@@ -1,0 +1,13 @@
+{
+  "name": "E5",
+  "version": "0.0.1",
+  "description": "E5 - Projeto ITA",
+  "main": "index.js",
+  "repository": "https://github.com/alegalliard/E5",
+  "author": "Alessandra D de Souza",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "materialize": "^1.0.0"
+  }
+}

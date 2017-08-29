@@ -1,0 +1,65 @@
+$menu-icons: [
+    "acervo",
+    "busca",
+    "contato",
+    "equipe",
+    "eventos",
+    "inicio",
+    "login",
+    "projetos",
+    "publicacoes"
+    ];
+
+.ic{
+    background-size: 100%;
+    background-position:center center;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    
+}
+@each $menu-icon in $menu-icons{
+    .ic-#{$menu-icon} {
+        @extend .ic;
+        background-image: url(../img/icones-menu/#{$menu-icon}.svg);   
+    }
+}
+
+.ic-sun{
+//    position: absolute;
+    background: $amarelo;
+    border-radius: 50%;
+    height: 23px;
+    width: 23px;
+    z-index: 2;
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+    
+    &:after{
+        content: " ";
+        position: absolute;
+        background: white;
+        width: 60px;
+        height: 10px;
+        top: -20px;
+        z-index: 2;
+        left: -20px
+    }
+    
+    i{
+      margin-left: -1px; 
+    }
+}
+
+.ic-tiny{
+    width: 20px;
+    height: 20px;
+}
+
+.ic-30{
+    width: 30px;
+    height: 30px;
+}

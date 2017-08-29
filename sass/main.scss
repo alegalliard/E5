@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+
+@import "components/vars";
+@import "components/buttons";
+@import "components/icons";
+@import "components/normalize";
+@import "components/fonts";
+@import "components/texts";
+@import "components/grid";
+@import "components/spaces";
+
+@import "sections/events";
+
+img{
+    max-width: 100%;
+}
+
+#logo{
+    width: 20%;
+    height: auto;
+    display: block;
+}
