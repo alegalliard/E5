@@ -6,13 +6,27 @@ a{
 
 .teal-title{
     color: $azulClaro;
-    font-size: 2.2rem;
+    font-size: 40px;
+    line-height: 48px;
+    font-family: "Circular";
+    font-weight: 500;
+    margin-bottom: 48px;
 }
 
 .e6-desc{
     text-align: center;
-    font-size: 1.1rem;
-    line-height: 1.9rem;
+    font-family: "Circular";
+    font-size: 20px;
+    line-height: 32px;
+    color: $azulEscuro;
+    margin-bottom: 36px;
+}
+
+.e6-bold{
+    font-family: "Circular";
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 500;
     color: $azulEscuro;
 }
 
@@ -28,10 +42,70 @@ a{
     border-bottom: $cinza 1px solid;
 }
 
-.h4-title{
+.h3-title{
     color:$azulEscuro;
+    font-family: "Circular";
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 16px;
 }
 
 p{
-    color: $cinza;    
+    color: $cinza; 
+    font-family: "Circular";
+    font-size: 16px;
+    line-height: 24px;    
+}
+
+.caption{
+    color: $azulEscuro; 
+    font-family: "Circular";
+    font-size: 12px;
+    line-height: 16px;
+    
+}
+.subcaption{
+    color: $cinza; 
+    font-family: "Circular";
+    font-size: 11px;
+    line-height: 16px;
+}
+
+.info-box{
+    .caption, .subcaption{
+        display: block
+    }
+    
+    &.side-icon{
+        i{
+            margin-right: 15px;
+        }
+        p{
+            display: inline-block;
+            vertical-align: middle;
+            max-width: 60%;
+            width: calc(100% - 60px);
+        }
+    }
+}
+
+.tags{
+    padding: 0;
+    margin: 0;
+    
+    .tag{
+      margin-right: 12px; 
+        margin-bottom: 12px;
+        display: inline-block;
+    }
+    
+    a{
+        padding: 8px 12px;
+        display: block;
+        color: $azulEscuro;
+        background-image: $patternAzul;
+        background-size: 40px;
+        font-size: 13px;
+    }
 }

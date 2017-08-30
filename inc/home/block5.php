@@ -15,8 +15,8 @@
                <i class=""></i>
            </div>
            <p class="">
-              <time class="">sexta-feira, 18 de agosto às 10 - 12 p.m.</time>
-               <small class="">daqui 5 dias</small>
+              <time class="caption">sexta-feira, 18 de agosto às 10 - 12 p.m.</time>
+               <small class="subcaption">daqui 5 dias</small>
            </p>
            
            
@@ -24,8 +24,8 @@
                <i class=""></i>
            </div>
            <p class="">
-              <b class="">auditório Mal. Benedito Miller</b>
-               <small class="">rua das Acácias, n 855 <a href="" class="">mostrar no mapa</a></small>
+              <b class="caption">auditório Mal. Benedito Miller</b>
+               <small class="subcaption">rua das Acácias, n 855 <a href="" class="">mostrar no mapa</a></small>
            </p>
            
            
@@ -33,8 +33,8 @@
                <i class=""></i>
            </div>
            <p class="">
-              <b class="">Lucille Delgado</b>
-               <small class="">professora doutora em comortamento pela UNICAMP</small>
+              <b class="caption">Lucille Delgado</b>
+               <small class="subcaption">professora doutora em comortamento pela UNICAMP</small>
            </p>           
            <hr>
            
@@ -62,8 +62,8 @@
                   <div class="event-block">
                     <span class=""></span>
                     <h5 class="">Escola de Educação Física promove seminário de Ética</h5>
-                    <span class=""><i class=""></i> 10-12 pm</span>
-                    <span class=""><i class=""></i> Espaço Benedito Miller de apoio</span>
+                    <span class="caption"><i class=""></i> 10-12 pm</span>
+                    <span class="subcaption"><i class=""></i> Espaço Benedito Miller de apoio</span>
                   </div>
                   <div class="aside-box">
                       <i class=""></i>

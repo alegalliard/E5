@@ -2,9 +2,10 @@
     border: 2px solid $azulEscuro;
     color: $azulEscuro;
     background-color: white;
-    width: 100%;
+    width: 90%;
     padding: 12px 15px;
     position: relative;
+    margin: 0 auto;
     cursor: pointer;
     &:hover{
         border: 2px solid $amarelo;
