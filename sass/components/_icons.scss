@@ -10,6 +10,22 @@ $menu-icons: [
     "publicacoes"
     ];
 
+
+.separador{
+    background:{
+        image: url(../img/separador.svg);
+        repeat: no-repeat;
+        position:center center;
+        color:transparent;
+    }
+    width: 63px;
+    height: 11px;
+    position: relative;
+    margin: 0 auto;
+    border: 0;
+}
+
+
 .ic{
     background-size: 100%;
     background-position:center center;
@@ -23,7 +39,7 @@ $menu-icons: [
 @each $menu-icon in $menu-icons{
     .ic-#{$menu-icon} {
         @extend .ic;
-        background-image: url(../img/icones-menu/#{$menu-icon}.svg);   
+        background-image: url(../img/icones-menu/#{$menu-icon}.svg);
     }
 }
 
