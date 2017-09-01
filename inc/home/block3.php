@@ -5,7 +5,7 @@
     <div class="news">
     <ul>
         <li class="news-box">
-           <figure><img src="" alt=""></figure> 
+           <figure class="news-pic"><img src="" alt=""></figure> 
            <h3 class="h3-title">Prêmio desafia estudantes a solucionar case de comunicação</h3>
            <p>Tema é "O custo da água e seu real valor para toda a sociedade".</p>
            
@@ -17,7 +17,7 @@
         </li>
         
         <li class="news-box">
-           <figure><img src="" alt=""></figure> 
+           <figure class="news-pic"><img src="" alt=""></figure> 
            <h3 class="h3-title">Programa ITA Talks discute a política de drogas</h3>
            <p>Reitor recebe secretário-geral da Corte Permanente de Arbitragem</p>
            
@@ -30,7 +30,7 @@
         
         
         <li class="news-box">
-           <figure><img src="" alt=""></figure> 
+           <figure class="news-pic"><img src="" alt=""></figure> 
            <h3 class="h3-title">ITA promove Feira das Profissões entre os dias 24 e 26/08</h3>
            <p>EXTENSÃO</p>
            
@@ -42,7 +42,7 @@
         </li>
         
         <li class="news-box">
-           <figure><img src="" alt=""></figure> 
+           <figure class="news-pic"><img src="" alt=""></figure> 
            <h3 class="h3-title">Cursos de graduação em todas as áreas do conhecimento</h3>
            <p>Programa ITA Talks discute a política de drogas.</p>
            
@@ -54,7 +54,7 @@
         </li>
         
         <li class="news-box">
-           <figure><img src="" alt=""></figure> 
+           <figure class="news-pic"><img src="" alt=""></figure> 
            <h3 class="h3-title">Cursos de graduação em todas as áreas do conhecimento</h3>
            <p>Programa ITA Talks discute a política de drogas.</p>
            
