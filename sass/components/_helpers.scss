@@ -1,2 +1,21 @@
 .left{float: left!important}
 .right{float: right!important}
+
+.p-rl-05{
+    padding-right: 0.5rem!important;
+    padding-left: 0.5rem!important;
+}
+
+
+
+
+.half-separator{
+    border: 0;
+    position: relative;
+    width: 300px;
+    margin: 2.5rem auto 2.0rem;
+    
+    @media #{$medium-and-down} {
+        border-bottom:#eee 2px solid;
+    }
+}
