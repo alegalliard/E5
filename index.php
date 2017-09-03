@@ -5,6 +5,8 @@
     <title>Document</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <link rel="stylesheet" href="css/main.css">
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/materialize/js/bin/materialize.min.js"></script>
 </head>
 <body>
    <?php

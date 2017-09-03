@@ -20,33 +20,34 @@
                 </header>
                 
                 
+                <div class="tab-area">
+                    <ul class="tabs">
+                        <li class="tab col s4 m4 l12"><a href="#when"><i class="icon ic-clock"></i> </a></li>
+                        <li class="tab col s4 m4 l12"><a href="#where"><i class="icon ic-map"></i></a></li>
+                        <li class="tab col s4 m4 l12"><a href="#who"><i class="icon ic-circle-user"></i></a></li>
+                    </ul>
+                
 
-                <div class="icon-block">
-                    <i class="icon ic-clock"></i>                
-                    <p class="desc">
-                        <time class="caption">sexta-feira, 18 de agosto às 10 - 12 p.m.</time>
-                        <small class="subcaption">daqui 5 dias</small>
-                    </p>
-                </div>
+                    <div class="desc-block">             
+                        <p class="desc" id="when">
+                            <time class="caption">sexta-feira, 18 de agosto às 10 - 12 p.m.</time>
+                            <small class="subcaption">daqui 5 dias</small>
+                        </p>
 
-                <div class="icon-block">
-                    <i class="icon ic-map"></i>                
-                    <p class="desc">
-                        <b class="caption">auditório Mal. Benedito Miller</b>
-                        <small class="subcaption">rua das Acácias, n 855 <a href="" class="">mostrar no mapa</a></small>
-                    </p>
-                </div>
+                        <p class="desc" id="where">
+                            <b class="caption">auditório Mal. Benedito Miller</b>
+                            <small class="subcaption">rua das Acácias, n 855 <a href="" class="sm-link">mostrar no mapa</a></small>
+                        </p>
 
-                <div class="icon-block">
-                    <i class="icon ic-circle-user"></i> 
-                    <p class="desc">
-                        <b class="caption">Lucille Delgado</b>
-                        <small class="subcaption">professora doutora em comortamento pela UNICAMP</small>
-                    </p>           
+                        <p class="desc" id="who">
+                            <b class="caption">Lucille Delgado</b>
+                            <small class="subcaption">professora doutora em comortamento pela UNICAMP</small>
+                        </p>           
+                    </div>
                 </div>
                 <hr>
 
-                <p>O evente é aberto a todos os interessadasos e não há necessidaded de inscrição. As atividades acontecem no Auditório José Geraldo Massucato - Bloco B da EEFE - USP. Haverá envio de certificado de participação via e-mail aos ouvintes que permanecerem durante todo o evento. Mais informações no site  <a href="" class="">ver mais</a></p>
+                <p>O evente é aberto a todos os interessadasos e não há necessidaded de inscrição. As atividades acontecem no Auditório José Geraldo Massucato - Bloco B da EEFE - USP. Haverá envio de certificado de participação via e-mail aos ouvintes que permanecerem durante todo o evento. Mais informações no site  <small class="subcaption"><a href="#" class="sm-link">ver mais</a></small></p>
 
 
                 <button type="button" class="btn-line">
