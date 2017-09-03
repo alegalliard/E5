@@ -10,6 +10,38 @@ $menu-icons: [
     "publicacoes"
     ];
 
+.mini-ics{
+    display: inline-block;
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+}
+
+    .ic-circle-user{
+        @extend .mini-ics;
+        background:{
+            image: url(../img/circle-user.png);
+            repeat: no-repeat;
+            position:center center;
+        }
+    }
+
+    .ic-clock{
+        @extend .mini-ics;
+        background:{
+            image: url(../img/clock.png);
+            repeat: no-repeat;
+            position:center center;
+        }
+    }
+    .ic-map{
+        @extend .mini-ics;
+        background:{
+            image: url(../img/map.png);
+            repeat: no-repeat;
+            position:center center;
+        }
+    }
 
 .separador{
     background:{

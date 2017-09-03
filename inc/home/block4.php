@@ -9,13 +9,13 @@
             
         <article class="row big-news">
             <div class="col s12 m4 l3">
-                <figure class="news-pic">
+                <figure class="news-pic shadow">
                     <img src="" alt="">
                 </figure>
             </div>
             
             <div class="col s12 m8 l5">
-                <h3 class="">Bibliometria: uma ferramenta estatística para a gestao da informação e do conhecimento, em sistemas de informação e de avaliação científica</h3>
+                <h3 class="h3-title">Bibliometria: uma ferramenta estatística para a gestao da informação e do conhecimento, em sistemas de informação e de avaliação científica</h3>
                 
                 <p>Este artigo tem como objetivo o desenvolvimento de uma revisão da literatura sobre Bibliometrie, edstacando sua aplicação como ferramenta estatística básica para gestão</p>
                 <footer class="info-box side-icon">

@@ -4,16 +4,57 @@ a{
 }
 .text-center{text-align: center}
 
-.teal-title{
-    color: $azulClaro;
+h1, .h1{
     font-size: 40px;
     line-height: 48px;
     font-family: "Circular";
     font-weight: 500;
+}
+h2, .h2{
+    font-size: 36px;
+    line-height: 48px;
+    font-family: "Circular";
+    font-weight: 500;
+}
+h3, .h3{
+    font-size: 20px;
+    line-height: 32px;
+    font-family: "Circular";
+    font-weight: 500;
+}
+h4, .h4{
+    font-size: 20px;
+    line-height: 24px;
+    font-family: "Circular";
+    font-weight: 500;
+}
+
+p, .p{
+    color: $cinza; 
+    font-family: "Circular";
+    font-size: 16px;
+    line-height: 24px;    
+}
+
+.blue-text{
+    color: $azul!important;
+}
+
+.marine-text{
+    color: $azulEscuro!important;
+}
+
+.teal-title{
+    color: $azulClaro;
     margin-bottom: 48px;
     
 }
-
+.blue-title{
+    color:$azulEscuro;
+    font-family: "Circular";
+    padding-bottom: 1.5rem;
+    border-bottom: #797979 1px solid;
+}
 
 
 .teal-subtitle{
@@ -59,12 +100,7 @@ a{
     margin-bottom: 16px;
 }
 
-p{
-    color: $cinza; 
-    font-family: "Circular";
-    font-size: 16px;
-    line-height: 24px;    
-}
+
 
 .caption{
     color: $azulEscuro; 

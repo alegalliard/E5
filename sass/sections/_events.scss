@@ -24,10 +24,9 @@
         width: 210px;
         height: 210px;
         background: #eee;
-        position: relative;
         margin: 0 auto;
         cursor: pointer;
-        &:before{
+        /*&:before{
             content: " ";
             position: absolute;
             background-image: $patternAzulEscuro;
@@ -38,7 +37,7 @@
             bottom: -10px;
             left: -10px;
             z-index: -5;
-        }
+        }*/
     }
     
     .h3-title{
@@ -56,11 +55,9 @@
         width: 100%;
         height: 210px;
         background: #eee;
-        position: relative;
-        margin: 0 auto;
+        margin: 20px auto 0;
         cursor: pointer;
-        margin-top: 20px;
-        &:before{
+        /*&:before{
             content: " ";
             position: absolute;
             background-image: $patternAzulEscuro;
@@ -71,7 +68,85 @@
             bottom: -10px;
             left: -10px;
             z-index: -5;
+        }*/
+    }
+    
+}
+
+.next-news{
+    .shadow{
+        background-color: #fff;
+    }
+    figure{
+        margin: 0
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .day-month{
+        display: inline-block;
+        vertical-align: middle;
+        width: 36px;
+        margin-right: 20px;
+        margin-top: 15px;
+        text-align: center;
+        
+    }
+    .mouth{
+        display: block;
+        padding-top:5px
+        
+    }
+    .next-info{
+        display: inline-block;
+        vertical-align: middle;
+        width: calc(100% - 60px);
+    }
+    
+    h4{
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
+    
+    .pad{
+        padding-left: 32px;
+        padding-bottom: 32px;
+    }
+    
+    .caption,.subcaption{
+        display: block;
+        font-weight: lighter
+    }
+    
+    .ic-calendario{
+        background:{
+            image: url(../img/calendario.png);
+            repeat: no-repeat;
+            position:center center;
         }
+        width: 34px;
+        display: inline-block;
+        color:$azul;
+        color: #0861FF;
+        font-weight: 500;
+        padding: 13px 0 3px;
+        text-align: center;
+        font-style: normal;    
+    }
+    
+    .icon-block{
+        
+    }
+    
+    .icon{
+        margin-left: 8px;
+        margin-right: 30px;
+    }
+    .desc{
+        display: inline-block;
+        vertical-align: middle;
+        width: calc(100% - 80px)
     }
     
 }
