@@ -579,7 +579,7 @@
   border: 2px solid #001B4B;
   color: #001B4B;
   background-color: white;
-  width: 90%;
+  width: 100%;
   padding: 12px 15px;
   position: relative;
   margin: 0 auto;
@@ -599,6 +599,19 @@
     z-index: -5; }
   .btn-line i {
     margin-right: 20px; }
+
+.ic-calendario {
+  background-image: url(../img/calendario.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 34px;
+  display: inline-block;
+  color: #0861FF;
+  color: #0861FF;
+  font-weight: 500;
+  padding: 13px 0 3px;
+  text-align: center;
+  font-style: normal; }
 
 .mini-ics, .ic-circle-user, .ic-clock, .ic-map {
   display: inline-block;
@@ -620,6 +633,20 @@
   background-image: url(../img/map.png);
   background-repeat: no-repeat;
   background-position: center center; }
+
+.tiny-ics {
+  display: inline-block;
+  vertical-align: middle;
+  width: 14px;
+  height: 14px; }
+  .tiny-ics.ic-clock {
+    background-image: url(../img/clock-mini.png);
+    background-repeat: no-repeat;
+    background-position: center center; }
+  .tiny-ics.ic-arroba {
+    background-image: url(../img/arroba.png);
+    background-repeat: no-repeat;
+    background-position: center center; }
 
 .separador {
   background-image: url(../img/separador.svg);
@@ -715,7 +742,8 @@ html {
  * Remove default margin.
  */
 body {
-  margin: 0; }
+  margin: 0;
+  background-color: #fafafa; }
 
 /* HTML5 display definitions
    ========================================================================== */
@@ -1323,19 +1351,7 @@ p, .p {
     height: 210px;
     background: #eee;
     margin: 0 auto;
-    cursor: pointer;
-    /*&:before{
-        content: " ";
-        position: absolute;
-        background-image: $patternAzulEscuro;
-        background-repeat: repeat;
-        background-size: 40px;
-        width:100%;
-        height:210px;
-        bottom: -10px;
-        left: -10px;
-        z-index: -5;
-    }*/ }
+    cursor: pointer; }
   .news .h3-title {
     height: 72px; }
 
@@ -1347,19 +1363,7 @@ p, .p {
   height: 210px;
   background: #eee;
   margin: 20px auto 0;
-  cursor: pointer;
-  /*&:before{
-      content: " ";
-      position: absolute;
-      background-image: $patternAzulEscuro;
-      background-repeat: repeat;
-      background-size: 40px;
-      width:100%;
-      height:210px;
-      bottom: -10px;
-      left: -10px;
-      z-index: -5;
-  }*/ }
+  cursor: pointer; }
 
 .next-news .shadow {
   background-color: #fff; }
@@ -1368,13 +1372,6 @@ p, .p {
 .next-news img {
   width: 100%;
   height: auto; }
-.next-news .day-month {
-  display: inline-block;
-  vertical-align: middle;
-  width: 36px;
-  margin-right: 20px;
-  margin-top: 15px;
-  text-align: center; }
 .next-news .mouth {
   display: block;
   padding-top: 5px; }
@@ -1386,26 +1383,14 @@ p, .p {
   margin-bottom: 0;
   margin-top: 10px; }
 .next-news .pad {
-  padding-left: 32px;
-  padding-bottom: 32px; }
-.next-news .caption {
-  display: block; }
-.next-news .subcaption {
+  padding: 0 32px 32px; }
+.next-news .caption, .next-news .subcaption {
+  display: block;
   font-weight: lighter; }
 .next-news .sm-link {
   padding-left: 15px; }
 .next-news .ic-calendario {
-  background-image: url(../img/calendario.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  width: 34px;
-  display: inline-block;
-  color: #0861FF;
-  color: #0861FF;
-  font-weight: 500;
-  padding: 13px 0 3px;
-  text-align: center;
-  font-style: normal; }
+  padding: 13px 0 3px; }
 .next-news button {
   margin: 20px auto 0; }
 .next-news .icon {
@@ -1439,6 +1424,70 @@ p, .p {
 @media only screen and (min-width: 993px) {
   .next-news .desc {
     display: block !important; } }
+
+.day-month {
+  display: inline-block;
+  vertical-align: middle;
+  width: 36px;
+  margin-right: 20px;
+  margin-top: 15px;
+  text-align: center; }
+
+@media only screen and (max-width: 600px) {
+  .side-events {
+    position: relative;
+    width: 100%;
+    margin: -22px 0 20px; }
+    .side-events:before {
+      content: " ";
+      position: absolute;
+      background-image: url(../img/pattern-azul-marinho.svg);
+      background-repeat: repeat;
+      background-size: 40px;
+      width: 97%;
+      height: 100%;
+      bottom: -10px;
+      left: 2px;
+      z-index: -5; } }
+
+.list-events {
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .list-events a {
+    padding: 15px 15px 20px;
+    list-style: none;
+    display: block;
+    height: auto; }
+    .list-events a:hover, .list-events a.active {
+      background: #0861FF;
+      color: #fff; }
+      .list-events a:hover .subcaption, .list-events a.active .subcaption {
+        color: #fff; }
+      .list-events a:hover span, .list-events a.active span {
+        color: #fff; }
+  .list-events h5 {
+    margin: 5px 0 0; }
+  .list-events span {
+    display: block;
+    color: #797979; }
+  .list-events .event-block {
+    width: calc(100% - 55px);
+    display: inline-block;
+    vertical-align: middle; }
+  .list-events .aside {
+    width: 85px;
+    display: inline-block;
+    text-align: center; }
+  .list-events .day-month {
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 7px; }
+  .list-events .half-separator {
+    border-bottom: #eee 2px solid;
+    width: 70%;
+    margin: 0 auto; }
 
 img {
   max-width: 100%; }

@@ -10,6 +10,24 @@ $menu-icons: [
     "publicacoes"
     ];
 
+.ic-calendario{
+        background:{
+            image: url(../img/calendario.png);
+            repeat: no-repeat;
+            position:center center;
+        }
+        width: 34px;
+        display: inline-block;
+        color:$azul;
+        color: #0861FF;
+        font-weight: 500;
+        padding: 13px 0 3px;
+        text-align: center;
+        font-style: normal;    
+    }
+
+
+
 .mini-ics{
     display: inline-block;
     vertical-align: middle;
@@ -42,6 +60,28 @@ $menu-icons: [
             position:center center;
         }
     }
+
+.tiny-ics{
+    display: inline-block;
+    vertical-align: middle;
+    width: 14px;
+    height: 14px;
+    
+    &.ic-clock{
+        background:{
+            image: url(../img/clock-mini.png);
+            repeat: no-repeat;
+            position:center center;
+        }
+    }
+    &.ic-arroba{
+        background:{
+            image: url(../img/arroba.png);
+            repeat: no-repeat;
+            position:center center;
+        }
+    }
+}
 
 .separador{
     background:{

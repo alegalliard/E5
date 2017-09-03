@@ -2,7 +2,7 @@
     <div class="container">
     <h3 class="blue-title">próximos eventos</h3>
 
-    <article class="col s8 next-news ">
+    <article class="col s12 m8 l8 next-news ">
         <div class="shadow">
             <figure>
                 <img src="img/ilustrative/hands.jpg" alt="">
@@ -49,7 +49,6 @@
 
                 <p>O evente é aberto a todos os interessadasos e não há necessidaded de inscrição. As atividades acontecem no Auditório José Geraldo Massucato - Bloco B da EEFE - USP. Haverá envio de certificado de participação via e-mail aos ouvintes que permanecerem durante todo o evento. Mais informações no site  <small class="subcaption"><a href="#" class="sm-link">ver mais</a></small></p>
 
-
                 <button type="button" class="btn-line">
                     <span class="ic-sun"><i class="ic-login"></i></span>
                     faça login para participar
@@ -66,22 +65,26 @@
        
        
        
-       <div class="col s4">
-           <ul class="side-events">
-               <li>
-                  <div class="event-block">
-                    <span class=""></span>
+        <div class="col s12 m4 l4 side-events">
+            <ul class="list-events">
+                <?php for($i=0; $i < 5; $i++){ ?>
+            <li>
+            <a href="#">
+                <div class="event-block">
+                    <small class="caption">curso</small>
                     <h5 class="">Escola de Educação Física promove seminário de Ética</h5>
-                    <span class="caption"><i class=""></i> 10-12 pm</span>
-                    <span class="subcaption"><i class=""></i> Espaço Benedito Miller de apoio</span>
-                  </div>
-                  <div class="aside-box">
-                      <i class=""></i>
-                      <span>ago</span>
-                  </div>
-               </li>
-           </ul>
-       </div>
-       </div>
+                    <span class="caption"><i class="tiny-ics ic-clock"></i> 10-12 pm</span>
+                    <span class="subcaption"><i class="tiny-ics ic-arroba"></i> Espaço Benedito Miller de apoio</span>
+                </div>
+                <div class="day-month">
+                    <i class="ic-calendario">15</i>
+                    <span class="mouth caption">ago</span>
+                </div>
+            </a>
+            <hr class="half-separator">
+            </li>
+            <?php } ?>
+            </ul>
+        </div>
     </div>
 </section>
