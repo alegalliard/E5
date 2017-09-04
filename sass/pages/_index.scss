@@ -1,1 +1,26 @@
 @import "../sections/events";
+
+.floating-header{
+    position: relative;
+}
+
+#logo{
+    position: absolute;
+    top: 0;
+    left:0;
+}
+
+.calendar{
+    .day, .day-header{
+        display: inline-block;
+        width: 14.285%;
+        text-align: center;
+    }
+}
+
+
+.slider{
+    ul {
+        list-style: none;
+    }
+}
