@@ -14,6 +14,7 @@ $date = date('h-i-s-a', time());
 </head>
 <body>
    <?php
+    include('inc/home/menu.php');
     include('inc/home/block1.php');
     include('inc/home/block2.php');
     include('inc/home/block3.php');
