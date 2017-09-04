@@ -1,17 +1,18 @@
 @charset "UTF-8";
 
-
 @import "components/vars";
+@import "components/normalize";
 @import "components/grid";
 @import "components/tabs";
 @import "components/buttons";
 @import "components/icons";
-@import "components/normalize";
 @import "components/fonts";
 @import "components/texts";
 @import "components/spaces";
 @import "components/mediaQuery";
 @import "components/helpers";
+
+@import "components/footer";
 
 //index
 @import "pages/index";

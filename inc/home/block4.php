@@ -10,7 +10,7 @@
         <article class="row big-news">
             <div class="col s12 m4 l3">
                 <figure class="news-pic shadow">
-                    <img src="" alt="">
+                    <img src="img/ilustrative/img<?php echo $i+1; ?>.jpg" alt="">
                 </figure>
             </div>
             

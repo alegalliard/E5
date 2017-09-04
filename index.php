@@ -19,6 +19,7 @@ $date = date('h-i-s-a', time());
     include('inc/home/block3.php');
     include('inc/home/block4.php');
     include('inc/home/block5.php');
+    include('inc/home/footer.php');
     
     ?>
    
