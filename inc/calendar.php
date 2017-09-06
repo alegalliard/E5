@@ -3,7 +3,7 @@
 
 <div class="side-events">
     <ul class="list-events">
-        <?php for($i=0; $i < 3; $i++){ ?>
+        <?php for($i=0; $i < 2; $i++){ ?>
     <li>
     <a href="#">
         <div class="event-block">
@@ -20,5 +20,30 @@
     <hr class="half-separator">
     </li>
     <?php } ?>
+    </ul>
+</div>
+
+
+<div class="pad">
+    <h2 class="teal-h3">últimos projetos</h2>
+    <ul class="tiny-list">
+        <li>
+            <a href="" class="truncate">Esteps In Installing Rack Mount Led Monitor</a>
+            <small class="subcaption">por Carlos Erickson</small>
+        </li>
+        <li>
+            <a href="">Asteroids</a>
+            <small class="subcaption">por Carlos Erickson</small>
+        </li>
+    </ul>
+    
+    
+    <h3 class="teal-h3">assuntos dos últimos projetos</h3>
+    <ul class="tags">
+        <li class="tag"><a href="#">oficinas</a></li>
+        <li class="tag"><a href="#">termodinâmica</a></li>
+        <li class="tag"><a href="#">engenharia</a></li>
+        <li class="tag"><a href="#">energia</a></li>
+        <li class="tag"><a href="#">trabalho</a></li>
     </ul>
 </div>

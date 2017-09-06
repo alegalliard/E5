@@ -5,29 +5,32 @@
         </header>
 
         <section class="row">
-            <div class="col s8">
-                <div class="slider">
+            <div class="col s9">
+                <div class="slider shadow">
                     <ul>
                         <li>
-                          <img src="img/ilustrative/home.png" alt="">
-                           <div class="icon-paginate">
-                               <i class=""></i>
-                               <span class="slider-pagin"><span class="current">1</span>/5</span>
-                           </div>
+                            <div class="slide">
+<!--                              <img src="img/ilustrative/img5.jpg" alt="">-->
+                               <div class="icon-paginate">
+                                   <i class=""></i>
+                                   <span class="slider-pagin"><span class="current">1</span>/5</span>
+                               </div>
 
-                            <small>destaques</small>
-                            <p class="slider-title">PRG reúne diretores e coordenadores de graduação</p>
+                                <small>destaques</small>
+                                <p class="slider-title">PRG reúne diretores e coordenadores de graduação</p>
+                                
+                            </div>
 
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="col s4">
+            <aside class="col s3 aside">
                 <div class="calendar">
                     
                     <?php include('inc/calendar.php'); ?>
                 </div>
-            </div>
+            </aside>
         </section>
     </div>
 </div>
