@@ -8,6 +8,18 @@ $date = date('h-i-s-a', time());
     <meta charset="UTF-8">
     <title>ITA</title>
     <meta name="description" content="">
+    <meta name="robots" content="index, follow">
+<!--  Se for importante indexar o site no Google, não se esqueça 
+       de permitir a personalização  da TITLE (até 60 chars), a 
+       META-DESCRIPTION (até 140 chars) 
+       e META-ROBOTS para cada página. 
+       
+       Páginas restritas: Não é necessário personalizar a meta-description, 
+       somente a title. Robots deve constar com content noindex,nofollow
+       
+       -->
+    
+    
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <link rel="stylesheet" href="css/main.css?<?php echo $date ; ?>">
     <link rel="stylesheet" href="vendor/jquery-ui-1.12.1.custom/jquery-ui.min.css">
