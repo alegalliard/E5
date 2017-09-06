@@ -25,6 +25,16 @@ $date = date('h-i-s-a', time());
                 dayNamesMin:["D", "S", "T", "Q", "Q", "S", "S"]
 
             });
+            
+            $('.icon-list').on('click', function(){
+                $('.full-itens').show();
+                $('.icon-list').hide();
+            });
+            $('.collapse').on('click', function(){
+                $('.full-itens').hide();
+                $('.icon-list').show();
+            });
+            
         });
     </script>
 </head>

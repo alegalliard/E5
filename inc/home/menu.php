@@ -1,22 +1,50 @@
 <menu class="sidenav side-nav fixed">
-    <ul>
-        <li class="negative"><a href=""><i class="ic-login"></i>login ou cadastrar</a></li>
+   <ul class="icon-list">
+       <li><i class="ic-login"></i></li>
+       <li><i class="ic-inicio"></i></li>
+       <li><i class="ic-busca"></i></li>
+       <li><i class="ic-eventos"></i></li>
+       <li><i class="ic-projetos"></i></li>
+       <li><i class="ic-acervo"></i></li>
+       <li><i class="ic-publicacoes"></i></li>
+       <li><i class="ic-equipe"></i></li>
+       <li><i class="ic-contato"></i></li>
+   </ul>
+    <ul class="full-itens">
+        <li class="negative">
+            <a href=""><i class="ic-login"></i>login ou cadastrar</a>
+        </li>
         
-        <li><a href=""><i class="ic-inicio"></i>início</a></li>
+        <li>
+            <a href=""><i class="ic-inicio"></i>início</a>
+        </li>
         <li class="search">
             <i class="ic-busca"></i>
             <input type="search" id="busca" name="busca" placeholder="busque no site">
         
         </li>
-        <li><a href=""><i class="ic-eventos"></i>eventos</a></li>
-        <li><a href=""><i class="ic-projetos"></i>projetos</a></li>
-        <li><a href=""><i class="ic-acervo"></i>acervo <br>
+        <li>
+            <a href=""><i class="ic-eventos"></i>eventos</a>
+        </li>
+        <li>
+            <a href=""><i class="ic-projetos"></i>projetos</a>
+        </li>
+        <li>
+           <a href=""><i class="ic-acervo"></i>acervo <br>
             <span class="subcaption">restrito à usuários cadastrados</span></a>
         </li>
-        <li><a href=""><i class="ic-publicacoes"></i>publicações</a></li>
-        <li><a href=""><i class="ic-equipe"></i>equipe</a></li>
+        <li>
+            <a href=""><i class="ic-publicacoes"></i>publicações</a>
+        </li>
+        <li>
+            <a href=""><i class="ic-equipe"></i>equipe</a>
+        </li>
 
-        <li><a href=""><i class="ic-contato"></i>contato</a></li>
-        <li class="collapse"><a href=""><i class="ic-contato"></i>colapsar</a></li>
+        <li>
+            <a href=""><i class="ic-contato"></i>contato</a>
+        </li>
+        <li class="collapse">
+            <a href="#" class="collapse"><i class="ic-contato"></i>colapsar</a>
+        </li>
     </ul>
 </menu>
