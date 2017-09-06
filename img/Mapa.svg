@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="E5/icons/Mapa" fill="#001B4B">
+            <path d="M14,13.188 L11,13.891 L11,4 L14,3.311 L14,13.188 Z M2,12.688 L2,2.811 L5,2.108 L5,11.938 L2,12.688 Z M7,2.775 L9,3.441 L9,13.224 L7,12.558 L7,2.775 Z M15.102,1.005 C15.021,1.005 14.936,1.016 14.846,1.039 L11,2 L5,0 L1,1 C0.403,1.199 0,1.697 0,2.25 L0,14.143 C0,14.599 0.341,14.993 0.882,14.993 C0.996,14.993 1.119,14.975 1.25,14.937 L5,14 L11,16 L15,15 C15.545,14.838 16,14.396 16,13.843 L16,2 C16,1.516 15.665,1.005 15.102,1.005 L15.102,1.005 Z" id="Fill-1"></path>
+        </g>
+    </g>
+</svg>

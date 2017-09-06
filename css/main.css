@@ -1637,11 +1637,47 @@ p, .p {
   .slider img {
     width: 100%;
     height: auto; }
+  .slider .info-box {
+    position: absolute;
+    bottom: 20px;
+    left: 40px; }
+  .slider .side-icon, .slider .side-box {
+    display: inline-block;
+    vertical-align: middle; }
+  .slider .side-box {
+    max-width: 80%;
+    margin-left: 30px; }
+  .slider .slider-title {
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    margin: 10px 0; }
+  .slider .bordered {
+    border: #FFCF15 3px solid;
+    padding: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center center; }
+  .slider .slider-pagin {
+    color: #FFCF15;
+    display: block;
+    padding: 10px 0;
+    text-align: center; }
+  .slider .event-type {
+    color: #FFCF15;
+    display: block; }
 
-.aside {
-  background: #fff; }
-  .aside .pad {
-    padding: 0 15px; }
+.aside .pad {
+  padding: 0 15px; }
+
+.timerout {
+  height: 5px;
+  background: #FFCF15;
+  width: 90%;
+  width: calc(100% - 23px);
+  display: block;
+  position: absolute;
+  bottom: 25px;
+  left: 12px; }
 
 .floating-header {
   position: relative; }

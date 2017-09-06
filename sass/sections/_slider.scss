@@ -11,11 +11,68 @@
         width: 100%;
         height: auto;
     }
+    .slide{
+    }
+    .info-box{
+        position: absolute;
+        bottom: 20px;
+        left: 40px;
+    }
+    
+    .side-icon,.side-box{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    .side-box{
+        max-width: 80%;
+        margin-left: 30px
+    }
+    
+    .slider-title{
+        color: #fff;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        margin: 10px 0;
+    }
+    .bordered{
+        border:$amarelo 3px solid;
+        padding: 20px 20px;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    
+    
+    .slider-pagin{
+        color: $amarelo;
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+    }
+    
+    .event-type{
+        color: $amarelo;
+        display: block;
+    }
+    
+    
 }
 
 .aside{
-    background: #fff;
     .pad{
         padding: 0 15px;
     }
+    
+    
+}
+
+.timerout{
+    height: 5px;
+    background: $amarelo;
+    width: 90%;
+    width: calc(100% - 23px);
+    display: block;
+    position: absolute;
+    bottom: 25px;
+    left: 12px;
 }

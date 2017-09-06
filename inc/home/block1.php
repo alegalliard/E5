@@ -5,25 +5,30 @@
         </header>
 
         <section class="row">
-            <div class="col s9">
+            <div class="col s9 rel">
                 <div class="slider shadow">
                     <ul>
-                        <li>
-                            <div class="slide">
-<!--                              <img src="img/ilustrative/img5.jpg" alt="">-->
-                               <div class="icon-paginate">
-                                   <i class=""></i>
+                        <li class="slide">
+                            <img src="img/ilustrative/img5.jpg" alt="">
+                            <div class="info-box">
+                               <div class="side-icon">
+                                  <div class="bordered">
+                                       <i class="ic-publicacoes"></i>
+                                  </div>
                                    <span class="slider-pagin"><span class="current">1</span>/5</span>
                                </div>
-
-                                <small>destaques</small>
-                                <p class="slider-title">PRG reúne diretores e coordenadores de graduação</p>
+                                <div class="side-box">
+                                    <small class="event-type">destaques</small>
+                                    <p class="slider-title">PRG reúne diretores e coordenadores de graduação</p>
+                                </div>
                                 
                             </div>
-
                         </li>
+                        
                     </ul>
                 </div>
+                
+                <div class="timerout"></div>
             </div>
             <aside class="col s3 aside">
                 <div class="calendar">
