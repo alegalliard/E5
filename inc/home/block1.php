@@ -1,7 +1,9 @@
 <div class="row">
     <div class="container">
         <header class="floating-header">
-            <a href="" id="logo"><img src="img/logo-horizontal.svg" alt=""></a>
+           <h1 class="m-tb-0">
+            <a href="index.html" id="logo"><img src="img/logo-horizontal.svg" alt="Espaço de Estudos e Experiências em Engenharia"></a>
+           </h1>
         </header>
 
         <section class="row">

@@ -1322,6 +1322,10 @@ p, .p {
 .m-b-0 {
   margin-bottom: 0 !important; }
 
+.m-tb-0 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important; }
+
 .p-rl-05 {
   padding-right: 0.5rem !important;
   padding-left: 0.5rem !important; }
@@ -1702,6 +1706,8 @@ img {
   width: 20%;
   height: auto;
   display: block;
-  z-index: 99; }
+  z-index: 99;
+  margin-top: 30px;
+  margin-left: 20px; }
 
 /*# sourceMappingURL=main.css.map */
