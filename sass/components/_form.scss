@@ -1,0 +1,23 @@
+$link-color: $azul;
+$primary-color: $azulEscuro;
+$footer-font-color: $azulEscuro;
+$footer-bg-color: $azulEscuro;
+$footer-copyright-font-color: $azulEscuro;
+$footer-copyright-bg-color: $azulEscuro;
+
+$primary-color: $azulEscuro !default;
+$primary-color-light: $azul !default;
+$primary-color-dark: $azulEscuro !default;
+
+$secondary-color: $azulEscuro !default;
+$success-color: $azulEscuro !default;
+$error-color: $azulEscuro !default;
+$link-color: $azul !default;
+
+// No Text Select
+.no-select {
+  user-select: none;
+}
+//@import "global";
+@import "variables";
+@import "forms/forms";

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>ITA - Cadastro</title>
+    <meta name="description" content="">
+    <meta name="robots" content="index, follow">
+<!--  Se for importante indexar o site no Google, não se esqueça 
+       de permitir a personalização  da TITLE (até 60 chars), a 
+       META-DESCRIPTION (até 140 chars) 
+       e META-ROBOTS para cada página. 
+       
+       Páginas restritas: Não é necessário personalizar a meta-description, 
+       somente a title. Robots deve constar com content noindex,nofollow
+       
+       -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="css/main.css?08-40-49-pm">
+    <link rel="stylesheet" href="vendor/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="vendor/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css">
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/materialize/js/bin/materialize.min.js"></script>
+    <script src="vendor/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script>
+        $( function() {
+            
+            
+            $('.icon-list').on('click', function(){
+                $('.full-itens').show();
+                $('.icon-list').hide();
+            });
+            $('.collapse').on('click', function(){
+                $('.full-itens').hide();
+                $('.icon-list').show();
+            });
+            
+        });
+    </script>
+</head>
+<body>
+   <menu class="sidenav side-nav fixed">
+   <ul class="icon-list">
+       <li><i class="ic-login"></i></li>
+       <li><i class="ic-inicio"></i></li>
+       <li><i class="ic-busca"></i></li>
+       <li><i class="ic-eventos"></i></li>
+       <li><i class="ic-projetos"></i></li>
+       <li><i class="ic-acervo"></i></li>
+       <li><i class="ic-publicacoes"></i></li>
+       <li><i class="ic-equipe"></i></li>
+       <li><i class="ic-contato"></i></li>
+   </ul>
+    <ul class="full-itens">
+        <li class="negative">
+            <a href="login.html"><i class="ic-login"></i>login ou cadastrar</a>
+        </li>
+        
+        <li>
+            <a href="index.html"><i class="ic-inicio"></i>início</a>
+        </li>
+        <li class="search">
+           <form action="login.html">
+            <i class="ic-busca"></i>
+            <input type="search" id="busca" name="busca" placeholder="busque no site">               
+           </form>        
+        </li>
+        <li>
+            <a href="eventos.html"><i class="ic-eventos"></i>eventos</a>
+        </li>
+        <li>
+            <a href="projetos.html"><i class="ic-projetos"></i>projetos</a>
+        </li>
+        <li>
+           <a href="acervo.html"><i class="ic-acervo"></i>acervo <br>
+            <span class="subcaption">restrito à usuários cadastrados</span></a>
+        </li>
+        <li>
+            <a href="publicacoes.html"><i class="ic-publicacoes"></i>publicações</a>
+        </li>
+        <li>
+            <a href="equipe-do-projeto.html"><i class="ic-equipe"></i>equipe</a>
+        </li>
+
+        <li>
+            <a href="contato.html"><i class="ic-contato"></i>contato</a>
+        </li>
+        <li class="collapse">
+            <a href="#" class="collapse"><i class="ic-contato"></i>colapsar</a>
+        </li>
+    </ul>
+</menu>
+   
+   <div class="row">
+    <div class="container">
+        <header class="floating-header">
+           <h1 class="m-tb-0">
+            <a href="index.html" id="logo"><img src="img/logo-horizontal.svg" alt="Espaço de Estudos e Experiências em Engenharia"></a>
+           </h1>
+        </header>        
+    </div>
+</div>
+
+  <main class="main">
+      
+  
+   <section class="row">
+    <article class="container">
+       
+       <div class="col s12">
+           <h1 class="teal-title">Cadastro de evento</h1>
+           <nav class="breadcrumb">
+               <ul>
+                   <li><a href="index.html">Home</a></li>
+                   <li class="active">Cadastro de evento</li>
+               </ul>
+           </nav>
+
+           
+           <p class="e6-desc text-left">Quisquam facere sint autem tempore dolorem fugiat unde hic, quia debitis dolores nam possimus ipsum doloribus laborum recusandae atque, vero sit! Commodi deserunt minima fugiat aliquam consequuntur rerum assumenda illum. <a href="mailto:contato.e5@ita.br">contato.e5@ita.br</a> ou telefone (12) 3456-7890.</p>
+           
+           
+           
+           <form action="" class="row">
+              
+              <fieldset>
+        			<legend>Pessoa</legend>
+                    <div class="col s7">
+                        <label for="nome" id="campoNome">Nome</label>
+                        <input id="nome" value="" name="nome" maxlength="255" type="text">
+                     </div>
+                    <div class="col s5">
+                        <label for="email">E-mail</label>
+                        <input id="email" name="email" value="" maxlength="100" type="text">
+                    </div>
+
+        			
+        			<div class="col s2" id="pessoaFisica"> 
+                        <label for="sexo">Sexo</label>
+                        <select name="sexo" id="sexo" class="browser-default">
+                            <option value="">Selecione...</option>
+                                  <option value="FEMININO">F</option>
+                                  <option value="MASCULINO">M</option>
+                        </select>
+        			</div>
+        				
+                    <div class="col s2">    
+                        <label for="nascimento">Data de Nascimento</label>
+                        <input id="nascimento" name="nascimento" value="" class="datepicker" type="text">
+                    </div>
+
+      				
+                    <div class="col s4">
+                        <label for="cpf">CPF</label>
+                        <input id="cpf" name="cpf" value="" class="inputFisica required" type="text">
+                    </div>
+
+                    <div class="col s4">
+                        <label for="rg">RG</label>
+                        <input id="rg" name="rg" value="" maxlength="15" class="inputFisica required" type="text">
+                    </div>
+       			
+        		</fieldset>
+              
+              
+              
+               <fieldset>
+                   <legend>Informações de login</legend>
+                   
+                   <div class="col s3">
+                       <label for="login">Login</label>
+                       <input type="text" name="login" id="login">
+                   </div>
+                   <div class="col s3">
+                       <label for="pass">Senha</label>
+                       <input type="password" name="pass" id="pass">
+                   </div>
+                   <div class="col s3">
+                       <label for="pass-repeat">Repetir senha</label>
+                       <input type="text" name="pass-repeat" id="pass-repeat">
+                   </div>
+               </fieldset>
+               
+               
+               <fieldset>
+        			<legend>Endereço</legend>
+                    <div class="col s6">
+                        <label for="cep">CEP</label>
+                        <input type="text" class="required" id="cep" name="cep" value="">
+                    </div>
+                    <div class="col s4">
+                        <label for="logradouro">Logradouro</label>
+                        <input type="text" class="required" id="logradouro" name="logradouro" value="" >
+                    </div>
+
+                    <div class="col s2">
+                        <label for="numeroLogradouro">Número</label>
+                        <input id="numeroLogradouro" name="numeroLogradouro" value="" type="text">
+                    </div>
+                    <div class="col s2"> 
+                        <label for="pessoaEstado">Estado</label>
+                        <select id="pessoaEstado" name="uf" value="" type="text" class="browser-default">
+                            <option value="">Selecione...</option>
+                                  <option value="AC"> 
+                                      AC
+                                  </option>
+                                  <option value="AL"> 
+                                      AL
+                                  </option>
+                                  <option value="AM"> 
+                                      AM
+                                  </option>
+                                  <option value="AP"> 
+                                      AP
+                                  </option>
+                                  <option value="BA"> 
+                                      BA
+                                  </option>
+                                  <option value="CE"> 
+                                      CE
+                                  </option>
+                                  <option value="DF"> 
+                                      DF
+                                  </option>
+                                  <option value="ES"> 
+                                      ES
+                                  </option>
+                                  <option value="GO"> 
+                                      GO
+                                  </option>
+                                  <option value="MA"> 
+                                      MA
+                                  </option>
+                                  <option value="MG"> 
+                                      MG
+                                  </option>
+                                  <option value="MS"> 
+                                      MS
+                                  </option>
+                                  <option value="MT"> 
+                                      MT
+                                  </option>
+                                  <option value="PA"> 
+                                      PA
+                                  </option>
+                                  <option value="PB"> 
+                                      PB
+                                  </option>
+                                  <option value="PE"> 
+                                      PE
+                                  </option>
+                                  <option value="PI"> 
+                                      PI
+                                  </option>
+                                  <option value="PR"> 
+                                      PR
+                                  </option>
+                                  <option value="RJ"> 
+                                      RJ
+                                  </option>
+                                  <option value="RN"> 
+                                      RN
+                                  </option>
+                                  <option value="RO"> 
+                                      RO
+                                  </option>
+                                  <option value="RR"> 
+                                      RR
+                                  </option>
+                                  <option value="RS"> 
+                                      RS
+                                  </option>
+                                  <option value="SC"> 
+                                      SC
+                                  </option>
+                                  <option value="SE"> 
+                                      SE
+                                  </option>
+                                  <option value="SP"> 
+                                      SP
+                                  </option>
+                                  <option value="TO"> 
+                                      TO
+                                  </option>
+                        </select>
+                    </div>
+        				
+        				
+        				<div class="col s4">
+                            <label for="pessoaCidade">Cidade</label>
+                            <input id="pessoaCidade" name="cidade" value="" autocomplete="false" type="text" class="typeahead span10 required">
+                       </div>
+	        			  
+                      <div class="col s4">  
+                        <label for="bairro">Bairro</label>
+                        <input id="bairro" spellcheck="true" name="bairro" value="" type="text" class=" required">
+                      </div>
+
+                       <div class="col s4">
+                            <label for="complemento">Complemento</label>
+                            <input id="complemento" name="complemento" value="" type="text" spellcheck="true">
+                       </div>
+        		</fieldset>
+               
+               <div class="col s4 offset-s4">
+                   <button type="submit" class="btn-line">Enviar</button>
+               </div>
+               
+           </form>
+       </div>
+       
+    </article>
+</section>
+</main>
+   
+   
+   
+   <footer id="footer">
+    <div class="row m-b-0">
+        <div class="container">
+            <div class="col s4">
+                <p class="caption">
+                <strong>Instituto Tecnológico de Aeronáutica</strong><br>
+                Praça Marechal Eduardo Gomes, 50 <br>
+                Vila das Acácias, 12228-900 <br>
+                São José dos Campos/SP - Brasil
+                </p>
+            </div>
+
+            <div class="col s3 text-center offset-s2">
+                <span class="caption">Apoio</span>
+                <div class="row">
+                    <div class="col s6">
+                        <a href="" class=""><img src="img/aeita.png" alt="AEITA"></a>
+                    </div>
+                    <div class="col s6">
+                        <a href="" class=""><img src="img/ita-ex.png" alt="Ex alunos do ITA"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s2 text-center offset-s1">
+                <span class="caption">Realização</span>
+                <div class="col s12">
+                    <a href="" class=""><img src="img/ita-logo.svg" alt="ITA logo"></a>
+                </div>
+            </div>
+        </div>
+
+        <nav class="row m-b-0">
+            <ul class=" yellow-list">
+                <li><a href="">Institucional</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>        
+        </nav>
+    </div>
+</footer>   
+    
+</body>
+</html>
