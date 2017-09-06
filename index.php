@@ -6,7 +6,8 @@ $date = date('h-i-s-a', time());
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>ITA</title>
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <link rel="stylesheet" href="css/main.css?<?php echo $date ; ?>">
     <link rel="stylesheet" href="vendor/jquery-ui-1.12.1.custom/jquery-ui.min.css">

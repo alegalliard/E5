@@ -12,11 +12,13 @@
 @import "components/mediaQuery";
 @import "components/helpers";
 @import "components/menu";
+@import "components/breadcrumb";
 
 @import "components/footer";
 
 //index
 @import "pages/index";
+@import "pages/infoPages";
 
 img{
     max-width: 100%;
@@ -30,3 +32,5 @@ img{
     margin-top: 30px;
     margin-left: 20px;
 }
+
+

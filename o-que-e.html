@@ -1,0 +1,202 @@
+
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>O que é</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="css/main.css?08-40-49-pm">
+    <link rel="stylesheet" href="vendor/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="vendor/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css">
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/materialize/js/bin/materialize.min.js"></script>
+    <script src="vendor/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script>
+        $( function() {
+            $( "#datepicker" ).datepicker({
+                autoSize: true,
+                showOtherMonths: true,
+                selectOtherMonths: true,
+                dateFormat: "dd-mm-yy",
+                monthNames: [ "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro" ],
+                dayNamesMin:["D", "S", "T", "Q", "Q", "S", "S"]
+
+            });
+            
+            $('.icon-list').on('click', function(){
+                $('.full-itens').show();
+                $('.icon-list').hide();
+            });
+            $('.collapse').on('click', function(){
+                $('.full-itens').hide();
+                $('.icon-list').show();
+            });
+            
+        });
+    </script>
+</head>
+<body>
+   <menu class="sidenav side-nav fixed">
+   <ul class="icon-list">
+       <li><i class="ic-login"></i></li>
+       <li><i class="ic-inicio"></i></li>
+       <li><i class="ic-busca"></i></li>
+       <li><i class="ic-eventos"></i></li>
+       <li><i class="ic-projetos"></i></li>
+       <li><i class="ic-acervo"></i></li>
+       <li><i class="ic-publicacoes"></i></li>
+       <li><i class="ic-equipe"></i></li>
+       <li><i class="ic-contato"></i></li>
+   </ul>
+    <ul class="full-itens">
+        <li class="negative">
+            <a href=""><i class="ic-login"></i>login ou cadastrar</a>
+        </li>
+        
+        <li>
+            <a href=""><i class="ic-inicio"></i>início</a>
+        </li>
+        <li class="search">
+            <i class="ic-busca"></i>
+            <input type="search" id="busca" name="busca" placeholder="busque no site">
+        
+        </li>
+        <li>
+            <a href=""><i class="ic-eventos"></i>eventos</a>
+        </li>
+        <li>
+            <a href=""><i class="ic-projetos"></i>projetos</a>
+        </li>
+        <li>
+           <a href=""><i class="ic-acervo"></i>acervo <br>
+            <span class="subcaption">restrito à usuários cadastrados</span></a>
+        </li>
+        <li>
+            <a href=""><i class="ic-publicacoes"></i>publicações</a>
+        </li>
+        <li>
+            <a href=""><i class="ic-equipe"></i>equipe</a>
+        </li>
+
+        <li>
+            <a href=""><i class="ic-contato"></i>contato</a>
+        </li>
+        <li class="collapse">
+            <a href="#" class="collapse"><i class="ic-contato"></i>colapsar</a>
+        </li>
+    </ul>
+</menu>
+   
+   <div class="row">
+    <div class="container">
+        <header class="floating-header">
+           <h1 class="m-tb-0">
+            <a href="index.html" id="logo"><img src="img/logo-horizontal.svg" alt="Espaço de Estudos e Experiências em Engenharia"></a>
+           </h1>
+        </header>        
+    </div>
+</div>
+
+  <main class="main">
+      
+  
+   <section class="row">
+    <article class="container">
+       
+       <figure class="col s12 m6 l4 right m-r-0">
+            <img src="img/ilustra-principal.svg" alt="Organograma ilustrativo">
+        </figure>
+        
+       <div class="col m6 l8 left">
+           <h1 class="teal-title">o que é</h1>
+           <nav class="breadcrumb">
+               <ul>
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="apresentacao.html">Apresentação</a></li>
+                   <li class="active">O que é</li>
+               </ul>
+           </nav>
+
+           
+           <p class="e6-desc text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla placeat dolore maiores dolores unde illum adipisci repudiandae debitis minima quod ab reprehenderit maxime, dolor accusantium eos magni sit, numquam quos?</p>
+           <p class="e6-desc text-left">Deserunt dignissimos praesentium velit, rerum ducimus, corrupti voluptates illum repellendus ut ipsa, numquam tenetur, pariatur natus animi distinctio iste explicabo? Alias quod provident inventore, facilis eveniet cumque voluptates distinctio! Soluta.</p>
+           <p class="e6-desc text-left">Quisquam facere sint autem tempore dolorem fugiat unde hic, quia debitis dolores nam possimus ipsum doloribus laborum recusandae atque, vero sit! Commodi deserunt minima fugiat aliquam consequuntur rerum assumenda illum. <a href="mailto:contato.e5@ita.br">contato.e5@ita.br</a> ou telefone (12) 3456-7890.</p>
+           
+           
+           <div class="hide-on-med-and-down">
+               <hr class="separador">
+
+               <p class="e6-bold">Solicite uma conta e tenha acesso a eventos e projetos</p>
+
+               <button type="button" class="btn-line">
+                   <span class="ic-sun"><i class="ic-login"></i></span>
+                   login ou cadastrar
+                </button>
+
+               <a href="#" class="mini-a">saiba mais</a>
+           </div>
+       </div>
+       
+       <div class="col s8 offset-s2 m6 offset-m3 text-center hide-on-large-only">
+           <hr class="separador">
+
+           <p class="e6-bold">Solicite uma conta e tenha acesso a eventos e projetos</p>
+
+           <button type="button" class="btn-line">
+               <span class="ic-sun"><i class="ic-login"></i></span>
+               login ou cadastrar
+            </button>
+
+           <a href="#" class="mini-a">saiba mais</a>
+       </div>
+    </article>
+</section>
+</main>
+   
+   
+   
+   <footer id="footer">
+    <div class="row m-b-0">
+        <div class="container">
+            <div class="col s4">
+                <p class="caption">
+                <strong>Instituto Tecnológico de Aeronáutica</strong><br>
+                Praça Marechal Eduardo Gomes, 50 <br>
+                Vila das Acácias, 12228-900 <br>
+                São José dos Campos/SP - Brasil
+                </p>
+            </div>
+
+            <div class="col s3 text-center offset-s2">
+                <span class="caption">Apoio</span>
+                <div class="row">
+                    <div class="col s6">
+                        <a href="" class=""><img src="img/aeita.png" alt="AEITA"></a>
+                    </div>
+                    <div class="col s6">
+                        <a href="" class=""><img src="img/ita-ex.png" alt="Ex alunos do ITA"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s2 text-center offset-s1">
+                <span class="caption">Realização</span>
+                <div class="col s12">
+                    <a href="" class=""><img src="img/ita-logo.svg" alt="ITA logo"></a>
+                </div>
+            </div>
+        </div>
+
+        <nav class="row m-b-0">
+            <ul class=" yellow-list">
+                <li><a href="">Institucional</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>        
+        </nav>
+    </div>
+</footer>   
+    
+</body>
+</html>
