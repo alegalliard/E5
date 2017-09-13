@@ -20,7 +20,7 @@ input[type=datetime]:not(.browser-default),
 input[type=datetime-local]:not(.browser-default),
 input[type=tel]:not(.browser-default),
 input[type=number]:not(.browser-default),
-input[type=search]:not(.browser-default),
+//input[type=search]:not(.browser-default),
 textarea.materialize-textarea {
 
   // General Styles
@@ -108,6 +108,9 @@ textarea.materialize-textarea {
   }
 }
 
+textarea{
+    height: 300px
+}
 
 /* Validation Sass Placeholders */
 %valid-input-style {

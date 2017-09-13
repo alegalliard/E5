@@ -930,7 +930,22 @@ th {
 .tabs {
   list-style: none;
   padding: 0;
-  margin: 0; }
+  margin: 10px 0 20px;
+  border-top: 2px #eee solid;
+  background: #fff; }
+  .tabs .tab {
+    padding: 0;
+    text-align: center;
+    display: inline-block; }
+    .tabs .tab a {
+      color: #001B4B; }
+    .tabs .tab .active {
+      border-bottom: 3px #001B4B solid; }
+  .tabs a {
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    padding: 15px 20px; }
 
 .btn-line {
   border: 2px solid #001B4B;
@@ -1330,9 +1345,16 @@ p, .p {
   margin-top: 0 !important;
   margin-bottom: 0 !important; }
 
+.m-r-10 {
+  margin-right: 10px; }
+
 .p-rl-05 {
   padding-right: 0.5rem !important;
   padding-left: 0.5rem !important; }
+
+.p-rl-10 {
+  padding-right: 10px !important;
+  padding-left: 10px !important; }
 
 .m-b-20 {
   margin-bottom: 20px !important; }
@@ -1471,7 +1493,6 @@ input[type=datetime]:not(.browser-default),
 input[type=datetime-local]:not(.browser-default),
 input[type=tel]:not(.browser-default),
 input[type=number]:not(.browser-default),
-input[type=search]:not(.browser-default),
 textarea.materialize-textarea {
   background-color: transparent;
   border: none;
@@ -1507,8 +1528,6 @@ textarea.materialize-textarea {
   input[type=tel]:not(.browser-default)[readonly="readonly"],
   input[type=number]:not(.browser-default):disabled,
   input[type=number]:not(.browser-default)[readonly="readonly"],
-  input[type=search]:not(.browser-default):disabled,
-  input[type=search]:not(.browser-default)[readonly="readonly"],
   textarea.materialize-textarea:disabled,
   textarea.materialize-textarea[readonly="readonly"] {
     color: rgba(0, 0, 0, 0.42);
@@ -1534,8 +1553,6 @@ textarea.materialize-textarea {
   input[type=tel]:not(.browser-default)[readonly="readonly"] + label,
   input[type=number]:not(.browser-default):disabled + label,
   input[type=number]:not(.browser-default)[readonly="readonly"] + label,
-  input[type=search]:not(.browser-default):disabled + label,
-  input[type=search]:not(.browser-default)[readonly="readonly"] + label,
   textarea.materialize-textarea:disabled + label,
   textarea.materialize-textarea[readonly="readonly"] + label {
     color: rgba(0, 0, 0, 0.42); }
@@ -1550,7 +1567,6 @@ textarea.materialize-textarea {
   input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
   input[type=tel]:not(.browser-default):focus:not([readonly]),
   input[type=number]:not(.browser-default):focus:not([readonly]),
-  input[type=search]:not(.browser-default):focus:not([readonly]),
   textarea.materialize-textarea:focus:not([readonly]) {
     border-bottom: 1px solid #001B4B;
     box-shadow: 0 1px 0 0 #001B4B; }
@@ -1565,7 +1581,6 @@ textarea.materialize-textarea {
   input[type=datetime-local]:not(.browser-default):focus:not([readonly]) + label,
   input[type=tel]:not(.browser-default):focus:not([readonly]) + label,
   input[type=number]:not(.browser-default):focus:not([readonly]) + label,
-  input[type=search]:not(.browser-default):focus:not([readonly]) + label,
   textarea.materialize-textarea:focus:not([readonly]) + label {
     color: #001B4B; }
   input:not([type]).validate + label,
@@ -1579,7 +1594,6 @@ textarea.materialize-textarea {
   input[type=datetime-local]:not(.browser-default).validate + label,
   input[type=tel]:not(.browser-default).validate + label,
   input[type=number]:not(.browser-default).validate + label,
-  input[type=search]:not(.browser-default).validate + label,
   textarea.materialize-textarea.validate + label {
     width: 100%; }
   input:not([type]).invalid + label:after, input:not([type]).valid + label:after,
@@ -1603,8 +1617,6 @@ textarea.materialize-textarea {
   input[type=tel]:not(.browser-default).valid + label:after,
   input[type=number]:not(.browser-default).invalid + label:after,
   input[type=number]:not(.browser-default).valid + label:after,
-  input[type=search]:not(.browser-default).invalid + label:after,
-  input[type=search]:not(.browser-default).valid + label:after,
   textarea.materialize-textarea.invalid + label:after,
   textarea.materialize-textarea.valid + label:after {
     display: none; }
@@ -1629,11 +1641,12 @@ textarea.materialize-textarea {
   input[type=tel]:not(.browser-default).valid + label.active:after,
   input[type=number]:not(.browser-default).invalid + label.active:after,
   input[type=number]:not(.browser-default).valid + label.active:after,
-  input[type=search]:not(.browser-default).invalid + label.active:after,
-  input[type=search]:not(.browser-default).valid + label.active:after,
   textarea.materialize-textarea.invalid + label.active:after,
   textarea.materialize-textarea.valid + label.active:after {
     display: block; }
+
+textarea {
+  height: 300px; }
 
 /* Validation Sass Placeholders */
 input.valid:not([type]), input.valid:not([type]):focus,
@@ -1657,8 +1670,6 @@ input[type=tel].valid:not(.browser-default),
 input[type=tel].valid:not(.browser-default):focus,
 input[type=number].valid:not(.browser-default),
 input[type=number].valid:not(.browser-default):focus,
-input[type=search].valid:not(.browser-default),
-input[type=search].valid:not(.browser-default):focus,
 textarea.materialize-textarea.valid,
 textarea.materialize-textarea.valid:focus, .select-wrapper.valid > input.select-dropdown {
   border-bottom: 1px solid #001B4B;
@@ -1685,8 +1696,6 @@ input[type=tel].invalid:not(.browser-default),
 input[type=tel].invalid:not(.browser-default):focus,
 input[type=number].invalid:not(.browser-default),
 input[type=number].invalid:not(.browser-default):focus,
-input[type=search].invalid:not(.browser-default),
-input[type=search].invalid:not(.browser-default):focus,
 textarea.materialize-textarea.invalid,
 textarea.materialize-textarea.invalid:focus, .select-wrapper.invalid > input.select-dropdown {
   border-bottom: 1px solid #001B4B;
@@ -1713,8 +1722,6 @@ input[type=tel]:not(.browser-default).valid + label:after,
 input[type=tel]:not(.browser-default):focus.valid + label:after,
 input[type=number]:not(.browser-default).valid + label:after,
 input[type=number]:not(.browser-default):focus.valid + label:after,
-input[type=search]:not(.browser-default).valid + label:after,
-input[type=search]:not(.browser-default):focus.valid + label:after,
 textarea.materialize-textarea.valid + label:after,
 textarea.materialize-textarea:focus.valid + label:after, .select-wrapper.valid + label:after {
   content: attr(data-success);
@@ -1743,8 +1750,6 @@ input[type=tel]:not(.browser-default).invalid + label:after,
 input[type=tel]:not(.browser-default):focus.invalid + label:after,
 input[type=number]:not(.browser-default).invalid + label:after,
 input[type=number]:not(.browser-default):focus.invalid + label:after,
-input[type=search]:not(.browser-default).invalid + label:after,
-input[type=search]:not(.browser-default):focus.invalid + label:after,
 textarea.materialize-textarea.invalid + label:after,
 textarea.materialize-textarea:focus.invalid + label:after, .select-wrapper.invalid + label:after {
   content: attr(data-error);
@@ -1763,7 +1768,6 @@ input[type=datetime]:not(.browser-default) + label:after,
 input[type=datetime-local]:not(.browser-default) + label:after,
 input[type=tel]:not(.browser-default) + label:after,
 input[type=number]:not(.browser-default) + label:after,
-input[type=search]:not(.browser-default) + label:after,
 textarea.materialize-textarea + label:after, .select-wrapper + label:after {
   display: block;
   content: "";
@@ -2803,6 +2807,49 @@ input[type=range]:focus::-ms-fill-upper {
     margin-bottom: 0; }
   .team .caption {
     margin-bottom: 30px; }
+
+.result-list {
+  list-style: none;
+  margin: 25px 0;
+  padding: 0; }
+  .result-list .card {
+    background: #fff;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+    margin-bottom: 20px; }
+  .result-list .side-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    color: #0861FF;
+    text-align: center;
+    font-size: 0.8rem; }
+    .result-list .side-icon i {
+      margin: 20px 0; }
+  .result-list .main-desc {
+    display: inline-block;
+    vertical-align: middle;
+    width: 80%;
+    width: calc(100% - 120px); }
+  .result-list .go-login {
+    color: #0861FF;
+    display: block;
+    text-align: right;
+    font-size: 0.8rem;
+    padding-top: 15px; }
+  .result-list .filesize {
+    color: #0861FF;
+    font-size: 0.9rem;
+    display: block; }
+  .result-list time {
+    display: block;
+    color: #797979;
+    font-size: 1.0rem;
+    padding: 7px 0 7px; }
+  .result-list a {
+    cursor: pointer; }
 
 img {
   max-width: 100%; }
