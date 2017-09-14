@@ -27,18 +27,22 @@ $menu-icons: [
     }
 
 .sun-search{
-        position: relative;
-        margin: 30px 0;
-        &:before{
-            content: "";
-            position: absolute;
-            width: 35px;
-            height: 35px;
-            margin-left: 3px;
-            background: $amarelo;
-            border-radius: 50%;
-        }
+    position: relative;
+    margin: 30px 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    &:before{
+        content: "";
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        margin-left: 3px;
+        background: $amarelo;
+        border-radius: 50%;
+        cursor: pointer;
     }
+}
 
 .mini-ics{
     display: inline-block;

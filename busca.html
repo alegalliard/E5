@@ -23,15 +23,7 @@
     <script src="vendor/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
     <script>
         $( function() {
-            $( "#datepicker" ).datepicker({
-                autoSize: true,
-                showOtherMonths: true,
-                selectOtherMonths: true,
-                dateFormat: "dd-mm-yy",
-                monthNames: [ "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro" ],
-                dayNamesMin:["D", "S", "T", "Q", "Q", "S", "S"]
-
-            });
+        
             
             $('.icon-list').on('click', function(){
                 $('.full-itens').show();
@@ -43,6 +35,21 @@
             });
             
             $('.modal').modal();
+            
+            $('.query-name').on('keydown', function(e){                
+                let code = e.keyCode || e.which;
+                switch(code){
+                    case 13: //enter
+                       $('.empty').fadeOut(1000,function(){
+                           $('#results-panel').fadeIn();
+                       });
+                    break;
+                }
+            });
+            
+            $('.empty').on('click', function(){
+                $('.query-name').focus();
+            });
             
         });
     </script>
@@ -110,10 +117,10 @@
             </div>
 
             <div class="col s7 text-center">
-                <h1 class="query-name">trabalho</h1>               
+                <input type="search" name="search" id="search" class="query-name" placeholder="pesquisar no e5">            
             </div>
             <div class="col s2 text-center">
-                <div class="sun-search"><i class="ic-busca"></i></div>
+                <button class="sun-search"><i class="ic-busca"></i></button>
             </div>
         </div>
        </div>
@@ -133,8 +140,13 @@
                </ul>
            </nav>
            
+           <article class="empty">
+               digite o que procura e aperte enter
+           </article>
            
 <!--        Resultados de ACERVO -->
+       
+       <div id="results-panel" style="display: none;">
         <article id="todo-o-acervo">
             <ul class="result-list">
                 <li class="col s12 m6 l6">
@@ -250,9 +262,26 @@
         
 <!--        Resultados de PUBLICAÇÃO -->
         <article id="publicacoes">
-            
+            <ul class="result-list">
+                <li class="col s12 m6 l6">
+                    <div class="card">
+                        <div class="side-icon">
+                            <i class="ic-acervo"></i>
+                            <span class="type">documento</span>
+                        </div>
+                        <div class="main-desc">
+                            <a href="#" class="marine-text">Moon Gazing</a>
+                            <time datetime="2016-09-18T19:00" class="caption">Adicionado 18 set 2016</time >
+                            <small class="filesize">311 kb</small>
+                        </div>
+                        <a href="#modal-login" class="go-login modal-trigger">
+                            <i class="ic-tiny ic-login m-r-10"></i> faça login para acessar
+                        </a>
+                    </div>
+                </li>
+            </ul>
         </article>
-            
+        </div>
 
         </div>
     </section>
