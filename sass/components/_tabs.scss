@@ -1,27 +1,31 @@
 .tabs{
     list-style: none;
     padding: 0;
-    margin: 0 0 20px;
     
-    border-top: 2px #eee solid;
-    background: #fff;
     
-    .tab{
-        padding:0;
-        text-align: center;
-        display: inline-block;
+    &.horizontal{
+        border-top: 2px #eee solid;
+        background: #fff;
+        margin: 0 0 20px;
+    
+        .tab{
+            padding:0;
+            text-align: center;
+            display: inline-block;
+            a{
+                color:$azulEscuro;
+            }
+            .active{
+                border-bottom: 3px $azulEscuro solid;
+            }
+        }
+
         a{
-            color:$azulEscuro;
+            cursor: pointer;
+            display: block;
+            height: 100%;
+            padding:15px 20px;
         }
-        .active{
-            border-bottom: 3px $azulEscuro solid;
-        }
-    }
     
-    a{
-        cursor: pointer;
-        display: block;
-        height: 100%;
-        padding:15px 20px;
     }
 }

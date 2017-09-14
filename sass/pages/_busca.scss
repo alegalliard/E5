@@ -9,7 +9,8 @@
         box-shadow:0 1px 2px 1px rgba(0,0,0,.05);
         padding:10px 15px 10px;  
         margin-bottom: 20px;
-        padding-bottom: 45px;
+        padding-bottom: 15px;
+        float: left;
     }
     
     .side-icon{
@@ -44,6 +45,11 @@
         padding-top:15px;
     }
     
+    .go-login-top{
+        color:$azul;
+        font-size: 0.7rem;
+    }
+    
     .filesize{
         color:$azul;
         font-size: 0.8rem;
@@ -61,4 +67,14 @@
         cursor: pointer;
         display: block;
     }
+    
+    .shadow{
+        &:before{
+            bottom: -5px;
+            left: -10px;
+        }
+    }
+    
+    
+    
 }

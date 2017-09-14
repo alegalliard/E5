@@ -42,6 +42,8 @@
                 $('.icon-list').show();
             });
             
+            $('.modal').modal();
+            
         });
     </script>
 </head>
@@ -123,7 +125,7 @@
     <section class="row">
         <div class="container">
            <nav class="p-rl-10">
-               <ul class="tabs">
+               <ul class="tabs horizontal">
                    <li class="tab"><a href="#todo-o-acervo" class="active">todo o acervo</a></li>
                    <li class="tab"><a href="#projetos">projetos</a></li>
                    <li class="tab"><a href="#eventos">eventos</a></li>
@@ -131,6 +133,8 @@
                </ul>
            </nav>
            
+           
+<!--        Resultados de ACERVO -->
         <article id="todo-o-acervo">
             <ul class="result-list">
                 <li class="col s12 m6 l6">
@@ -144,138 +148,50 @@
                             <time datetime="2016-09-18T19:00" class="caption">Adicionado 18 set 2016</time >
                             <small class="filesize">311 kb</small>
                         </div>
-                        <a href="#" class="go-login">
-                            <i class="ic-tiny ic-login m-r-10"></i> faça login para acessar
-                        </a>
-                    </div>
-                </li>
-                
-                <li class="col s12 m6 l6">
-                    <div class="card">
-                        <div class="side-icon">
-                            <i class="ic-acervo"></i>
-                            <span class="type">documento</span>
-                        </div>
-                        <div class="main-desc">
-                            <a href="#" class="marine-text">Moon Gazing</a>
-                            <time datetime="2016-09-18T19:00" class="caption">Adicionado 18 set 2016</time >
-                            <small class="filesize">311 kb</small>
-                        </div>
-                        <a href="#" class="go-login">
-                            <i class="ic-tiny ic-login m-r-10"></i> faça login para acessar
-                        </a>
-                    </div>
-                </li>
-                
-                <li class="col s12 m6 l6">
-                    <div class="card">
-                        <div class="side-icon">
-                            <i class="ic-acervo"></i>
-                            <span class="type">documento</span>
-                        </div>
-                        <div class="main-desc">
-                            <a href="#" class="marine-text">Moon Gazing</a>
-                            <time datetime="2016-09-18T19:00" class="caption">Adicionado 18 set 2016</time >
-                            <small class="filesize">311 kb</small>
-                        </div>
-                        <a href="#" class="go-login">
-                            <i class="ic-tiny ic-login m-r-10"></i> faça login para acessar
-                        </a>
-                    </div>
-                </li>
-                
-                <li class="col s12 m6 l6">
-                    <div class="card">
-                        <div class="side-icon">
-                            <i class="ic-acervo"></i>
-                            <span class="type">documento</span>
-                        </div>
-                        <div class="main-desc">
-                            <a href="#" class="marine-text">Moon Gazing</a>
-                            <time datetime="2016-09-18T19:00" class="caption">Adicionado 18 set 2016</time >
-                            <small class="filesize">311 kb</small>
-                        </div>
-                        <a href="#" class="go-login">
-                            <i class="ic-tiny ic-login m-r-10"></i> faça login para acessar
-                        </a>
-                    </div>
-                </li>
-                
-                <li class="col s12 m6 l6">
-                    <div class="card">
-                        <div class="side-icon">
-                            <i class="ic-acervo"></i>
-                            <span class="type">documento</span>
-                        </div>
-                        <div class="main-desc">
-                            <a href="#" class="marine-text">Moon Gazing</a>
-                            <time datetime="2016-09-18T19:00" class="caption">Adicionado 18 set 2016</time >
-                            <small class="filesize">311 kb</small>
-                        </div>
-                        <a href="#" class="go-login">
-                            <i class="ic-tiny ic-login m-r-10"></i> faça login para acessar
-                        </a>
-                    </div>
-                </li>
-                
-                <li class="col s12 m6 l6">
-                    <div class="card">
-                        <div class="side-icon">
-                            <i class="ic-acervo"></i>
-                            <span class="type">documento</span>
-                        </div>
-                        <div class="main-desc">
-                            <a href="#" class="marine-text">Moon Gazing</a>
-                            <time datetime="2016-09-18T19:00" class="caption">Adicionado 18 set 2016</time >
-                            <small class="filesize">311 kb</small>
-                        </div>
-                        <a href="#" class="go-login">
-                            <i class="ic-tiny ic-login m-r-10"></i> faça login para acessar
-                        </a>
-                    </div>
-                </li>
-                
-                <li class="col s12 m6 l6">
-                    <div class="card">
-                        <div class="side-icon">
-                            <i class="ic-acervo"></i>
-                            <span class="type">documento</span>
-                        </div>
-                        <div class="main-desc">
-                            <a href="#" class="marine-text">Moon Gazing</a>
-                            <time datetime="2016-09-18T19:00" class="caption">Adicionado 18 set 2016</time >
-                            <small class="filesize">311 kb</small>
-                        </div>
-                        <a href="#" class="go-login">
-                            <i class="ic-tiny ic-login m-r-10"></i> faça login para acessar
-                        </a>
-                    </div>
-                </li>
-                
-                <li class="col s12 m6 l6">
-                    <div class="card">
-                        <div class="side-icon">
-                            <i class="ic-acervo"></i>
-                            <span class="type">documento</span>
-                        </div>
-                        <div class="main-desc">
-                            <a href="#" class="marine-text">Moon Gazing</a>
-                            <time datetime="2016-09-18T19:00" class="caption">Adicionado 18 set 2016</time >
-                            <small class="filesize">311 kb</small>
-                        </div>
-                        <a href="#" class="go-login">
+                        <a href="#modal-login" class="go-login modal-trigger">
                             <i class="ic-tiny ic-login m-r-10"></i> faça login para acessar
                         </a>
                     </div>
                 </li>
             </ul>
         </article>
+        
+        
+<!--        Resultados de PROJETO -->
+        
         <article id="projetos">
-            
+            <ul class="result-list">
+                <li class="col s12 m6 l6">
+                    <div class="">
+                       
+                        <div class="col s4">
+                           <figure class="news-pic shadow">                               
+                            <img src="img/ilustrative/img2.jpg" alt="">
+                           </figure>
+                        </div>
+                        <div class="col s8">
+                           <a href="#modal-login" class="col s12 m-b-10 go-login-top modal-trigger">
+                            <i class="ic-15 ic-login"></i> faça login para acessar
+                            </a>
+                            
+                            <a href="#" class="marine-text">Projeto de Video-aulas e Sala de aula Invertida em Álgebra Linear</a>
+                            <time datetime="2016-09-18T19:00" class="caption">Este projeto é essencialmente uma réplica do meu primeiro...</time >
+                            <small class="caption"><i class="ic-user"></i> Renan Lima</small>
+                        </div>
+                        
+                    </div>
+                </li>
+            </ul>
         </article>
+        
+        
+<!--        Resultados de EVENTO -->
         <article id="eventos">
             
         </article>
+        
+        
+<!--        Resultados de PUBLICAÇÃO -->
         <article id="publicacoes">
             
         </article>
@@ -328,6 +244,42 @@
         </nav>
     </div>
 </footer>   
+    
+    
+      <!-- Modal Structure -->
+  <div id="modal-login" class="modal" role="dialog">
+    <div class="modal-content">
+       <form action="" class="row">
+           <fieldset class="col s8 offset-s2">
+               <legend class="col s12 h3">Entrar</legend>
+               <div class="col s12">
+                   <label for="login" class="active">Login</label>
+                   <input type="text" name="login" id="login">
+               </div>
+               <div class="col s12">
+                   <label for="pass" class="active">Senha</label>
+                   <input type="password" name="pass" id="pass">
+               </div>
+               
+               <div class="col s12 text-right">
+                   <a href="cadastro-usuario.html">ou cadastre-se aqui</a>
+               </div>
+               
+               
+               <div class="col s6">
+                   <button type="button" class="modal-action modal-close btn-line">Cancelar</button>
+               </div>
+
+               <div class="col s6">
+                   <button type="submit" class="btn-line">Enviar</button>
+               </div>
+               
+           </fieldset>
+       </form>
+    </div>
+  </div>
+    
+    
     
 </body>
 </html>
