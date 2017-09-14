@@ -1361,12 +1361,18 @@ p, .p {
 .m-b-10 {
   margin-bottom: 10px !important; }
 
+.m-t-10 {
+  margin-top: 10px !important; }
+
 .m-tb-0 {
   margin-top: 0 !important;
   margin-bottom: 0 !important; }
 
 .m-r-10 {
   margin-right: 10px; }
+
+.p-t-10 {
+  padding-top: 10px !important; }
 
 .p-rl-05 {
   padding-right: 0.5rem !important;
@@ -2943,6 +2949,9 @@ input[type=range]:focus::-ms-fill-upper {
   .result-list .shadow:before {
     bottom: -5px;
     left: -10px; }
+  .result-list .caption {
+    padding-top: 10px;
+    display: block; }
 
 img {
   max-width: 100%; }
