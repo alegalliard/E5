@@ -930,7 +930,7 @@ th {
 .tabs {
   list-style: none;
   padding: 0;
-  margin: 10px 0 20px;
+  margin: 0 0 20px;
   border-top: 2px #eee solid;
   background: #fff; }
   .tabs .tab {
@@ -984,6 +984,18 @@ th {
   padding: 13px 0 3px;
   text-align: center;
   font-style: normal; }
+
+.sun-search {
+  position: relative;
+  margin: 30px 0; }
+  .sun-search:before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    margin-left: 3px;
+    background: #FFCF15;
+    border-radius: 50%; }
 
 .mini-ics, .ic-circle-user, .ic-clock, .ic-map {
   display: inline-block;
