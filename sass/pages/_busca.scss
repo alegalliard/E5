@@ -5,16 +5,17 @@
     
     .card{
         background:#fff;
-        box-shadow:0 1px 1px 1px rgba(0,0,0,.1);
-        padding:15px 20px;  
+        box-shadow:0 1px 2px 1px rgba(0,0,0,.05);
+        padding:10px 15px 10px;  
         margin-bottom: 20px;
+        padding-bottom: 45px;
     }
     
     .side-icon{
         display:inline-block;
         vertical-align:middle;
-        width:80px;
-        height:80px;
+        width:100px;
+        height:70px;
         margin-right:20px;
         color:$azul;
         text-align:center;
@@ -22,35 +23,41 @@
         
         i{
             margin: 20px 0;
+            opacity: .2;
+            width: 40px;
+            height: 40px;
         }
     }
     .main-desc{
         display:inline-block;
         vertical-align:middle;
         width:80%;
-        width: calc(100% - 120px)
+        width: calc(100% - 140px)
     }
     
     .go-login{
         color:$azul;
-        display:block;
+        float: right;
         text-align:right;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         padding-top:15px;
     }
     
     .filesize{
         color:$azul;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         display: block;
     }
     
     time{
         display: block;
         color:$cinza;
-        font-size: 1.0rem;
-        padding: 7px 0 7px;
+        font-size: 0.8rem;
+        padding: 5px 0;
     }
     
-    a{cursor: pointer;}
+    a{
+        cursor: pointer;
+        display: block;
+    }
 }

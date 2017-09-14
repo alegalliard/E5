@@ -2756,9 +2756,6 @@ input[type=range]:focus::-ms-fill-upper {
   bottom: 25px;
   left: 12px; }
 
-.floating-header {
-  position: relative; }
-
 #logo {
   position: absolute;
   top: 0;
@@ -2771,10 +2768,6 @@ input[type=range]:focus::-ms-fill-upper {
 
 .slider ul {
   list-style: none; }
-
-.main {
-  position: relative;
-  margin-top: 150px; }
 
 .team {
   overflow: auto;
@@ -2814,42 +2807,47 @@ input[type=range]:focus::-ms-fill-upper {
   padding: 0; }
   .result-list .card {
     background: #fff;
-    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1);
-    padding: 15px 20px;
-    margin-bottom: 20px; }
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.05);
+    padding: 10px 15px 10px;
+    margin-bottom: 20px;
+    padding-bottom: 45px; }
   .result-list .side-icon {
     display: inline-block;
     vertical-align: middle;
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 70px;
     margin-right: 20px;
     color: #0861FF;
     text-align: center;
     font-size: 0.8rem; }
     .result-list .side-icon i {
-      margin: 20px 0; }
+      margin: 20px 0;
+      opacity: .2;
+      width: 40px;
+      height: 40px; }
   .result-list .main-desc {
     display: inline-block;
     vertical-align: middle;
     width: 80%;
-    width: calc(100% - 120px); }
+    width: calc(100% - 140px); }
   .result-list .go-login {
     color: #0861FF;
-    display: block;
+    float: right;
     text-align: right;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     padding-top: 15px; }
   .result-list .filesize {
     color: #0861FF;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     display: block; }
   .result-list time {
     display: block;
     color: #797979;
-    font-size: 1.0rem;
-    padding: 7px 0 7px; }
+    font-size: 0.8rem;
+    padding: 5px 0; }
   .result-list a {
-    cursor: pointer; }
+    cursor: pointer;
+    display: block; }
 
 img {
   max-width: 100%; }
@@ -2861,5 +2859,12 @@ img {
   z-index: 99;
   margin-top: 30px;
   margin-left: 20px; }
+
+.header {
+  background: #fff; }
+
+#mini-logo img {
+  margin-top: 30px;
+  width: 120px; }
 
 /*# sourceMappingURL=main.css.map */
