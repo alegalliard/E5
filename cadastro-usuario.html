@@ -34,6 +34,10 @@
                 $('.icon-list').show();
             });
             
+            $('.tab a').on('click',function(){
+                $('#tipo-usuario').val($(this).text());
+                $('#titulo-usuario').text($(this).text());
+            });
         });
     </script>
 </head>
@@ -114,7 +118,9 @@
   
   
 
-  <main class="main">  
+<main class="main">
+      
+  
    <section class="row">
     <article class="container">
        
@@ -128,188 +134,84 @@
 
            
            <p class="e6-desc text-left">Quisquam facere sint autem tempore dolorem fugiat unde hic, quia debitis dolores nam possimus ipsum doloribus laborum recusandae atque, vero sit! Commodi deserunt minima fugiat aliquam consequuntur rerum assumenda illum. <a href="mailto:contato.e5@ita.br">contato.e5@ita.br</a> ou telefone (12) 3456-7890.</p>
+
+           <h3>Selecione seu tipo de usuário:</h3>
+
+           <nav>
+<!--              input hidden associado ao comportamento dessas
+                   tabs no início do formulário abaixo-->
+                   
+               <ul class="tabs horizontal">
+                   <li class="tab"><a href="#" class="active">Docente do ITA</a></li>
+                   <li class="tab"><a href="#">Aluno do ITA</a></li>
+                   <li class="tab"><a href="#">Servidor técnico-administrativo do ITA</a></li>
+                   <li class="tab"><a href="#">Outro</a></li>
+               </ul>
+           </nav>
+           
            
            
            
            <form action="" class="row">
-              
+              <input type="hidden" name="tipo-usuario" id="tipo-usuario" value="Docente do ITA">
               <fieldset>
-        			<legend>Pessoa</legend>
-                    <div class="col s7">
-                        <label for="nome" id="campoNome">Nome</label>
+        			<legend id="titulo-usuario">Docente do ITA</legend>
+                    <div class="col s12">
+                        <label for="nome" id="campoNome">Nome completo</label>
                         <input id="nome" value="" name="nome" maxlength="255" type="text">
                      </div>
-                    <div class="col s5">
+                    <div class="col s6">
                         <label for="email">E-mail</label>
                         <input id="email" name="email" value="" maxlength="100" type="text">
                     </div>
-
-        			
-        			<div class="col s2" id="pessoaFisica"> 
-                        <label for="sexo">Sexo</label>
-                        <select name="sexo" id="sexo" class="browser-default">
-                            <option value="">Selecione...</option>
-                                  <option value="FEMININO">F</option>
-                                  <option value="MASCULINO">M</option>
-                        </select>
-        			</div>
-        				
-                    <div class="col s2">    
-                        <label for="nascimento">Data de Nascimento</label>
-                        <input id="nascimento" name="nascimento" value="" class="datepicker" type="text">
-                    </div>
-
-      				
-                    <div class="col s4">
-                        <label for="cpf">CPF</label>
-                        <input id="cpf" name="cpf" value="" class="inputFisica required" type="text">
-                    </div>
-
-                    <div class="col s4">
-                        <label for="rg">RG</label>
-                        <input id="rg" name="rg" value="" maxlength="15" class="inputFisica required" type="text">
-                    </div>
-       			
-        		</fieldset>
-              
-              
-              
-               <fieldset>
-                   <legend>Informações de login</legend>
-                   
-                   <div class="col s3">
-                       <label for="login">Login</label>
-                       <input type="text" name="login" id="login">
-                   </div>
-                   <div class="col s3">
-                       <label for="pass">Senha</label>
-                       <input type="password" name="pass" id="pass">
-                   </div>
-                   <div class="col s3">
-                       <label for="pass-repeat">Repetir senha</label>
-                       <input type="text" name="pass-repeat" id="pass-repeat">
-                   </div>
-               </fieldset>
-               
-               
-               <fieldset>
-        			<legend>Endereço</legend>
                     <div class="col s6">
-                        <label for="cep">CEP</label>
-                        <input type="text" class="required" id="cep" name="cep" value="">
+                        <label for="email-alt">E-mail alternativo (opcional):</label>
+                        <input id="email-alt" name="email-alt" value="" maxlength="100" type="text">
                     </div>
                     <div class="col s4">
-                        <label for="logradouro">Logradouro</label>
-                        <input type="text" class="required" id="logradouro" name="logradouro" value="" >
+                        <label for="telefone">Telefone para contato (ramal):</label>
+                        <input id="telefone" name="telefone" value="" maxlength="100" type="text">
                     </div>
-
-                    <div class="col s2">
-                        <label for="numeroLogradouro">Número</label>
-                        <input id="numeroLogradouro" name="numeroLogradouro" value="" type="text">
+                    <div class="col s8">
+                      <label for="lattes">Link para curriculo Lattes</label>
+                      <input type="text" id="lattes">
                     </div>
-                    <div class="col s2"> 
-                        <label for="pessoaEstado">Estado</label>
-                        <select id="pessoaEstado" name="uf" value="" type="text" class="browser-default">
-                            <option value="">Selecione...</option>
-                                  <option value="AC"> 
-                                      AC
-                                  </option>
-                                  <option value="AL"> 
-                                      AL
-                                  </option>
-                                  <option value="AM"> 
-                                      AM
-                                  </option>
-                                  <option value="AP"> 
-                                      AP
-                                  </option>
-                                  <option value="BA"> 
-                                      BA
-                                  </option>
-                                  <option value="CE"> 
-                                      CE
-                                  </option>
-                                  <option value="DF"> 
-                                      DF
-                                  </option>
-                                  <option value="ES"> 
-                                      ES
-                                  </option>
-                                  <option value="GO"> 
-                                      GO
-                                  </option>
-                                  <option value="MA"> 
-                                      MA
-                                  </option>
-                                  <option value="MG"> 
-                                      MG
-                                  </option>
-                                  <option value="MS"> 
-                                      MS
-                                  </option>
-                                  <option value="MT"> 
-                                      MT
-                                  </option>
-                                  <option value="PA"> 
-                                      PA
-                                  </option>
-                                  <option value="PB"> 
-                                      PB
-                                  </option>
-                                  <option value="PE"> 
-                                      PE
-                                  </option>
-                                  <option value="PI"> 
-                                      PI
-                                  </option>
-                                  <option value="PR"> 
-                                      PR
-                                  </option>
-                                  <option value="RJ"> 
-                                      RJ
-                                  </option>
-                                  <option value="RN"> 
-                                      RN
-                                  </option>
-                                  <option value="RO"> 
-                                      RO
-                                  </option>
-                                  <option value="RR"> 
-                                      RR
-                                  </option>
-                                  <option value="RS"> 
-                                      RS
-                                  </option>
-                                  <option value="SC"> 
-                                      SC
-                                  </option>
-                                  <option value="SE"> 
-                                      SE
-                                  </option>
-                                  <option value="SP"> 
-                                      SP
-                                  </option>
-                                  <option value="TO"> 
-                                      TO
-                                  </option>
-                        </select>
+                    <div class="col s12">
+                      <legend>Divisão:</legend>
+                      <p>
+                        <input name="divisao" type="radio" id="ciencias-fundamentais" />
+                        <label for="ciencias-fundamentais">Ciências Fundamentais</label>
+                      </p>
+                      <p>
+                        <input name="divisao" type="radio" id="eng-aeronautica" />
+                        <label for="eng-aeronautica">Engenharia Aeronáutica</label>
+                      </p>                          
+                      <p>
+                        <input name="divisao" type="radio" id="eng-eletronica" />
+                        <label for="eng-eletronica">Engenharia Eletrônica</label>
+                      </p>                          
+                      <p class="m-b-20">
+                        <input name="divisao" type="radio" id="eng-mecanica" />
+                        <label for="eng-mecanica">Engenharia Mecânica</label>
+                      </p>                          
+                      <p class="m-b-20">
+                        <input name="divisao" type="radio" id="eng-civil" />
+                        <label for="eng-civil">Engenharia Civil</label>
+                      </p>                          
+                      <p class="m-b-20">
+                        <input name="divisao" type="radio" id="computacao" />
+                        <label for="computacao">Ciência da Computação</label>
+                      </p>
                     </div>
-        				
-        				
-        				<div class="col s4">
-                            <label for="pessoaCidade">Cidade</label>
-                            <input id="pessoaCidade" name="cidade" value="" autocomplete="false" type="text" class="typeahead span10 required">
-                       </div>
-	        			  
-                      <div class="col s4">  
-                        <label for="bairro">Bairro</label>
-                        <input id="bairro" spellcheck="true" name="bairro" value="" type="text" class=" required">
-                      </div>
-
-                       <div class="col s4">
-                            <label for="complemento">Complemento</label>
-                            <input id="complemento" name="complemento" value="" type="text" spellcheck="true">
-                       </div>
+                    <div class="col s6">
+                        <label for="senha">Senha</label>
+                        <input id="senha" name="senha" value="" maxlength="100" type="password">
+                    </div>
+                    <div class="col s6">
+                        <label for="conf-senha">Confirmação de senha:</label>
+                        <input id="conf-senha" name="conf-senha" value="" maxlength="100" type="password">
+                    </div> 				
+       			
         		</fieldset>
                
                <div class="col s4 offset-s4">
