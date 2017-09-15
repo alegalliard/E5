@@ -10,6 +10,35 @@ $menu-icons: [
     "publicacoes"
     ];
 
+@each $menu-icon in $menu-icons{
+    .ic-#{$menu-icon} {
+        @extend .ic;
+        background-image: url(../img/icones-menu/#{$menu-icon}.svg);
+    }
+}
+
+$icon-colors: [
+    "amarelo",
+    "azul",
+    "azul-marinho",
+    "azul-turquesa",
+    "cinza"
+];
+$download-icons: [
+    "audio",
+    "documentos",
+    "video"
+];
+
+@each $icon-color in $icon-colors{
+    @each $download-icon in $download-icons{
+        .ic-#{$download-icon}-#{$icon-color} {
+            @extend .ic;
+            background-image: url(../img/icones-arquivos/#{$icon-color}/#{$download-icon}.svg);
+        }
+    }
+}
+
 .ic-calendario{
         background:{
             image: url(../img/calendario.png);
@@ -117,6 +146,7 @@ $menu-icons: [
 .ic{
     background-size: 100%;
     background-position:center center;
+    background-repeat:no-repeat;
     width: 25px;
     height: 25px;
     display: inline-block;
@@ -124,12 +154,7 @@ $menu-icons: [
     position: relative;
     
 }
-@each $menu-icon in $menu-icons{
-    .ic-#{$menu-icon} {
-        @extend .ic;
-        background-image: url(../img/icones-menu/#{$menu-icon}.svg);
-    }
-}
+
 
 .ic-sun{
 //    position: absolute;

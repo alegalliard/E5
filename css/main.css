@@ -973,6 +973,78 @@ th {
   .btn-line i {
     margin-right: 20px; }
 
+.ic-acervo {
+  background-image: url(../img/icones-menu/acervo.svg); }
+
+.ic-busca {
+  background-image: url(../img/icones-menu/busca.svg); }
+
+.ic-contato {
+  background-image: url(../img/icones-menu/contato.svg); }
+
+.ic-equipe {
+  background-image: url(../img/icones-menu/equipe.svg); }
+
+.ic-eventos {
+  background-image: url(../img/icones-menu/eventos.svg); }
+
+.ic-inicio {
+  background-image: url(../img/icones-menu/inicio.svg); }
+
+.ic-login {
+  background-image: url(../img/icones-menu/login.svg); }
+
+.ic-projetos {
+  background-image: url(../img/icones-menu/projetos.svg); }
+
+.ic-publicacoes {
+  background-image: url(../img/icones-menu/publicacoes.svg); }
+
+.ic-audio-amarelo {
+  background-image: url(../img/icones-arquivos/amarelo/audio.svg); }
+
+.ic-documentos-amarelo {
+  background-image: url(../img/icones-arquivos/amarelo/documentos.svg); }
+
+.ic-video-amarelo {
+  background-image: url(../img/icones-arquivos/amarelo/video.svg); }
+
+.ic-audio-azul {
+  background-image: url(../img/icones-arquivos/azul/audio.svg); }
+
+.ic-documentos-azul {
+  background-image: url(../img/icones-arquivos/azul/documentos.svg); }
+
+.ic-video-azul {
+  background-image: url(../img/icones-arquivos/azul/video.svg); }
+
+.ic-audio-azul-marinho {
+  background-image: url(../img/icones-arquivos/azul-marinho/audio.svg); }
+
+.ic-documentos-azul-marinho {
+  background-image: url(../img/icones-arquivos/azul-marinho/documentos.svg); }
+
+.ic-video-azul-marinho {
+  background-image: url(../img/icones-arquivos/azul-marinho/video.svg); }
+
+.ic-audio-azul-turquesa {
+  background-image: url(../img/icones-arquivos/azul-turquesa/audio.svg); }
+
+.ic-documentos-azul-turquesa {
+  background-image: url(../img/icones-arquivos/azul-turquesa/documentos.svg); }
+
+.ic-video-azul-turquesa {
+  background-image: url(../img/icones-arquivos/azul-turquesa/video.svg); }
+
+.ic-audio-cinza {
+  background-image: url(../img/icones-arquivos/cinza/audio.svg); }
+
+.ic-documentos-cinza {
+  background-image: url(../img/icones-arquivos/cinza/documentos.svg); }
+
+.ic-video-cinza {
+  background-image: url(../img/icones-arquivos/cinza/video.svg); }
+
 .ic-calendario {
   background-image: url(../img/calendario.png);
   background-repeat: no-repeat;
@@ -1048,41 +1120,15 @@ th {
   margin: 0 auto;
   border: 0; }
 
-.ic, .ic-acervo, .ic-busca, .ic-contato, .ic-equipe, .ic-eventos, .ic-inicio, .ic-login, .ic-projetos, .ic-publicacoes {
+.ic, .ic-acervo, .ic-busca, .ic-contato, .ic-equipe, .ic-eventos, .ic-inicio, .ic-login, .ic-projetos, .ic-publicacoes, .ic-audio-amarelo, .ic-documentos-amarelo, .ic-video-amarelo, .ic-audio-azul, .ic-documentos-azul, .ic-video-azul, .ic-audio-azul-marinho, .ic-documentos-azul-marinho, .ic-video-azul-marinho, .ic-audio-azul-turquesa, .ic-documentos-azul-turquesa, .ic-video-azul-turquesa, .ic-audio-cinza, .ic-documentos-cinza, .ic-video-cinza {
   background-size: 100%;
   background-position: center center;
+  background-repeat: no-repeat;
   width: 25px;
   height: 25px;
   display: inline-block;
   vertical-align: middle;
   position: relative; }
-
-.ic-acervo {
-  background-image: url(../img/icones-menu/acervo.svg); }
-
-.ic-busca {
-  background-image: url(../img/icones-menu/busca.svg); }
-
-.ic-contato {
-  background-image: url(../img/icones-menu/contato.svg); }
-
-.ic-equipe {
-  background-image: url(../img/icones-menu/equipe.svg); }
-
-.ic-eventos {
-  background-image: url(../img/icones-menu/eventos.svg); }
-
-.ic-inicio {
-  background-image: url(../img/icones-menu/inicio.svg); }
-
-.ic-login {
-  background-image: url(../img/icones-menu/login.svg); }
-
-.ic-projetos {
-  background-image: url(../img/icones-menu/projetos.svg); }
-
-.ic-publicacoes {
-  background-image: url(../img/icones-menu/publicacoes.svg); }
 
 .ic-sun {
   background: #FFCF15;
@@ -2921,9 +2967,8 @@ input[type=range]:focus::-ms-fill-upper {
     font-size: 0.8rem; }
     .result-list .side-icon i {
       margin: 20px 0;
-      opacity: .2;
-      width: 40px;
-      height: 40px; }
+      width: 30px;
+      height: 45px; }
   .result-list .main-desc {
     display: inline-block;
     vertical-align: middle;
