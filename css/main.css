@@ -1418,6 +1418,10 @@ p, .p {
   margin-top: 0 !important;
   margin-bottom: 0 !important; }
 
+.m-tb-10 {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important; }
+
 .m-r-10 {
   margin-right: 10px; }
 
