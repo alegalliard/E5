@@ -3005,6 +3005,12 @@ input[type=range]:focus::-ms-fill-upper {
   .result-list a {
     cursor: pointer;
     display: block; }
+  .result-list.news-list .shadow:before {
+    bottom: -5px; }
+
+.list-events .card {
+  background: #fff;
+  width: 95%; }
 
 .empty {
   width: 100%;
