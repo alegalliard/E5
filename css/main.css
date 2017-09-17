@@ -3048,8 +3048,13 @@ img {
 .header {
   background: #fff; }
 
-#mini-logo img {
-  margin-top: 30px;
-  width: 120px; }
+#mini-logo {
+  overflow: hidden;
+  width: 50px;
+  display: block; }
+  #mini-logo img {
+    margin-top: 30px;
+    width: 120px;
+    max-width: none; }
 
 /*# sourceMappingURL=main.css.map */
