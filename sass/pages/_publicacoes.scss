@@ -1,0 +1,74 @@
+#banner-logo{
+    overflow: hidden;
+    width: 130px;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    left: 45%;
+    left: calc(50% - 75px);
+    top: 25px;
+}
+.public-header{
+    h1{
+        color: $azulEscuro;
+        margin-bottom: 0;
+        padding-bottom: 10px;
+        
+        @media only screen and (min-width: $small-screen) and (max-width: $medium-screen) {
+            font-size: 30px;
+            line-height: 38px;
+        }
+        
+    }
+    .date{
+        text-align: center;
+        display: block;
+    }
+    @media #{$medium-and-down} {
+        text-align: center;
+    }
+}
+.full-fig{
+    margin: 0 0 70px;
+    padding: 0;
+    
+    overflow: hidden;
+    height: 600px;
+    
+    img{
+        width:100%;
+        height: auto;
+    }
+    
+    @media only screen and (min-width: $small-screen) and (max-width: $medium-screen) {
+        height: 400px;
+    }
+    @media #{$small-and-down} {
+        height: 300px;
+    }
+}
+
+.author-box{
+    position: absolute;
+    z-index: 3;
+    text-align: center;
+    top: 0;
+    left: 0; 
+    right: 0; 
+    margin-top:-105px;
+    margin-left: auto; 
+    margin-right: auto; 
+    
+    a{
+        display: block;
+        padding: 5px 0 0;
+        color: $azul;
+    }
+    
+    
+}
+.profile-circle{
+    width:70px;
+    height: 70px;
+    border-radius: 50%;
+}
