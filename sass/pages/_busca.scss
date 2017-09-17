@@ -11,12 +11,13 @@
         margin-bottom: 20px;
         padding-bottom: 15px;
         float: left;
+        width: 95%;
     }
     
     .side-icon{
         display:inline-block;
         vertical-align:middle;
-        width:100px;
+        width:80px;
         height:70px;
         margin-right:20px;
         color:$azul;
@@ -24,9 +25,9 @@
         font-size: 0.8rem;
         
         i{
-            margin: 20px 0;
+            margin: 10px 0;
             width: 30px;
-            height: 45px;
+            height: 40px;
         }
     }
     .main-desc{
@@ -36,12 +37,18 @@
         width: calc(100% - 140px)
     }
     
-    .go-login{
+    .go-login, .go-details{
         color:$azul;
         float: right;
         text-align:right;
         font-size: 0.7rem;
-        padding-top:15px;
+        padding-top:5px;
+        
+    }
+    
+    .go-details{
+        color: $cinza;
+        margin-right: 30px;
     }
     
     .go-login-top{
@@ -62,24 +69,16 @@
         padding: 5px 0;
     }
     
+    .type,.caption{
+        display: block;
+    }
+    
+    
     a{
         cursor: pointer;
         display: block;
     }
-    
-    .shadow{
-        &:before{
-            bottom: -5px;
-            left: -10px;
-        }
-    }
-    
-    .caption{
-        padding-top:10px;
-        display: block;
-    }
-    
-    
+        
 }
 
 .empty{

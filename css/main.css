@@ -2649,10 +2649,10 @@ input[type=range]:focus::-ms-fill-upper {
   background: #001B4B; }
   .yellow-list a {
     color: #FFCF15;
-    padding: 30px 0 25px;
     display: block;
     font-size: 12px;
-    font-weight: lighter; }
+    font-weight: lighter;
+    padding: 30px 0px 25px; }
     .yellow-list a:after {
       content: "|";
       display: inline-block;
@@ -2955,31 +2955,35 @@ input[type=range]:focus::-ms-fill-upper {
     padding: 10px 15px 10px;
     margin-bottom: 20px;
     padding-bottom: 15px;
-    float: left; }
+    float: left;
+    width: 95%; }
   .result-list .side-icon {
     display: inline-block;
     vertical-align: middle;
-    width: 100px;
+    width: 80px;
     height: 70px;
     margin-right: 20px;
     color: #0861FF;
     text-align: center;
     font-size: 0.8rem; }
     .result-list .side-icon i {
-      margin: 20px 0;
+      margin: 10px 0;
       width: 30px;
-      height: 45px; }
+      height: 40px; }
   .result-list .main-desc {
     display: inline-block;
     vertical-align: middle;
     width: 80%;
     width: calc(100% - 140px); }
-  .result-list .go-login {
+  .result-list .go-login, .result-list .go-details {
     color: #0861FF;
     float: right;
     text-align: right;
     font-size: 0.7rem;
-    padding-top: 15px; }
+    padding-top: 5px; }
+  .result-list .go-details {
+    color: #797979;
+    margin-right: 30px; }
   .result-list .go-login-top {
     color: #0861FF;
     font-size: 0.7rem; }
@@ -2992,14 +2996,10 @@ input[type=range]:focus::-ms-fill-upper {
     color: #797979;
     font-size: 0.8rem;
     padding: 5px 0; }
+  .result-list .type, .result-list .caption {
+    display: block; }
   .result-list a {
     cursor: pointer;
-    display: block; }
-  .result-list .shadow:before {
-    bottom: -5px;
-    left: -10px; }
-  .result-list .caption {
-    padding-top: 10px;
     display: block; }
 
 .empty {
