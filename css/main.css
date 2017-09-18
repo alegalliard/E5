@@ -1000,6 +1000,15 @@ th {
 .ic-publicacoes {
   background-image: url(../img/icones-menu/publicacoes.svg); }
 
+.ic-evento-cancelar {
+  background-image: url(../img/icones-eventos/cancelar.svg); }
+
+.ic-evento-exportar {
+  background-image: url(../img/icones-eventos/exportar.svg); }
+
+.ic-evento-imprimir {
+  background-image: url(../img/icones-eventos/imprimir.svg); }
+
 .ic-audio-amarelo {
   background-image: url(../img/icones-arquivos/amarelo/audio.svg); }
 
@@ -1120,7 +1129,7 @@ th {
   margin: 0 auto;
   border: 0; }
 
-.ic, .ic-acervo, .ic-busca, .ic-contato, .ic-equipe, .ic-eventos, .ic-inicio, .ic-login, .ic-projetos, .ic-publicacoes, .ic-audio-amarelo, .ic-documentos-amarelo, .ic-video-amarelo, .ic-audio-azul, .ic-documentos-azul, .ic-video-azul, .ic-audio-azul-marinho, .ic-documentos-azul-marinho, .ic-video-azul-marinho, .ic-audio-azul-turquesa, .ic-documentos-azul-turquesa, .ic-video-azul-turquesa, .ic-audio-cinza, .ic-documentos-cinza, .ic-video-cinza {
+.ic, .ic-acervo, .ic-busca, .ic-contato, .ic-equipe, .ic-eventos, .ic-inicio, .ic-login, .ic-projetos, .ic-publicacoes, .ic-evento-cancelar, .ic-evento-exportar, .ic-evento-imprimir, .ic-audio-amarelo, .ic-documentos-amarelo, .ic-video-amarelo, .ic-audio-azul, .ic-documentos-azul, .ic-video-azul, .ic-audio-azul-marinho, .ic-documentos-azul-marinho, .ic-video-azul-marinho, .ic-audio-azul-turquesa, .ic-documentos-azul-turquesa, .ic-video-azul-turquesa, .ic-audio-cinza, .ic-documentos-cinza, .ic-video-cinza {
   background-size: 100%;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1246,6 +1255,9 @@ p, .p {
 .teal-title {
   color: #00CACD;
   margin-bottom: 48px; }
+
+.error {
+  color: darkred; }
 
 .teal-h3 {
   color: #00CACD;
@@ -2828,6 +2840,16 @@ textarea {
     border-bottom: #eee 2px solid;
     width: 70%;
     margin: 0 auto; }
+  .list-events .button-group {
+    margin-top: 25px;
+    text-align: center;
+    color: #001B4B;
+    margin-bottom: 0; }
+    .list-events .button-group i {
+      margin-bottom: 10px; }
+  .list-events button {
+    background: transparent;
+    border: 0; }
 
 .tiny-list {
   padding: 0;

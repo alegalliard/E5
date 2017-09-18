@@ -30,6 +30,20 @@ $download-icons: [
     "video"
 ];
 
+$eventos-page-icons: [
+    "cancelar","exportar","imprimir"
+];
+
+@each $icon in $eventos-page-icons{
+    .ic-evento-#{$icon} {
+        @extend .ic;
+        background-image: url(../img/icones-eventos/#{$icon}.svg);
+    }
+}
+
+
+
+
 @each $icon-color in $icon-colors{
     @each $download-icon in $download-icons{
         .ic-#{$download-icon}-#{$icon-color} {
