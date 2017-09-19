@@ -78,8 +78,24 @@
         cursor: pointer;
         display: block;
     }
-        
+    
+    &.news-list{
+        .shadow{
+            &:before{
+                bottom: -5px;
+            }
+        }
+    }
 }
+
+.list-events{
+    .card{
+        background: #fff;
+        width: 95%;
+    }
+}
+
+
 
 .empty{
     width: 100%;

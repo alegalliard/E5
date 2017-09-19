@@ -22,10 +22,9 @@
 @import "pages/index";
 @import "pages/infoPages";
 @import "pages/busca";
+@import "pages/publicacoes";
 
-img{
-    max-width: 100%;
-}
+img{ max-width: 100%}
 
 #logo{
     width: 20%;
@@ -40,9 +39,13 @@ img{
     background: #fff;
 }
 #mini-logo{
+    overflow: hidden;
+    width: 50px;
+    display: block;
     img {
         margin-top: 30px;
         width: 120px;
+        max-width: none;
     }
 }
 

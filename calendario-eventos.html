@@ -115,7 +115,15 @@
         </div>
        </div>
         
+        <nav>
+           <ul class="tabs horizontal">
+               <li class="tab"><a href="#eventos-abertos">abertos</a></li>
+               <li class="tab"><a href="#eventos-passados">eventos passados</a></li>
+               <li class="tab"><a href="#meus-eventos" class="active">meus eventos</a></li>
+            </ul>
+        </nav>
     </div>
+    
 </header>
 
 
@@ -123,11 +131,80 @@
 
 
 <main class="main">
-<section class="row">
-    <div class="container">
-    <h2 class="blue-title">próximos eventos</h2>
+<div class="container">
+   
+   
+    <section class="row" id="meus-eventos">
+        <h2 class="col s12">meus eventos</h2>
+        
+        <div class="side-events rel">
+           
+            <ul class="list-events shadow">
+                <li class="col s12 m6 l4">
+                <a href="#">
+                    <div class="event-block">
+                        <small class="caption">curso</small>
+                        <h5 class="">Escola de Educação Física promove seminário de Ética</h5>
+                        <span class="caption"><i class="tiny-ics ic-clock"></i> 10-12 pm</span>
+                        <span class="subcaption"><i class="tiny-ics ic-arroba"></i> Espaço Benedito Miller de apoio</span>
+                    </div>
+                    <div class="day-month">
+                        <i class="ic-calendario">15</i>
+                        <span class="mouth caption">ago</span>
+                    </div>
+                    
+                    <div class="row button-group">
+                        <div class="col s3">
+                            <button type="button">
+                                <i class="ic-evento-exportar"></i>
+                                <div class="caption">exportar</div>
+                            </button>
+                        </div>
+                        <div class="col s6">
+                            <button type="button">
+                                <i class="ic-evento-imprimir"></i>
+                                <div class="caption">imprimir infos.</div>
+                            </button>
+                        </div>
+                        <div class="col s3">
+                            <button type="button" class="error">
+                                <i class="ic-evento-cancelar"></i>
+                                <div class="caption error">cancelar</div>
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <hr class="half-separator">
+                </li>
+            </ul>
+            
+        </div>
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    <section class="row" id="eventos-passados">
+        <h2 class="col s12">eventos abertos</h2>
+        
+    </section>
 
-    <article class="col s12 m8 l8 next-news ">
+  
+  
+  
+  
+  
+   
+   
+   
+    <section class="row" id="eventos-abertos">
+    
+        <h2 class="col s12">evento a seguir</h2>
+
+        <article class="col s12 m8 l8 next-news">
         <div class="shadow">
             <figure>
                 <img src="img/ilustrative/hands.jpg" alt="">
@@ -190,7 +267,7 @@
            <div id="datepicker"></div>
            
             <ul class="list-events">
-                            <li>
+            <li>
             <a href="#">
                 <div class="event-block">
                     <small class="caption">curso</small>
@@ -278,45 +355,44 @@
             </ul>
             
         </div>
-        
-        
-    </div>
-</section>
-  </main>
-   
+    </section>
+</div>
+</main>
    
    
 <footer id="footer">
     <div class="row m-b-0">
         <div class="container">
-            <div class="col s4">
-                <p class="caption">
-                <strong>Instituto Tecnológico de Aeronáutica</strong><br>
-                Praça Marechal Eduardo Gomes, 50 <br>
-                Vila das Acácias, 12228-900 <br>
-                São José dos Campos/SP - Brasil
-                </p>
-            </div>
-
-            <div class="col s3 text-center offset-s2">
+            <div class="col s12 m5 l3 offset-l2 right text-center">
                 <span class="caption">Apoio</span>
                 <div class="row">
-                    <div class="col s6">
+                    <div class="col s4 m6 l6 offset-s2 m-tb-10">
                         <a href="" class=""><img src="img/aeita.png" alt="AEITA"></a>
                     </div>
-                    <div class="col s6">
+                    <div class="col s4 m6 l6 m-tb-10">
                         <a href="" class=""><img src="img/ita-ex.png" alt="Ex alunos do ITA"></a>
                     </div>
                 </div>
             </div>
 
-            <div class="col s2 text-center offset-s1">
+            <div class="col s12 m3 l2 text-center offset-l1 right">
                 <span class="caption">Realização</span>
-                <div class="col s12">
+                <div class="col s6 m12 l12 offset-s3 m-tb-10">
                     <a href="" class=""><img src="img/ita-logo.svg" alt="ITA logo"></a>
                 </div>
             </div>
+            
+            <div class="col s12 m4 l4 left m-tb-10">
+                <p class="caption center-on-small-only">
+                <strong>Instituto Tecnológico de Aeronáutica</strong><br>
+                Praça Marechal Eduardo Gomes, 50 <br>
+                Vila das Acácias, 12228-900 <br>
+                São José dos Campos/SP - Brasil
+                </p>
+            </div>            
         </div>
+        
+        
 
         <nav class="row m-b-0">
             <ul class=" yellow-list">

@@ -2,7 +2,7 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <title>ITA - Cadastro</title>
+    <title>ITA - Apresentação</title>
     <meta name="description" content="">
     <meta name="robots" content="index, follow">
 <!--  Se for importante indexar o site no Google, não se esqueça 
@@ -23,7 +23,15 @@
     <script src="vendor/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
     <script>
         $( function() {
-            
+            $( "#datepicker" ).datepicker({
+                autoSize: true,
+                showOtherMonths: true,
+                selectOtherMonths: true,
+                dateFormat: "dd-mm-yy",
+                monthNames: [ "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro" ],
+                dayNamesMin:["D", "S", "T", "Q", "Q", "S", "S"]
+
+            });
             
             $('.icon-list').on('click', function(){
                 $('.full-itens').show();
@@ -38,6 +46,7 @@
     </script>
 </head>
 <body>
+
 <menu class="sidenav side-nav fixed">
    <ul class="icon-list">
        <li><i class="ic-login"></i></li>
@@ -89,12 +98,13 @@
         </li>
     </ul>
 </menu>
-   
-   
-   
-   
-   
-   <header class="row m-b-0">
+
+  
+  
+  
+  
+<!--
+<header class="row m-b-0">
     <div class="container">
        <div class="p-rl-10">
            <div class="col s12 header">
@@ -103,99 +113,54 @@
             </div>
 
             <div class="col s9 text-center">
-                <h1>contato</h1>           
+                <h1>apresentação</h1>           
             </div>
         </div>
        </div>
         
     </div>
 </header>
-   
-   
-   
-   
-   
-   
-   
+-->
+  
+<header class="row public-header">
+   <a href="index.html" id="banner-logo"><img src="img/logo-horizontal.svg" alt="Espaço de Estudos e Experiências em Engenharia"></a>
+    <figure class="full-fig">
+        <img src="img/ilustrative/banner.jpg" alt="">
+    </figure>
+    <div class="container rel">
+        <h1>Método de ensino é só a ponta do iceberg, sinaliza especialista em evento de graduação</h1>
+        <time class="date subcaption text-center">22 Jun - leitura: 9 min aprox.</time>
+        <div class="author-box">
+            <img src="img/ilustrative/img3.jpg" alt="" class="profile-circle">
+            <a href="#" class="caption">Rosana Lins</a>
+        </div>
+    </div>
+</header>
+  
+  
 
 <main class="main">
-      
-  
-   <section class="row">
-    <article class="container">
-       
-       <div class="col s12">
-           <h2 class="teal-title">Fale conosco</h2>
-           <nav class="breadcrumb">
-               <ul>
-                   <li><a href="index.html">Home</a></li>
-                   <li class="active">Contato</li>
-               </ul>
-           </nav>
-
-           <div class="col s7">           
-               <form action="" class="row">
-                  <fieldset>
-                        <legend>Pessoa</legend>
-                        <div class="col s12">
-                            <label for="nome" id="campoNome">Nome</label>
-                            <input id="nome" value="" name="nome" maxlength="255" type="text">
-                         </div>
-                        <div class="col s6">
-                            <label for="email">E-mail</label>
-                            <input id="email" name="email" value="" maxlength="100" type="text">
-                        </div>
-                        <div class="col s6">
-                            <label for="tel">Telefone</label>
-                            <input id="tel" name="tel" value="" maxlength="100" type="text">
-                        </div>
-                        <div class="col s12">
-                          <legend>Tipo de usuário:</legend>
-                          <p>
-                            <input name="tipo-usuario" type="radio" id="usuario-docente" />
-                            <label for="usuario-docente">Docente do ITA</label>
-                          </p>
-                          <p>
-                            <input name="tipo-usuario" type="radio" id="aluno-ita" />
-                            <label for="aluno-ita">Aluno do ITA</label>
-                          </p>                          
-                          <p>
-                            <input name="tipo-usuario" type="radio" id="servidor-ita" />
-                            <label for="servidor-ita">Servidor técnico-administrativo do ITA </label>
-                          </p>                          
-                          <p class="m-b-20">
-                            <input name="tipo-usuario" type="radio" id="outro" />
-                            <label for="outro">Outro</label>
-                          </p>
-                        </div>
-                        <div class="col s12">
-                            <label for="msg">Mensagem</label>
-                            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
-                        </div>
-                    </fieldset>
-
-
-                   <div class="col s4 offset-s4">
-                       <button type="submit" class="btn-line">Enviar</button>
-                   </div>
-
-               </form>
-           </div>
-           
-            <div class="col s4 offset-s1">
-               <p class="e6-desc text-left">Entre em contato conosco. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi iusto, nesciunt vitae aliquid omnis. <a href="mailto:contato.e5@ita.br">contato.e5@ita.br</a> ou telefone (12) 3456-7890.</p>
-           </div>
-           
-       </div>
-       <div class="col s12">
-               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.0348795438986!2d-45.88464988561691!3d-23.20539945442691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4a5c2a9cb6b3%3A0x7de921c0833365cc!2sPra%C3%A7a+Marechal-do-Ar+Eduardo+Gomes%2C+50+-+Vila+das+Acacias%2C+S%C3%A3o+Jos%C3%A9+dos+Campos+-+SP!5e0!3m2!1spt-BR!2sbr!4v1504701403183" width="600" height="450" frameborder="0" style="border:0; width: 100%" allowfullscreen></iframe>
-           </div>
-    </article>
-</section>
+    <section class="row">
+        <article class="container">
+        
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, fugit repellat ab cum voluptate id incidunt iste veritatis itaque voluptatem aspernatur fuga natus recusandae. Necessitatibus sequi, numquam accusamus architecto debitis.
+        Cum vitae voluptatem corporis cupiditate odit autem omnis eligendi quaerat numquam maiores, unde quasi similique molestias a accusantium aliquid doloremque sequi veritatis officia totam! Accusantium quos asperiores cum debitis perspiciatis.
+        Neque molestias similique magni enim facilis delectus nesciunt, maiores repudiandae quidem repellat, beatae voluptates, labore tempore tempora ducimus officiis laborum reiciendis ad. Expedita ratione, facere sequi vero consequuntur, eos quibusdam.</p>
+        <p>Eveniet, aperiam, reiciendis? Porro nostrum quo qui natus iure, officiis in sunt iusto, ea tenetur dolorum maxime quibusdam, ipsum earum! Dolorem, dignissimos vitae tempore assumenda ducimus adipisci consequatur consequuntur porro. Tempore sapiente officia quasi quis fugit dolor harum asperiores ab nam doloribus eligendi beatae inventore debitis unde dicta numquam, est possimus necessitatibus minus, aut commodi quibusdam. Autem fugit aliquam id.</p>
+        <p>Nisi voluptates eum ratione molestiae veritatis non veniam et incidunt, similique dolorem aut fugit architecto porro itaque dolore voluptas eos odio quos. Numquam esse est totam distinctio aliquid explicabo, eveniet?</p>
+        <p>Blanditiis ipsa cum culpa perspiciatis. Porro est sit vero cupiditate, distinctio vel tempora cumque reiciendis ipsam numquam eligendi perferendis necessitatibus accusantium in facilis, saepe dolorem alias architecto nulla. Modi, vel.
+        Quod ab voluptas illum iusto tempore quo itaque aut ad nemo est, quas recusandae sint maiores natus perspiciatis nesciunt illo nostrum distinctio assumenda, saepe officiis tenetur corporis non, minima. Asperiores.Sapiente veritatis, amet praesentium. Recusandae pariatur soluta animi nemo, accusamus veniam, quisquam maxime ut architecto? Quo eaque libero atque error voluptate accusantium voluptatum aliquam, impedit accusamus iusto exercitationem saepe pariatur. Rerum non itaque ipsa necessitatibus distinctio reiciendis rem recusandae autem asperiores et facilis eos ipsum suscipit nisi magni dolor, modi dolorem molestias molestiae minima, nobis consequatur ea excepturi aperiam. Quaerat.</p>
+        <p>Quod rem nemo corporis saepe a? Impedit consequuntur itaque officia ipsum, animi vitae, quo assumenda enim placeat ea quia possimus quisquam. Quidem dolor explicabo ipsum sed, cupiditate ipsa aperiam harum. Atque ab voluptate expedita temporibus quo minus velit eum. Nesciunt quis officiis consequuntur, rerum! Iure, eligendi, ut. Quidem nostrum omnis suscipit nobis modi perspiciatis aspernatur nemo. Consequatur voluptatum, cumque doloribus.</p>
+        <p>Unde odio fugit ratione suscipit laudantium provident eius iste quibusdam voluptatum impedit eum totam, qui quod, architecto aliquam ducimus porro molestias repellat aperiam accusamus nulla molestiae libero. Sint, atque, saepe.</p>
+        <p>Et natus ex fugiat doloribus doloremque nam dicta officiis impedit vel in modi iusto nostrum laudantium vitae, provident facere dolore laboriosam culpa a. Quas quis voluptas excepturi minus, iste accusantium.</p>
+        <p>Rem consectetur, aut dicta sequi ullam, at dolore placeat corrupti eum quaerat doloribus molestias! Esse magni quia pariatur amet itaque, error, sapiente, blanditiis consequatur aperiam asperiores quaerat est harum culpa. Deserunt praesentium tempore rerum eveniet iure vel amet consequuntur qui labore dolores laborum suscipit quibusdam, officiis officia ducimus quaerat modi necessitatibus quia tempora maxime, eligendi debitis. Consequuntur quibusdam, cum ab.</p>
+        </article>
+    </section>
 </main>
    
    
-
+   
 <footer id="footer">
     <div class="row m-b-0">
         <div class="container">
@@ -239,6 +204,6 @@
         </nav>
     </div>
 </footer>
-
+    
 </body>
 </html>
