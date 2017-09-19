@@ -2,7 +2,7 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <title>ITA - Cadastro</title>
+    <title>ITA - Apresentação</title>
     <meta name="description" content="">
     <meta name="robots" content="index, follow">
 <!--  Se for importante indexar o site no Google, não se esqueça 
@@ -15,15 +15,23 @@
        
        -->
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <link rel="stylesheet" href="css/main.css?08-40-49-pm">
-    <link rel="stylesheet" href="vendor/jquery-ui-1.12.1.custom/jquery-ui.min.css">
-    <link rel="stylesheet" href="vendor/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css">
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/materialize/js/bin/materialize.min.js"></script>
-    <script src="vendor/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="../css/main.css?08-40-49-pm">
+    <link rel="stylesheet" href="../vendor/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="../vendor/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css">
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/materialize/js/bin/materialize.min.js"></script>
+    <script src="../vendor/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
     <script>
         $( function() {
-            
+            $( "#datepicker" ).datepicker({
+                autoSize: true,
+                showOtherMonths: true,
+                selectOtherMonths: true,
+                dateFormat: "dd-mm-yy",
+                monthNames: [ "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro" ],
+                dayNamesMin:["D", "S", "T", "Q", "Q", "S", "S"]
+
+            });
             
             $('.icon-list').on('click', function(){
                 $('.full-itens').show();
@@ -38,6 +46,7 @@
     </script>
 </head>
 <body>
+
 <menu class="sidenav side-nav fixed">
    <ul class="icon-list">
        <li><i class="ic-login"></i></li>
@@ -89,113 +98,94 @@
         </li>
     </ul>
 </menu>
-   
-   
-   
-   
-   
-   <header class="row m-b-0">
+
+  
+  
+  
+  
+<header class="row m-b-0">
     <div class="container">
        <div class="p-rl-10">
            <div class="col s12 header">
             <div class="col s2">
-                <a href="index.html" id="mini-logo"><img src="img/logo-horizontal.svg" alt="Espaço de Estudos e Experiências em Engenharia"></a>
+                <a href="index.html" id="mini-logo"><img src="../img/logo-horizontal.svg" alt="Espaço de Estudos e Experiências em Engenharia"></a>
             </div>
 
             <div class="col s9 text-center">
-                <h1>contato</h1>           
+                <h1>apresentação</h1>           
             </div>
         </div>
        </div>
         
     </div>
 </header>
-   
-   
-   
-   
-   
-   
-   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
-<main class="main">
-      
+  <main class="main">
   
    <section class="row">
     <article class="container">
        
-       <div class="col s12">
-           <h2 class="teal-title">Fale conosco</h2>
+       <figure class="col s12 m6 l4 right m-r-0">
+            <img src="../img/ilustra-principal.svg" alt="Organograma ilustrativo">
+        </figure>
+        
+       <div class="col m6 l8 left">
            <nav class="breadcrumb">
                <ul>
                    <li><a href="index.html">Home</a></li>
-                   <li class="active">Contato</li>
+                   <li><a href="apresentacao.html">Apresentação</a></li>
+                   <li class="active">O que é</li>
                </ul>
            </nav>
 
-           <div class="col s7">           
-               <form action="" class="row">
-                  <fieldset>
-                        <legend>Pessoa</legend>
-                        <div class="col s12">
-                            <label for="nome" id="campoNome">Nome</label>
-                            <input id="nome" value="" name="nome" maxlength="255" type="text">
-                         </div>
-                        <div class="col s6">
-                            <label for="email">E-mail</label>
-                            <input id="email" name="email" value="" maxlength="100" type="text">
-                        </div>
-                        <div class="col s6">
-                            <label for="tel">Telefone</label>
-                            <input id="tel" name="tel" value="" maxlength="100" type="text">
-                        </div>
-                        <div class="col s12">
-                          <legend>Tipo de usuário:</legend>
-                          <p>
-                            <input name="tipo-usuario" type="radio" id="usuario-docente" />
-                            <label for="usuario-docente">Docente do ITA</label>
-                          </p>
-                          <p>
-                            <input name="tipo-usuario" type="radio" id="aluno-ita" />
-                            <label for="aluno-ita">Aluno do ITA</label>
-                          </p>                          
-                          <p>
-                            <input name="tipo-usuario" type="radio" id="servidor-ita" />
-                            <label for="servidor-ita">Servidor técnico-administrativo do ITA </label>
-                          </p>                          
-                          <p class="m-b-20">
-                            <input name="tipo-usuario" type="radio" id="outro" />
-                            <label for="outro">Outro</label>
-                          </p>
-                        </div>
-                        <div class="col s12">
-                            <label for="msg">Mensagem</label>
-                            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
-                        </div>
-                    </fieldset>
-
-
-                   <div class="col s4 offset-s4">
-                       <button type="submit" class="btn-line">Enviar</button>
-                   </div>
-
-               </form>
-           </div>
            
-            <div class="col s4 offset-s1">
-               <p class="e6-desc text-left">Entre em contato conosco. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi iusto, nesciunt vitae aliquid omnis. <a href="mailto:contato.e5@ita.br">contato.e5@ita.br</a> ou telefone (12) 3456-7890.</p>
-           </div>
+           <p class="e6-desc text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla placeat dolore maiores dolores unde illum adipisci repudiandae debitis minima quod ab reprehenderit maxime, dolor accusantium eos magni sit, numquam quos?</p>
+           <p class="e6-desc text-left">Deserunt dignissimos praesentium velit, rerum ducimus, corrupti voluptates illum repellendus ut ipsa, numquam tenetur, pariatur natus animi distinctio iste explicabo? Alias quod provident inventore, facilis eveniet cumque voluptates distinctio! Soluta.</p>
+           <p class="e6-desc text-left">Quisquam facere sint autem tempore dolorem fugiat unde hic, quia debitis dolores nam possimus ipsum doloribus laborum recusandae atque, vero sit! Commodi deserunt minima fugiat aliquam consequuntur rerum assumenda illum. <a href="mailto:contato.e5@ita.br">contato.e5@ita.br</a> ou telefone (12) 3456-7890.</p>
            
+           
+           <div class="hide-on-med-and-down">
+               <hr class="separador">
+
+               <p class="e6-bold">Solicite uma conta e tenha acesso a eventos e projetos</p>
+
+               <button type="button" class="btn-line">
+                   <span class="ic-sun"><i class="ic-login"></i></span>
+                   login ou cadastrar
+                </button>
+
+               <a href="#" class="mini-a">saiba mais</a>
+           </div>
        </div>
-       <div class="col s12">
-               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.0348795438986!2d-45.88464988561691!3d-23.20539945442691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4a5c2a9cb6b3%3A0x7de921c0833365cc!2sPra%C3%A7a+Marechal-do-Ar+Eduardo+Gomes%2C+50+-+Vila+das+Acacias%2C+S%C3%A3o+Jos%C3%A9+dos+Campos+-+SP!5e0!3m2!1spt-BR!2sbr!4v1504701403183" width="600" height="450" frameborder="0" style="border:0; width: 100%" allowfullscreen></iframe>
-           </div>
+       
+       <div class="col s8 offset-s2 m6 offset-m3 text-center hide-on-large-only">
+           <hr class="separador">
+
+           <p class="e6-bold">Solicite uma conta e tenha acesso a eventos e projetos</p>
+
+           <button type="button" class="btn-line">
+               <span class="ic-sun"><i class="ic-login"></i></span>
+               login ou cadastrar
+            </button>
+
+           <a href="#" class="mini-a">saiba mais</a>
+       </div>
     </article>
 </section>
 </main>
    
    
-
+   
 <footer id="footer">
     <div class="row m-b-0">
         <div class="container">
@@ -203,10 +193,10 @@
                 <span class="caption">Apoio</span>
                 <div class="row">
                     <div class="col s4 m6 l6 offset-s2 m-tb-10">
-                        <a href="" class=""><img src="img/aeita.png" alt="AEITA"></a>
+                        <a href="" class=""><img src="../img/aeita.png" alt="AEITA"></a>
                     </div>
                     <div class="col s4 m6 l6 m-tb-10">
-                        <a href="" class=""><img src="img/ita-ex.png" alt="Ex alunos do ITA"></a>
+                        <a href="" class=""><img src="../img/ita-ex.png" alt="Ex alunos do ITA"></a>
                     </div>
                 </div>
             </div>
@@ -214,7 +204,7 @@
             <div class="col s12 m3 l2 text-center offset-l1 right">
                 <span class="caption">Realização</span>
                 <div class="col s6 m12 l12 offset-s3 m-tb-10">
-                    <a href="" class=""><img src="img/ita-logo.svg" alt="ITA logo"></a>
+                    <a href="" class=""><img src="../img/ita-logo.svg" alt="ITA logo"></a>
                 </div>
             </div>
             
@@ -239,6 +229,6 @@
         </nav>
     </div>
 </footer>
-
+    
 </body>
 </html>

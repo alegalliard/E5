@@ -1174,34 +1174,34 @@ th {
 
 @font-face {
   font-family: "Circular";
-  src: local("CircularStd-Medium.otf"), url(../fonts/Circular/CircularStd-Medium.otf) format("opentype"); }
+  src: local("CircularStd-Medium.otf"), url(../css/fonts/Circular/CircularStd-Medium.otf) format("opentype"); }
 @font-face {
   font-family: "Lora";
-  src: local("Lora-Regular.ttf"), url(../fonts/Lora/Lora-Regular.ttf) format("truetype"); }
+  src: local("Lora-Regular.ttf"), url(../css/fonts/Lora/Lora-Regular.ttf) format("truetype"); }
 @font-face {
   font-family: "Maison";
-  src: local("maisonneuebook.ttf"), url(../fonts/maison/maisonneuebook.ttf) format("truetype"); }
+  src: local("maisonneuebook.ttf"), url(../css/fonts/maison/maisonneuebook.ttf) format("truetype"); }
 html, body, h2 {
   font-family: "Circular"; }
 
 /* pesos diferentes em fontes
 @font-face {
     font-family: "DejaVu Sans";
-    src: url("fonts/DejaVuSans.ttf");
+    src: url("../css/fonts/DejaVuSans.ttf");
 }
 @font-face {
     font-family: "DejaVu Sans";
-    src: url("fonts/DejaVuSans-Bold.ttf");
+    src: url("../css/fonts/DejaVuSans-Bold.ttf");
     font-weight: bold;
 }
 @font-face {
     font-family: "DejaVu Sans";
-    src: url("fonts/DejaVuSans-Oblique.ttf");
+    src: url("../css/fonts/DejaVuSans-Oblique.ttf");
     font-style: italic, oblique;
 }
 @font-face {
     font-family: "DejaVu Sans";
-    src: url("fonts/DejaVuSans-BoldOblique.ttf");
+    src: url("../css/fonts/DejaVuSans-BoldOblique.ttf");
     font-weight: bold;
     font-style: italic, oblique;
 }
