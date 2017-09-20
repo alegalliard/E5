@@ -154,6 +154,10 @@ $eventos-page-icons: [
     position: relative;
     margin: 0 auto;
     border: 0;
+    
+    &.pull-left{
+        margin: 20px 0;
+    }
 }
 
 

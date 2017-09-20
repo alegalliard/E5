@@ -4,6 +4,7 @@ a{
 }
 .text-center{text-align: center!important}
 .text-left{text-align: left!important}
+.text-right{text-align: right!important}
 
 h1, .h1{
     font-size: 40px;
@@ -35,6 +36,13 @@ p, .p{
     font-family: "Circular";
     font-size: 16px;
     line-height: 24px;    
+}
+
+.bold-title{
+    font-size: 30px;
+    line-height: 38px;
+    font-family: "Circular";
+    font-weight: 500;
 }
 
 .blue-text{

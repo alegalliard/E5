@@ -17,8 +17,11 @@
 .rel{position: relative}
 
 .m-b-0{margin-bottom: 0!important}
+.m-b-05{margin-bottom: 5px!important}
 .m-b-10{margin-bottom: 10px!important}
 .m-t-10{margin-top: 10px!important}
+.m-t-20{margin-top: 20px!important}
+.m-t-30{margin-top: 30px!important}
 
 .m-tb-0{
     margin-top: 0!important;
@@ -46,6 +49,13 @@
     margin-bottom: 20px!important;
 }
 
+.m-tb-60{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.m-t-120{
+    margin-top: 120px;
+}
 .shadow{
     position: relative;
     width: 100%;

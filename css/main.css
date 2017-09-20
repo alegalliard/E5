@@ -1128,6 +1128,8 @@ th {
   position: relative;
   margin: 0 auto;
   border: 0; }
+  .separador.pull-left {
+    margin: 20px 0; }
 
 .ic, .ic-acervo, .ic-busca, .ic-contato, .ic-equipe, .ic-eventos, .ic-inicio, .ic-login, .ic-projetos, .ic-publicacoes, .ic-evento-cancelar, .ic-evento-exportar, .ic-evento-imprimir, .ic-audio-amarelo, .ic-documentos-amarelo, .ic-video-amarelo, .ic-audio-azul, .ic-documentos-azul, .ic-video-azul, .ic-audio-azul-marinho, .ic-documentos-azul-marinho, .ic-video-azul-marinho, .ic-audio-azul-turquesa, .ic-documentos-azul-turquesa, .ic-video-azul-turquesa, .ic-audio-cinza, .ic-documentos-cinza, .ic-video-cinza {
   background-size: 100%;
@@ -1216,6 +1218,9 @@ a {
 .text-left {
   text-align: left !important; }
 
+.text-right {
+  text-align: right !important; }
+
 h1, .h1 {
   font-size: 40px;
   line-height: 48px;
@@ -1245,6 +1250,12 @@ p, .p {
   font-family: "Circular";
   font-size: 16px;
   line-height: 24px; }
+
+.bold-title {
+  font-size: 30px;
+  line-height: 38px;
+  font-family: "Circular";
+  font-weight: 500; }
 
 .blue-text {
   color: #0861FF !important; }
@@ -1420,11 +1431,20 @@ p, .p {
 .m-b-0 {
   margin-bottom: 0 !important; }
 
+.m-b-05 {
+  margin-bottom: 5px !important; }
+
 .m-b-10 {
   margin-bottom: 10px !important; }
 
 .m-t-10 {
   margin-top: 10px !important; }
+
+.m-t-20 {
+  margin-top: 20px !important; }
+
+.m-t-30 {
+  margin-top: 30px !important; }
 
 .m-tb-0 {
   margin-top: 0 !important;
@@ -1450,6 +1470,13 @@ p, .p {
 
 .m-b-20 {
   margin-bottom: 20px !important; }
+
+.m-tb-60 {
+  margin-top: 60px;
+  margin-bottom: 60px; }
+
+.m-t-120 {
+  margin-top: 120px; }
 
 .shadow {
   position: relative;
@@ -3143,5 +3170,10 @@ img {
     margin-top: 30px;
     width: 120px;
     max-width: none; }
+
+#side-logo img {
+  margin-top: 30px;
+  width: 200px;
+  max-width: none; }
 
 /*# sourceMappingURL=main.css.map */
