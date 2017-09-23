@@ -19,6 +19,11 @@ $menu-icons: [
     }
 }
 
+.ic-filtros {
+    @extend .ic;
+    background-image: url(../img/icones-eventos/small/filtros.svg)
+}
+
 $icon-colors: [
     "amarelo",
     "azul",

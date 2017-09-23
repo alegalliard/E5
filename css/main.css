@@ -1000,6 +1000,9 @@ th {
 .ic-publicacoes {
   background-image: url(../img/icones-menu/publicacoes.svg); }
 
+.ic-filtros {
+  background-image: url(../img/icones-eventos/small/filtros.svg); }
+
 .ic-evento-cancelar {
   background-image: url(../img/icones-eventos/cancelar.svg); }
 
@@ -1131,7 +1134,7 @@ th {
   .separador.pull-left {
     margin: 20px 0; }
 
-.ic, .ic-acervo, .ic-busca, .ic-contato, .ic-equipe, .ic-eventos, .ic-inicio, .ic-login, .ic-projetos, .ic-publicacoes, .ic-evento-cancelar, .ic-evento-exportar, .ic-evento-imprimir, .ic-audio-amarelo, .ic-documentos-amarelo, .ic-video-amarelo, .ic-audio-azul, .ic-documentos-azul, .ic-video-azul, .ic-audio-azul-marinho, .ic-documentos-azul-marinho, .ic-video-azul-marinho, .ic-audio-azul-turquesa, .ic-documentos-azul-turquesa, .ic-video-azul-turquesa, .ic-audio-cinza, .ic-documentos-cinza, .ic-video-cinza {
+.ic, .ic-acervo, .ic-busca, .ic-contato, .ic-equipe, .ic-eventos, .ic-inicio, .ic-login, .ic-projetos, .ic-publicacoes, .ic-filtros, .ic-evento-cancelar, .ic-evento-exportar, .ic-evento-imprimir, .ic-audio-amarelo, .ic-documentos-amarelo, .ic-video-amarelo, .ic-audio-azul, .ic-documentos-azul, .ic-video-azul, .ic-audio-azul-marinho, .ic-documentos-azul-marinho, .ic-video-azul-marinho, .ic-audio-azul-turquesa, .ic-documentos-azul-turquesa, .ic-video-azul-turquesa, .ic-audio-cinza, .ic-documentos-cinza, .ic-video-cinza {
   background-size: 100%;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1416,6 +1419,25 @@ p, .p {
     background-image: url(../img/pattern-azul.svg);
     background-size: 40px;
     font-size: 13px; }
+
+.filter-tags {
+  padding: 0;
+  margin: 0;
+  text-align: center; }
+  .filter-tags .filter-tag {
+    margin-right: 12px;
+    margin-bottom: 12px;
+    display: inline-block; }
+  .filter-tags a {
+    padding: 8px 12px;
+    display: block;
+    color: #fff;
+    background-color: #0861FF;
+    background-size: 40px;
+    font-size: 13px; }
+    .filter-tags a:hover, .filter-tags a.active {
+      color: #001B4B;
+      background-color: #ddd; }
 
 .m-r-0 {
   margin-right: 0 !important; }
@@ -2402,7 +2424,7 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
 select {
   display: none; }
 
-select.browser-default {
+select.browser-default, .select-center {
   display: block; }
 
 select {
@@ -2672,6 +2694,15 @@ textarea {
   height: 200px;
   background: #fff;
   box-shadow: 0 -1px 1px 2px rgba(0, 0, 0, 0.02); }
+
+.select-center {
+  text-align-last: center; }
+
+.line-input {
+  border: 0 !important;
+  border-bottom: 2px solid #001B4B !important;
+  background-color: transparent !important;
+  box-shadow: none !important; }
 
 .modal {
   display: none;

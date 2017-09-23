@@ -2,7 +2,7 @@
    ========================================================================== */
 
 select { display: none; }
-select.browser-default { display: block; }
+select.browser-default, .select-center { display: block; }
 
 select {
   background-color: $select-background;
