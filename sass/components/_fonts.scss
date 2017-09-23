@@ -1,6 +1,4 @@
-// =============================================================================
 // String Replace
-// =============================================================================
 
 @function str-replace($string, $search, $replace: "") {
 	$index: str-index($string, $search);
@@ -14,7 +12,7 @@
 
 // =============================================================================
 // Font Face
-// =============================================================================
+
 
 @mixin font-face($name, $path, $weight: null, $style: null, $exts: otf ttf) {
 	$src: null;
@@ -47,31 +45,6 @@ $circular-path: '../fonts/Circular';
 $lora-path: '../fonts/Lora';
 $maison-path: '../fonts/maison';
 
-
-$circular: [
-//    "CircularStd-Black",
-//    "CircularStd-BlackItalic",
-//    "CircularStd-Bold",
-//    "CircularStd-BoldItalic",
-//    "CircularStd-Bold",
-//    "CircularStd-BoldItalic",
-//    "CircularStd-Book",
-//    "CircularStd-BookItalic",
-    "CircularStd-Medium"
-//    "CircularStd-MediumItalic"
-    ];
-$circular-styles:(
-//    [700, normal],
-//    (700, italic),
-//    (500, normal),
-//    [500, italic],
-//    (normal, normal),
-    (normal, italic)
-);
-
-//@include font-face(Circular, $circular-path, 500, normal, eot);
-//@include font-face(Lora, $lora-path, 500, normal, ttf);
-//@include font-face(Maison, $maison-path, 500, normal, ttf);
 
 $circular: (
     ("CircularStd-Black", 900, normal),
