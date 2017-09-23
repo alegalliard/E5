@@ -1176,38 +1176,98 @@ th {
 
 @font-face {
   font-family: "Circular";
-  src: local("CircularStd-Medium.otf"), url(../fonts/Circular/CircularStd-Medium.otf) format("opentype"); }
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/Circular/CircularStd-Black.otf?") format("opentype"); }
+@font-face {
+  font-family: "Circular";
+  font-style: italic;
+  font-weight: 7900;
+  src: url("../fonts/Circular/CircularStd-BlackItalic.otf?") format("opentype"); }
+@font-face {
+  font-family: "Circular";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Circular/CircularStd-Bold.otf?") format("opentype"); }
+@font-face {
+  font-family: "Circular";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/Circular/CircularStd-BoldItalic.otf?") format("opentype"); }
+@font-face {
+  font-family: "Circular";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Circular/CircularStd-Book.otf?") format("opentype"); }
+@font-face {
+  font-family: "Circular";
+  font-style: italic;
+  font-weight: 500;
+  src: url("../fonts/Circular/CircularStd-BookItalic.otf?") format("opentype"); }
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/Circular/CircularStd-Medium.otf?") format("opentype"); }
+@font-face {
+  font-family: "Circular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Circular/CircularStd-MediumItalic.otf?") format("opentype"); }
 @font-face {
   font-family: "Lora";
-  src: local("Lora-Regular.ttf"), url(../fonts/Lora/Lora-Regular.ttf) format("truetype"); }
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Circular/Lora-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: "Lora";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/Circular/Lora-BoldItalic.ttf") format("truetype"); }
+@font-face {
+  font-family: "Lora";
+  font-style: italic;
+  src: url("../fonts/Circular/Lora-Italic.ttf") format("truetype"); }
+@font-face {
+  font-family: "Lora";
+  src: url("../fonts/Circular/Lora-Regular.ttf") format("truetype"); }
 @font-face {
   font-family: "Maison";
-  src: local("maisonneuebook.ttf"), url(../fonts/maison/maisonneuebook.ttf) format("truetype"); }
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/Maison/maisonneuebook.ttf") format("truetype"); }
+@font-face {
+  font-family: "Maison";
+  font-style: italic;
+  font-weight: 900;
+  src: url("../fonts/Maison/maisonneuebookitalic.ttf") format("truetype"); }
+@font-face {
+  font-family: "Maison";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Maison/maisonneuebold.ttf") format("truetype"); }
+@font-face {
+  font-family: "Maison";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Maison/maisonneuebolditalic.ttf") format("truetype"); }
+@font-face {
+  font-family: "Maison";
+  src: url("../fonts/Maison/maisonneuemono.ttf") format("truetype"); }
+@font-face {
+  font-family: "Maison";
+  font-style: italic;
+  src: url("../fonts/Maison/maisonneuemonoitalic.ttf") format("truetype"); }
 html, body, h2 {
   font-family: "Circular"; }
 
-/* pesos diferentes em fontes
-@font-face {
-    font-family: "DejaVu Sans";
-    src: url("fonts/DejaVuSans.ttf");
-}
-@font-face {
-    font-family: "DejaVu Sans";
-    src: url("fonts/DejaVuSans-Bold.ttf");
-    font-weight: bold;
-}
-@font-face {
-    font-family: "DejaVu Sans";
-    src: url("fonts/DejaVuSans-Oblique.ttf");
-    font-style: italic, oblique;
-}
-@font-face {
-    font-family: "DejaVu Sans";
-    src: url("fonts/DejaVuSans-BoldOblique.ttf");
-    font-weight: bold;
-    font-style: italic, oblique;
-}
-*/
+.maison {
+  font-family: "Maison"; }
+
+.circular {
+  font-family: "Circular"; }
+
+.lora {
+  font-family: "Lora"; }
+
 a {
   text-decoration: none;
   color: #0861FF; }
@@ -2681,6 +2741,16 @@ textarea {
   border-radius: 0;
   will-change: bottom, opacity; }
 
+.ilustra-projetos {
+  background-image: url(../img/Projetos.svg);
+  background-position: center right;
+  background-repeat: no-repeat; }
+
+.ilustra-eventos {
+  background-image: url(../img/Eventos.svg);
+  background-position: center right;
+  background-repeat: no-repeat; }
+
 #footer {
   background: #fff;
   padding: 15px 0 0;
@@ -3086,7 +3156,15 @@ textarea {
   font-size: 2.0rem;
   text-align: center;
   padding: 1.0rem 0;
-  margin: 10px 0; }
+  margin: 10px 0;
+  width: 100%;
+  box-sizing: border-box; }
+
+.tab-nav {
+  float: left;
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box; }
 
 #banner-logo {
   overflow: hidden;
@@ -3160,7 +3238,7 @@ img {
   margin-left: 20px; }
 
 .header {
-  background: #fff; }
+  background-color: #fff; }
 
 #mini-logo {
   overflow: hidden;
