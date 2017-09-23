@@ -1,3 +1,53 @@
+// =============================================================================
+// String Replace
+// =============================================================================
+
+@function str-replace($string, $search, $replace: "") {
+	$index: str-index($string, $search);
+
+	@if $index {
+		@return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+	}
+
+	@return $string;
+}
+
+// =============================================================================
+// Font Face
+// =============================================================================
+
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: otf ttf) {
+	$src: null;
+
+	$formats: (
+		otf: "opentype",
+		ttf: "truetype"
+	);
+    
+    $extmods: (
+		otf: "?",
+		svg: "#" + str-replace($name, " ", "_")
+	);
+
+	@each $ext in $exts {
+		$extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+		$format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+		$src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+	}
+
+	@font-face {
+		font-family: quote($name);
+		font-style: $style;
+		font-weight: $weight;
+		src: $src;
+	}
+}
+
+$circular-path: '../fonts/Circular';
+$lora-path: '../fonts/Lora';
+$maison-path: '../fonts/maison';
+
+
 $circular: [
 //    "CircularStd-Black",
 //    "CircularStd-BlackItalic",
@@ -10,84 +60,71 @@ $circular: [
     "CircularStd-Medium"
 //    "CircularStd-MediumItalic"
     ];
+$circular-styles:(
+//    [700, normal],
+//    (700, italic),
+//    (500, normal),
+//    [500, italic],
+//    (normal, normal),
+    (normal, italic)
+);
 
-$lora: [
-//    "Lora-Bold",
-//    "Lora-BoldItalic",
-//    "Lora-Italic",
-    "Lora-Regular"
-    ];
+//@include font-face(Circular, $circular-path, 500, normal, eot);
+//@include font-face(Lora, $lora-path, 500, normal, ttf);
+//@include font-face(Maison, $maison-path, 500, normal, ttf);
 
-$maison: [
-//    "maisonneuebold",
-//    "maisonneuebolditalic",
-    "maisonneuebook"
-//    "maisonneuebookitalic",
-//    "maisonneuemono",
-//    "maisonneuemonoitalic"
-    ];
+$circular: (
+    ("CircularStd-Black", 900, normal),
+    ("CircularStd-BlackItalic", 7900, italic),
+    ("CircularStd-Bold", 700, normal),
+    ("CircularStd-BoldItalic", 700, italic),
+    ("CircularStd-Book", 500, normal),
+    ("CircularStd-BookItalic", 500, italic),
+    ("CircularStd-Medium", null,null),
+    ("CircularStd-MediumItalic", normal,normal)
+);
 
 
-@each $circ in $circular{
-    @font-face {
-        font-family: "Circular";
-        src: local('#{$circ}.otf'),
-            url(../fonts/Circular/#{$circ}.otf) format('opentype');
+    @each $circ in $circular{
+        @include font-face("Circular", "../fonts/Circular/#{nth($circ, 1)}", nth($circ, 2), nth($circ, 3), otf);
     }
-}
 
-@each $lor in $lora{
-    @font-face {
-        font-family: "Lora";
-        src: local('#{$lor}.ttf'),
-            url(../fonts/Lora/#{$lor}.ttf) format('truetype');
-    }
-}
 
-@each $mai in $maison{
-    @font-face {
-        font-family: "Maison";
-        src: local('#{$mai}.ttf'),
-            url(../fonts/maison/#{$mai}.ttf) format('truetype');
+$loras: (
+    ("Lora-Bold", 700, normal),
+    ("Lora-BoldItalic", 700, italic),
+    ("Lora-Italic", null, italic),
+    ("Lora-Regular", null, null)
+);
+    @each $lora in $loras{
+        @include font-face("Lora", "../fonts/Circular/#{nth($lora, 1)}", nth($lora, 2), nth($lora, 3), ttf);
     }
-}
+
+$maisons: (
+    ("maisonneuebook", 900, normal),
+    ("maisonneuebookitalic", 900, italic),
+    ("maisonneuebold", 700, normal),
+    ("maisonneuebolditalic", 700, normal),
+    ("maisonneuemono", null,null),
+    ("maisonneuemonoitalic", null, italic)
+);
+    @each $maison in $maisons{
+        @include font-face("Maison", "../fonts/Maison/#{nth($maison, 1)}", nth($maison, 2), nth($maison, 3), ttf);
+    }
+
 
 html, body, h2{
     font-family: "Circular"
-    
 }
-/* pesos diferentes em fontes
-@font-face {
-    font-family: "DejaVu Sans";
-    src: url("fonts/DejaVuSans.ttf");
-}
-@font-face {
-    font-family: "DejaVu Sans";
-    src: url("fonts/DejaVuSans-Bold.ttf");
-    font-weight: bold;
-}
-@font-face {
-    font-family: "DejaVu Sans";
-    src: url("fonts/DejaVuSans-Oblique.ttf");
-    font-style: italic, oblique;
-}
-@font-face {
-    font-family: "DejaVu Sans";
-    src: url("fonts/DejaVuSans-BoldOblique.ttf");
-    font-weight: bold;
-    font-style: italic, oblique;
-}
-*/
 
+.maison{
+    font-family: "Maison"
+}
 
+.circular{
+    font-family: "Circular"
+}
 
-//@mixin define-font($dir,$fontName, $ref, $types)
-//{
-//    @each $type in $types 
-//    {
-//        @font-face{
-//            font-family: $font;
-//            src: url(#{$dir}/#{$font}.ttf);
-//        }
-//    }
-//}
+.lora{
+    font-family: "Lora"
+}
