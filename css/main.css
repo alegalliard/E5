@@ -1364,12 +1364,13 @@ p, .p {
 .blue-title {
   color: #001B4B;
   font-family: "Circular";
-  padding-bottom: 1.5rem;
-  border-bottom: #797979 1px solid; }
+  margin-bottom: 0; }
 
 .teal-subtitle {
   color: #00CACD;
-  font-size: 1.5rem; }
+  position: relative;
+  margin-bottom: 0;
+  font-weight: 700; }
 
 .e6-desc {
   text-align: center;
@@ -1393,8 +1394,45 @@ p, .p {
 
 .yellow-title {
   color: #FFCF15;
-  padding-bottom: 1.5rem;
-  border-bottom: #797979 1px solid; }
+  position: relative;
+  margin-bottom: 0;
+  font-weight: 700; }
+
+.yellow-down {
+  border: 0;
+  border-bottom: #ddd 2px solid;
+  margin-bottom: 20px; }
+  .yellow-down:after {
+    background: #FFCF15;
+    content: " ";
+    width: 254px;
+    height: 2px;
+    position: absolute;
+    left: 0; }
+
+.teal-down {
+  border: 0;
+  border-bottom: #ddd 2px solid;
+  margin-bottom: 20px; }
+  .teal-down:after {
+    background: #00CACD;
+    content: " ";
+    width: 254px;
+    height: 2px;
+    position: absolute;
+    left: 0; }
+
+.marine-down {
+  border: 0;
+  border-bottom: #ddd 2px solid;
+  margin-bottom: 20px; }
+  .marine-down:after {
+    background: #001B4B;
+    content: " ";
+    width: 254px;
+    height: 2px;
+    position: absolute;
+    left: 0; }
 
 .h3-title {
   color: #001B4B;
@@ -2867,6 +2905,22 @@ textarea {
 .ilustra-eventos {
   background-image: url(../img/Eventos.svg); }
 
+/*::-webkit-scrollbar              {}
+::-webkit-scrollbar-button       {}
+::-webkit-scrollbar-track        {}
+::-webkit-scrollbar-track-piece  {}
+::-webkit-scrollbar-thumb        {}
+::-webkit-scrollbar-corner       {}
+::-webkit-resizer                {}*/
+.news::-webkit-scrollbar {
+  width: 6px;
+  height: 7px;
+  background: #ddd; }
+
+.news::-webkit-scrollbar-thumb {
+  background-color: #FFCF15;
+  -webkit-border-radius: 1ex; }
+
 #footer {
   background: #fff;
   padding: 15px 0 0;
@@ -3102,6 +3156,25 @@ textarea {
   border: 0 !important;
   background: #fff !important;
   color: #001B4B !important; }
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+  border: 1px solid #FFCF15 !important;
+  background: #FFCF15 !important;
+  color: #001B4B; }
+
+.ui-state-active {
+  position: relative;
+  color: #0861FF !important; }
+  .ui-state-active:after {
+    content: " ";
+    background: #0861FF;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+    left: 40%;
+    top: 0; }
 
 .slider {
   position: relative; }

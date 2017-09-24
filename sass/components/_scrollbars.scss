@@ -1,0 +1,10 @@
+/*::-webkit-scrollbar              {}
+::-webkit-scrollbar-button       {}
+::-webkit-scrollbar-track        {}
+::-webkit-scrollbar-track-piece  {}
+::-webkit-scrollbar-thumb        {}
+::-webkit-scrollbar-corner       {}
+::-webkit-resizer                {}*/
+
+.news::-webkit-scrollbar {width: 6px; height: 7px; background: #ddd; }
+.news::-webkit-scrollbar-thumb { background-color: $amarelo; -webkit-border-radius: 1ex; }

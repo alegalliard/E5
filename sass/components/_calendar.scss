@@ -23,3 +23,25 @@
     background: #fff!important;
     color: $azulEscuro!important;
 }
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+    border: 1px solid $amarelo!important;
+    background: $amarelo!important;
+    color: $azulEscuro;
+}
+
+.ui-state-active{
+    position: relative;
+    color: $azul!important;
+    &:after{
+        content: " ";
+        background: $azul;
+        width: 5px;
+        height: 5px;
+        position: absolute;
+        border-radius: 50%;
+        z-index: 1;
+        left: 40%;
+        top: 0;
+    }
+}

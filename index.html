@@ -45,7 +45,26 @@
                 $('.full-itens').hide();
                 $('.icon-list').show();
             });
+
+            //descarte esse, utilize a classe .ui-state-active para dias que existem eventos 
+            var simulateEventsOnCalendar = function(){
+                window.setTimeout(function(){
+                    $(document).find('.ui-state-default').each(function(i,d){
+                        var rand = Math.floor(Math.random() * (25 - 1)) + 1;
+                        if(i == rand){
+                            $(d).addClass('ui-state-active');
+                        }
+                    });
+                    
+                    $(document).find('.ui-datepicker-next, .ui-datepicker-prev').on('click', function(){
+                        simulateEventsOnCalendar();
+                    });
+                    
+                },50);
+            }
             
+            simulateEventsOnCalendar();
+                
         });
     </script>
 </head>
@@ -250,6 +269,10 @@
 </section><section class="row">
    <div class="container">
     <h2 class="yellow-title">últimas notícias</h2>
+    <div class="rel">
+       <a href="" class="subcaption blue-text">+ ver todas</a>
+        <hr class="yellow-down">
+    </div>
     
     <div class="news">
     <ul>
@@ -329,10 +352,11 @@
    </div>
 </section><section class="row">
     <div class="container">
-        <h3 class="teal-subtitle">projetos em alta</h3>
-        <small class=""><a href="">+ ver todos</a></small>
-        
-        <hr>
+        <h2 class="teal-subtitle">projetos em alta</h2>
+        <div class="rel">
+           <a href="#" class="subcaption blue-text">+ ver todas</a>
+            <hr class="teal-down">
+        </div>
                     
         <article class="row big-news">
             <div class="col s12 m4 l3">
@@ -514,7 +538,11 @@
 </section>
    <section class="row">
     <div class="container">
-    <h3 class="blue-title">próximos eventos</h3>
+        <h2 class="blue-title">próximos eventos</h2>
+        <div class="rel">
+           <a href="#" class="subcaption blue-text">+ ver todas</a>
+            <hr class="marine-down">
+        </div>
 
     <article class="col s12 m8 l8 next-news ">
         <div class="shadow">

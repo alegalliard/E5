@@ -68,6 +68,7 @@ p, .p{
     margin-bottom: 48px;
 }
 
+
 .error{
     color: darkred;
 }
@@ -83,14 +84,15 @@ p, .p{
 .blue-title{
     color:$azulEscuro;
     font-family: "Circular";
-    padding-bottom: 1.5rem;
-    border-bottom: #797979 1px solid;
+    margin-bottom: 0;
 }
 
 
 .teal-subtitle{
     color: $azulClaro;
-    font-size: 1.5rem;
+    position: relative;
+    margin-bottom: 0;
+    font-weight: 700;
 }
 
 .e6-desc{
@@ -118,8 +120,54 @@ p, .p{
 
 .yellow-title{
     color:$amarelo;
-    padding-bottom: 1.5rem;
-    border-bottom: $cinza 1px solid;
+    position: relative;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+.yellow-down{
+    border:0;
+    border-bottom: #ddd 2px solid;
+    margin-bottom: 20px;
+    
+    &:after{
+        background: $amarelo;
+        content: " ";
+        width: 254px;
+        height: 2px;
+        position: absolute;
+        left: 0;
+    }
+}
+
+.teal-down{
+    border:0;
+    border-bottom: #ddd 2px solid;
+    margin-bottom: 20px;
+    
+    &:after{
+        background: $azulClaro;
+        content: " ";
+        width: 254px;
+        height: 2px;
+        position: absolute;
+        left: 0;
+    }
+}
+
+.marine-down{
+    border:0;
+    border-bottom: #ddd 2px solid;
+    margin-bottom: 20px;
+    
+    &:after{
+        background: $azulEscuro;
+        content: " ";
+        width: 254px;
+        height: 2px;
+        position: absolute;
+        left: 0;
+    }
 }
 
 .h3-title{
