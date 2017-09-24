@@ -27,3 +27,19 @@
         margin-right: 20px;
     }
 }
+
+.btn-white{
+    color: $azul;
+    border: 0;
+    border-top: #ddd 2px solid;
+    margin-top: -2px;
+    background-color: #fff;
+    box-shadow: none;
+    padding: 15px;
+    width: 100%;
+    
+    &:hover{
+        background-color: $azul;
+        color: #fff!important;
+    }
+}

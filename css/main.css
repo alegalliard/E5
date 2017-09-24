@@ -973,6 +973,19 @@ th {
   .btn-line i {
     margin-right: 20px; }
 
+.btn-white {
+  color: #0861FF;
+  border: 0;
+  border-top: #ddd 2px solid;
+  margin-top: -2px;
+  background-color: #fff;
+  box-shadow: none;
+  padding: 15px;
+  width: 100%; }
+  .btn-white:hover {
+    background-color: #0861FF;
+    color: #fff !important; }
+
 .ic-acervo {
   background-image: url(../img/icones-menu/acervo.svg); }
 
@@ -1314,6 +1327,14 @@ p, .p {
   font-size: 16px;
   line-height: 24px; }
 
+.title-label {
+  color: #001B4B;
+  font-size: 0.8rem;
+  padding: 1rem 0 0.5rem;
+  line-height: 1rem;
+  margin: 0;
+  font-weight: bold; }
+
 .bold-title {
   font-size: 30px;
   line-height: 38px;
@@ -1560,6 +1581,9 @@ p, .p {
 .m-t-120 {
   margin-top: 120px; }
 
+.white {
+  background-color: #fff; }
+
 .shadow {
   position: relative;
   width: 100%;
@@ -1576,6 +1600,63 @@ p, .p {
     left: -10px;
     z-index: -5; }
 
+@media only screen and (max-width: 600px) {
+  .shadow-on-small {
+    background: #fff;
+    float: left;
+    clear: both;
+    position: relative;
+    width: 100%;
+    margin: 0 0 20px; }
+    .shadow-on-small:before {
+      content: " ";
+      position: absolute;
+      background-image: url(../img/pattern-azul-marinho.svg);
+      background-repeat: repeat;
+      background-size: 40px;
+      width: 100%;
+      height: 100%;
+      bottom: -10px;
+      left: -10px;
+      z-index: -5; } }
+@media only screen and (max-width: 992px) {
+  .shadow-on-med-and-down {
+    background: #fff;
+    float: left;
+    clear: both;
+    position: relative;
+    width: 100%;
+    margin: 0 0 20px; }
+    .shadow-on-med-and-down:before {
+      content: " ";
+      position: absolute;
+      background-image: url(../img/pattern-azul-marinho.svg);
+      background-repeat: repeat;
+      background-size: 40px;
+      width: 100%;
+      height: 100%;
+      bottom: -10px;
+      left: -10px;
+      z-index: -5; } }
+@media only screen and (min-width: 993px) {
+  .shadow-on-large {
+    background: #fff;
+    float: left;
+    clear: both;
+    position: relative;
+    width: 100%;
+    margin: 0 0 20px; }
+    .shadow-on-large:before {
+      content: " ";
+      position: absolute;
+      background-image: url(../img/pattern-azul-marinho.svg);
+      background-repeat: repeat;
+      background-size: 40px;
+      width: 100%;
+      height: 100%;
+      bottom: -10px;
+      left: -10px;
+      z-index: -5; } }
 .half-separator {
   border: 0;
   position: relative;
@@ -2772,15 +2853,19 @@ textarea {
   border-radius: 0;
   will-change: bottom, opacity; }
 
+.ilustra-projetos, .ilustra-eventos {
+  background-position: center right;
+  background-repeat: no-repeat; }
+  @media only screen and (max-width: 600px) {
+    .ilustra-projetos, .ilustra-eventos {
+      background-image: none !important; } }
+  @media only screen and (min-width: 600px) and (max-width: 992px) {
+    .ilustra-projetos, .ilustra-eventos {
+      background-size: 15% !important; } }
 .ilustra-projetos {
-  background-image: url(../img/Projetos.svg);
-  background-position: center right;
-  background-repeat: no-repeat; }
-
+  background-image: url(../img/Projetos.svg); }
 .ilustra-eventos {
-  background-image: url(../img/Eventos.svg);
-  background-position: center right;
-  background-repeat: no-repeat; }
+  background-image: url(../img/Eventos.svg); }
 
 #footer {
   background: #fff;
@@ -2935,11 +3020,17 @@ textarea {
   padding: 0;
   margin: 0;
   list-style: none; }
+  @media only screen and (max-width: 992px) {
+    .list-events {
+      margin: 0 5%;
+      width: 90%; } }
   .list-events a {
     padding: 15px 15px 20px;
     list-style: none;
     display: block;
-    height: auto; }
+    height: auto;
+    width: 95%;
+    margin: 0 auto; }
     .list-events a:hover, .list-events a.active {
       background: #0861FF;
       color: #fff; }
@@ -2969,13 +3060,12 @@ textarea {
     width: 70%;
     margin: 0 auto; }
   .list-events .button-group {
-    margin-top: 25px;
+    margin: 10px 0 15px;
     text-align: center;
-    color: #001B4B;
-    margin-bottom: 0; }
+    color: #001B4B; }
     .list-events .button-group i {
       margin-bottom: 10px; }
-  .list-events button {
+  .list-events button:not(.btn-white) {
     background: transparent;
     border: 0; }
 

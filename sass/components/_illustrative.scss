@@ -1,15 +1,28 @@
-.ilustra-projetos{
-    background:{
-        image: url(../img/Projetos.svg);
+.ilustra-{
+    &projetos, &eventos{
+        background:{
         position:center right;
         repeat: no-repeat;
-    }
-}
+        }
+        
+        @media #{$small-and-down} {
+            background-image: none!important;
+        }
 
-.ilustra-eventos{
-    background:{
+        @media only screen and (min-width: $small-screen) and (max-width: $medium-screen) {
+            background-size: 15%!Important;
+         }
+    }
+    
+    &projetos{
+        background:{
+        image: url(../img/Projetos.svg);
+        }
+    }
+    
+    &eventos{
+        background:{
         image: url(../img/Eventos.svg);
-        position:center right;
-        repeat: no-repeat;
+        }
     }
 }

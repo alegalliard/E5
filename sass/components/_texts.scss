@@ -38,12 +38,22 @@ p, .p{
     line-height: 24px;    
 }
 
+.title-label{
+    color: $azulEscuro;
+    font-size: 0.8rem;
+    padding: 1rem 0 0.5rem;
+    line-height: 1rem;
+    margin: 0;
+    font-weight: bold;
+}
+
 .bold-title{
     font-size: 30px;
     line-height: 38px;
     font-family: "Circular";
     font-weight: 500;
 }
+
 
 .blue-text{
     color: $azul!important;
@@ -200,4 +210,6 @@ p, .p{
         }
     }
 }
+
+
 
