@@ -15,7 +15,10 @@
     border: 0!important;
     background: #fff!important;
     text-align: center!important;
-    /* color: #454545; */
+    @media #{$medium-and-down} {
+        padding: 15px 0;
+        font-size: 1.2rem;
+    }
 }
 
 .ui-widget-header {

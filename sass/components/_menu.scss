@@ -29,13 +29,6 @@
         display: none;
         i{margin: 0 20px 0 0 }    
     }
-    
-    .icon-list{
-        i{
-            margin: 10px;
-        }
-    }
-    
     li{ display: block; }
     
     
@@ -74,6 +67,35 @@
         
         a{
             color: #fff
+        }
+    }
+    
+    @media #{$medium-and-down} {
+        width: 100%!important;
+        height: 60px!important;
+        top: inherit!important;
+        bottom: 0!important;
+        padding: 0;
+        overflow: hidden;
+        box-shadow: 0 -2px 18px 1px rgba(0, 0, 0, 0.2);
+        li{
+            display: inline-block;
+        }
+    }
+    
+}
+
+.icon-list{
+    i{
+        margin: 10px;
+    }
+    @media #{$medium-and-down} {
+        li{
+            width: 16.66%;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            float: left;
         }
     }
 }

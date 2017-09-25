@@ -11,6 +11,12 @@
     display: none !important;
   }
 }
+
+.right-on-med-and-down {
+  @media #{$medium-and-down} {
+    float:right !important
+  }
+}
 .hide-on-med-and-up {
   @media #{$medium-and-up} {
     display: none !important;
