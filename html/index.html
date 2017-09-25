@@ -45,7 +45,26 @@
                 $('.full-itens').hide();
                 $('.icon-list').show();
             });
+
+            //descarte esse, utilize a classe .ui-state-active para dias que existem eventos 
+            var simulateEventsOnCalendar = function(){
+                window.setTimeout(function(){
+                    $(document).find('.ui-state-default').each(function(i,d){
+                        var rand = Math.floor(Math.random() * (25 - 1)) + 1;
+                        if(i == rand){
+                            $(d).addClass('ui-state-active');
+                        }
+                    });
+                    
+                    $(document).find('.ui-datepicker-next, .ui-datepicker-prev').on('click', function(){
+                        simulateEventsOnCalendar();
+                    });
+                    
+                },50);
+            }
             
+            simulateEventsOnCalendar();
+                
         });
     </script>
 </head>
@@ -54,15 +73,16 @@
  
 <menu class="sidenav side-nav fixed">
    <ul class="icon-list">
-       <li><i class="ic-login"></i></li>
+       <li class="right-on-med-and-down"><i class="ic-login"></i></li>
        <li><i class="ic-inicio"></i></li>
        <li><i class="ic-busca"></i></li>
        <li><i class="ic-eventos"></i></li>
        <li><i class="ic-projetos"></i></li>
-       <li><i class="ic-acervo"></i></li>
-       <li><i class="ic-publicacoes"></i></li>
-       <li><i class="ic-equipe"></i></li>
-       <li><i class="ic-contato"></i></li>
+       <li class="hide-on-large-only"><i class="ic-menu ic-sun">...</i></li>
+       <li class="hide-on-med-and-down"><i class="ic-acervo"></i></li>
+       <li class="hide-on-med-and-down"><i class="ic-publicacoes"></i></li>
+       <li class="hide-on-med-and-down"><i class="ic-equipe"></i></li>
+       <li class="hide-on-med-and-down"><i class="ic-contato"></i></li>
    </ul>
     <ul class="full-itens">
         <li class="negative">
@@ -113,7 +133,7 @@
         </header>
 
         <section class="row">
-            <div class="col s9 rel">
+            <div class="col s12 m12 l9 rel">
                 <div class="slider shadow">
                     <ul>
                         <li class="slide">
@@ -138,7 +158,7 @@
                 
                 <div class="timerout"></div>
             </div>
-            <aside class="col s3 aside">
+            <aside class="col s12 m12 l3 aside">
                 <div class="calendar">
                     
                     <div id="datepicker"></div>
@@ -250,6 +270,10 @@
 </section><section class="row">
    <div class="container">
     <h2 class="yellow-title">últimas notícias</h2>
+    <div class="rel">
+       <a href="" class="subcaption blue-text">+ ver todas</a>
+        <hr class="yellow-down">
+    </div>
     
     <div class="news">
     <ul>
@@ -329,10 +353,11 @@
    </div>
 </section><section class="row">
     <div class="container">
-        <h3 class="teal-subtitle">projetos em alta</h3>
-        <small class=""><a href="">+ ver todos</a></small>
-        
-        <hr>
+        <h2 class="teal-subtitle">projetos em alta</h2>
+        <div class="rel">
+           <a href="#" class="subcaption blue-text">+ ver todas</a>
+            <hr class="teal-down">
+        </div>
                     
         <article class="row big-news">
             <div class="col s12 m4 l3">
@@ -514,7 +539,11 @@
 </section>
    <section class="row">
     <div class="container">
-    <h3 class="blue-title">próximos eventos</h3>
+        <h2 class="blue-title">próximos eventos</h2>
+        <div class="rel">
+           <a href="#" class="subcaption blue-text">+ ver todas</a>
+            <hr class="marine-down">
+        </div>
 
     <article class="col s12 m8 l8 next-news ">
         <div class="shadow">

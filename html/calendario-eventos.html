@@ -104,26 +104,25 @@
 <header class="row m-b-0">
     <div class="container">
        <div class="p-rl-10">
-           <div class="col s12 header">
-            <div class="col s2">
+           <div class="col s12 header ilustra-eventos">
+            <div class="col s2 m1 l1">
                 <a href="index.html" id="mini-logo"><img src="../img/logo-horizontal.svg" alt="Espaço de Estudos e Experiências em Engenharia"></a>
             </div>
 
-            <div class="col s9 text-center">
+            <div class="col s9 m10 l10 text-center">
                 <h1>calendário de eventos</h1>           
             </div>
         </div>
        </div>
         
-        <nav>
+        <nav class="tab-nav">
            <ul class="tabs horizontal">
-               <li class="tab"><a href="#eventos-abertos" class="active">abertos</a></li>
+               <li class="tab"><a href="#eventos-abertos">abertos</a></li>
                <li class="tab"><a href="#eventos-passados">eventos passados</a></li>
-               <li class="tab"><a href="#meus-eventos">meus eventos</a></li>
+               <li class="tab"><a href="#meus-eventos"  class="active">meus eventos</a></li>
             </ul>
         </nav>
     </div>
-    
 </header>
 
 
@@ -139,43 +138,45 @@
         
         <div class="side-events rel">
            
-            <ul class="list-events shadow">
-                <li class="col s12 m6 l4">
-                <a href="#">
-                    <div class="event-block">
-                        <small class="caption">curso</small>
-                        <h5 class="">Escola de Educação Física promove seminário de Ética</h5>
-                        <span class="caption"><i class="tiny-ics ic-clock"></i> 10-12 pm</span>
-                        <span class="subcaption"><i class="tiny-ics ic-arroba"></i> Espaço Benedito Miller de apoio</span>
-                    </div>
-                    <div class="day-month">
-                        <i class="ic-calendario">15</i>
-                        <span class="mouth caption">ago</span>
-                    </div>
-                    
-                    <div class="row button-group">
-                        <div class="col s3">
-                            <button type="button">
-                                <i class="ic-evento-exportar"></i>
-                                <div class="caption">exportar</div>
-                            </button>
+            <ul class="list-events shadow-on-med-and-down">
+                <li class="col s12 m12 l6">
+                <div class="white shadow-on-large">
+                    <a href="#">
+                        <div class="event-block">
+                            <small class="caption">curso</small>
+                            <h5 class="">Escola de Educação Física promove seminário de Ética</h5>
+                            <span class="caption"><i class="tiny-ics ic-clock"></i> 10-12 pm</span>
+                            <span class="subcaption"><i class="tiny-ics ic-arroba"></i> Espaço Benedito Miller de apoio</span>
                         </div>
-                        <div class="col s6">
-                            <button type="button">
-                                <i class="ic-evento-imprimir"></i>
-                                <div class="caption">imprimir infos.</div>
-                            </button>
+                        <div class="day-month">
+                            <i class="ic-calendario">15</i>
+                            <span class="mouth caption">ago</span>
                         </div>
-                        <div class="col s3">
-                            <button type="button" class="error">
-                                <i class="ic-evento-cancelar"></i>
-                                <div class="caption error">cancelar</div>
-                            </button>
+                        </a>
+                        <div class="row button-group">
+                            <div class="col s3">
+                                <button type="button" data-id="1">
+                                    <i class="ic-evento-exportar"></i>
+                                    <div class="caption">exportar</div>
+                                </button>
+                            </div>
+                            <div class="col s6">
+                                <button type="button" data-id="1">
+                                    <i class="ic-evento-imprimir"></i>
+                                    <div class="caption">imprimir infos.</div>
+                                </button>
+                            </div>
+                            <div class="col s3">
+                                <button type="button" class="error" data-id="1">
+                                    <i class="ic-evento-cancelar"></i>
+                                    <div class="caption error">cancelar</div>
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <hr class="half-separator">
+                    </div>                
+                    <hr class="half-separator">
                 </li>
+                
             </ul>
             
         </div>
@@ -188,8 +189,29 @@
     
     
     <section class="row" id="eventos-passados">
-        <h2 class="col s12">eventos abertos</h2>
-        
+        <h2 class="col s12">eventos passados</h2>
+        <div class="side-events rel">
+           
+            <ul class="list-events shadow-on-med-and-down">
+                <li class="col s12 m12 l6">
+                <a href="#" class="white shadow-on-large">
+                    <div class="event-block">
+                        <small class="caption">curso</small>
+                        <h5 class="">Escola promove seminário de Ética</h5>
+                        <span class="caption"><i class="tiny-ics ic-clock"></i> 10-12 pm</span>
+                        <span class="subcaption"><i class="tiny-ics ic-arroba"></i> Espaço Benedito Miller de apoio</span>
+                    </div>
+                    <div class="day-month">
+                        <i class="ic-calendario">15</i>
+                        <span class="mouth caption">ago</span>
+                    </div>
+                </a>
+                <hr class="half-separator">
+                </li>
+                
+            </ul>
+            
+        </div>        
     </section>
 
   
@@ -319,6 +341,50 @@
           <div class="shadow">
            <div id="datepicker"></div>
            
+           <div class="col s4 caption">
+               <i class="ic-filtros"></i> Filtros
+           </div>
+           <div class="col s8 text-right caption">
+               listando apenas as opções selecionadas
+           </div>
+           
+           <div class="col s12">
+              <h4 class="title-label">temas</h4>
+               <ul class="filter-tags">
+                   <li class="filter-tag"><a href="">sexualidade</a></li>
+                   <li class="filter-tag"><a href="" class="active">ética</a></li>
+                   <li class="filter-tag"><a href="">livre docência</a></li>
+                   <li class="filter-tag"><a href="">metodologia</a></li>
+                   <li class="filter-tag"><a href="">gestão</a></li>
+               </ul>
+           </div>
+           
+           
+           <fieldset class="col s12">
+               <h4 class="title-label">período</h4>
+               <div class="col s6">
+                  <label for="de-data">De:</label>
+                   <input type="date" name="de-data" id="de-data" class="line-input">
+               </div>
+               <div class="col s6">
+                  <label for="ate-data">Até:</label>
+                   <input type="date" name="ate-data" id="ate-data" class="line-input">
+               </div>
+          
+               <div class="col s12 m-t-20">
+                   <label for="organizador" class="title-label">organizador</label>
+                   <select name="organizador" id="organizador" class="select-center line-input">
+                      <option value="">Dilmês ipsum</option>
+                       <option value="">Primeiro eu queria</option>
+                       <option value="">Cumprimentar os internautas</option>
+                       <option value="">Oi Internautas!</option>
+                       <option value="">Depois dizer que o meio ambiente </option>
+                       <option value="">é sem dúvida nenhuma uma ameaça</option>
+                       <option value="">ao desenvolvimento sustentável.</option>
+                   </select>
+               </div>
+           </fieldset>
+           
             <ul class="list-events">
             <li>
             <a href="#">
@@ -335,74 +401,28 @@
             </a>
             <hr class="half-separator">
             </li>
-                        <li>
-            <a href="#">
-                <div class="event-block">
-                    <small class="caption">curso</small>
-                    <h5 class="">Escola de Educação Física promove seminário de Ética</h5>
-                    <span class="caption"><i class="tiny-ics ic-clock"></i> 10-12 pm</span>
-                    <span class="subcaption"><i class="tiny-ics ic-arroba"></i> Espaço Benedito Miller de apoio</span>
-                </div>
-                <div class="day-month">
-                    <i class="ic-calendario">15</i>
-                    <span class="mouth caption">ago</span>
-                </div>
-            </a>
-            <hr class="half-separator">
-            </li>
-                        <li>
-            <a href="#">
-                <div class="event-block">
-                    <small class="caption">curso</small>
-                    <h5 class="">Escola de Educação Física promove seminário de Ética</h5>
-                    <span class="caption"><i class="tiny-ics ic-clock"></i> 10-12 pm</span>
-                    <span class="subcaption"><i class="tiny-ics ic-arroba"></i> Espaço Benedito Miller de apoio</span>
-                </div>
-                <div class="day-month">
-                    <i class="ic-calendario">15</i>
-                    <span class="mouth caption">ago</span>
-                </div>
-            </a>
-            <hr class="half-separator">
-            </li>
-                        <li>
-            <a href="#">
-                <div class="event-block">
-                    <small class="caption">curso</small>
-                    <h5 class="">Escola de Educação Física promove seminário de Ética</h5>
-                    <span class="caption"><i class="tiny-ics ic-clock"></i> 10-12 pm</span>
-                    <span class="subcaption"><i class="tiny-ics ic-arroba"></i> Espaço Benedito Miller de apoio</span>
-                </div>
-                <div class="day-month">
-                    <i class="ic-calendario">15</i>
-                    <span class="mouth caption">ago</span>
-                </div>
-            </a>
-            <hr class="half-separator">
-            </li>
             <li>
-                <a href="#">
-                    <div class="event-block">
-                        <small class="caption">curso</small>
-                        <h5 class="">Escola de Educação Física promove seminário de Ética</h5>
-                        <span class="caption"><i class="tiny-ics ic-clock"></i> 10-12 pm</span>
-                        <span class="subcaption"><i class="tiny-ics ic-arroba"></i> Espaço Benedito Miller de apoio</span>
-                    </div>
-                    <div class="day-month">
-                        <i class="ic-calendario">15</i>
-                        <span class="mouth caption">ago</span>
-                    </div>
-                </a>
-                </li>
-                
-                <li class="row">
-                   <hr class="divider">
-                    <div class="col s12 text-center">
-                        <button type="button" class="btn-line m-b-20">
-                            carregar mais
-                        </button>
-                    </div>
-                </li>
+            <a href="#">
+                <div class="event-block">
+                    <small class="caption">curso</small>
+                    <h5 class="">Escola de Educação Física promove seminário de Ética</h5>
+                    <span class="caption"><i class="tiny-ics ic-clock"></i> 10-12 pm</span>
+                    <span class="subcaption"><i class="tiny-ics ic-arroba"></i> Espaço Benedito Miller de apoio</span>
+                </div>
+                <div class="day-month">
+                    <i class="ic-calendario">15</i>
+                    <span class="mouth caption">ago</span>
+                </div>
+            </a>
+            <hr class="half-separator">
+            </li>                
+            <li class="row">
+                <div class="col s12 text-center">
+                    <button type="button" class="btn-white">
+                        carregar mais
+                    </button>
+                </div>
+            </li>
                 
             </ul>
             
