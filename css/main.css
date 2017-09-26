@@ -2826,8 +2826,8 @@ textarea {
   right: 0;
   background-color: #fafafa;
   padding: 0;
-  max-height: 70%;
-  width: 55%;
+  max-height: 80%;
+  width: 70%;
   margin: auto;
   overflow-y: auto;
   border-radius: 2px;
@@ -2947,6 +2947,11 @@ textarea {
       display: inline-block;
       color: #FFCF15;
       margin: 0 40px; }
+
+.detalhes-evento {
+  overflow: hidden;
+  height: 120px;
+  display: block; }
 
 .news {
   overflow: auto; }
@@ -3131,40 +3136,35 @@ textarea {
   .tiny-list .subcaption {
     display: block; }
 
-.ui-widget.ui-widget-content {
+#datepicker .ui-widget.ui-widget-content {
   margin: 0 auto;
   width: 100%;
   border: 0 !important; }
-
-.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+#datepicker .ui-state-highlight, #datepicker .ui-widget-content .ui-state-highlight, #datepicker .ui-widget-header .ui-state-highlight {
   border: 1px solid transparent;
   background: #FFCF15;
   color: #ccc;
   border-radius: 50px; }
-
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+#datepicker .ui-state-default, #datepicker .ui-widget-content .ui-state-default, #datepicker .ui-widget-header .ui-state-default, #datepicker .ui-button, #datepicker html .ui-button.ui-state-disabled:hover, #datepicker html .ui-button.ui-state-disabled:active {
   border: 0 !important;
   background: #fff !important;
   text-align: center !important; }
   @media only screen and (max-width: 992px) {
-    .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    #datepicker .ui-state-default, #datepicker .ui-widget-content .ui-state-default, #datepicker .ui-widget-header .ui-state-default, #datepicker .ui-button, #datepicker html .ui-button.ui-state-disabled:hover, #datepicker html .ui-button.ui-state-disabled:active {
       padding: 15px 0;
       font-size: 1.2rem; } }
-
-.ui-widget-header {
+#datepicker .ui-widget-header {
   border: 0 !important;
   background: #fff !important;
   color: #001B4B !important; }
-
-.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+#datepicker .ui-state-highlight, #datepicker .ui-widget-content .ui-state-highlight, #datepicker .ui-widget-header .ui-state-highlight {
   border: 1px solid #FFCF15 !important;
   background: #FFCF15 !important;
   color: #001B4B; }
-
-.ui-state-active {
+#datepicker .ui-state-active {
   position: relative;
   color: #0861FF !important; }
-  .ui-state-active:after {
+  #datepicker .ui-state-active:after {
     content: " ";
     background: #0861FF;
     width: 5px;

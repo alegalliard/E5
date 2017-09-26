@@ -1,4 +1,10 @@
 @import "../components/variables";
+
+.detalhes-evento{
+    overflow: hidden;
+    height: 120px;
+    display: block;
+}
     
 .news{
     overflow: auto;
