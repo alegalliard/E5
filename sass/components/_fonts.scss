@@ -43,18 +43,18 @@
 
 $circular-path: '../fonts/Circular';
 $lora-path: '../fonts/Lora';
-$maison-path: '../fonts/maison';
+
 
 
 $circular: (
-    ("CircularStd-Black", 900, normal),
-    ("CircularStd-BlackItalic", 7900, italic),
+//    ("CircularStd-Black", 900, normal),
+//    ("CircularStd-BlackItalic", 7900, italic),
     ("CircularStd-Bold", 700, normal),
     ("CircularStd-BoldItalic", 700, italic),
     ("CircularStd-Book", 500, normal),
-    ("CircularStd-BookItalic", 500, italic),
-    ("CircularStd-Medium", null,null),
-    ("CircularStd-MediumItalic", normal,normal)
+    ("CircularStd-BookItalic", 500, italic)
+//    ("CircularStd-Medium", null,null),
+//    ("CircularStd-MediumItalic", normal,normal)
 );
 
 
@@ -73,25 +73,11 @@ $loras: (
         @include font-face("Lora", "../fonts/Circular/#{nth($lora, 1)}", nth($lora, 2), nth($lora, 3), ttf);
     }
 
-$maisons: (
-    ("maisonneuebook", 900, normal),
-    ("maisonneuebookitalic", 900, italic),
-    ("maisonneuebold", 700, normal),
-    ("maisonneuebolditalic", 700, normal),
-    ("maisonneuemono", null,null),
-    ("maisonneuemonoitalic", null, italic)
-);
-    @each $maison in $maisons{
-        @include font-face("Maison", "../fonts/Maison/#{nth($maison, 1)}", nth($maison, 2), nth($maison, 3), ttf);
-    }
+
 
 
 html, body, h2{
     font-family: "Circular"
-}
-
-.maison{
-    font-family: "Maison"
 }
 
 .circular{

@@ -1193,16 +1193,6 @@ th {
 @font-face {
   font-family: "Circular";
   font-style: normal;
-  font-weight: 900;
-  src: url("../fonts/Circular/CircularStd-Black.otf?") format("opentype"); }
-@font-face {
-  font-family: "Circular";
-  font-style: italic;
-  font-weight: 7900;
-  src: url("../fonts/Circular/CircularStd-BlackItalic.otf?") format("opentype"); }
-@font-face {
-  font-family: "Circular";
-  font-style: normal;
   font-weight: 700;
   src: url("../fonts/Circular/CircularStd-Bold.otf?") format("opentype"); }
 @font-face {
@@ -1221,14 +1211,6 @@ th {
   font-weight: 500;
   src: url("../fonts/Circular/CircularStd-BookItalic.otf?") format("opentype"); }
 @font-face {
-  font-family: "Circular";
-  src: url("../fonts/Circular/CircularStd-Medium.otf?") format("opentype"); }
-@font-face {
-  font-family: "Circular";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/Circular/CircularStd-MediumItalic.otf?") format("opentype"); }
-@font-face {
   font-family: "Lora";
   font-style: normal;
   font-weight: 700;
@@ -1245,38 +1227,8 @@ th {
 @font-face {
   font-family: "Lora";
   src: url("../fonts/Circular/Lora-Regular.ttf") format("truetype"); }
-@font-face {
-  font-family: "Maison";
-  font-style: normal;
-  font-weight: 900;
-  src: url("../fonts/Maison/maisonneuebook.ttf") format("truetype"); }
-@font-face {
-  font-family: "Maison";
-  font-style: italic;
-  font-weight: 900;
-  src: url("../fonts/Maison/maisonneuebookitalic.ttf") format("truetype"); }
-@font-face {
-  font-family: "Maison";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/Maison/maisonneuebold.ttf") format("truetype"); }
-@font-face {
-  font-family: "Maison";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/Maison/maisonneuebolditalic.ttf") format("truetype"); }
-@font-face {
-  font-family: "Maison";
-  src: url("../fonts/Maison/maisonneuemono.ttf") format("truetype"); }
-@font-face {
-  font-family: "Maison";
-  font-style: italic;
-  src: url("../fonts/Maison/maisonneuemonoitalic.ttf") format("truetype"); }
 html, body, h2 {
   font-family: "Circular"; }
-
-.maison {
-  font-family: "Maison"; }
 
 .circular {
   font-family: "Circular"; }
