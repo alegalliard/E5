@@ -1660,6 +1660,27 @@ p, .p {
     .half-separator {
       border-bottom: #eee 2px solid; } }
 
+.alert {
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent; }
+  .alert.success {
+    background-color: #dff0d8;
+    border-color: #d0e9c6;
+    color: #3c763d; }
+  .alert.error {
+    background-color: #f2dede;
+    border-color: #ebcccc;
+    color: #a94442; }
+  .alert.info {
+    background-color: #d9edf7;
+    border-color: #bcdff1;
+    color: #31708f; }
+  .alert.warning {
+    background-color: #fcf8e3;
+    border-color: #faf2cc;
+    color: #8a6d3b; }
+
 .sidenav {
   background-color: #f8f8f8;
   position: fixed;
