@@ -21,6 +21,7 @@
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/materialize/js/bin/materialize.min.js"></script>
     <script src="../vendor/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="../js/login.js"></script>
     <script>
         $( function() {
             
@@ -106,7 +107,8 @@
            <h1 class="bold-title">Bem vindo ao E6, um portal feito por docentes para docentes e alunos ou qualquer frase do tipo</h1>
        </header>
            <div class="col s12 m6 l4 offset-m3 offset-l1 m-t-120">           
-               <form action="" class="row">
+               <form action="" class="row" id="login-form">
+                  <div class="alert error" style="display: none"></div>
                    <fieldset class="">
                        <div class="col s12">
                            <label for="login">prontuário</label>
@@ -115,12 +117,12 @@
                        <div class="col s12">
                            <label for="pass">senha</label>
                            <input type="password" name="pass" id="pass" class="m-b-05">
-                           <small class="caption"><a href="#">esqueceu a senha?</a></small>
+                           <small class="caption"><a href="#reset-senha-form" id="recuperar-senha" class="switch-session" data-parent="login-form">esqueceu a senha?</a></small>
                        </div>
                    </fieldset>
 
                    <div class="col s12 m-t-20">
-                       <button type="submit" class="btn-line">
+                       <button type="submit" class="btn-line" id="entrar">
                            <span class="ic-sun"><i class="ic-login"></i></span>
                            login ou cadastrar
                         </button>
@@ -130,6 +132,37 @@
                        <a href="cadastro-usuario.html" class="">solicitar uma conta</a>
                    </div>
                </form>
+               
+               
+               <form action="" id="reset-senha-form" style="display: none">
+                   <div class="alert error" style="display: none"></div>
+                   <fieldset class="">
+                      <legend>Recupere seu acesso</legend>
+                      
+                       <div class="col s12">
+                           <label for="prontuario">prontuário</label>
+                           <input type="text" name="prontuario" id="prontuario">
+                       </div>
+                       ou
+                       <div class="col s12">
+                           <label for="email">email</label>
+                           <input type="text" name="email" id="email">
+                       </div>
+                   </fieldset>
+
+                   <div class="col s12 m-t-20">
+                       <button type="submit" class="btn-line" id="recuperar">
+                           <span class="ic-sun"><i class="ic-login"></i></span>
+                           recuperar senha
+                        </button>
+                   </div>
+                   <div class="col s12 text-center m-t-30 caption">
+                       <a href="cadastro-usuario.html" class="">solicitar uma conta</a><br>
+                       <a href="#login-form" class="switch-session" data-parent="reset-senha-form">voltar ao login</a>
+                   </div>
+               </form>
+               
+               
            </div>
        
     </div>
@@ -141,34 +174,36 @@
 <footer id="footer">
     <div class="row m-b-0">
         <div class="container">
-            <div class="col s4">
-                <p class="caption">
-                <strong>Instituto Tecnológico de Aeronáutica</strong><br>
-                Praça Marechal Eduardo Gomes, 50 <br>
-                Vila das Acácias, 12228-900 <br>
-                São José dos Campos/SP - Brasil
-                </p>
-            </div>
-
-            <div class="col s3 text-center offset-s2">
+            <div class="col s12 m5 l3 offset-l2 right text-center">
                 <span class="caption">Apoio</span>
                 <div class="row">
-                    <div class="col s6">
+                    <div class="col s4 m6 l6 offset-s2 m-tb-10">
                         <a href="" class=""><img src="../img/aeita.png" alt="AEITA"></a>
                     </div>
-                    <div class="col s6">
+                    <div class="col s4 m6 l6 m-tb-10">
                         <a href="" class=""><img src="../img/ita-ex.png" alt="Ex alunos do ITA"></a>
                     </div>
                 </div>
             </div>
 
-            <div class="col s2 text-center offset-s1">
+            <div class="col s12 m3 l2 text-center offset-l1 right">
                 <span class="caption">Realização</span>
-                <div class="col s12">
+                <div class="col s6 m12 l12 offset-s3 m-tb-10">
                     <a href="" class=""><img src="../img/ita-logo.svg" alt="ITA logo"></a>
                 </div>
             </div>
+            
+            <div class="col s12 m4 l4 left m-tb-10">
+                <p class="caption center-on-small-only">
+                <strong>Instituto Tecnológico de Aeronáutica</strong><br>
+                Praça Marechal Eduardo Gomes, 50 <br>
+                Vila das Acácias, 12228-900 <br>
+                São José dos Campos/SP - Brasil
+                </p>
+            </div>            
         </div>
+        
+        
 
         <nav class="row m-b-0">
             <ul class=" yellow-list">
@@ -178,7 +213,7 @@
             </ul>        
         </nav>
     </div>
-</footer>   
+</footer>
     
 </body>
 </html>
