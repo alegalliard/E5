@@ -1,0 +1,81 @@
+.vitrine{
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+}
+
+.insert-file{
+    background-color: $azulEscuro;
+    position: relative;
+    
+    label{
+        color:$amarelo;
+        display: inline-block;
+        padding: 20px 1.2rem 0;
+        font-size: 1.0rem;
+        height: 40px;
+    }
+    
+    .img-icon{
+        background-color: $amarelo;
+        display: inline-block;
+        float: right;
+    }
+    
+    .ic-photo{
+        padding: 15px;
+    }
+    
+    input[type=file]{
+        opacity: 0;
+        width: 100%;
+        height: 60px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        cursor: pointer;
+    }
+}
+
+
+.list-chapters{
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+    .links-row{
+        text-align: right;
+        width: 100%;
+        a{
+            display: inline-block;
+            padding: 0 0.5rem;
+            margin-left: 1.0rem;
+            font-size: 0.9rem;
+        }
+    }
+    
+    .chapter-{
+        &index{
+            background-color: $azulEscuro;
+            color: $amarelo;
+            display: inline-block;
+            padding: 2.5rem 1rem;
+            vertical-align:middle;
+            font-size: 1.5rem;
+            margin-right: 1.0rem;
+        }
+        &block{
+            display: inline-block;
+            vertical-align:middle;
+            width: 80%;
+        }
+        
+        &title{
+            margin: 0.5rem 0 1.0rem;
+            font-size: 1.0rem;
+        }
+        
+    }
+}

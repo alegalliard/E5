@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>ITA - Meus projetos</title>
+    <meta name="description" content="">
+    <meta name="robots" content="index, follow">
+<!--  Se for importante indexar o site no Google, não se esqueça 
+       de permitir a personalização  da TITLE (até 60 chars), a 
+       META-DESCRIPTION (até 140 chars) 
+       e META-ROBOTS para cada página. 
+       
+       Páginas restritas: Não é necessário personalizar a meta-description, 
+       somente a title. Robots deve constar com content noindex,nofollow
+       
+       -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="css/main.css?08-40-49-pm">
+    <link rel="stylesheet" href="vendor/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="vendor/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css">
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/materialize/js/bin/materialize.min.js"></script>
+    <script src="vendor/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+
+    <script>
+        $( function() {
+            
+            
+            $('.icon-list').on('click', function(){
+                $('.full-itens').show();
+                $('.icon-list').hide();
+            });
+            $('.collapse').on('click', function(){
+                $('.full-itens').hide();
+                $('.icon-list').show();
+            });
+            
+        });
+    </script>
+</head>
+<body>
+
+<menu class="sidenav side-nav fixed">
+   <ul class="icon-list">
+       <li><i class="ic-login"></i></li>
+       <li><i class="ic-inicio"></i></li>
+       <li><i class="ic-busca"></i></li>
+       <li><i class="ic-eventos"></i></li>
+       <li><i class="ic-projetos"></i></li>
+       <li><i class="ic-acervo"></i></li>
+       <li><i class="ic-publicacoes"></i></li>
+       <li><i class="ic-equipe"></i></li>
+       <li><i class="ic-contato"></i></li>
+   </ul>
+    <ul class="full-itens">
+        <li class="negative">
+            <a href="login.html"><i class="ic-login"></i>login ou cadastrar</a>
+        </li>
+        
+        <li>
+            <a href="index.html"><i class="ic-inicio"></i>início</a>
+        </li>
+        <li class="search">
+           <form action="login.html">
+            <i class="ic-busca"></i>
+            <input type="search" id="busca" name="busca" placeholder="busque no site">               
+           </form>        
+        </li>
+        <li>
+            <a href="eventos.html"><i class="ic-eventos"></i>eventos</a>
+        </li>
+        <li>
+            <a href="projetos.html"><i class="ic-projetos"></i>projetos</a>
+        </li>
+        <li>
+           <a href="acervo.html"><i class="ic-acervo"></i>acervo <br>
+            <span class="subcaption">restrito à usuários cadastrados</span></a>
+        </li>
+        <li>
+            <a href="publicacoes.html"><i class="ic-publicacoes"></i>publicações</a>
+        </li>
+        <li>
+            <a href="apresentacao.html"><i class="ic-equipe"></i>apresentação</a>
+        </li>
+
+        <li>
+            <a href="contato.html"><i class="ic-contato"></i>contato</a>
+        </li>
+        <li class="collapse">
+            <a href="#" class="collapse"><i class="ic-contato"></i>colapsar</a>
+        </li>
+    </ul>
+</menu>
+   
+
+
+<header class="row m-b-0">
+    <div class="container">
+       <div class="p-rl-10">
+           <div class="col s12 header ilustra-eventos">
+            <div class="col s2 m1 l1">
+                <a href="index.html" id="mini-logo"><img src="img/logo-horizontal.svg" alt="Espaço de Estudos e Experiências em Engenharia"></a>
+            </div>
+
+            <div class="col s9 m10 l10 text-center">
+                <h1>projetos</h1>           
+            </div>
+        </div>
+       </div>
+        
+        <nav class="tab-nav">
+           <ul class="tabs horizontal">
+               <li class="tab"><a href="#meus-eventos" class="active">meus eventos</a></li>
+               <li class="tab"><a href="#eventos-abertos">últimos cadastrados</a></li>
+               <li class="tab"><a href="#docentes">docentes</a></li>
+               <li class="tab"><a href="#meus-projetos">meus projetos</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+
+
+
+<main class="main">
+<div class="container">
+  
+<section class="row" id="meus-eventos">
+    <fieldset class="row">
+        <legend class="col s12">novo projeto</legend>
+        <div class="col s12">
+           <label for="nome-projeto">Nome do projeto</label>
+            <input type="text" name="nome-projeto" id="nome-projeto">
+        </div>
+        <div class="col s12">
+           <label for="desc-projeto">Nome do projeto</label>
+           <textarea name="desc-projeto" id="desc-projeto" cols="30" rows="10"></textarea>
+        </div>
+        
+        <div class="col s5">
+           <label for="keywords-projeto">Palavras-chave</label>
+           <input type="text" id="keywords-projeto" name="keywords-projeto">
+           <ul class="tags" id="insert-keywords">
+<!--               <li class="tag"><a href=""></a><input type="hidden" name="keywods[]"></li>-->
+           </ul>
+        </div>
+        
+        <div class="col s6 offset-s1 rel">
+            <h3 class="h4 blue-text">imagem para o projeto</h3>
+            <div class="shadow">
+              <div class="vitrine"></div>
+              <div class="insert-file">
+                 <label for="img-projeto">inserir uma nova imagem</label>
+                 <div class="img-icon"><i class="ic-photo"></i></div>
+                  <input type="file" name="img-projeto" id="img-projeto" accept="image/jpeg">
+              </div>
+            </div>
+        </div>
+        
+        <div class="col s12">
+            <h3 class="h4 blue-text">capítulos</h3>
+            <ul class="list-chapters shadow-on-med-and-down">
+                <li class="col s12 m12 l6">
+                <div class="white shadow-on-large">
+                    <div class="chapter-index">
+                        01
+                    </div>
+                    <div class="chapter-block">
+                        <h4 class="chapter-title">quanto tempo gasta um professor pra que este trabalho ocorra?</h4 class="h5">
+                        <div class="links-row">
+                            <a href=""><i class="ic-"></i>excluir</a>
+                            <a href=""><i class="ic-"></i>editar</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <hr class="half-separator">
+                </li>
+            </ul>
+            <div class="col s12">
+                <button type="button" class="chapter-new">novo capítulo</button>
+            </div>
+        </div>
+        
+        <div class="col s12">
+            <button type="submit"><i class="ic-"></i> publicar projeto</button>
+        </div>
+
+    </fieldset>
+</section>
+    
+    
+    
+    
+    
+   
+   
+    <section class="row" id="meus-eventos">
+        <h2 class="col s12">meus eventos</h2>
+        
+        <div class="side-events rel">
+           
+            <ul class="list-events shadow-on-med-and-down">
+                <li class="col s12 m12 l6">
+                <div class="white shadow-on-large">
+                    <a href="#">
+                        <div class="event-block">
+                            <small class="caption">curso</small>
+                            <h5 class="">Escola de Educação Física promove seminário de Ética</h5>
+                            <span class="caption"><i class="tiny-ics ic-clock"></i> 10-12 pm</span>
+                            <span class="subcaption"><i class="tiny-ics ic-arroba"></i> Espaço Benedito Miller de apoio</span>
+                        </div>
+                        <div class="day-month">
+                            <i class="ic-calendario">15</i>
+                            <span class="mouth caption">ago</span>
+                        </div>
+                        </a>
+                        <div class="row button-group">
+                            <div class="col s3">
+                                <button type="button" data-id="1">
+                                    <i class="ic-evento-exportar"></i>
+                                    <div class="caption">exportar</div>
+                                </button>
+                            </div>
+                            <div class="col s6">
+                                <button type="button" data-id="1">
+                                    <i class="ic-evento-imprimir"></i>
+                                    <div class="caption">imprimir infos.</div>
+                                </button>
+                            </div>
+                            <div class="col s3">
+                                <button type="button" class="error" data-id="1">
+                                    <i class="ic-evento-cancelar"></i>
+                                    <div class="caption error">cancelar</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>                
+                    <hr class="half-separator">
+                </li>
+                
+            </ul>
+            
+        </div>
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    <section class="row" id="eventos-passados">
+        <h2 class="col s12">eventos passados</h2>
+        <div class="side-events rel">
+           
+            <ul class="list-events shadow-on-med-and-down">
+                <li class="col s12 m12 l6">
+                <a href="#" class="white shadow-on-large">
+                    <div class="event-block">
+                        <small class="caption">curso</small>
+                        <h5 class="">Escola promove seminário de Ética</h5>
+                        <span class="caption"><i class="tiny-ics ic-clock"></i> 10-12 pm</span>
+                        <span class="subcaption"><i class="tiny-ics ic-arroba"></i> Espaço Benedito Miller de apoio</span>
+                    </div>
+                    <div class="day-month">
+                        <i class="ic-calendario">15</i>
+                        <span class="mouth caption">ago</span>
+                    </div>
+                </a>
+                <hr class="half-separator">
+                </li>
+                
+            </ul>
+            
+        </div>        
+    </section>
+
+  
+  
+  
+  
+  
+   
+   
+   
+    <section class="row" id="eventos-abertos">
+    
+        <h2 class="col s12">evento a seguir</h2>
+
+        <article class="col s12 m8 l8 next-news">
+        <div class="shadow">
+            <figure>
+                <img src="img/ilustrative/hands.jpg" alt="">
+            </figure>
+            <div class="pad">
+                <header>
+                    <div class="day-month">
+                        <i class="ic-calendario">15</i>
+                        <span class="mouth caption">ago</span>
+                    </div>
+                    <div class="next-info">
+                        <h4 class="blue-text">Escola de Educação Física promove seminário de Ética</h4>
+                        <small class="subcaption">Público</small>
+                    </div>
+                </header>
+                
+                
+                <div class="tab-area">
+                    <ul class="tabs">
+                        <li class="tab col s4 m4 l12"><a href="#when"><i class="icon ic-clock"></i> </a></li>
+                        <li class="tab col s4 m4 l12"><a href="#where"><i class="icon ic-map"></i></a></li>
+                        <li class="tab col s4 m4 l12"><a href="#who"><i class="icon ic-circle-user"></i></a></li>
+                    </ul>
+                
+
+                    <div class="desc-block">             
+                        <p class="desc" id="when">
+                            <time class="caption">sexta-feira, 18 de agosto às 10 - 12 p.m.</time>
+                            <small class="subcaption">daqui 5 dias</small>
+                        </p>
+
+                        <p class="desc" id="where">
+                            <b class="caption">auditório Mal. Benedito Miller</b>
+                            <small class="subcaption">rua das Acácias, n 855 <a href="" class="sm-link">mostrar no mapa</a></small>
+                        </p>
+
+                        <p class="desc" id="who">
+                            <b class="caption">Lucille Delgado</b>
+                            <small class="subcaption">professora doutora em comortamento pela UNICAMP</small>
+                        </p>           
+                    </div>
+                </div>
+                <hr>
+
+                <div class="detalhes-evento">
+                    <p>O evente é aberto a todos os interessadasos e não há necessidaded de inscrição. As atividades acontecem no Auditório José Geraldo Massucato - Bloco B da EEFE - USP. Haverá envio de certificado de participação via e-mail aos ouvintes que permanecerem durante todo o evento. Mais informações no site  </p>
+                    <p>Etiam placerat turpis nulla, ac venenatis magna iaculis ut. Phasellus massa ex, imperdiet a lectus in, commodo varius tortor. Fusce dapibus dolor neque, eget condimentum diam tincidunt vel. Fusce eu enim egestas, consectetur lectus nec, vehicula enim. Fusce feugiat dolor pulvinar urna faucibus, id porttitor magna dignissim. Mauris magna neque, dapibus ac arcu a, gravida faucibus massa. Ut ut vestibulum diam, non feugiat neque. Ut elementum lacus at leo elementum, id interdum lacus molestie. Etiam metus eros, dictum et luctus vel, posuere vitae lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam ac lectus nec lorem pellentesque porttitor eget non magna. Cras cursus nec enim sed lacinia. Aliquam erat volutpat. Etiam at eros pretium, vestibulum tellus eu, tincidunt arcu.</p>
+                    <p>Duis gravida, tortor vel imperdiet efficitur, nibh augue auctor ligula, at mattis eros metus ultrices magna. Donec facilisis nisl tortor, vel venenatis tortor laoreet eu. Ut aliquam dui at nisi cursus tristique. Proin et dui elementum, efficitur purus in, congue lectus. Sed sagittis dapibus rutrum. Morbi eu bibendum dui. Etiam lacinia magna in ex rutrum facilisis. In ornare dolor vitae nunc vulputate rutrum. Mauris rhoncus libero ut orci porttitor lobortis. Vivamus sit amet iaculis erat. Proin ac tincidunt diam. Fusce vel vehicula velit, id elementum elit. Donec consectetur, nulla quis condimentum tempus, dui ipsum iaculis lacus, eget eleifend eros quam a augue. Nulla porttitor sed mauris eu tempus.</p>
+                    <p>Nunc ut orci sapien. In ut auctor lorem, eget faucibus diam. In ac fermentum velit. Phasellus eros sapien, sollicitudin at semper vel, convallis sed ipsum. Curabitur eu dignissim odio. Aenean mollis, turpis ac tempus hendrerit, risus mauris rutrum mauris, in fermentum lectus diam vel est. Sed consequat augue vel est tempus, gravida gravida dolor tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean semper non lorem et eleifend. Etiam sit amet dui commodo, vestibulum dolor at, interdum urna.</p>
+                    
+                </div>
+                <small class="subcaption"><a href="#" class="sm-link ver-mais">ver mais</a></small>
+                
+                
+                
+                
+                <ul class="result-list row">
+                <li class="col s12">
+                    <div class="card">
+                        <div class="side-icon">
+                            <i class="ic-documentos-azul"></i>
+                            <span class="type">documento</span>
+                        </div>
+                        <div class="main-desc">
+                            <a href="#" class="marine-text m-t-10">Moon Gazing</a>
+                            <time datetime="2016-09-18T19:00" class="caption">Adicionado 18 set 2016</time>
+                            <small class="filesize">311 kb</small>
+                        <div class="row m-b-0">
+                            <a href="#modal-login" class="go-login modal-trigger">
+                             download <i class="ic-tiny"></i>
+                            </a>
+                            <a href="#modal-detalhes" class="go-details modal-trigger modal-file">detalhes</a>
+                        </div>
+
+                        </div>
+                    </div>
+                </li>
+
+                <li class="col s12">
+                    <div class="card">
+                        <div class="side-icon">
+                            <i class="ic-video-azul"></i>
+                            <span class="type">video</span>
+                        </div>
+                        <div class="main-desc">
+                            <a href="#" class="marine-text m-t-10">Moon Gazing</a>
+                            <time datetime="2016-09-18T19:00" class="caption">Adicionado 18 set 2016</time>
+                            <small class="filesize">311 kb</small>
+                        <div class="row m-b-0">
+                            <a href="#modal-login" class="go-login modal-trigger">
+                             download <i class="ic-tiny"></i>
+                            </a>
+                            <a href="#modal-detalhes" class="go-details modal-trigger modal-file">detalhes</a>
+                        </div>
+
+                        </div>
+                    </div>
+                </li>
+                </ul>
+                
+                
+                
+                <button type="button" class="btn-line">
+                    <span class="ic-sun"><i class="ic-login"></i></span>
+                    faça login para participar
+                </button>
+                
+                
+            </div>
+        </div>
+    </article>
+       
+       
+       
+       
+       
+        <div class="col s12 m4 l4 side-events rel">
+          <div class="shadow">
+           <div id="datepicker"></div>
+           
+           <div class="col s4 caption">
+               <i class="ic-filtros"></i> Filtros
+           </div>
+           <div class="col s8 text-right caption">
+               listando apenas as opções selecionadas
+           </div>
+           
+           <div class="col s12">
+              <h4 class="title-label">temas</h4>
+               <ul class="filter-tags">
+                   <li class="filter-tag"><a href="">sexualidade</a></li>
+                   <li class="filter-tag"><a href="" class="active">ética</a></li>
+                   <li class="filter-tag"><a href="">livre docência</a></li>
+                   <li class="filter-tag"><a href="">metodologia</a></li>
+                   <li class="filter-tag"><a href="">gestão</a></li>
+               </ul>
+           </div>
+           
+           
+           <fieldset class="col s12">
+               <h4 class="title-label">período</h4>
+               <div class="col s6">
+                  <label for="de-data">De:</label>
+                   <input type="text" name="de-data" id="de-data" class="line-input datepicker">
+               </div>
+               <div class="col s6">
+                  <label for="ate-data">Até:</label>
+                   <input type="text" name="ate-data" id="ate-data" class="line-input datepicker">
+               </div>
+          
+               <div class="col s12 m-t-20">
+                   <label for="organizador" class="title-label">organizador</label>
+                   <select name="organizador" id="organizador" class="select-center line-input">
+                      <option value="">Dilmês ipsum</option>
+                       <option value="">Primeiro eu queria</option>
+                       <option value="">Cumprimentar os internautas</option>
+                       <option value="">Oi Internautas!</option>
+                       <option value="">Depois dizer que o meio ambiente </option>
+                       <option value="">é sem dúvida nenhuma uma ameaça</option>
+                       <option value="">ao desenvolvimento sustentável.</option>
+                   </select>
+               </div>
+           </fieldset>
+           
+            <ul class="list-events">
+            <li>
+            <a href="#">
+                <div class="event-block">
+                    <small class="caption">curso</small>
+                    <h5 class="">Escola de Educação Física promove seminário de Ética</h5>
+                    <span class="caption"><i class="tiny-ics ic-clock"></i> 10-12 pm</span>
+                    <span class="subcaption"><i class="tiny-ics ic-arroba"></i> Espaço Benedito Miller de apoio</span>
+                </div>
+                <div class="day-month">
+                    <i class="ic-calendario">15</i>
+                    <span class="mouth caption">ago</span>
+                </div>
+            </a>
+            <hr class="half-separator">
+            </li>
+            <li>
+            <a href="#">
+                <div class="event-block">
+                    <small class="caption">curso</small>
+                    <h5 class="">Escola de Educação Física promove seminário de Ética</h5>
+                    <span class="caption"><i class="tiny-ics ic-clock"></i> 10-12 pm</span>
+                    <span class="subcaption"><i class="tiny-ics ic-arroba"></i> Espaço Benedito Miller de apoio</span>
+                </div>
+                <div class="day-month">
+                    <i class="ic-calendario">15</i>
+                    <span class="mouth caption">ago</span>
+                </div>
+            </a>
+            <hr class="half-separator">
+            </li>                
+            <li class="row">
+                <div class="col s12 text-center">
+                    <button type="button" class="btn-white carregar-mais">
+                        carregar mais
+                    </button>
+                </div>
+            </li>
+                
+            </ul>
+            
+        </div>
+        </div>
+    </section>
+</div>
+</main>
+   
+   
+<footer id="footer">
+    <div class="row m-b-0">
+        <div class="container">
+            <div class="col s12 m5 l3 offset-l2 right text-center">
+                <span class="caption">Apoio</span>
+                <div class="row">
+                    <div class="col s4 m6 l6 offset-s2 m-tb-10">
+                        <a href="" class=""><img src="img/aeita.png" alt="AEITA"></a>
+                    </div>
+                    <div class="col s4 m6 l6 m-tb-10">
+                        <a href="" class=""><img src="img/ita-ex.png" alt="Ex alunos do ITA"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m3 l2 text-center offset-l1 right">
+                <span class="caption">Realização</span>
+                <div class="col s6 m12 l12 offset-s3 m-tb-10">
+                    <a href="" class=""><img src="img/ita-logo.svg" alt="ITA logo"></a>
+                </div>
+            </div>
+            
+            <div class="col s12 m4 l4 left m-tb-10">
+                <p class="caption center-on-small-only">
+                <strong>Instituto Tecnológico de Aeronáutica</strong><br>
+                Praça Marechal Eduardo Gomes, 50 <br>
+                Vila das Acácias, 12228-900 <br>
+                São José dos Campos/SP - Brasil
+                </p>
+            </div>            
+        </div>
+        
+        
+
+        <nav class="row m-b-0">
+            <ul class=" yellow-list">
+                <li><a href="apresentacao.html">Institucional</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>        
+        </nav>
+    </div>
+</footer>
+   
+   
+   
+<div id="modal-detalhes" class="modal">
+    <div class="row">
+    <div class="modal-content col s12">
+    <h4>Detalhes do arquivo</h4>
+    <table class="bordered">
+        <thead>
+            <tr>
+                <th colspan="2" class="file-name"></th>
+            </tr>
+        </thead>
+        <tbody>    
+            <tr>
+                <td>Tamanho:</td>
+                <td class="file-size"></td>
+            </tr>
+            <tr>
+                <td>Adicionado em:</td>
+                <td class="file-date"></td>
+            </tr>
+            <tr>
+                <td>Tags:</td>
+                <td class="file-tags"></td>
+            </tr>
+            <tr>
+                <td>Projeto:</td>
+                <td class="file-project"></td>
+            </tr>
+            <tr>
+                <td>Descrição:</td>
+                <td class="file-desc"></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+        <footer class="modal-footer">
+            <div class="col s6 offset-s6 text-right">
+                <a href="#!" class="modal-action modal-close btn-line">Fechar</a>         
+            
+                <a href="#!" class="modal-action modal-close btn-line">Baixar</a>
+            </div>
+        </footer>
+    </div>
+</div>
+   
+   
+    
+</body>
+</html>

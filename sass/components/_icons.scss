@@ -221,3 +221,18 @@ $eventos-page-icons: [
     width: 30px;
     height: 30px;
 }
+
+//PROJETOS
+.ic-{
+    &photo{
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        vertical-align: middle;
+        background:{
+            image: url(../img/icones-projetos/novo-projeto.svg);
+            repeat: no-repeat;
+            position:center center;
+        }
+    }
+}
