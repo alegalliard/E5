@@ -21,10 +21,9 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/materialize/js/bin/materialize.min.js"></script>
     <script src="vendor/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="js/area-restrita.js"></script>
     <script>
         $( function() {
-            
-            
             $('.icon-list').on('click', function(){
                 $('.full-itens').show();
                 $('.icon-list').hide();
@@ -33,75 +32,6 @@
                 $('.full-itens').hide();
                 $('.icon-list').show();
             });
-            
-            $('.tab a').on('click',function(){
-                $('#tipo-usuario').val($(this).text());
-                $('#titulo-usuario').text($(this).text());
-            });
-            
-            
-            var perfilType = function(){
-                let ref = window.location.href;
-                let getParams = ref.split("?");
-
-                if(getParams.length > 1){
-                    var activatePerfil = null;
-                    
-                    if(/aluno/.test(getParams[1]))
-                        activatePerfil = 'aluno';
-                    else if(/docente/.test(getParams[1]))
-                        activatePerfil = 'docente';
-                    else if(/tecnico/.test(getParams[1]))
-                        activatePerfil = 'tecnico';
-                    else if(/administrativo/.test(getParams[1]))
-                        activatePerfil = 'administrativo';
-                    else
-                        activatePerfil = 'outro';
-                       
-                    return activatePerfil;
-                }
-                
-                return 'outro'
-            }
-            
-            var DOMchangesPerfil = function(){   
-                var perfilRadio = $('#perfil4');
-                
-                if(perfilType() == 'outro')
-                    $('.do-ita').hide();
-                else
-                    $('.do-ita').show();
-
-                if(perfilType() == 'tecnico' || perfilType() == 'administrativo')
-                    $('.tecnico-adm').show();
-                else
-                    $('.tecnico-adm').hide();
-
-                if(perfilType() == 'outro')
-                    $('.outro').show();
-                else
-                    $('.outro').hide();
-
-                
-                switch(perfilType()){
-                    case 'docente':
-                        perfilRadio = $('#perfil1');
-                    break;
-                    case 'aluno':
-                        perfilRadio = $('#perfil2');
-                    break;
-                    case 'administrativo':
-                    case 'tecnico':
-                        perfilRadio = $('#perfil3');
-                    break;
-                }
-
-                perfilRadio.prop('checked',true);
-                $('[name=tipo-perfil]').prop('disabled',true);
-                
-            }
-            
-            DOMchangesPerfil();
         });
     </script>
 </head>
@@ -173,8 +103,8 @@
             </div>
 
             <div class="col s9 m10 l10 text-center">
-                <h1>Meu cadastro</h1> 
-                <small>Bem vindo, Fulano José de Tal <a href="#sair" class="subcaption blue-text">sair</a> </small>         
+                <h1>Área restrita</h1> 
+                <small>Bem vindo, Fulano José de Tal <a href="index.html" class="subcaption blue-text">sair</a> </small>         
             </div>
         </div>
        </div>
@@ -183,7 +113,7 @@
            <ul class="tabs horizontal">
                <li class="tab"><a href="#meu-perfil">meu perfil</a></li>
                <li class="tab"><a href="#dados-de-acesso">dados de acesso</a></li>
-               <li class="tab"><a href="#calendario-eventos.html#meus-eventos">meus eventos</a></li>
+               <li class="tab go-out"><a href="calendario-eventos.html#meus-eventos">meus eventos</a></li>
             </ul>
         </nav>
        
