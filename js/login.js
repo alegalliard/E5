@@ -17,9 +17,6 @@ $( function() {
             window.location = 'usuario-logado.html';
             
         mess.show();
-        window.setTimeout(function(){
-         mess.fadeOut();   
-        },5000);
     });
     
     
@@ -30,6 +27,14 @@ $( function() {
         var parent = $(this).data('parent');
         $(target).show();
         $('#'+parent).hide();
+        $('.alert').text('');
+        $('.alert').hide();
+    });
+    
+    $('input').on('focus', function(){
+        mess.fadeOut();
+        mess.removeClass('success');
+        mess.addClass('error');
     });
     
     
@@ -49,11 +54,8 @@ $( function() {
             mess.text('Registro não encontrado');
         }
         mess.show();
+        mess.stop().delay(5000).fadeOut();
         
-        window.setTimeout(function(){
-         mess.fadeOut(); 
-            mess.toggleClass('error success');
-        },5000);
         
         e.preventDefault();
     });
