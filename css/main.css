@@ -1198,6 +1198,38 @@ th {
   background-image: url(../img/icones-projetos/novo-projeto.svg);
   background-repeat: no-repeat;
   background-position: center center; }
+.ic-edit-small {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(../img/icones-projetos/editar-small.svg);
+  background-repeat: no-repeat;
+  background-position: center center; }
+.ic-publish {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(../img/icones-projetos/publicar-projeto.svg);
+  background-repeat: no-repeat;
+  background-position: center center; }
+.ic-publish {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(../img/icones-projetos/publicar-projeto.svg);
+  background-repeat: no-repeat;
+  background-position: center center; }
+.ic-add-sun {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(../img/icones-projetos/novo-capitulo.svg);
+  background-repeat: no-repeat;
+  background-position: center center; }
 
 @font-face {
   font-family: "Circular";

@@ -235,4 +235,54 @@ $eventos-page-icons: [
             position:center center;
         }
     }
+    
+    &edit-small{
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        vertical-align: middle;
+        background:{
+            image: url(../img/icones-projetos/editar-small.svg);
+            repeat: no-repeat;
+            position:center center;
+        }
+    }
+    
+    &publish{
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        vertical-align: middle;
+        background:{
+            image: url(../img/icones-projetos/publicar-projeto.svg);
+            repeat: no-repeat;
+            position:center center;
+        }
+    }
+    
+    &publish{
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        vertical-align: middle;
+        background:{
+            image: url(../img/icones-projetos/publicar-projeto.svg);
+            repeat: no-repeat;
+            position:center center;
+        }
+    }
+    
+    &add-sun{
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        vertical-align: middle;
+        background:{
+            image: url(../img/icones-projetos/novo-capitulo.svg);
+            repeat: no-repeat;
+            position:center center;
+        }
+    }
+    
 }
+

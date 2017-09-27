@@ -110,7 +110,6 @@
         
         <nav class="tab-nav">
            <ul class="tabs horizontal">
-               <li class="tab"><a href="#meus-eventos" class="active">meus eventos</a></li>
                <li class="tab"><a href="#eventos-abertos">últimos cadastrados</a></li>
                <li class="tab"><a href="#docentes">docentes</a></li>
                <li class="tab"><a href="#meus-projetos">meus projetos</a></li>
@@ -134,7 +133,7 @@
             <input type="text" name="nome-projeto" id="nome-projeto">
         </div>
         <div class="col s12">
-           <label for="desc-projeto">Nome do projeto</label>
+           <label for="desc-projeto">Descrição</label>
            <textarea name="desc-projeto" id="desc-projeto" cols="30" rows="10"></textarea>
         </div>
         
@@ -142,7 +141,7 @@
            <label for="keywords-projeto">Palavras-chave</label>
            <input type="text" id="keywords-projeto" name="keywords-projeto">
            <ul class="tags" id="insert-keywords">
-<!--               <li class="tag"><a href=""></a><input type="hidden" name="keywods[]"></li>-->
+               <li class="tag"><a href="">gestão</a><input type="hidden" name="keywods[]"></li>
            </ul>
         </div>
         
@@ -170,7 +169,7 @@
                         <h4 class="chapter-title">quanto tempo gasta um professor pra que este trabalho ocorra?</h4 class="h5">
                         <div class="links-row">
                             <a href=""><i class="ic-"></i>excluir</a>
-                            <a href=""><i class="ic-"></i>editar</a>
+                            <a href="">editar <i class="ic-edit-small"></i></a>
                         </div>
                     </div>
                     
@@ -178,326 +177,32 @@
                 <hr class="half-separator">
                 </li>
             </ul>
+            <form action="">
+                <legend>Novo capítulo</legend>
+            </form>
             <div class="col s12">
-                <button type="button" class="chapter-new">novo capítulo</button>
+                <button type="button" class="btn-white chapter-new"><i class="ic-add-sun"></i> novo capítulo</button>
             </div>
         </div>
         
         <div class="col s12">
-            <button type="submit"><i class="ic-"></i> publicar projeto</button>
+            <button class="btn btn-line" type="submit"><i class="ic-publish"></i> publicar projeto</button>
         </div>
 
     </fieldset>
 </section>
     
     
-    
-    
-    
-   
-   
-    <section class="row" id="meus-eventos">
-        <h2 class="col s12">meus eventos</h2>
-        
-        <div class="side-events rel">
-           
-            <ul class="list-events shadow-on-med-and-down">
-                <li class="col s12 m12 l6">
-                <div class="white shadow-on-large">
-                    <a href="#">
-                        <div class="event-block">
-                            <small class="caption">curso</small>
-                            <h5 class="">Escola de Educação Física promove seminário de Ética</h5>
-                            <span class="caption"><i class="tiny-ics ic-clock"></i> 10-12 pm</span>
-                            <span class="subcaption"><i class="tiny-ics ic-arroba"></i> Espaço Benedito Miller de apoio</span>
-                        </div>
-                        <div class="day-month">
-                            <i class="ic-calendario">15</i>
-                            <span class="mouth caption">ago</span>
-                        </div>
-                        </a>
-                        <div class="row button-group">
-                            <div class="col s3">
-                                <button type="button" data-id="1">
-                                    <i class="ic-evento-exportar"></i>
-                                    <div class="caption">exportar</div>
-                                </button>
-                            </div>
-                            <div class="col s6">
-                                <button type="button" data-id="1">
-                                    <i class="ic-evento-imprimir"></i>
-                                    <div class="caption">imprimir infos.</div>
-                                </button>
-                            </div>
-                            <div class="col s3">
-                                <button type="button" class="error" data-id="1">
-                                    <i class="ic-evento-cancelar"></i>
-                                    <div class="caption error">cancelar</div>
-                                </button>
-                            </div>
-                        </div>
-                    </div>                
-                    <hr class="half-separator">
-                </li>
-                
-            </ul>
-            
-        </div>
-    </section>
-    
-    
-    
-    
-    
-    
-    
-    <section class="row" id="eventos-passados">
-        <h2 class="col s12">eventos passados</h2>
-        <div class="side-events rel">
-           
-            <ul class="list-events shadow-on-med-and-down">
-                <li class="col s12 m12 l6">
-                <a href="#" class="white shadow-on-large">
-                    <div class="event-block">
-                        <small class="caption">curso</small>
-                        <h5 class="">Escola promove seminário de Ética</h5>
-                        <span class="caption"><i class="tiny-ics ic-clock"></i> 10-12 pm</span>
-                        <span class="subcaption"><i class="tiny-ics ic-arroba"></i> Espaço Benedito Miller de apoio</span>
-                    </div>
-                    <div class="day-month">
-                        <i class="ic-calendario">15</i>
-                        <span class="mouth caption">ago</span>
-                    </div>
-                </a>
-                <hr class="half-separator">
-                </li>
-                
-            </ul>
-            
-        </div>        
-    </section>
-
   
-  
-  
+    
+    
+    
+    
   
   
    
    
    
-    <section class="row" id="eventos-abertos">
-    
-        <h2 class="col s12">evento a seguir</h2>
-
-        <article class="col s12 m8 l8 next-news">
-        <div class="shadow">
-            <figure>
-                <img src="img/ilustrative/hands.jpg" alt="">
-            </figure>
-            <div class="pad">
-                <header>
-                    <div class="day-month">
-                        <i class="ic-calendario">15</i>
-                        <span class="mouth caption">ago</span>
-                    </div>
-                    <div class="next-info">
-                        <h4 class="blue-text">Escola de Educação Física promove seminário de Ética</h4>
-                        <small class="subcaption">Público</small>
-                    </div>
-                </header>
-                
-                
-                <div class="tab-area">
-                    <ul class="tabs">
-                        <li class="tab col s4 m4 l12"><a href="#when"><i class="icon ic-clock"></i> </a></li>
-                        <li class="tab col s4 m4 l12"><a href="#where"><i class="icon ic-map"></i></a></li>
-                        <li class="tab col s4 m4 l12"><a href="#who"><i class="icon ic-circle-user"></i></a></li>
-                    </ul>
-                
-
-                    <div class="desc-block">             
-                        <p class="desc" id="when">
-                            <time class="caption">sexta-feira, 18 de agosto às 10 - 12 p.m.</time>
-                            <small class="subcaption">daqui 5 dias</small>
-                        </p>
-
-                        <p class="desc" id="where">
-                            <b class="caption">auditório Mal. Benedito Miller</b>
-                            <small class="subcaption">rua das Acácias, n 855 <a href="" class="sm-link">mostrar no mapa</a></small>
-                        </p>
-
-                        <p class="desc" id="who">
-                            <b class="caption">Lucille Delgado</b>
-                            <small class="subcaption">professora doutora em comortamento pela UNICAMP</small>
-                        </p>           
-                    </div>
-                </div>
-                <hr>
-
-                <div class="detalhes-evento">
-                    <p>O evente é aberto a todos os interessadasos e não há necessidaded de inscrição. As atividades acontecem no Auditório José Geraldo Massucato - Bloco B da EEFE - USP. Haverá envio de certificado de participação via e-mail aos ouvintes que permanecerem durante todo o evento. Mais informações no site  </p>
-                    <p>Etiam placerat turpis nulla, ac venenatis magna iaculis ut. Phasellus massa ex, imperdiet a lectus in, commodo varius tortor. Fusce dapibus dolor neque, eget condimentum diam tincidunt vel. Fusce eu enim egestas, consectetur lectus nec, vehicula enim. Fusce feugiat dolor pulvinar urna faucibus, id porttitor magna dignissim. Mauris magna neque, dapibus ac arcu a, gravida faucibus massa. Ut ut vestibulum diam, non feugiat neque. Ut elementum lacus at leo elementum, id interdum lacus molestie. Etiam metus eros, dictum et luctus vel, posuere vitae lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam ac lectus nec lorem pellentesque porttitor eget non magna. Cras cursus nec enim sed lacinia. Aliquam erat volutpat. Etiam at eros pretium, vestibulum tellus eu, tincidunt arcu.</p>
-                    <p>Duis gravida, tortor vel imperdiet efficitur, nibh augue auctor ligula, at mattis eros metus ultrices magna. Donec facilisis nisl tortor, vel venenatis tortor laoreet eu. Ut aliquam dui at nisi cursus tristique. Proin et dui elementum, efficitur purus in, congue lectus. Sed sagittis dapibus rutrum. Morbi eu bibendum dui. Etiam lacinia magna in ex rutrum facilisis. In ornare dolor vitae nunc vulputate rutrum. Mauris rhoncus libero ut orci porttitor lobortis. Vivamus sit amet iaculis erat. Proin ac tincidunt diam. Fusce vel vehicula velit, id elementum elit. Donec consectetur, nulla quis condimentum tempus, dui ipsum iaculis lacus, eget eleifend eros quam a augue. Nulla porttitor sed mauris eu tempus.</p>
-                    <p>Nunc ut orci sapien. In ut auctor lorem, eget faucibus diam. In ac fermentum velit. Phasellus eros sapien, sollicitudin at semper vel, convallis sed ipsum. Curabitur eu dignissim odio. Aenean mollis, turpis ac tempus hendrerit, risus mauris rutrum mauris, in fermentum lectus diam vel est. Sed consequat augue vel est tempus, gravida gravida dolor tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean semper non lorem et eleifend. Etiam sit amet dui commodo, vestibulum dolor at, interdum urna.</p>
-                    
-                </div>
-                <small class="subcaption"><a href="#" class="sm-link ver-mais">ver mais</a></small>
-                
-                
-                
-                
-                <ul class="result-list row">
-                <li class="col s12">
-                    <div class="card">
-                        <div class="side-icon">
-                            <i class="ic-documentos-azul"></i>
-                            <span class="type">documento</span>
-                        </div>
-                        <div class="main-desc">
-                            <a href="#" class="marine-text m-t-10">Moon Gazing</a>
-                            <time datetime="2016-09-18T19:00" class="caption">Adicionado 18 set 2016</time>
-                            <small class="filesize">311 kb</small>
-                        <div class="row m-b-0">
-                            <a href="#modal-login" class="go-login modal-trigger">
-                             download <i class="ic-tiny"></i>
-                            </a>
-                            <a href="#modal-detalhes" class="go-details modal-trigger modal-file">detalhes</a>
-                        </div>
-
-                        </div>
-                    </div>
-                </li>
-
-                <li class="col s12">
-                    <div class="card">
-                        <div class="side-icon">
-                            <i class="ic-video-azul"></i>
-                            <span class="type">video</span>
-                        </div>
-                        <div class="main-desc">
-                            <a href="#" class="marine-text m-t-10">Moon Gazing</a>
-                            <time datetime="2016-09-18T19:00" class="caption">Adicionado 18 set 2016</time>
-                            <small class="filesize">311 kb</small>
-                        <div class="row m-b-0">
-                            <a href="#modal-login" class="go-login modal-trigger">
-                             download <i class="ic-tiny"></i>
-                            </a>
-                            <a href="#modal-detalhes" class="go-details modal-trigger modal-file">detalhes</a>
-                        </div>
-
-                        </div>
-                    </div>
-                </li>
-                </ul>
-                
-                
-                
-                <button type="button" class="btn-line">
-                    <span class="ic-sun"><i class="ic-login"></i></span>
-                    faça login para participar
-                </button>
-                
-                
-            </div>
-        </div>
-    </article>
-       
-       
-       
-       
-       
-        <div class="col s12 m4 l4 side-events rel">
-          <div class="shadow">
-           <div id="datepicker"></div>
-           
-           <div class="col s4 caption">
-               <i class="ic-filtros"></i> Filtros
-           </div>
-           <div class="col s8 text-right caption">
-               listando apenas as opções selecionadas
-           </div>
-           
-           <div class="col s12">
-              <h4 class="title-label">temas</h4>
-               <ul class="filter-tags">
-                   <li class="filter-tag"><a href="">sexualidade</a></li>
-                   <li class="filter-tag"><a href="" class="active">ética</a></li>
-                   <li class="filter-tag"><a href="">livre docência</a></li>
-                   <li class="filter-tag"><a href="">metodologia</a></li>
-                   <li class="filter-tag"><a href="">gestão</a></li>
-               </ul>
-           </div>
-           
-           
-           <fieldset class="col s12">
-               <h4 class="title-label">período</h4>
-               <div class="col s6">
-                  <label for="de-data">De:</label>
-                   <input type="text" name="de-data" id="de-data" class="line-input datepicker">
-               </div>
-               <div class="col s6">
-                  <label for="ate-data">Até:</label>
-                   <input type="text" name="ate-data" id="ate-data" class="line-input datepicker">
-               </div>
-          
-               <div class="col s12 m-t-20">
-                   <label for="organizador" class="title-label">organizador</label>
-                   <select name="organizador" id="organizador" class="select-center line-input">
-                      <option value="">Dilmês ipsum</option>
-                       <option value="">Primeiro eu queria</option>
-                       <option value="">Cumprimentar os internautas</option>
-                       <option value="">Oi Internautas!</option>
-                       <option value="">Depois dizer que o meio ambiente </option>
-                       <option value="">é sem dúvida nenhuma uma ameaça</option>
-                       <option value="">ao desenvolvimento sustentável.</option>
-                   </select>
-               </div>
-           </fieldset>
-           
-            <ul class="list-events">
-            <li>
-            <a href="#">
-                <div class="event-block">
-                    <small class="caption">curso</small>
-                    <h5 class="">Escola de Educação Física promove seminário de Ética</h5>
-                    <span class="caption"><i class="tiny-ics ic-clock"></i> 10-12 pm</span>
-                    <span class="subcaption"><i class="tiny-ics ic-arroba"></i> Espaço Benedito Miller de apoio</span>
-                </div>
-                <div class="day-month">
-                    <i class="ic-calendario">15</i>
-                    <span class="mouth caption">ago</span>
-                </div>
-            </a>
-            <hr class="half-separator">
-            </li>
-            <li>
-            <a href="#">
-                <div class="event-block">
-                    <small class="caption">curso</small>
-                    <h5 class="">Escola de Educação Física promove seminário de Ética</h5>
-                    <span class="caption"><i class="tiny-ics ic-clock"></i> 10-12 pm</span>
-                    <span class="subcaption"><i class="tiny-ics ic-arroba"></i> Espaço Benedito Miller de apoio</span>
-                </div>
-                <div class="day-month">
-                    <i class="ic-calendario">15</i>
-                    <span class="mouth caption">ago</span>
-                </div>
-            </a>
-            <hr class="half-separator">
-            </li>                
-            <li class="row">
-                <div class="col s12 text-center">
-                    <button type="button" class="btn-white carregar-mais">
-                        carregar mais
-                    </button>
-                </div>
-            </li>
-                
-            </ul>
-            
-        </div>
-        </div>
-    </section>
 </div>
 </main>
    
