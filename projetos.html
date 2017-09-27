@@ -21,6 +21,7 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/materialize/js/bin/materialize.min.js"></script>
     <script src="vendor/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="js/projetos.js"></script>
 
     <script>
         $( function() {
@@ -138,11 +139,21 @@
         </div>
         
         <div class="col s5">
-           <label for="keywords-projeto">Palavras-chave</label>
-           <input type="text" id="keywords-projeto" name="keywords-projeto">
-           <ul class="tags" id="insert-keywords">
-               <li class="tag"><a href="">gestão</a><input type="hidden" name="keywods[]"></li>
-           </ul>
+           <div class="row">
+               <label for="keywords-projeto">Palavras-chave</label>
+                <div class="col s10">
+                    <input type="text" id="keywords-projeto" name="keywords-projeto">
+                </div>
+                <div class="col s2">
+                    <button type="button" class="btn-naked add-tag"><i class="ic-add-sun"></i></button>
+                </div>
+           </div>
+            
+            <div class="row">
+                <ul class="tags" id="insert-keywords">
+    <!--                <li class="tag added"><a href="">gestão</a><input type="hidden" name="keywods[]"></li>-->
+                </ul>
+            </div>
         </div>
         
         <div class="col s6 offset-s1 rel">
@@ -159,33 +170,36 @@
         
         <div class="col s12">
             <h3 class="h4 blue-text">capítulos</h3>
-            <ul class="list-chapters shadow-on-med-and-down">
+            <form action="" id="new-chapter">
+                <legend>Novo capítulo</legend>
+                <label for="capitulo">Título do capítulo</label>
+                <input type="text" name="capitulo" id="capitulo">
+            </form>
+            <ul class="list-chapters shadow-on-med-and-down" style="display: none">
+<!--
                 <li class="col s12 m12 l6">
                 <div class="white shadow-on-large">
                     <div class="chapter-index">
                         01
                     </div>
                     <div class="chapter-block">
-                        <h4 class="chapter-title">quanto tempo gasta um professor pra que este trabalho ocorra?</h4 class="h5">
+                        <h4 class="chapter-title">quanto tempo gasta um professor pra que este trabalho ocorra?</h4>
                         <div class="links-row">
                             <a href=""><i class="ic-"></i>excluir</a>
                             <a href="">editar <i class="ic-edit-small"></i></a>
                         </div>
                     </div>
-                    
                 </div>
-                <hr class="half-separator">
                 </li>
+-->
             </ul>
-            <form action="">
-                <legend>Novo capítulo</legend>
-            </form>
+            
             <div class="col s12">
-                <button type="button" class="btn-white chapter-new"><i class="ic-add-sun"></i> novo capítulo</button>
+                <button type="button" class="btn-white add-chapter"><i class="ic-add-sun"></i> novo capítulo</button>
             </div>
         </div>
         
-        <div class="col s12">
+        <div class="col s12 m-t-120">
             <button class="btn btn-line" type="submit"><i class="ic-publish"></i> publicar projeto</button>
         </div>
 

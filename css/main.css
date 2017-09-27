@@ -973,6 +973,11 @@ th {
   .btn-line i {
     margin-right: 20px; }
 
+.btn-naked {
+  background: transparent;
+  border: 0;
+  padding: 1.0rem; }
+
 .btn-white {
   color: #0861FF;
   border: 0;
