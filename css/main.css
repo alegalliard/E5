@@ -1325,6 +1325,11 @@ p, .p {
   font-size: 16px;
   line-height: 24px; }
 
+.mini-p {
+  color: #797979;
+  font-size: 0.8rem;
+  padding: 5px 0; }
+
 .title-label {
   color: #001B4B;
   font-size: 0.8rem;
