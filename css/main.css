@@ -1377,6 +1377,10 @@ p, .p {
   font-family: "Circular";
   margin-bottom: 0; }
 
+.grey-text {
+  color: #797979 !important;
+  font-family: "Circular"; }
+
 .teal-subtitle {
   color: #00CACD;
   position: relative;
@@ -1516,8 +1520,10 @@ p, .p {
 .file-list a {
   display: inline !important;
   font-style: italic; }
-.file-list .side-icon {
+.file-list .side-icon, .file-list .day-month {
   vertical-align: top !important; }
+.file-list .publicacao-box {
+  width: 100% !important; }
 
 .file-tags {
   padding: 0;

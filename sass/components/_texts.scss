@@ -93,6 +93,10 @@ p, .p{
     margin-bottom: 0;
 }
 
+.grey-text{
+    color:$cinza!important;
+    font-family: "Circular";
+}
 
 .teal-subtitle{
     color: $azulClaro;
@@ -275,8 +279,12 @@ p, .p{
         display: inline!important;
         font-style: italic;
     }
-    .side-icon{
+    .side-icon, .day-month{
         vertical-align: top!important;
+    }
+    
+    .publicacao-box{
+        width:100%!important
     }
 }
 .file-tags{
