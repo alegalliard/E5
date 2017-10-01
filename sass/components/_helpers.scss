@@ -153,7 +153,14 @@
 
 
 
-
+.grey-hr{
+    border: 0;
+    height: 2px;
+    background: #eee;
+    width: 100%;
+    margin-top: 1.0rem;
+//    border-bottom:1px #ddd solid;
+}
 .half-separator{
     border: 0;
     position: relative;

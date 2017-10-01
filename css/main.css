@@ -1235,6 +1235,14 @@ th {
   background-image: url(../img/icones-projetos/novo-capitulo.svg);
   background-repeat: no-repeat;
   background-position: center center; }
+.ic-tiny-download {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  vertical-align: bottom;
+  background-image: url(../img/icones-mini/download.svg);
+  background-repeat: no-repeat;
+  background-position: center center; }
 
 @font-face {
   font-family: "Circular";
@@ -1501,6 +1509,39 @@ p, .p {
       color: #001B4B;
       background-color: #ddd; }
 
+.file-list .event-name {
+  font-size: 0.8rem;
+  line-height: 1.1rem;
+  margin-bottom: 1rem; }
+.file-list a {
+  display: inline !important;
+  font-style: italic; }
+.file-list .side-icon {
+  vertical-align: top !important; }
+
+.file-tags {
+  padding: 0;
+  margin: 0 0 .7rem;
+  text-align: left;
+  clear: both;
+  float: left;
+  width: 100%; }
+  .file-tags .file-tag {
+    margin: 0 .5rem 1rem 0;
+    display: inline-block; }
+  .file-tags i {
+    vertical-align: top; }
+  .file-tags a {
+    padding: 8px 12px;
+    display: block;
+    color: #0861FF;
+    background-color: #eee;
+    background-size: 40px;
+    font-size: 13px; }
+    .file-tags a:hover, .file-tags a.active {
+      color: #001B4B;
+      background-color: #ddd; }
+
 .m-r-0 {
   margin-right: 0 !important; }
 
@@ -1702,6 +1743,13 @@ p, .p {
       bottom: -10px;
       left: -10px;
       z-index: -5; } }
+.grey-hr {
+  border: 0;
+  height: 2px;
+  background: #eee;
+  width: 100%;
+  margin-top: 1.0rem; }
+
 .half-separator {
   border: 0;
   position: relative;

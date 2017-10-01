@@ -284,5 +284,16 @@ $eventos-page-icons: [
         }
     }
     
+    &tiny-download{
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        vertical-align: bottom;
+        background:{
+            image: url(../img/icones-mini/download.svg);
+            repeat: no-repeat;
+            position:center center;
+        }
+    }
 }
 
