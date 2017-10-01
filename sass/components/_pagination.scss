@@ -1,0 +1,33 @@
+.pagination{
+    float: left;
+    clear: both;
+    width: 100%;
+    margin: 1rem;
+    text-align: center;
+    ul{
+        padding: 0;
+        list-style: none;
+        width: auto;
+        display: inline-block;
+    }
+    
+    li{
+        display: inline-block;
+        margin: 0;
+    }
+    
+    a{
+        padding: .7rem 1rem;
+        background: #fff;
+        display: block;
+        color: $azulEscuro;
+        background-image: $patternAzul;
+        background-size: 40px;
+        border: transparent 3px solid;
+        
+        &:hover, &.active{
+            border: $amarelo 3px solid;
+            background:#fff;
+        }
+    }    
+}

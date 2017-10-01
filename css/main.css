@@ -3016,6 +3016,32 @@ textarea {
   background-color: #FFCF15;
   -webkit-border-radius: 1ex; }
 
+.pagination {
+  float: left;
+  clear: both;
+  width: 100%;
+  margin: 1rem;
+  text-align: center; }
+  .pagination ul {
+    padding: 0;
+    list-style: none;
+    width: auto;
+    display: inline-block; }
+  .pagination li {
+    display: inline-block;
+    margin: 0; }
+  .pagination a {
+    padding: .7rem 1rem;
+    background: #fff;
+    display: block;
+    color: #001B4B;
+    background-image: url(../img/pattern-azul.svg);
+    background-size: 40px;
+    border: transparent 3px solid; }
+    .pagination a:hover, .pagination a.active {
+      border: #FFCF15 3px solid;
+      background: #fff; }
+
 #footer {
   background: #fff;
   padding: 15px 0 0;
