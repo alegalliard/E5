@@ -29,8 +29,6 @@
        text-overflow: ellipsis;
     }
     .news-pic{
-//        width: 210px;
-//        height: 210px;
         background: #eee;
         margin: 0 auto;
         cursor: pointer;
@@ -38,6 +36,20 @@
     
     .h3-title{
         height:72px;
+    }
+}
+
+.news-in-block{
+    overflow:auto!important;
+
+    ul{
+        width: auto!important;
+    }
+    .news-box{
+        padding-right: 2%;
+        width: 30%!important;
+        margin-right: 0;
+        margin-bottom: 2.0rem
     }
 }
 
