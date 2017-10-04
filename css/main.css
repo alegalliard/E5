@@ -1248,39 +1248,39 @@ th {
   font-family: "Circular";
   font-style: normal;
   font-weight: 700;
-  src: url("../css/fonts/Circular/CircularStd-Bold.otf?") format("opentype"); }
+  src: url("../fonts/Circular/CircularStd-Bold.otf?") format("opentype"); }
 @font-face {
   font-family: "Circular";
   font-style: italic;
   font-weight: 700;
-  src: url("../css/fonts/Circular/CircularStd-BoldItalic.otf?") format("opentype"); }
+  src: url("../fonts/Circular/CircularStd-BoldItalic.otf?") format("opentype"); }
 @font-face {
   font-family: "Circular";
   font-style: normal;
   font-weight: 500;
-  src: url("../css/fonts/Circular/CircularStd-Book.otf?") format("opentype"); }
+  src: url("../fonts/Circular/CircularStd-Book.otf?") format("opentype"); }
 @font-face {
   font-family: "Circular";
   font-style: italic;
   font-weight: 500;
-  src: url("../css/fonts/Circular/CircularStd-BookItalic.otf?") format("opentype"); }
+  src: url("../fonts/Circular/CircularStd-BookItalic.otf?") format("opentype"); }
 @font-face {
   font-family: "Lora";
   font-style: normal;
   font-weight: 700;
-  src: url("../css/fonts/Circular/Lora-Bold.ttf") format("truetype"); }
+  src: url("../fonts/Circular/Lora-Bold.ttf") format("truetype"); }
 @font-face {
   font-family: "Lora";
   font-style: italic;
   font-weight: 700;
-  src: url("../css/fonts/Circular/Lora-BoldItalic.ttf") format("truetype"); }
+  src: url("../fonts/Circular/Lora-BoldItalic.ttf") format("truetype"); }
 @font-face {
   font-family: "Lora";
   font-style: italic;
-  src: url("../css/fonts/Circular/Lora-Italic.ttf") format("truetype"); }
+  src: url("../fonts/Circular/Lora-Italic.ttf") format("truetype"); }
 @font-face {
   font-family: "Lora";
-  src: url("../css/fonts/Circular/Lora-Regular.ttf") format("truetype"); }
+  src: url("../fonts/Circular/Lora-Regular.ttf") format("truetype"); }
 html, body, h2 {
   font-family: "Circular"; }
 
@@ -1351,6 +1351,9 @@ p, .p {
   line-height: 38px;
   font-family: "Circular";
   font-weight: 500; }
+
+.teal-text {
+  color: #00CACD !important; }
 
 .blue-text {
   color: #0861FF !important; }
@@ -2451,13 +2454,9 @@ form p:last-child {
   margin-bottom: 0; }
 
 /* Remove default checkbox */
-[type="checkbox"]:not(:checked),
-[type="checkbox"]:checked {
-  position: absolute;
-  opacity: 0;
-  pointer-events: none; }
-
 [type="checkbox"] {
+  float: left;
+  margin-right: 0.5rem;
   /* checkbox aspect */ }
   [type="checkbox"] + label {
     position: relative;
@@ -3124,6 +3123,16 @@ textarea {
     cursor: pointer; }
   .news .h3-title {
     height: 72px; }
+
+.news-in-block {
+  overflow: auto !important; }
+  .news-in-block ul {
+    width: auto !important; }
+  .news-in-block .news-box {
+    padding-right: 2%;
+    width: 30% !important;
+    margin-right: 0;
+    margin-bottom: 2rem; }
 
 @media only screen and (max-width: 992px) {
   .big-news .tags {
