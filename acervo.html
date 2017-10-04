@@ -203,7 +203,6 @@
        
        <form class="col s12 m4 l4 side-events rel">
           <div class="shadow left white">
-           <div id="datepicker"></div>
            
            <div class="col s4 caption m-t-20">
                <i class="ic-filtros"></i> Filtros
@@ -212,18 +211,73 @@
                listando apenas as opções selecionadas
            </div>
            
-           <div class="col s12 m-t-10 rel">
-                <label for="nome-evento">Por nome do evento:</label>
-               <select  id="nome-evento" name="nome-evento" class="select-center line-input">
-                  <option value="">Dilmês ipsum</option>
-                   <option value="">Primeiro eu queria</option>
-                   <option value="">Cumprimentar os internautas</option>
-                   <option value="">Oi Internautas!</option>
-                   <option value="">Depois dizer que o meio ambiente </option>
-                   <option value="">é sem dúvida nenhuma uma ameaça</option>
-                   <option value="">ao desenvolvimento sustentável.</option>
-               </select>
+           <fieldset class="col s12">
+               <h4 class="title-label">período</h4>
+               <div class="col s6">
+                  <label for="de-data">De:</label>
+                   <input type="text" name="de-data" id="de-data" class="line-input datepicker">
+               </div>
+               <div class="col s6">
+                  <label for="ate-data">Até:</label>
+                   <input type="text" name="ate-data" id="ate-data" class="line-input datepicker">
+               </div>
+           </fieldset>
+           
+           
+           <div class="col s12">
+              <h4 class="title-label">Por nome do evento:</h4>
+              <div class="col s12">
+                <label for="dilmes">Dilmês ipsum</label>
+                <input type="checkbox" name="nome-evento[]" id="dilmes">
+              </div>  
+              <div class="col s12">
+                <label for="primeiro">Primeiro eu queria</label>
+                <input type="checkbox" name="nome-evento[]" id="primeiro">
+              </div>  
+              <div class="col s12">
+                <label for="cump">Cumprimentar os internautas</label>
+                <input type="checkbox" name="nome-evento[]" id="cump">
+              </div>  
+              <div class="col s12">
+                <label for="oi">Oi Internautas!</label>
+                <input type="checkbox" name="nome-evento[]" id="oi">
+              </div>
+              <div class="col s12">
+                <label for="deps">Depois dizer que o meio ambiente</label>
+                <input type="checkbox" name="nome-evento[]" id="deps">
+              </div>
+              <div class="col s12">
+                <label for="sem">é sem dúvida nenhuma uma ameaça</label>
+                <input type="checkbox" name="nome-evento[]" id="sem">
+              </div>                              
            </div>
+           
+           
+           
+           <div class="col s12">
+              <h4 class="title-label">Tipos de arquivo</h4>
+              <div class="col s12 m6 l4">
+                <label for="pdf">PDF</label>
+                <input type="checkbox" name="tipos-arquivo[]" id="pdf">
+              </div>
+               <div class="col s12 m6 l4">
+                   <label for="word">Word</label>
+                   <input type="checkbox" name="tipos-arquivo[]" id="word">
+               </div>
+               <div class="col s12 m6 l4">
+                   <label for="excel">Excel</label>
+                   <input type="checkbox" name="tipos-arquivo[]" id="excel">
+               </div>
+                <div class="col s12 m6 l4">
+                    <label for="mp3">MP3</label>
+                   <input type="checkbox" name="tipos-arquivo[]" id="mp3">
+                </div>
+                <div class="col s12 m6 l4">
+                    <label for="avi">AVI</label>
+                   <input type="checkbox" name="tipos-arquivo[]" id="avi">
+                </div>                              
+           </div>
+           
         
            
            <div class="col s12">
@@ -238,17 +292,7 @@
            </div>
            
            
-           <fieldset class="col s12">
-               <h4 class="title-label">período</h4>
-               <div class="col s6">
-                  <label for="de-data">De:</label>
-                   <input type="text" name="de-data" id="de-data" class="line-input datepicker">
-               </div>
-               <div class="col s6">
-                  <label for="ate-data">Até:</label>
-                   <input type="text" name="ate-data" id="ate-data" class="line-input datepicker">
-               </div>
-           </fieldset>
+           
            
            <button type="button" class="btn-white carregar-mais">filtrar</button>
         </div>

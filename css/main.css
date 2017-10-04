@@ -2451,13 +2451,9 @@ form p:last-child {
   margin-bottom: 0; }
 
 /* Remove default checkbox */
-[type="checkbox"]:not(:checked),
-[type="checkbox"]:checked {
-  position: absolute;
-  opacity: 0;
-  pointer-events: none; }
-
 [type="checkbox"] {
+  float: left;
+  margin-right: 0.5rem;
   /* checkbox aspect */ }
   [type="checkbox"] + label {
     position: relative;
