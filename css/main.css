@@ -1352,6 +1352,9 @@ p, .p {
   font-family: "Circular";
   font-weight: 500; }
 
+.teal-text {
+  color: #00CACD !important; }
+
 .blue-text {
   color: #0861FF !important; }
 
