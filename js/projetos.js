@@ -48,4 +48,11 @@ $( function() {
         
         
     });
+    
+    $('.switch-projeto').click(function(e){
+        $('#voltar-projetos, #abre-projeto, #meus-projetos, #novo-projeto').toggle();
+        
+        e.preventDefault();
+    });
+    
 });
