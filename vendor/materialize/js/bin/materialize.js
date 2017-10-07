@@ -4746,7 +4746,7 @@ if (Vel) {
 
                     var autocompleteOption = $('<li></li>');
                     if (!!data[key]) {
-                      autocompleteOption.append('<img src="../' + data[key] + '" class="right circle"><span>' + key + '</span>');
+                      autocompleteOption.append('<img src="' + data[key] + '" class="right circle"><span>' + key + '</span>');
                     } else {
                       autocompleteOption.append('<span>' + key + '</span>');
                     }
@@ -4877,7 +4877,7 @@ if (Vel) {
           if (!!classes) classString = ' class="' + classes + '"';
 
           // Check for multiple type.
-          options.append($('<li class="' + disabledClass + optgroupClass + '"><img alt="" src="../' + icon_url + '"' + classString + '><span>' + multipleCheckbox + option.html() + '</span></li>'));
+          options.append($('<li class="' + disabledClass + optgroupClass + '"><img alt="" src="' + icon_url + '"' + classString + '><span>' + multipleCheckbox + option.html() + '</span></li>'));
           return true;
         }
 

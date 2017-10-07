@@ -948,6 +948,10 @@ th {
       height: 100%;
       padding: 15px 20px; }
 
+button {
+  background-color: transparent;
+  border: 0; }
+
 .btn-line {
   border: 2px solid #001B4B;
   color: #001B4B;
@@ -1248,39 +1252,39 @@ th {
   font-family: "Circular";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/Circular/CircularStd-Bold.otf?") format("opentype"); }
+  src: url("../css/fonts/Circular/CircularStd-Bold.otf?") format("opentype"); }
 @font-face {
   font-family: "Circular";
   font-style: italic;
   font-weight: 700;
-  src: url("../fonts/Circular/CircularStd-BoldItalic.otf?") format("opentype"); }
+  src: url("../css/fonts/Circular/CircularStd-BoldItalic.otf?") format("opentype"); }
 @font-face {
   font-family: "Circular";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/Circular/CircularStd-Book.otf?") format("opentype"); }
+  src: url("../css/fonts/Circular/CircularStd-Book.otf?") format("opentype"); }
 @font-face {
   font-family: "Circular";
   font-style: italic;
   font-weight: 500;
-  src: url("../fonts/Circular/CircularStd-BookItalic.otf?") format("opentype"); }
+  src: url("../css/fonts/Circular/CircularStd-BookItalic.otf?") format("opentype"); }
 @font-face {
   font-family: "Lora";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/Circular/Lora-Bold.ttf") format("truetype"); }
+  src: url("../css/fonts/Circular/Lora-Bold.ttf") format("truetype"); }
 @font-face {
   font-family: "Lora";
   font-style: italic;
   font-weight: 700;
-  src: url("../fonts/Circular/Lora-BoldItalic.ttf") format("truetype"); }
+  src: url("../css/fonts/Circular/Lora-BoldItalic.ttf") format("truetype"); }
 @font-face {
   font-family: "Lora";
   font-style: italic;
-  src: url("../fonts/Circular/Lora-Italic.ttf") format("truetype"); }
+  src: url("../css/fonts/Circular/Lora-Italic.ttf") format("truetype"); }
 @font-face {
   font-family: "Lora";
-  src: url("../fonts/Circular/Lora-Regular.ttf") format("truetype"); }
+  src: url("../css/fonts/Circular/Lora-Regular.ttf") format("truetype"); }
 html, body, h2 {
   font-family: "Circular"; }
 
@@ -3634,6 +3638,36 @@ textarea {
   .list-chapters .chapter-title {
     margin: 0.5rem 0 1.0rem;
     font-size: 1.0rem; }
+
+.chapter-list {
+  list-style: none;
+  padding: 0;
+  float: left;
+  clear: both;
+  background-color: #fff; }
+  .chapter-list li {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+    float: left;
+    border-bottom: #001B4B 2px solid; }
+  .chapter-list a, .chapter-list .active {
+    padding: 1rem 1.0rem;
+    background-color: #fff;
+    display: block;
+    width: 70%;
+    float: left; }
+    .chapter-list a:hover, .chapter-list .active:hover {
+      background-color: #001B4B;
+      color: #fff; }
+  .chapter-list button {
+    width: 10%;
+    height: 100%;
+    float: right;
+    padding: 1.0rem; }
+    .chapter-list button:hover {
+      background: #FFCF15; }
 
 img {
   max-width: 100%; }
