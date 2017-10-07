@@ -1,0 +1,189 @@
+<header class="row m-b-0">
+	<div class="container">
+		<div class="p-rl-10">
+			<div class="col s12 header ilustra--eventos">
+				<div class="col s2 m1 l1">
+					<a href="index.html" id="mini-logo"><img src="../img/logo-horizontal.svg" alt="Espaço de Estudos e Experiências em Engenharia"></a>
+				</div>
+				<div class="col s9 m10 l10 text-center">
+					<h1>Área restrita</h1> 
+					<small>Bem vindo, {NOME} <a href="{LINK_SAIR}" class="subcaption blue-text">sair</a> </small>
+				</div>
+			</div>
+		</div>
+		<nav class="tab-nav">
+			<ul class="tabs horizontal">
+				<li class="tab"><a href="#meu-perfil" id="link-meu-perfil">meu perfil</a></li>
+				<li class="tab"><a href="#dados-de-acesso" id="link-dados-de-acesso">dados de acesso</a></li>
+				<li class="tab"><a href="#meus-eventos" id="link-meus-eventos">meus eventos</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+{RETORNO}
+<main class="main" class="row">
+	<div class="container">
+		<section class="col s12" id="meu-perfil">  
+			<form action="{LINK_SALVAR}" class="row" name="form-meu-perfil" method="POST">
+				<input type="hidden" name="tipo_usuario" id="tipo_usuario" value="{TIPO_USUARIO}">
+				<fieldset class="p-rl-05">
+					<legend id="titulo-usuario">Dados de cadastro</legend>
+					<div class="col s12 m10 l8 offset-m1 offset-l2">
+						<div class="col s12">
+							<legend>Eu sou:</legend>
+							<div class="col s3">
+								<input type="radio" value="professor_ita" name="tipo-perfil" id="perfil1" class="browser-default" />
+								<label for="perfil1">Docente do ITA</label>
+							</div>
+							<div class="col s3">
+								<input type="radio" value="aluno_ita" name="tipo-perfil" id="perfil2" class="browser-default" />
+								<label for="perfil2">Aluno do ITA</label>
+							</div>
+							<div class="col s4">
+								<input type="radio" value="servidor_ita" name="tipo-perfil" id="perfil3" class="browser-default" />
+								<label for="perfil3">Servidor técnico-administrativo do ITA</label>
+							</div>
+							<div class="col s2">
+								<input type="radio" value="outros" name="tipo-perfil" id="perfil4" class="browser-default" />
+								<label for="perfil4">Outro</label>
+							</div>
+						</div>
+						<div class="col s12">
+							<label for="nome" id="campoNome">Nome completo</label>
+							<input id="nome" value="{NOME}" name="nome" maxlength="255" type="text" />
+						</div>
+						<div class="col s12">
+							<label for="mail_secundario">E-mail alternativo (opcional):</label>
+							<input id="mail_secundario" name="mail_secundario" value="{MAIL_SECUNDARIO}" maxlength="100" type="text" />
+						</div>
+						<div class="col s3">
+							<label for="telefone">Telefone para contato:</label>
+							<input id="telefone" name="telefone" value="{TELEFONE}" maxlength="20" type="text" />
+						</div>
+						<div class="col s1">
+							<label for="ramal">Ramal:</label>
+							<input id="ramal" name="ramal" value="{RAMAL}" maxlength="10" type="text" />
+						</div>
+						<div class="col s8">
+							<label for="link_curriculo">Link para curriculo Lattes <span class="outro">(opcional):</span></label>
+							<input type="text" id="link_curriculo" name="link_curriculo" value="{LINK_CURRICULO}">
+						</div>
+					</div>
+					<div class="col s12 m10 l8 offset-m1 offset-l2">
+						<div class="row outro">
+							<div class="col s6">
+								<label for="cargo">Função/Cargo:</label>
+								<input type="text" id="cargo" name="cargo" value="{CARGO}">
+							</div>
+							<div class="col s6">
+								<label for="instituicao">Instituição:</label>
+								<input type="text" id="instituicao" name="instituicao" value="{INSTITUICAO}">
+							</div>
+							<div class="col s6">
+								<label for="localidade">Cidade/Estado da Instituição:</label>
+								<input type="text" id="localidade" name="localidade" value="{LOCALIDADE}">
+							</div>
+						</div>
+						<div class="row do-ita">
+							<legend>Divisão:</legend>
+							<!-- INICIO BLOCO_DIVISAO_OPTS -->
+								<!-- INICIO BLOCO_DIVISAO_OPTS_GRUPO_ABRE -->
+							<div class="{OPT_GRUPO} col s6">
+								<!-- FIM BLOCO_DIVISAO_OPTS_GRUPO_ABRE -->
+								<p class="m-b-20">
+									<input name="divisao" type="radio" id="divisao_{OPT_VALOR}" value="{OPT_VALOR}" <!-- INICIO BLOCO_DIVISAO_OPTS_OK --> checked="checked" <!-- FIM BLOCO_DIVISAO_OPTS_OK --> />
+									<label for="divisao_{OPT_VALOR}">{OPT_ROTULO}</label>
+								</p>
+								<!-- INICIO BLOCO_DIVISAO_OPTS_GRUPO_FECHA -->
+							</div>
+								<!-- FIM BLOCO_DIVISAO_OPTS_GRUPO_FECHA -->
+							<!-- FIM BLOCO_DIVISAO_OPTS -->
+						</div>
+					</div>
+				</fieldset>
+				<div class="col s4 offset-s4">
+					<button type="submit" class="btn-line">Alterar</button>
+				</div>
+			</form>
+		</section>
+		<section id="dados-de-acesso">
+			<form action="{LINK_SALVAR}" class="row" name="form-meu-acesso" method="POST">
+				<fieldset class="p-rl-05">
+					<div class="row">
+						<legend>Alterar dados de acesso</legend>
+						<div class="col s12 m5 l4 offset-m1 offset-l2">
+							<label for="email">E-mail</label>
+							<input id="email" name="email" value="{EMAIL}" maxlength="100" type="text">
+						</div>
+						<div class="col s12 m5 l4">
+							<label for="email2">Confirmar e-mail</label>
+							<input id="email2" name="email2" value="" maxlength="100" type="text">
+						</div>
+						<div class="col s12 m5 l4 offset-m1 offset-l2">
+							<label for="senha">Senha</label>
+							<input id="senha" name="senha" value="" maxlength="100" type="password">
+						</div>
+						<div class="col s12 m5 l4">
+							<label for="conf-senha">Confirmação de senha:</label>
+							<input id="conf-senha" name="conf-senha" value="" maxlength="100" type="password">
+						</div> 
+					</div>
+				</fieldset>
+				<div class="col s4 offset-s4">
+					<button type="submit" class="btn-line">Alterar</button>
+				</div>
+			</form>
+		</section>
+		<section class="row" id="meus-eventos">
+			<h2 class="col s12">meus eventos</h2>
+			<div class="side-events rel">
+				<!-- INICIO BLOCO_MEUS_EVENTOS -->
+				<ul class="list-events shadow-on-med-and-down">
+					<!-- INICIO BLOCO_MEUS_EVENTOS_ITEM -->
+					<li class="col s12 m12 l6">
+						<div class="white shadow-on-large">
+							<a href="#">
+								<div class="event-block">
+									<small class="caption">curso</small>
+									<h5 class="">{EVENTO_TITULO}</h5>
+									<span class="caption"><i class="tiny-ics ic-clock"></i> {EVENTO_HORARIO}</span>
+									<span class="subcaption"><i class="tiny-ics ic-arroba"></i> {EVENTO_LOCAL}</span>
+								</div>
+								<div class="day-month">
+									<i class="ic-calendario">{EVENTO_DIA}</i>
+									<span class="mouth caption">{EVENTO_MES}</span>
+								</div>
+							</a>
+							<div class="row button-group">
+								<div class="col s3">
+									<button type="button" data-id="1">
+										<i class="ic-evento-exportar"></i>
+										<div class="caption">exportar</div>
+									</button>
+								</div>
+								<div class="col s6">
+									<button type="button" data-id="1">
+										<i class="ic-evento-imprimir"></i>
+										<div class="caption">imprimir infos.</div>
+									</button>
+								</div>
+								<div class="col s3">
+									<a class="button error" href="{LINK_CANCELAR}">
+										<i class="ic-evento-cancelar"></i>
+										<div class="caption error">cancelar</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<hr class="half-separator">
+					</li>
+					<!-- FIM BLOCO_MEUS_EVENTOS_ITEM -->
+				</ul>
+				<!-- FIM BLOCO_MEUS_EVENTOS -->
+				<!-- INICIO BLOCO_MEUS_EVENTOS_VAZIO -->
+					<small class="subcaption">nenhum evento no momento</small>
+				<!-- FIM BLOCO_MEUS_EVENTOS_VAZIO -->
+			</div>
+		</section>
+	</div>
+</main>
