@@ -79,3 +79,39 @@
         
     }
 }
+
+.chapter-list{
+    list-style: none;
+    padding:0;
+    float: left;
+    clear: both;
+    background-color: #fff;
+    li{
+        margin: 0;
+        padding: 0;
+        display: block;
+        width: 100%;
+        float: left;
+        border-bottom: $azulEscuro 2px solid;
+    }
+    a,.active{
+        padding: 1rem 1.0rem;
+        background-color: #fff;
+        display: block;
+        width: 70%;
+        float: left;
+        &:hover{
+            background-color: $azulEscuro;
+            color: #fff;
+        }
+    }
+    button{
+        width: 10%;
+        height: 100%;
+        float: right;
+        padding: 1.0rem;
+        &:hover{
+            background: $amarelo;
+        }
+    }
+}

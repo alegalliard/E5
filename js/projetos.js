@@ -1,6 +1,6 @@
 $( function() {
     var totalTags = 0;
-    var totalChapters = 0;
+    var totalChapters = 3;
     
     $('.add-tag').on('click', function(e){
         e.preventDefault();
@@ -23,29 +23,28 @@ $( function() {
     
     $('.add-chapter').on('click', function(e){
         e.preventDefault();
-        var list = $('.list-chapters');
+        var list = $('.chapter-list');
         list.show();
         
         totalChapters++;
         
         var newChapter = $('#capitulo').val();
         
-        var HTMLchapter = '<li class="col s12 m12 l6">'
-                +'<div class="white shadow-on-large">'
-                    +'<div class="chapter-index">'
-                    +    totalChapters
-                    +'</div>'
-                    +'<div class="chapter-block">'
-                    +    '<h4 class="chapter-title">'+newChapter+'</h4>'
-                    +    '<div class="links-row">'
-                    +        '<a href=""><i class="ic-"></i>excluir</a>'
-                    +        '<a href="">editar <i class="ic-edit-small"></i></a>'
-                    +    '</div>'
-                    +'</div>'
-                +'</div>'
-                +'</li>';
+        var HTMLchapter = '<li class="chapter">'
+                          +   '<a href="#editar" class="active">Capítulo '
+                          +   totalChapters 
+                          +   ' -'
+                          +   newChapter
+                          +   '</a>'
+                          +   '<button class="edit-chapter">'
+                          +       '<i class="ic-">x</i>'
+                          +   '</button>'
+                          +   '<button class="delete-chapter">'
+                          +       '<i class="ic-edit-small"></i>'
+                          +   '</button>'
+                          + '</li>';
         list.append(HTMLchapter);
-        
+        $('#capitulo,#capitulo-desc').val('');
         
     });
     
@@ -54,5 +53,7 @@ $( function() {
         
         e.preventDefault();
     });
+    
+    tinymce.init({ selector:'.tinyMce' });
     
 });

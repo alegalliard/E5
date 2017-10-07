@@ -23,6 +23,8 @@
     <script src="vendor/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
     <script src="js/area-restrita.js"></script>
     <script src="js/projetos.js"></script>
+    <script src="vendor/tinymce/js/tinymce/tinymce.min.js"></script>
+    
     <script>
         $( function() {
             $('.icon-list').on('click', function(){
@@ -143,7 +145,7 @@
             <hr class="teal-down col s12">
         </div>
                    
-                   
+<!--        Início de form de novo projeto -->           
         <form id="novo-projeto" style="display: none">
            <fieldset class="row">
                 <legend class="col s12">novo projeto</legend>
@@ -185,20 +187,53 @@
                     </div>
                 </div>
 
-                <div class="col s12">
+                <div class="col s6">
                     <h3 class="h4 blue-text">capítulos</h3>
-                    <form action="" id="new-chapter">
+                    <div action="" id="new-chapter">
                         <legend>Novo capítulo</legend>
                         <label for="capitulo">Título do capítulo</label>
                         <input type="text" name="capitulo" id="capitulo">
-                    </form>
-                    <ul class="list-chapters shadow-on-med-and-down" style="display: none">
-                    </ul>
-
-                    <div class="col s12">
-                        <button type="button" class="btn-white add-chapter"><i class="ic-add-sun"></i> novo capítulo</button>
                     </div>
+                
+                    <label for="capitulo-desc">Descrição do capítulo</label>
+                    <textarea name="capitulo-desc" id="capitulo-desc" class="tinyMce"></textarea>
+                    
+                     <button type="button" class="btn-white add-chapter"><i class="ic-add-sun"></i> novo capítulo</button>
                 </div>
+                
+                <div class="col s6 m-t-20 rel">
+                   <h3 class="m-t-20">Lista de capítulos</h3>
+                    <ul class="chapter-list shadow">
+                        <li class="chapter">
+                            <a href="#editar">Capítulo 1 - Kakakakakaka</a>
+                            <button class="edit-chapter">
+                                <i class="ic-">x</i>
+                            </button>
+                            <button class="delete-chapter">
+                                <i class="ic-edit-small"></i>
+                            </button>
+                        </li>
+                        <li class="chapter">
+                            <a href="#editar" class="active">Capítulo 2 - Nononon nonono nono no nono</a>
+                            <button class="edit-chapter">
+                                <i class="ic-">x</i>
+                            </button>
+                            <button class="delete-chapter">
+                                <i class="ic-edit-small"></i>
+                            </button>
+                        </li>
+                        <li class="chapter">
+                            <a href="#editar" class="active">Capítulo 3 - Papoapapapoapoap ap oa paapapap  apapapap</a>
+                            <button class="edit-chapter">
+                                <i class="ic-">x</i>
+                            </button>
+                            <button class="delete-chapter">
+                                <i class="ic-edit-small"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                
 
                 <div class="col s12 m-t-120">
                     <button class="btn btn-line" type="submit"><i class="ic-publish"></i> publicar projeto</button>
@@ -207,7 +242,10 @@
             </fieldset>
         </form>
 <!--        Fim de form de novo projeto -->
-        
+
+
+
+<!--        Início de meus projetos -->
         <div id="meus-projetos">
             <article class="row big-news">
                 <div class="col s12 m4 l3">
@@ -239,6 +277,16 @@
                         <li class="tag"><a href="#">Comunicação</a></li>
                         <li class="tag"><a href="#">Gestão Tecnológica</a></li>
                     </ul>
+                    
+                    <button type="button" class="error right text-center m-t-10">
+                        <i class="ic-evento-cancelar"></i>
+                        <div class="caption error m-t-10">apagar</div>
+                    </button>
+                    
+                    <button type="button" class="right text-center m-t-10 switch-projeto">
+                        <i class="ic-evento-exportar"></i>
+                        <div class="caption error m-t-10">editar</div>
+                    </button>
                 </aside>     
             </article>
             <hr class="half-separator" />
@@ -273,11 +321,20 @@
                         <li class="tag"><a href="#">Comunicação</a></li>
                         <li class="tag"><a href="#">Gestão Tecnológica</a></li>
                     </ul>
+                    <button type="button" class="error right text-center m-t-10">
+                        <i class="ic-evento-cancelar"></i>
+                        <div class="caption error m-t-10">apagar</div>
+                    </button>
+                    
+                    <button type="button" class="right text-center m-t-10 switch-projeto">
+                        <i class="ic-evento-exportar"></i>
+                        <div class="caption error m-t-10">editar</div>
+                    </button>
                 </aside>     
             </article>
             <hr class="half-separator" />
         </div>   
-           
+<!--        Fim de meus projetos -->
        </section>
         
         

@@ -138,83 +138,101 @@
 <div class="container">
   
 <section class="row" id="meus-eventos">
-    <fieldset class="row">
-        <legend class="col s12">novo projeto</legend>
-        <div class="col s12">
-           <label for="nome-projeto">Nome do projeto</label>
-            <input type="text" name="nome-projeto" id="nome-projeto">
-        </div>
-        <div class="col s12">
-           <label for="desc-projeto">Descrição</label>
-           <textarea name="desc-projeto" id="desc-projeto" cols="30" rows="10"></textarea>
-        </div>
-        
-        <div class="col s5">
-           <div class="row">
-               <label for="keywords-projeto">Palavras-chave</label>
-                <div class="col s10">
-                    <input type="text" id="keywords-projeto" name="keywords-projeto">
+    <form id="novo-projeto">
+           <fieldset class="row">
+                <legend class="col s12">novo projeto</legend>
+                <div class="col s12">
+                   <label for="nome-projeto">Nome do projeto</label>
+                    <input type="text" name="nome-projeto" id="nome-projeto">
                 </div>
-                <div class="col s2">
-                    <button type="button" class="btn-naked add-tag"><i class="ic-add-sun"></i></button>
+                <div class="col s12">
+                   <label for="desc-projeto">Descrição</label>
+                   <textarea name="desc-projeto" id="desc-projeto" cols="30" rows="10"></textarea>
                 </div>
-           </div>
-            
-            <div class="row">
-                <ul class="tags" id="insert-keywords">
-    <!--                <li class="tag added"><a href="">gestão</a><input type="hidden" name="keywods[]"></li>-->
-                </ul>
-            </div>
-        </div>
-        
-        <div class="col s6 offset-s1 rel">
-            <h3 class="h4 blue-text">imagem para o projeto</h3>
-            <div class="shadow">
-              <div class="vitrine"></div>
-              <div class="insert-file">
-                 <label for="img-projeto">inserir uma nova imagem</label>
-                 <div class="img-icon"><i class="ic-photo"></i></div>
-                  <input type="file" name="img-projeto" id="img-projeto" accept="image/jpeg">
-              </div>
-            </div>
-        </div>
-        
-        <div class="col s12">
-            <h3 class="h4 blue-text">capítulos</h3>
-            <form action="" id="new-chapter">
-                <legend>Novo capítulo</legend>
-                <label for="capitulo">Título do capítulo</label>
-                <input type="text" name="capitulo" id="capitulo">
-            </form>
-            <ul class="list-chapters shadow-on-med-and-down" style="display: none">
-<!--
-                <li class="col s12 m12 l6">
-                <div class="white shadow-on-large">
-                    <div class="chapter-index">
-                        01
-                    </div>
-                    <div class="chapter-block">
-                        <h4 class="chapter-title">quanto tempo gasta um professor pra que este trabalho ocorra?</h4>
-                        <div class="links-row">
-                            <a href=""><i class="ic-"></i>excluir</a>
-                            <a href="">editar <i class="ic-edit-small"></i></a>
-                        </div>
-                    </div>
-                </div>
-                </li>
--->
-            </ul>
-            
-            <div class="col s12">
-                <button type="button" class="btn-white add-chapter"><i class="ic-add-sun"></i> novo capítulo</button>
-            </div>
-        </div>
-        
-        <div class="col s12 m-t-120">
-            <button class="btn btn-line" type="submit"><i class="ic-publish"></i> publicar projeto</button>
-        </div>
 
-    </fieldset>
+                <div class="col s5">
+                   <div class="row">
+                       <label for="keywords-projeto">Palavras-chave</label>
+                        <div class="col s10">
+                            <input type="text" id="keywords-projeto" name="keywords-projeto">
+                        </div>
+                        <div class="col s2">
+                            <button type="button" class="btn-naked add-tag"><i class="ic-add-sun"></i></button>
+                        </div>
+                   </div>
+
+                    <div class="row">
+                        <ul class="tags" id="insert-keywords">
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col s6 offset-s1 rel">
+                    <h3 class="h4 blue-text">imagem para o projeto</h3>
+                    <div class="shadow">
+                      <div class="vitrine"></div>
+                      <div class="insert-file">
+                         <label for="img-projeto">inserir uma nova imagem</label>
+                         <div class="img-icon"><i class="ic-photo"></i></div>
+                          <input type="file" name="img-projeto" id="img-projeto" accept="image/jpeg">
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col s6">
+                    <h3 class="h4 blue-text">capítulos</h3>
+                    <div action="" id="new-chapter">
+                        <legend>Novo capítulo</legend>
+                        <label for="capitulo">Título do capítulo</label>
+                        <input type="text" name="capitulo" id="capitulo">
+                    </div>
+                
+                    <label for="capitulo-desc">Descrição do capítulo</label>
+                    <textarea name="capitulo-desc" id="capitulo-desc" class="tinyMce"></textarea>
+                    
+                     <button type="button" class="btn-white add-chapter"><i class="ic-add-sun"></i> novo capítulo</button>
+                </div>
+                
+                <div class="col s6 m-t-20 rel">
+                   <h3 class="m-t-20">Lista de capítulos</h3>
+                    <ul class="chapter-list shadow">
+                        <li class="chapter">
+                            <a href="#editar">Capítulo 1 - Kakakakakaka</a>
+                            <button class="edit-chapter">
+                                <i class="ic-">x</i>
+                            </button>
+                            <button class="delete-chapter">
+                                <i class="ic-edit-small"></i>
+                            </button>
+                        </li>
+                        <li class="chapter">
+                            <a href="#editar" class="active">Capítulo 2 - Nononon nonono nono no nono</a>
+                            <button class="edit-chapter">
+                                <i class="ic-">x</i>
+                            </button>
+                            <button class="delete-chapter">
+                                <i class="ic-edit-small"></i>
+                            </button>
+                        </li>
+                        <li class="chapter">
+                            <a href="#editar" class="active">Capítulo 3 - Papoapapapoapoap ap oa paapapap  apapapap</a>
+                            <button class="edit-chapter">
+                                <i class="ic-">x</i>
+                            </button>
+                            <button class="delete-chapter">
+                                <i class="ic-edit-small"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                
+
+                <div class="col s12 m-t-120">
+                    <button class="btn btn-line" type="submit"><i class="ic-publish"></i> publicar projeto</button>
+                </div>
+
+            </fieldset>
+        </form>
 </section>
     
     

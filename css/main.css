@@ -948,6 +948,10 @@ th {
       height: 100%;
       padding: 15px 20px; }
 
+button {
+  background-color: transparent;
+  border: 0; }
+
 .btn-line {
   border: 2px solid #001B4B;
   color: #001B4B;
@@ -3634,6 +3638,36 @@ textarea {
   .list-chapters .chapter-title {
     margin: 0.5rem 0 1.0rem;
     font-size: 1.0rem; }
+
+.chapter-list {
+  list-style: none;
+  padding: 0;
+  float: left;
+  clear: both;
+  background-color: #fff; }
+  .chapter-list li {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+    float: left;
+    border-bottom: #001B4B 2px solid; }
+  .chapter-list a, .chapter-list .active {
+    padding: 1rem 1.0rem;
+    background-color: #fff;
+    display: block;
+    width: 70%;
+    float: left; }
+    .chapter-list a:hover, .chapter-list .active:hover {
+      background-color: #001B4B;
+      color: #fff; }
+  .chapter-list button {
+    width: 10%;
+    height: 100%;
+    float: right;
+    padding: 1.0rem; }
+    .chapter-list button:hover {
+      background: #FFCF15; }
 
 img {
   max-width: 100%; }
