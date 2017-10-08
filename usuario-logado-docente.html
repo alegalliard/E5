@@ -21,9 +21,9 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/materialize/js/bin/materialize.min.js"></script>
     <script src="vendor/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="vendor/tinymce/js/tinymce/tinymce.min.js"></script>
     <script src="js/area-restrita.js"></script>
     <script src="js/projetos.js"></script>
-    <script src="vendor/tinymce/js/tinymce/tinymce.min.js"></script>
     
     <script>
         $( function() {
@@ -147,21 +147,62 @@
                    
 <!--        Início de form de novo projeto -->           
         <form id="novo-projeto" style="display: none">
-           <fieldset class="row">
-                <legend class="col s12">novo projeto</legend>
-                <div class="col s12">
-                   <label for="nome-projeto">Nome do projeto</label>
-                    <input type="text" name="nome-projeto" id="nome-projeto">
+           <fieldset class="row">                
+                <div class="col s12 m6 l6">
+                   <legend class="col s12">novo projeto</legend>
+                    <div class="col s12">
+                       <label for="nome-projeto">Nome do projeto</label>
+                        <input type="text" name="nome-projeto" id="nome-projeto">
+                    </div>
+                    <div class="col s12">
+                       <label for="desc-projeto">Descrição</label>
+                       <textarea name="desc-projeto" id="desc-projeto" class="tinyMce"></textarea>
+                    </div>
                 </div>
-                <div class="col s12">
-                   <label for="desc-projeto">Descrição</label>
-                   <textarea name="desc-projeto" id="desc-projeto" cols="30" rows="10"></textarea>
+                
+                
+                <div class="col s12 m6 l5 offset-l1 rel">
+                    <h3 class="h4 blue-text">imagem para o projeto</h3>
+                    <div class="shadow">
+                      <div class="vitrine"></div>
+                      <div class="insert-file">
+                         <label for="img-projeto">inserir uma nova imagem</label>
+                         <div class="img-icon"><i class="ic-photo"></i></div>
+                          <input type="file" name="img-projeto" id="img-projeto" accept="image/jpeg">
+                      </div>
+                    </div>
                 </div>
+                
+                
 
-                <div class="col s5">
+                <div class="col s12 m6 l6 m-t-20 rel">
+                    <h3 class="m-t-20">Lista de anexos </h3>
+                    
+                    <div class="attachs">
+                        <label for="attach">Adicionar arquivo</label>
+                        <input type="file" name="attach" id="attach" class="attach-input">
+                        <button type="button" class="btn-naked add-attach"><i class="ic-add-sun"></i></button>
+                    </div>
+                   
+                    <ul class="chapter-list shadow">
+<!--
+                        <li class="chapter">
+                            <a href="#editar">Capítulo 1 - Kakakakakaka</a>
+                            <button class="edit-chapter">
+                                <i class="ic-">x</i>
+                            </button>
+                        </li>
+-->
+                    </ul>
+                </div>
+                
+                
+
+                <div class="col s12 m6 offset-l1 l5 m-t-20">
+                   <h3 class="m-t-20">Palavras-chave</h3>
                    <div class="row">
-                       <label for="keywords-projeto">Palavras-chave</label>
                         <div class="col s10">
+                           <label for="keywords-projeto">Adicionar palavra-chave</label>
                             <input type="text" id="keywords-projeto" name="keywords-projeto">
                         </div>
                         <div class="col s2">
@@ -175,67 +216,11 @@
                     </div>
                 </div>
 
-                <div class="col s6 offset-s1 rel">
-                    <h3 class="h4 blue-text">imagem para o projeto</h3>
-                    <div class="shadow">
-                      <div class="vitrine"></div>
-                      <div class="insert-file">
-                         <label for="img-projeto">inserir uma nova imagem</label>
-                         <div class="img-icon"><i class="ic-photo"></i></div>
-                          <input type="file" name="img-projeto" id="img-projeto" accept="image/jpeg">
-                      </div>
-                    </div>
-                </div>
-
-                <div class="col s6">
-                    <h3 class="h4 blue-text">capítulos</h3>
-                    <div action="" id="new-chapter">
-                        <legend>Novo capítulo</legend>
-                        <label for="capitulo">Título do capítulo</label>
-                        <input type="text" name="capitulo" id="capitulo">
-                    </div>
-                
-                    <label for="capitulo-desc">Descrição do capítulo</label>
-                    <textarea name="capitulo-desc" id="capitulo-desc" class="tinyMce"></textarea>
-                    
-                     <button type="button" class="btn-white add-chapter"><i class="ic-add-sun"></i> novo capítulo</button>
-                </div>
-
-                <div class="col s6 m-t-20 rel">
-                   <h3 class="m-t-20">Lista de capítulos</h3>
-                    <ul class="chapter-list shadow">
-                        <li class="chapter">
-                            <a href="#editar">Capítulo 1 - Kakakakakaka</a>
-                            <button class="edit-chapter">
-                                <i class="ic-">x</i>
-                            </button>
-                            <button class="delete-chapter">
-                                <i class="ic-edit-small"></i>
-                            </button>
-                        </li>
-                        <li class="chapter">
-                            <a href="#editar" class="active">Capítulo 2 - Nononon nonono nono no nono</a>
-                            <button class="edit-chapter">
-                                <i class="ic-">x</i>
-                            </button>
-                            <button class="delete-chapter">
-                                <i class="ic-edit-small"></i>
-                            </button>
-                        </li>
-                        <li class="chapter">
-                            <a href="#editar" class="active">Capítulo 3 - Papoapapapoapoap ap oa paapapap  apapapap</a>
-                            <button class="edit-chapter">
-                                <i class="ic-">x</i>
-                            </button>
-                            <button class="delete-chapter">
-                                <i class="ic-edit-small"></i>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
                 
 
-                <div class="col s12 m-t-120">
+
+
+                <div class="col s12 m-t-20">
                     <button class="btn btn-line" type="submit"><i class="ic-publish"></i> publicar projeto</button>
                 </div>
 

@@ -1,6 +1,6 @@
 $( function() {
     var totalTags = 0;
-    var totalChapters = 3;
+    var totalFiles = 0;
     
     $('.add-tag').on('click', function(e){
         e.preventDefault();
@@ -21,24 +21,21 @@ $( function() {
     });
     
     
-    $('.add-chapter').on('click', function(e){
+    $('.add-attach').on('click', function(e){
         e.preventDefault();
         var list = $('.chapter-list');
         list.show();
         
-        totalChapters++;
+        totalFiles++;
         
-        var newChapter = $('#capitulo').val();
+        var newChapter = $('.attach-input').val();
         
         var HTMLchapter = '<li class="chapter">'
-                          +   '<a href="#editar" class="active">Capítulo '
-                          +   totalChapters 
+                          +   '<a href="#editar" class="active">Arquivo '
+                          +   totalFiles 
                           +   ' -'
                           +   newChapter
                           +   '</a>'
-                          +   '<button class="edit-chapter">'
-                          +       '<i class="ic-">x</i>'
-                          +   '</button>'
                           +   '<button class="delete-chapter">'
                           +       '<i class="ic-edit-small"></i>'
                           +   '</button>'
@@ -55,5 +52,11 @@ $( function() {
     });
     
     tinymce.init({ selector:'.tinyMce' });
+    
+    $('.attach-input').on('change', function(){
+        $('label[for=attach]').text($(this)[0].files[0].name);
+    });
+    
+
     
 });

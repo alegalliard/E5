@@ -3653,10 +3653,10 @@ textarea {
     float: left;
     border-bottom: #001B4B 2px solid; }
   .chapter-list a, .chapter-list .active {
-    padding: 1rem 1.0rem;
+    padding: 1rem 5%;
     background-color: #fff;
     display: block;
-    width: 70%;
+    width: 80%;
     float: left; }
     .chapter-list a:hover, .chapter-list .active:hover {
       background-color: #001B4B;
@@ -3668,6 +3668,16 @@ textarea {
     padding: 1.0rem; }
     .chapter-list button:hover {
       background: #FFCF15; }
+
+.attach-input {
+  opacity: 0;
+  position: absolute; }
+
+.attachs label {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.0rem;
+  color: #0861FF; }
 
 img {
   max-width: 100%; }

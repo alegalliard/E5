@@ -95,10 +95,10 @@
         border-bottom: $azulEscuro 2px solid;
     }
     a,.active{
-        padding: 1rem 1.0rem;
+        padding: 1rem 5%;
         background-color: #fff;
         display: block;
-        width: 70%;
+        width: 80%;
         float: left;
         &:hover{
             background-color: $azulEscuro;
@@ -113,5 +113,18 @@
         &:hover{
             background: $amarelo;
         }
+    }
+}
+
+.attach-input{
+    opacity: 0;
+    position: absolute;
+}
+.attachs{
+    label{
+        cursor: pointer;
+        display: inline-block;
+        font-size: 1.0rem;
+        color: $azul;
     }
 }
