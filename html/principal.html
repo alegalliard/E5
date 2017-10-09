@@ -2,7 +2,7 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <title>ITA - Apresentação</title>
+    <title>ITA</title>
     <meta name="description" content="">
     <meta name="robots" content="index, follow">
 <!--  Se for importante indexar o site no Google, não se esqueça 
@@ -15,38 +15,22 @@
        
        -->
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <link rel="stylesheet" href="../css/main.css?08-40-49-pm">
+    <link rel="stylesheet" href="../css/main.css?10-26-28-pm">
     <link rel="stylesheet" href="../vendor/jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <link rel="stylesheet" href="../vendor/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css">
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/materialize/js/bin/materialize.min.js"></script>
     <script src="../vendor/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
-    <script>
-        $( function() {
-            $( "#datepicker" ).datepicker({
-                autoSize: true,
-                showOtherMonths: true,
-                selectOtherMonths: true,
-                dateFormat: "dd-mm-yy",
-                monthNames: [ "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro" ],
-                dayNamesMin:["D", "S", "T", "Q", "Q", "S", "S"]
-
-            });
-            
-            $('.icon-list').on('click', function(){
-                $('.full-itens').show();
-                $('.icon-list').hide();
-            });
-            $('.collapse').on('click', function(){
-                $('.full-itens').hide();
-                $('.icon-list').show();
-            });
-            
-        });
-    </script>
+	<!-- INICIO BLOCO_ESTILO -->
+	{ESTILO}
+	<!-- FIM BLOCO_ESTILO -->
+	<!-- INICIO BLOCO_SCRIPT -->
+	{SCRIPT}
+	<!-- FIM BLOCO_SCRIPT -->
 </head>
 <body>
-
+ 
+ 
 <menu class="sidenav side-nav fixed">
    <ul class="icon-list">
        <li class="right-on-med-and-down"><i class="ic-login"></i></li>
@@ -62,37 +46,37 @@
    </ul>
     <ul class="full-itens">
         <li class="negative">
-            <a href="login.html"><i class="ic-login"></i>login ou cadastrar</a>
+            <a href="login.php"><i class="ic-login"></i>login ou cadastrar</a>
         </li>
         
         <li>
-            <a href="index.html"><i class="ic-inicio"></i>início</a>
+            <a href="index.php"><i class="ic-inicio"></i>início</a>
         </li>
         <li class="search">
-           <form action="login.html">
+           <form action="busca.php" method="post">
             <i class="ic-busca"></i>
-            <input type="search" id="busca" name="busca" placeholder="busque no site">               
+            <input type="search" id="termo" name="termo" placeholder="busque no site">               
            </form>        
         </li>
         <li>
-            <a href="eventos.html"><i class="ic-eventos"></i>eventos</a>
+            <a href="calendario_eventos.php"><i class="ic-eventos"></i>eventos</a>
         </li>
         <li>
-            <a href="projetos.html"><i class="ic-projetos"></i>projetos</a>
+            <a href="#"><i class="ic-projetos"></i>projetos</a>
         </li>
         <li>
-           <a href="acervo.html"><i class="ic-acervo"></i>acervo <br>
-            <span class="subcaption">restrito à usuários cadastrados</span></a>
+           <a href="#"><i class="ic-acervo"></i>acervo <br>
+            <span class="subcaption">restrito a usuários cadastrados</span></a>
         </li>
         <li>
-            <a href="publicacoes.html"><i class="ic-publicacoes"></i>publicações</a>
+            <a href="#"><i class="ic-publicacoes"></i>publicações</a>
         </li>
         <li>
-            <a href="apresentacao.html"><i class="ic-equipe"></i>apresentação</a>
+            <a href="apresentacao.php"><i class="ic-equipe"></i>apresentação</a>
         </li>
 
         <li>
-            <a href="contato.html"><i class="ic-contato"></i>contato</a>
+            <a href="contato.php"><i class="ic-contato"></i>contato</a>
         </li>
         <li class="collapse">
             <a href="#" class="collapse"><i class="ic-contato"></i>colapsar</a>
@@ -100,37 +84,9 @@
     </ul>
 </menu>
    
-  
-  
-  
-
-  
-<main class="main">
-   <section class="row">
-    <div class="container">
-    
-       <header class="col s12 m12 l2 offset-l2 m-tb-60">
-          <a href="index.html" id="side-logo"><img src="../img/logo-horizontal.svg" alt="Espaço de Estudos e Experiências em Engenharia"></a>
-          <hr class="separador pull-left">           
-       </header>
-          
-          <article class="col s12 m12 l5 offset-l1" style="margin-top: 60px">
-              <h1 class="bold-title">500 - Erro interno no servidor</h1>               
-               <p>Ocorreu um erro ao processar essa requisição. Por favor, tente novamente mais tarde.<br><br>
-               <a href="index.html"> voltar para a home</a></p>
-          </article>
-           
-    </div>
-</section>
-</main>
-  
-  
-
-  
-   
-   
-   
-<footer id="footer">
+ {PAG_CONTEUDO}
+ 
+ <footer id="footer">
     <div class="row m-b-0">
         <div class="container">
             <div class="col s12 m5 l3 offset-l2 right text-center">
@@ -166,9 +122,9 @@
 
         <nav class="row m-b-0">
             <ul class=" yellow-list">
-                <li><a href="apresentacao.html">Institucional</a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a href="apresentacao.php">Institucional</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="contato.php">Contato</a></li>
             </ul>        
         </nav>
     </div>

@@ -1,107 +1,9 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <title>ITA - Cadastro</title>
-    <meta name="description" content="">
-    <meta name="robots" content="index, follow">
-<!--  Se for importante indexar o site no Google, não se esqueça 
-       de permitir a personalização  da TITLE (até 60 chars), a 
-       META-DESCRIPTION (até 140 chars) 
-       e META-ROBOTS para cada página. 
-       
-       Páginas restritas: Não é necessário personalizar a meta-description, 
-       somente a title. Robots deve constar com content noindex,nofollow
-       
-       -->
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <link rel="stylesheet" href="../css/main.css?08-40-49-pm">
-    <link rel="stylesheet" href="../vendor/jquery-ui-1.12.1.custom/jquery-ui.min.css">
-    <link rel="stylesheet" href="../vendor/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css">
-    <script src="../vendor/jquery/jquery.min.js"></script>
-    <script src="../vendor/materialize/js/bin/materialize.min.js"></script>
-    <script src="../vendor/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
-    <script>
-        $( function() {
-            
-            
-            $('.icon-list').on('click', function(){
-                $('.full-itens').show();
-                $('.icon-list').hide();
-            });
-            $('.collapse').on('click', function(){
-                $('.full-itens').hide();
-                $('.icon-list').show();
-            });
-            
-        });
-    </script>
-</head>
-<body>
-
-
-<menu class="sidenav side-nav fixed">
-   <ul class="icon-list">
-       <li class="right-on-med-and-down"><i class="ic-login"></i></li>
-       <li><i class="ic-inicio"></i></li>
-       <li><i class="ic-busca"></i></li>
-       <li><i class="ic-eventos"></i></li>
-       <li><i class="ic-projetos"></i></li>
-       <li class="hide-on-large-only"><i class="ic-menu ic-sun">...</i></li>
-       <li class="hide-on-med-and-down"><i class="ic-acervo"></i></li>
-       <li class="hide-on-med-and-down"><i class="ic-publicacoes"></i></li>
-       <li class="hide-on-med-and-down"><i class="ic-equipe"></i></li>
-       <li class="hide-on-med-and-down"><i class="ic-contato"></i></li>
-   </ul>
-    <ul class="full-itens">
-        <li class="negative">
-            <a href="login.html"><i class="ic-login"></i>login ou cadastrar</a>
-        </li>
-        
-        <li>
-            <a href="index.html"><i class="ic-inicio"></i>início</a>
-        </li>
-        <li class="search">
-           <form action="busca.html">
-            <i class="ic-busca"></i>
-            <input type="search" id="busca" name="busca" placeholder="busque no site"> 
-           </form>        
-        </li>
-        <li>
-            <a href="calendario-eventos.html"><i class="ic-eventos"></i>eventos</a>
-        </li>
-        <li>
-            <a href="projetos.html"><i class="ic-projetos"></i>projetos</a>
-        </li>
-        <li>
-           <a href="acervo.html"><i class="ic-acervo"></i>acervo <br>
-            <span class="subcaption">restrito à usuários cadastrados</span></a>
-        </li>
-        <li>
-            <a href="publicacoes.html"><i class="ic-publicacoes"></i>publicações</a>
-        </li>
-        <li>
-            <a href="apresentacao.html"><i class="ic-equipe"></i>apresentação</a>
-        </li>
-
-        <li>
-            <a href="contato.html"><i class="ic-contato"></i>contato</a>
-        </li>
-        <li class="collapse">
-            <a href="#" class="collapse"><i class="ic-contato"></i>colapsar</a>
-        </li>
-    </ul>
-</menu>
-   
-   
-   
-   
 <header class="row m-b-0">
     <div class="container">
        <div class="p-rl-10">
            <div class="col s12 header ilustra--eventos">
             <div class="col s2 m1 l1">
-                <a href="index.html" id="mini-logo"><img src="../img/logo-horizontal.svg" alt="Espaço de Estudos e Experiências em Engenharia"></a>
+                <a href="index.php" id="mini-logo"><img src="../img/logo-horizontal.svg" alt="Espaço de Estudos e Experiências em Engenharia"></a>
             </div>
 
             <div class="col s9 m10 l10 text-center">
@@ -109,26 +11,10 @@
             </div>
         </div>
        </div>
-       <nav class="breadcrumb">
-           <ul class="col s12 m-b-0">
-               <li><a href="index.html">Home</a></li>
-                <li class="active">Contato</li>
-               <li class="right m-b-20"><a href="index.html" class="teal-text">Voltar</a></li>
-           </ul>
-       </nav>
     </div>
 </header>
-   
-   
-   
-   
-   
-   
-   
 
 <main class="main">
-      
-  
    <section class="row">
     <article class="container">
        
@@ -136,13 +22,13 @@
            <h2 class="teal-title">Fale conosco</h2>
            <nav class="breadcrumb">
                <ul>
-                   <li><a href="index.html">Home</a></li>
+                   <li><a href="index.php">Home</a></li>
                    <li class="active">Contato</li>
                </ul>
            </nav>
-
+		   {RETORNO}
            <div class="col s7">           
-               <form action="" class="row">
+               <form action="{LINK_CONTATO_FORM}" method="post" class="row">
                   <fieldset>
                         <legend>Pessoa</legend>
                         <div class="col s12">
@@ -150,43 +36,40 @@
                             <input id="nome" value="" name="nome" maxlength="255" type="text">
                          </div>
                         <div class="col s6">
-                            <label for="email">E-mail</label>
-                            <input id="email" name="email" value="" maxlength="100" type="text">
+                            <label for="contato">E-mail</label>
+                            <input id="email" name="contato" value="" maxlength="100" type="text">
                         </div>
                         <div class="col s6">
-                            <label for="tel">Telefone</label>
-                            <input id="tel" name="tel" value="" maxlength="100" type="text">
+                            <label for="telefone">Telefone</label>
+                            <input id="tel" name="telefone" value="" maxlength="100" type="text">
                         </div>
                         <div class="col s12">
                           <legend>Tipo de usuário:</legend>
                           <p>
-                            <input name="tipo-usuario" type="radio" id="usuario-docente" />
+                            <input name="tipo-usuario" value="Docente do ITA" type="radio" id="usuario-docente" />
                             <label for="usuario-docente">Docente do ITA</label>
                           </p>
                           <p>
-                            <input name="tipo-usuario" type="radio" id="aluno-ita" />
+                            <input name="tipo-usuario" value="Aluno do ITA" type="radio" id="aluno-ita" />
                             <label for="aluno-ita">Aluno do ITA</label>
                           </p>                          
                           <p>
-                            <input name="tipo-usuario" type="radio" id="servidor-ita" />
-                            <label for="servidor-ita">Servidor técnico-administrativo do ITA </label>
+                            <input name="tipo-usuario" value="Servidor técnico-administrativo do ITA" type="radio" id="servidor-ita" />
+                            <label for="servidor-ita">Servidor do ITA </label>
                           </p>                          
                           <p class="m-b-20">
-                            <input name="tipo-usuario" type="radio" id="outro" />
-                            <label for="outro">Outro</label>
+                            <input name="tipo-usuario" value="Outros" type="radio" id="outro" />
+                            <label for="outro">Outros</label>
                           </p>
                         </div>
                         <div class="col s12">
-                            <label for="msg">Mensagem</label>
-                            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+                            <label for="mensagem">Mensagem</label>
+                            <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
                         </div>
                     </fieldset>
-
-
                    <div class="col s4 offset-s4">
                        <button type="submit" class="btn-line">Enviar</button>
                    </div>
-
                </form>
            </div>
            
@@ -201,52 +84,3 @@
     </article>
 </section>
 </main>
-   
-   
-
-<footer id="footer">
-    <div class="row m-b-0">
-        <div class="container">
-            <div class="col s12 m5 l3 offset-l2 right text-center">
-                <span class="caption">Apoio</span>
-                <div class="row">
-                    <div class="col s4 m6 l6 offset-s2 m-tb-10">
-                        <a href="" class=""><img src="../img/aeita.png" alt="AEITA"></a>
-                    </div>
-                    <div class="col s4 m6 l6 m-tb-10">
-                        <a href="" class=""><img src="../img/ita-ex.png" alt="Ex alunos do ITA"></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s12 m3 l2 text-center offset-l1 right">
-                <span class="caption">Realização</span>
-                <div class="col s6 m12 l12 offset-s3 m-tb-10">
-                    <a href="" class=""><img src="../img/ita-logo.svg" alt="ITA logo"></a>
-                </div>
-            </div>
-            
-            <div class="col s12 m4 l4 left m-tb-10">
-                <p class="caption center-on-small-only">
-                <strong>Instituto Tecnológico de Aeronáutica</strong><br>
-                Praça Marechal Eduardo Gomes, 50 <br>
-                Vila das Acácias, 12228-900 <br>
-                São José dos Campos/SP - Brasil
-                </p>
-            </div>            
-        </div>
-        
-        
-
-        <nav class="row m-b-0">
-            <ul class=" yellow-list">
-                <li><a href="apresentacao.html">Institucional</a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>        
-        </nav>
-    </div>
-</footer>
-
-</body>
-</html>

@@ -15,18 +15,16 @@
        
        -->
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <link rel="stylesheet" href="../css/main.css?08-40-49-pm">
-    <link rel="stylesheet" href="../vendor/jquery-ui-1.12.1.custom/jquery-ui.min.css">
-    <link rel="stylesheet" href="../vendor/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css">
-    <script src="../vendor/jquery/jquery.min.js"></script>
-    <script src="../vendor/materialize/js/bin/materialize.min.js"></script>
-    <script src="../vendor/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
-    <script src="../js/projetos.js"></script>
+    <link rel="stylesheet" href="css/main.css?08-40-49-pm">
+    <link rel="stylesheet" href="vendor/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="vendor/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css">
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/materialize/js/bin/materialize.min.js"></script>
+    <script src="vendor/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="js/projetos.js"></script>
 
     <script>
-        $( function() {
-            
-            
+        $( function() {            
             $('.icon-list').on('click', function(){
                 $('.full-itens').show();
                 $('.icon-list').hide();
@@ -103,7 +101,7 @@
        <div class="p-rl-10">
            <div class="col s12 header ilustra-eventos">
             <div class="col s2 m1 l1">
-                <a href="index.html" id="mini-logo"><img src="../img/logo-horizontal.svg" alt="Espaço de Estudos e Experiências em Engenharia"></a>
+                <a href="index.html" id="mini-logo"><img src="img/logo-horizontal.svg" alt="Espaço de Estudos e Experiências em Engenharia"></a>
             </div>
 
             <div class="col s9 m10 l10 text-center">
@@ -114,16 +112,15 @@
         
         <nav class="tab-nav">
            <ul class="tabs horizontal">
-               <li class="tab"><a href="#eventos-abertos">últimos cadastrados</a></li>
-               <li class="tab"><a href="#docentes">docentes</a></li>
-               <li class="tab"><a href="#meus-projetos">meus projetos</a></li>
+              <li class="tab"><a href="#projetos" class="active">todos os projetos</a></li>
+               <li class="tab"><a href="#ultimos-projetos">últimos cadastrados</a></li>
             </ul>
         </nav>
         
         <nav class="breadcrumb">
            <ul class="col s12 m-b-0">
                <li><a href="index.html">Home</a></li>
-                <li class="active">Novo projeto</li>
+                <li class="active">Projetos</li>
                <li class="right m-b-20"><a href="index.html" class="teal-text">Voltar</a></li>
            </ul>
        </nav>
@@ -137,23 +134,154 @@
 <main class="main">
 <div class="container">
   
-<section class="row" id="meus-eventos">
-    <form id="novo-projeto">
-           <fieldset class="row">
-                <legend class="col s12">novo projeto</legend>
-                <div class="col s12">
-                   <label for="nome-projeto">Nome do projeto</label>
-                    <input type="text" name="nome-projeto" id="nome-projeto">
-                </div>
-                <div class="col s12">
-                   <label for="desc-projeto">Descrição</label>
-                   <textarea name="desc-projeto" id="desc-projeto" cols="30" rows="10"></textarea>
-                </div>
+    <section id="ultimos-projetos">
+        <div class="rel row">
+            <div class="col s8">
+                <h2 class="teal-subtitle">últimos cadastrados</h2>
+            </div>
+            <hr class="teal-down col s12">
+        </div>
+        <article class="row big-news">
+            <div class="col s12 m4 l3">
+                <figure class="news-pic shadow">
+                    <img src="img/ilustrative/img1.jpg" alt="">
+                </figure>
+            </div>
 
-                <div class="col s5">
+            <div class="col s12 m8 l5">
+                <h3 class="h3-title">Bibliometria: uma ferramenta estatística para a gestao da informação e do conhecimento, em sistemas de informação e de avaliação científica</h3>
+
+                <p>Este artigo tem como objetivo o desenvolvimento de uma revisão da literatura sobre Bibliometrie, edstacando sua aplicação como ferramenta estatística básica para gestão</p>
+                <footer class="info-box side-icon">
+                   <i class="ic-login"></i>
+                   <p>
+                       <span class="author caption">Howard Santiago</span>
+                       <time class="date subcaption">02 Jun - leitura: 15 min aprox.</time>
+                   </p>
+               </footer>
+            </div>      
+
+            <aside class="col s12 m12 l4">
+               <h4 class="caption">palavras-chave</h4>
+                <ul class="tags">
+                    <li class="tag"><a href="#">Gestão da Informação</a></li>
+                    <li class="tag"><a href="#">Festão do Conhecimento</a></li>
+                    <li class="tag"><a href="#">Sistemas de Informação</a></li>
+                    <li class="tag"><a href="#">Comunicação</a></li>
+                    <li class="tag"><a href="#">Gestão Tecnológica</a></li>
+                </ul>
+            </aside>     
+        </article>
+        <hr class="half-separator" />
+
+        <article class="row big-news">
+            <div class="col s12 m4 l3">
+                <figure class="news-pic shadow">
+                    <img src="img/ilustrative/img2.jpg" alt="">
+                </figure>
+            </div>
+
+            <div class="col s12 m8 l5">
+                <h3 class="h3-title">Bibliometria: uma ferramenta estatística para a gestao da informação e do conhecimento, em sistemas de informação e de avaliação científica</h3>
+
+                <p>Este artigo tem como objetivo o desenvolvimento de uma revisão da literatura sobre Bibliometrie, edstacando sua aplicação como ferramenta estatística básica para gestão</p>
+                <footer class="info-box side-icon">
+                   <i class="ic-login"></i>
+                   <p>
+                       <span class="author caption">Howard Santiago</span>
+                       <time class="date subcaption">02 Jun - leitura: 15 min aprox.</time>
+                   </p>
+               </footer>
+            </div>      
+
+            <aside class="col s12 m12 l4">
+               <h4 class="caption">palavras-chave</h4>
+                <ul class="tags">
+                    <li class="tag"><a href="#">Biometria</a></li>
+                    <li class="tag"><a href="#">Gestão da Informação</a></li>
+                    <li class="tag"><a href="#">Festão do Conhecimento</a></li>
+                    <li class="tag"><a href="#">Sistemas de Informação</a></li>
+                    <li class="tag"><a href="#">Gestão Tecnológica</a></li>
+                </ul>
+            </aside>     
+        </article>  
+    </section>
+    
+    
+    
+    
+         
+    <section id="projetos">
+           
+        <div class="rel row">
+            <div class="col s8">
+                <h2 class="teal-subtitle">meus projetos</h2>
+            </div>
+             <div class="col s4 text-right m-t-20">
+                 <a href="#meus-projetos" class="btn-line switch-projeto" id="voltar-projetos" style="display: none">ver meus projetos</a>
+                 <a href="#novo-projeto" class="btn-line switch-projeto" id="abre-projeto">novo projeto</a>
+             </div>
+            <hr class="teal-down col s12">
+        </div>
+                   
+<!--        Início de form de novo projeto -->           
+        <form id="novo-projeto" style="display: none">
+           <fieldset class="row">                
+                <div class="col s12 m6 l6">
+                   <legend class="col s12">novo projeto</legend>
+                    <div class="col s12">
+                       <label for="nome-projeto">Nome do projeto</label>
+                        <input type="text" name="nome-projeto" id="nome-projeto">
+                    </div>
+                    <div class="col s12">
+                       <label for="desc-projeto">Descrição</label>
+                       <textarea name="desc-projeto" id="desc-projeto" class="tinyMce"></textarea>
+                    </div>
+                </div>
+                
+                
+                <div class="col s12 m6 l5 offset-l1 rel">
+                    <h3 class="h4 blue-text">imagem para o projeto</h3>
+                    <div class="shadow">
+                      <div class="vitrine"></div>
+                      <div class="insert-file">
+                         <label for="img-projeto">inserir uma nova imagem</label>
+                         <div class="img-icon"><i class="ic-photo"></i></div>
+                          <input type="file" name="img-projeto" id="img-projeto" accept="image/jpeg">
+                      </div>
+                    </div>
+                </div>
+                
+                
+
+                <div class="col s12 m6 l6 m-t-20 rel">
+                    <h3 class="m-t-20">Lista de anexos </h3>
+                    
+                    <div class="attachs">
+                        <label for="attach">Adicionar arquivo</label>
+                        <input type="file" name="attach" id="attach" class="attach-input">
+                        <button type="button" class="btn-naked add-attach"><i class="ic-add-sun"></i></button>
+                    </div>
+                   
+                    <ul class="chapter-list shadow">
+<!--
+                        <li class="chapter">
+                            <a href="#editar">Capítulo 1 - Kakakakakaka</a>
+                            <button class="edit-chapter">
+                                <i class="ic-">x</i>
+                            </button>
+                        </li>
+-->
+                    </ul>
+                </div>
+                
+                
+
+                <div class="col s12 m6 offset-l1 l5 m-t-20">
+                   <h3 class="m-t-20">Palavras-chave</h3>
                    <div class="row">
-                       <label for="keywords-projeto">Palavras-chave</label>
                         <div class="col s10">
+                           <label for="keywords-projeto">Adicionar palavra-chave</label>
                             <input type="text" id="keywords-projeto" name="keywords-projeto">
                         </div>
                         <div class="col s2">
@@ -167,79 +295,112 @@
                     </div>
                 </div>
 
-                <div class="col s6 offset-s1 rel">
-                    <h3 class="h4 blue-text">imagem para o projeto</h3>
-                    <div class="shadow">
-                      <div class="vitrine"></div>
-                      <div class="insert-file">
-                         <label for="img-projeto">inserir uma nova imagem</label>
-                         <div class="img-icon"><i class="ic-photo"></i></div>
-                          <input type="file" name="img-projeto" id="img-projeto" accept="image/jpeg">
-                      </div>
-                    </div>
-                </div>
-
-                <div class="col s6">
-                    <h3 class="h4 blue-text">capítulos</h3>
-                    <div action="" id="new-chapter">
-                        <legend>Novo capítulo</legend>
-                        <label for="capitulo">Título do capítulo</label>
-                        <input type="text" name="capitulo" id="capitulo">
-                    </div>
-                
-                    <label for="capitulo-desc">Descrição do capítulo</label>
-                    <textarea name="capitulo-desc" id="capitulo-desc" class="tinyMce"></textarea>
-                    
-                     <button type="button" class="btn-white add-chapter"><i class="ic-add-sun"></i> novo capítulo</button>
-                </div>
-                
-                <div class="col s6 m-t-20 rel">
-                   <h3 class="m-t-20">Lista de capítulos</h3>
-                    <ul class="chapter-list shadow">
-                        <li class="chapter">
-                            <a href="#editar">Capítulo 1 - Kakakakakaka</a>
-                            <button class="edit-chapter">
-                                <i class="ic-">x</i>
-                            </button>
-                            <button class="delete-chapter">
-                                <i class="ic-edit-small"></i>
-                            </button>
-                        </li>
-                        <li class="chapter">
-                            <a href="#editar" class="active">Capítulo 2 - Nononon nonono nono no nono</a>
-                            <button class="edit-chapter">
-                                <i class="ic-">x</i>
-                            </button>
-                            <button class="delete-chapter">
-                                <i class="ic-edit-small"></i>
-                            </button>
-                        </li>
-                        <li class="chapter">
-                            <a href="#editar" class="active">Capítulo 3 - Papoapapapoapoap ap oa paapapap  apapapap</a>
-                            <button class="edit-chapter">
-                                <i class="ic-">x</i>
-                            </button>
-                            <button class="delete-chapter">
-                                <i class="ic-edit-small"></i>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
                 
 
-                <div class="col s12 m-t-120">
+
+
+                <div class="col s12 m-t-20">
                     <button class="btn btn-line" type="submit"><i class="ic-publish"></i> publicar projeto</button>
                 </div>
 
             </fieldset>
         </form>
-</section>
-    
-    
-  
-    
-    
-    
+<!--        Fim de form de novo projeto -->
+
+
+
+<!--        Início de meus projetos -->
+        <div id="meus-projetos">
+            <article class="row big-news">
+                <div class="col s12 m4 l3">
+                    <figure class="news-pic shadow">
+                        <img src="img/ilustrative/img1.jpg" alt="">
+                    </figure>
+                </div>
+
+                <div class="col s12 m8 l5">
+                    <h3 class="h3-title">Bibliometria: uma ferramenta estatística para a gestao da informação e do conhecimento, em sistemas de informação e de avaliação científica</h3>
+
+                    <p>Este artigo tem como objetivo o desenvolvimento de uma revisão da literatura sobre Bibliometrie, edstacando sua aplicação como ferramenta estatística básica para gestão</p>
+                    <footer class="info-box side-icon">
+                       <i class="ic-login"></i>
+                       <p>
+                           <span class="author caption">Howard Santiago</span>
+                           <time class="date subcaption">02 Jun - leitura: 15 min aprox.</time>
+                       </p>
+                   </footer>
+                </div>      
+
+                <aside class="col s12 m12 l4">
+                   <h4 class="caption">palavras-chave</h4>
+                    <ul class="tags">
+                        <li class="tag"><a href="#">Biometria</a></li>
+                        <li class="tag"><a href="#">Gestão da Informação</a></li>
+                        <li class="tag"><a href="#">Festão do Conhecimento</a></li>
+                        <li class="tag"><a href="#">Sistemas de Informação</a></li>
+                        <li class="tag"><a href="#">Comunicação</a></li>
+                        <li class="tag"><a href="#">Gestão Tecnológica</a></li>
+                    </ul>
+                    
+                    <button type="button" class="error right text-center m-t-10">
+                        <i class="ic-evento-cancelar"></i>
+                        <div class="caption error m-t-10">apagar</div>
+                    </button>
+                    
+                    <button type="button" class="right text-center m-t-10 switch-projeto">
+                        <i class="ic-evento-exportar"></i>
+                        <div class="caption error m-t-10">editar</div>
+                    </button>
+                </aside>     
+            </article>
+            <hr class="half-separator" />
+
+            <article class="row big-news">
+                <div class="col s12 m4 l3">
+                    <figure class="news-pic shadow">
+                        <img src="img/ilustrative/img2.jpg" alt="">
+                    </figure>
+                </div>
+
+                <div class="col s12 m8 l5">
+                    <h3 class="h3-title">Bibliometria: uma ferramenta estatística para a gestao da informação e do conhecimento, em sistemas de informação e de avaliação científica</h3>
+
+                    <p>Este artigo tem como objetivo o desenvolvimento de uma revisão da literatura sobre Bibliometrie, edstacando sua aplicação como ferramenta estatística básica para gestão</p>
+                    <footer class="info-box side-icon">
+                       <i class="ic-login"></i>
+                       <p>
+                           <span class="author caption">Howard Santiago</span>
+                           <time class="date subcaption">02 Jun - leitura: 15 min aprox.</time>
+                       </p>
+                   </footer>
+                </div>      
+
+                <aside class="col s12 m12 l4">
+                   <h4 class="caption">palavras-chave</h4>
+                    <ul class="tags">
+                        <li class="tag"><a href="#">Biometria</a></li>
+                        <li class="tag"><a href="#">Gestão da Informação</a></li>
+                        <li class="tag"><a href="#">Festão do Conhecimento</a></li>
+                        <li class="tag"><a href="#">Sistemas de Informação</a></li>
+                        <li class="tag"><a href="#">Comunicação</a></li>
+                        <li class="tag"><a href="#">Gestão Tecnológica</a></li>
+                    </ul>
+                    <button type="button" class="error right text-center m-t-10">
+                        <i class="ic-evento-cancelar"></i>
+                        <div class="caption error m-t-10">apagar</div>
+                    </button>
+                    
+                    <button type="button" class="right text-center m-t-10 switch-projeto">
+                        <i class="ic-evento-exportar"></i>
+                        <div class="caption error m-t-10">editar</div>
+                    </button>
+                </aside>     
+            </article>
+            <hr class="half-separator" />
+        </div>   
+<!--        Fim de meus projetos -->
+       </section>
+        
     
   
   
@@ -249,7 +410,7 @@
 </div>
 </main>
    
-
+   
 <footer id="footer">
     <div class="row m-b-0">
         <div class="container">
@@ -257,10 +418,10 @@
                 <span class="caption">Apoio</span>
                 <div class="row">
                     <div class="col s4 m6 l6 offset-s2 m-tb-10">
-                        <a href="" class=""><img src="../img/aeita.png" alt="AEITA"></a>
+                        <a href="" class=""><img src="img/aeita.png" alt="AEITA"></a>
                     </div>
                     <div class="col s4 m6 l6 m-tb-10">
-                        <a href="" class=""><img src="../img/ita-ex.png" alt="Ex alunos do ITA"></a>
+                        <a href="" class=""><img src="img/ita-ex.png" alt="Ex alunos do ITA"></a>
                     </div>
                 </div>
             </div>
@@ -268,7 +429,7 @@
             <div class="col s12 m3 l2 text-center offset-l1 right">
                 <span class="caption">Realização</span>
                 <div class="col s6 m12 l12 offset-s3 m-tb-10">
-                    <a href="" class=""><img src="../img/ita-logo.svg" alt="ITA logo"></a>
+                    <a href="" class=""><img src="img/ita-logo.svg" alt="ITA logo"></a>
                 </div>
             </div>
             
@@ -293,6 +454,7 @@
         </nav>
     </div>
 </footer>
+   
    
    
 <div id="modal-detalhes" class="modal">
