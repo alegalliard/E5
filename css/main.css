@@ -3337,24 +3337,30 @@ textarea {
     top: 0; }
 
 .slider {
-  position: relative; }
+  position: relative;
+  height: 650px;
+  overflow: hidden; }
   .slider ul, .slider li {
     list-style: none;
     padding: 0;
     margin: 0; }
   .slider img {
     width: 100%;
-    height: auto; }
+    height: auto;
+    position: absolute; }
   .slider .info-box {
     position: absolute;
     bottom: 20px;
-    left: 40px; }
+    left: 40px;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.4); }
   .slider .side-icon, .slider .side-box {
     display: inline-block;
     vertical-align: middle; }
   .slider .side-box {
     max-width: 80%;
     margin-left: 30px; }
+  .slider .current {
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.4); }
   .slider .slider-title {
     color: #fff;
     font-size: 2.5rem;
@@ -3378,15 +3384,31 @@ textarea {
   padding: 0 15px; }
 
 .timerout {
-  height: 5px;
-  background: #FFCF15;
-  width: 90%;
-  width: calc(100% - 23px);
-  display: block;
-  position: absolute;
-  bottom: 25px;
-  left: 12px; }
+  height: 6px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  margin-top: -30px; }
+  .timerout:before {
+    display: block;
+    position: absolute;
+    content: "";
+    left: -200px;
+    width: 200px;
+    height: 6px;
+    left: 0;
+    z-index: 2;
+    background-color: #FFCF15;
+    animation: timerout 10s linear infinite; }
+  .timerout.stop:before {
+    width: 100% !important; }
 
+@keyframes timerout {
+  from {
+    width: 0%; }
+  to {
+    width: 100%; } }
 #logo {
   position: absolute;
   top: 0;

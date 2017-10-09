@@ -1,6 +1,7 @@
 .slider{
     position: relative;
-
+    height: 650px;
+    overflow: hidden;
     ul,li{
         list-style: none;
         padding: 0;
@@ -10,13 +11,13 @@
     img{
         width: 100%;
         height: auto;
-    }
-    .slide{
+        position: absolute;
     }
     .info-box{
         position: absolute;
         bottom: 20px;
         left: 40px;
+        text-shadow: 0 1px 5px rgba(0,0,0,.4)
     }
     
     .side-icon,.side-box{
@@ -28,6 +29,11 @@
         max-width: 80%;
         margin-left: 30px
     }
+    
+    .current{
+        text-shadow: 0 1px 5px rgba(0,0,0,.4)
+    }
+    
     
     .slider-title{
         color: #fff;
@@ -62,17 +68,39 @@
     .pad{
         padding: 0 15px;
     }
-    
-    
 }
 
-.timerout{
-    height: 5px;
-    background: $amarelo;
-    width: 90%;
-    width: calc(100% - 23px);
-    display: block;
-    position: absolute;
-    bottom: 25px;
-    left: 12px;
+
+.timerout {
+    height: 6px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    margin-top:-30px;
+    &:before{
+        display: block;
+        position: absolute;
+        content: "";
+        left: -200px;
+        width: 200px;
+        height: 6px;
+        left: 0;
+        z-index: 2;
+        background-color: $amarelo;
+        animation: timerout 10s linear infinite;
+    }
+
+    &.stop:before{
+        width: 100%!important
+    }
+}
+
+@keyframes timerout {
+    from {
+        width: 0%
+    }
+    to {
+        width: 100%
+    }
 }

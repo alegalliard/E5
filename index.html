@@ -19,12 +19,14 @@
     
     
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <link rel="stylesheet" href="css/main.css?10-26-28-pm">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="vendor/jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <link rel="stylesheet" href="vendor/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css">
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/materialize/js/bin/materialize.min.js"></script>
     <script src="vendor/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="js/slider.js"></script>
     <script>
         $( function() {
             $( "#datepicker" ).datepicker({
@@ -136,24 +138,36 @@
             <div class="col s12 m12 l9 rel">
                 <div class="slider shadow">
                     <ul>
-                        <li class="slide">
-                            <img src="img/ilustrative/img5.jpg" alt="">
-                            <div class="info-box">
-                               <div class="side-icon">
-                                  <div class="bordered">
-                                       <i class="ic-publicacoes"></i>
-                                  </div>
-                                   <span class="slider-pagin"><span class="current">1</span>/5</span>
-                               </div>
-                                <div class="side-box">
-                                    <small class="event-type">destaques</small>
-                                    <p class="slider-title">PRG reúne diretores e coordenadores de graduação</p>
-                                </div>
-                                
-                            </div>
+                        <li class="slide" data-title="Mussum Ipsum, cacilds vidis litro abertis." data-desc="Delegadis gente finis, bibendum egestas augue arcu ut est. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.">
+                            <img src="img/ilustrative/img1.jpg" alt="">
                         </li>
-                        
+                        <li class="slide" data-title="Quem num gosta di mim que vai caçá sua turmis!" data-desc="Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.">
+                            <img src="img/ilustrative/img2.jpg" alt="">
+                        </li>
+                        <li class="slide" data-title="Per aumento de cachacis, eu reclamis." data-desc="Não sou faixa preta cumpadi, sou preto inteiris, inteiris. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet.">
+                            <img src="img/ilustrative/img3.jpg" alt="">
+                        </li>
+                        <li class="slide" data-title="Casamentiss faiz malandris se pirulitá. " data-desc="Copo furadis é disculpa de bebadis, arcu quam euismod magna.">
+                            <img src="img/ilustrative/img4.jpg" alt="">
+                        </li>
+                        <li class="slide" data-title=" In elementis mé pra quem é amistosis quis leo." data-desc="Aenean aliquam molestie leo, vitae iaculis nisl. Diuretics paradis num copo é motivis de denguis.">
+                            <img src="img/ilustrative/img5.jpg" alt="">
+                        </li>
                     </ul>
+                    
+                    <div class="info-box">
+                       <div class="side-icon">
+                          <div class="bordered">
+                               <i class="ic-publicacoes"></i>
+                          </div>
+                           <span class="slider-pagin"><span class="current">1</span>/5</span>
+                       </div>
+                        <div class="side-box">
+                            <small class="event-type">destaques</small>
+                            <p class="slider-title">PRG reúne diretores e coordenadores de graduação</p>
+                        </div>
+                    </div>
+                    
                 </div>
                 
                 <div class="timerout"></div>
