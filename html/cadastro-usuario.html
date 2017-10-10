@@ -1,340 +1,110 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <title>ITA - Cadastro</title>
-    <meta name="description" content="">
-    <meta name="robots" content="index, follow">
-<!--  Se for importante indexar o site no Google, não se esqueça 
-       de permitir a personalização  da TITLE (até 60 chars), a 
-       META-DESCRIPTION (até 140 chars) 
-       e META-ROBOTS para cada página. 
-       
-       Páginas restritas: Não é necessário personalizar a meta-description, 
-       somente a title. Robots deve constar com content noindex,nofollow
-       
-       -->
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <link rel="stylesheet" href="../css/main.css?08-40-49-pm">
-    <link rel="stylesheet" href="../vendor/jquery-ui-1.12.1.custom/jquery-ui.min.css">
-    <link rel="stylesheet" href="../vendor/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css">
-    <script src="../vendor/jquery/jquery.min.js"></script>
-    <script src="../vendor/materialize/js/bin/materialize.min.js"></script>
-    <script src="../vendor/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
-    <script>
-        $( function() {
-            
-            
-            $('.icon-list').on('click', function(){
-                $('.full-itens').show();
-                $('.icon-list').hide();
-            });
-            $('.collapse').on('click', function(){
-                $('.full-itens').hide();
-                $('.icon-list').show();
-            });
-            
-            $('.tab a').on('click',function(){
-                $('#tipo-usuario').val($(this).text());
-                $('#titulo-usuario').text($(this).text());
-                
-                if($(this).hasClass('is-ita'))
-                    $('.do-ita').show();
-                else
-                    $('.do-ita').hide();
-                
-                if($(this).hasClass('tec-adm'))
-                    $('.tecnico-adm').show();
-                else
-                    $('.tecnico-adm').hide();
-                
-                if($(this).hasClass('nao-ita'))
-                    $('.outro').show();
-                else
-                    $('.outro').hide();
-            });
-        });
-    </script>
-</head>
-<body>
-   
-
- 
-  <menu class="sidenav side-nav fixed">
-   <ul class="icon-list">
-       <li class="right-on-med-and-down"><i class="ic-login"></i></li>
-       <li><i class="ic-inicio"></i></li>
-       <li><i class="ic-busca"></i></li>
-       <li><i class="ic-eventos"></i></li>
-       <li><i class="ic-projetos"></i></li>
-       <li class="hide-on-large-only"><i class="ic-menu ic-sun">...</i></li>
-       <li class="hide-on-med-and-down"><i class="ic-acervo"></i></li>
-       <li class="hide-on-med-and-down"><i class="ic-publicacoes"></i></li>
-       <li class="hide-on-med-and-down"><i class="ic-equipe"></i></li>
-       <li class="hide-on-med-and-down"><i class="ic-contato"></i></li>
-   </ul>
-    <ul class="full-itens">
-        <li class="negative">
-            <a href="login.html"><i class="ic-login"></i>login ou cadastrar</a>
-        </li>
-        
-        <li>
-            <a href="index.html"><i class="ic-inicio"></i>início</a>
-        </li>
-        <li class="search">
-           <form action="busca.html">
-            <i class="ic-busca"></i>
-            <input type="search" id="busca" name="busca" placeholder="busque no site"> 
-           </form>        
-        </li>
-        <li>
-            <a href="calendario-eventos.html"><i class="ic-eventos"></i>eventos</a>
-        </li>
-        <li>
-            <a href="projetos.html"><i class="ic-projetos"></i>projetos</a>
-        </li>
-        <li>
-           <a href="acervo.html"><i class="ic-acervo"></i>acervo <br>
-            <span class="subcaption">restrito à usuários cadastrados</span></a>
-        </li>
-        <li>
-            <a href="publicacoes.html"><i class="ic-publicacoes"></i>publicações</a>
-        </li>
-        <li>
-            <a href="apresentacao.html"><i class="ic-equipe"></i>apresentação</a>
-        </li>
-
-        <li>
-            <a href="contato.html"><i class="ic-contato"></i>contato</a>
-        </li>
-        <li class="collapse">
-            <a href="#" class="collapse"><i class="ic-contato"></i>colapsar</a>
-        </li>
-    </ul>
-</menu> 
-   
-   
-
 <header class="row m-b-0">
-    <div class="container">
-       <div class="p-rl-10">
-           <div class="col s12 header ilustra--eventos">
-            <div class="col s2 m1 l1">
-                <a href="index.html" id="mini-logo"><img src="../img/logo-horizontal.svg" alt="Espaço de Estudos e Experiências em Engenharia"></a>
-            </div>
-
-            <div class="col s9 m10 l10 text-center">
-                <h1>cadastro de usuários</h1>           
-            </div>
-        </div>
-       </div>
-       <nav class="breadcrumb">
-           <ul class="col s12 m-b-0">
-               <li><a href="index.html">Home</a></li>
-                <li class="active">Busca</li>
-               <li class="right m-b-20"><a href="index.html" class="teal-text">Voltar</a></li>
-           </ul>
-       </nav>
-    </div>
+	<div class="container">
+		<div class="p-rl-10">
+			<div class="col s12 header ilustra--eventos">
+				<div class="col s2 m1 l1">
+					<a href="index.html" id="mini-logo"><img src="../img/logo-horizontal.svg" alt="Espaço de Estudos e Experiências em Engenharia"></a>
+				</div>
+				<div class="col s9 m10 l10 text-center">
+					<h1>cadastro de usuários</h1>
+				</div>
+			</div>
+		</div>
+	</div>
 </header>
-  
-  
-  
-
+{RETORNO}
 <main class="main">
-      
-      
-   <section class="row">
-    <article class="container">
-       
-       <div class="col s12">
-           
-           <p class="e6-desc text-left">Quisquam facere sint autem tempore dolorem fugiat unde hic, quia debitis dolores nam possimus ipsum doloribus laborum recusandae atque, vero sit! Commodi deserunt minima fugiat aliquam consequuntur rerum assumenda illum. <a href="mailto:contato.e5@ita.br">contato.e5@ita.br</a> ou telefone (12) 3456-7890.</p>
+	<section class="row">
+		<article class="container">
+			<div class="col s12">
+				<p class="e6-desc text-left">Quisquam facere sint autem tempore dolorem fugiat unde hic, quia debitis dolores nam possimus ipsum doloribus laborum recusandae atque, vero sit! Commodi deserunt minima fugiat aliquam consequuntur rerum assumenda illum. <a href="mailto:contato.e5@ita.br">contato.e5@ita.br</a> ou telefone (12) 3456-7890.</p>
+				<h3>Selecione seu tipo de usuário:</h3>
+				<nav>
+					<!-- input hidden associado ao comportamento dessas
+					tabs no início do formulário abaixo -->
+					<ul class="tabs horizontal">
+						<li class="tab"><a href="#" data-tipo="professor_ita" class="is-ita">Docente do ITA</a></li>
+						<li class="tab"><a href="#" data-tipo="aluno_ita" class="is-ita">Aluno do ITA</a></li>
+						<li class="tab"><a href="#" data-tipo="servidor_ita" class="is-ita tec-adm">Servidor técnico-administrativo do ITA</a></li>
+						<li class="tab"><a href="#" data-tipo="outros" class="nao-ita">Outro</a></li>
+					</ul>
+				</nav>
+				<form action="{LINK_CADASTRAR}" class="row" method="POST" name="cadastro">
+					<input type="hidden" name="tipo_usuario" id="tipo_usuario" value="{TIPO_USUARIO}">
+					<fieldset class="p-rl-05">
+						<legend id="titulo-usuario">Docente do ITA</legend>
+						<div class="row">
+							<div class="col s12">
+								<label for="nome" id="campoNome">Nome completo</label>
+								<input id="nome" value="{NOME}" name="nome" maxlength="255" type="text">
+							</div>
+							<div class="col s6">
+								<label for="email">E-mail</label>
+								<input id="email" name="email" value="{EMAIL}" maxlength="100" type="text">
+							</div>
+							<div class="col s6">
+								<label for="mail_secundario">E-mail alternativo (opcional):</label>
+								<input id="mail_secundario" name="mail_secundario" value="{MAIL_SECUNDARIO}" maxlength="100" type="text">
+							</div>
+							<div class="col s3">
+								<label for="telefone">Telefone para contato:</label>
+								<input id="telefone" name="telefone" value="{TELEFONE}" maxlength="100" type="text">
+							</div>
+							<div class="col s1">
+								<label for="ramal">Ramal:</label>
+								<input id="ramal" name="ramal" value="{RAMAL}" maxlength="10" type="text">
+							</div>
+							<div class="col s8">
+								<label for="link_curriculo">Link para curriculo Lattes <span class="outro">(opcional):</span></label>
+								<input type="text" id="link_curriculo" name="link_curriculo" value="{LINK_CURRICULO}" />
+							</div>
+						</div>
+						<div class="outro row">
+							<div class="col s6">
+								<label for="cargo">Função/Cargo:</label>
+								<input type="text" id="cargo" name="cargo" value="{CARGO}">
+							</div>
+							<div class="col s6">
+								<label for="instituicao">Instituição:</label>
+								<input type="text" id="instituicao" name="instituicao" value="{INSTITUICAO}">
+							</div>
+							<div class="col s6">
+								<label for="localidade">Cidade/Estado da Instituição:</label>
+								<input type="text" id="localidade" name="localidade" value="{LOCALIDADE}">
+							</div>
+						</div>
+						<div class="row do-ita">
+							<legend>Divisão:</legend>
+							<!-- INICIO BLOCO_DIVISAO_OPTS -->
+								<!-- INICIO BLOCO_DIVISAO_OPTS_GRUPO_ABRE -->
+							<div class="{OPT_GRUPO} col s6">
+								<!-- FIM BLOCO_DIVISAO_OPTS_GRUPO_ABRE -->
+								<p class="m-b-20">
+									<input name="divisao" type="radio" id="divisao_{OPT_VALOR}" value="{OPT_VALOR}" <!-- INICIO BLOCO_DIVISAO_OPTS_OK --> checked="checked" <!-- FIM BLOCO_DIVISAO_OPTS_OK --> />
+									<label for="divisao_{OPT_VALOR}">{OPT_ROTULO}</label>
+								</p>
+								<!-- INICIO BLOCO_DIVISAO_OPTS_GRUPO_FECHA -->
+							</div>
+								<!-- FIM BLOCO_DIVISAO_OPTS_GRUPO_FECHA -->
+							<!-- FIM BLOCO_DIVISAO_OPTS -->
 
-           <h3>Selecione seu tipo de usuário:</h3>
-
-           <nav>
-<!--              input hidden associado ao comportamento dessas
-                   tabs no início do formulário abaixo-->
-                   
-               <ul class="tabs horizontal">
-                   <li class="tab"><a href="#" class="active">Docente do ITA</a></li>
-                   <li class="tab"><a href="#" class="is-ita">Aluno do ITA</a></li>
-                   <li class="tab"><a href="#" class="is-ita tec-adm">Servidor técnico-administrativo do ITA</a></li>
-                   <li class="tab"><a href="#" class="nao-ita">Outro</a></li>
-               </ul>
-           </nav>
-           
-           
-           
-           
-           <form action="" class="row">
-              <input type="hidden" name="tipo-usuario" id="tipo-usuario" value="Docente do ITA">
-              <fieldset class="p-rl-05">
-        			<legend id="titulo-usuario">Docente do ITA</legend>
-                   <div class="row">
-                       <div class="col s12">
-                            <label for="nome" id="campoNome">Nome completo</label>
-                            <input id="nome" value="" name="nome" maxlength="255" type="text">
-                         </div>
-                        <div class="col s6">
-                            <label for="email">E-mail</label>
-                            <input id="email" name="email" value="" maxlength="100" type="text">
-                        </div>
-                        <div class="col s6">
-                            <label for="email-alt">E-mail alternativo (opcional):</label>
-                            <input id="email-alt" name="email-alt" value="" maxlength="100" type="text">
-                        </div>
-                        <div class="col s4">
-                            <label for="telefone">Telefone para contato (ramal):</label>
-                            <input id="telefone" name="telefone" value="" maxlength="100" type="text">
-                        </div>
-                        <div class="col s8">
-                          <label for="lattes">Link para curriculo Lattes <span class="outro">(opcional):</span></label>
-                          <input type="text" id="lattes">
-                        </div>
-                   </div>
-
-
-
-                    <div class="outro row">
-                        <div class="col s6">
-                            <label for="cargo">Função/Cargo:</label>
-                            <input type="text" id="cargo">
-                        </div>
-                        <div class="col s6">
-                            <label for="instituicao">Instituição:</label>
-                            <input type="text" id="instituicao">
-                        </div>
-                        <div class="col s6">
-                            <label for="localidade-instituicao">Cidade/Estado da Instituição:</label>
-                            <input type="text" id="localidade-instituicao">
-                        </div>
-                    </div>
-                    
-
-                    
-                    <div class="row do-ita">
-                      <legend>Divisão:</legend>
-                      <div class="tecnico-adm col s6">
-                          <p>
-                            <input name="divisao" type="radio" id="reitoria" />
-                            <label for="reitoria">Reitoria</label>
-                          </p>
-                          <p>
-                            <input name="divisao" type="radio" id="pro-reitoria-graduacao" />
-                            <label for="pro-reitoria-graduacao">Pró-Reitoria de Graduação</label>
-                          </p>
-                          <p>
-                            <input name="divisao" type="radio" id="pro-reitoria-pos" />
-                            <label for="pro-reitoria-pos">Pró-Reitoria de Pós-Graduação</label>
-                          </p>
-                          <p>
-                            <input name="divisao" type="radio" id="pro-reitoria-pesquisa" />
-                            <label for="pro-reitoria-pesquisa">Pró-Reitoria de Pesquisa e Relacionamento Institucional</label>
-                          </p>
-                          <p>
-                            <input name="divisao" type="radio" id="pro-reitoria-" />
-                            <label for="pro-reitoria-">Pró-Reitoria de Administração</label>
-                          </p>
-                      </div>
-                      <div class="do-ita col s6">
-                          <p>
-                            <input name="divisao" type="radio" id="ciencias-fundamentais" />
-                            <label for="ciencias-fundamentais">Ciências Fundamentais</label>
-                          </p>
-                          <p>
-                            <input name="divisao" type="radio" id="eng-aeronautica" />
-                            <label for="eng-aeronautica">Engenharia Aeronáutica</label>
-                          </p>                          
-                          <p>
-                            <input name="divisao" type="radio" id="eng-eletronica" />
-                            <label for="eng-eletronica">Engenharia Eletrônica</label>
-                          </p>                          
-                          <p class="m-b-20">
-                            <input name="divisao" type="radio" id="eng-mecanica" />
-                            <label for="eng-mecanica">Engenharia Mecânica</label>
-                          </p>                          
-                          <p class="m-b-20">
-                            <input name="divisao" type="radio" id="eng-civil" />
-                            <label for="eng-civil">Engenharia Civil</label>
-                          </p>                          
-                          <p class="m-b-20">
-                            <input name="divisao" type="radio" id="computacao" />
-                            <label for="computacao">Ciência da Computação</label>
-                          </p>
-                      </div>
-                    </div>
-                    <div class="row">
-                       <div class="col s6">
-                            <label for="senha">Senha</label>
-                            <input id="senha" name="senha" value="" maxlength="100" type="password">
-                        </div>
-                        <div class="col s6">
-                            <label for="conf-senha">Confirmação de senha:</label>
-                            <input id="conf-senha" name="conf-senha" value="" maxlength="100" type="password">
-                        </div> 	
-                        
-                    </div>
-                    			
-       			
-        		</fieldset>
-               
-               <div class="col s4 offset-s4">
-                   <button type="submit" class="btn-line">Enviar</button>
-               </div>
-               
-           </form>
-       </div>
-       
-    </article>
-</section>
+						</div>
+						<div class="row">
+							<div class="col s6">
+								<label for="senha">Senha</label>
+								<input id="senha" name="senha" value="" maxlength="100" type="password">
+							</div>
+							<div class="col s6">
+								<label for="senha2">Confirmação de senha:</label>
+								<input id="senha2" name="senha2" value="" maxlength="100" type="password">
+							</div>
+						</div>
+					</fieldset>
+					<div class="col s4 offset-s4">
+						<button type="submit" class="btn-line">Enviar</button>
+					</div>
+				</form>
+			</div>
+		</article>
+	</section>
 </main>
-   
-   
-<footer id="footer">
-    <div class="row m-b-0">
-        <div class="container">
-            <div class="col s12 m5 l3 offset-l2 right text-center">
-                <span class="caption">Apoio</span>
-                <div class="row">
-                    <div class="col s4 m6 l6 offset-s2 m-tb-10">
-                        <a href="" class=""><img src="../img/aeita.png" alt="AEITA"></a>
-                    </div>
-                    <div class="col s4 m6 l6 m-tb-10">
-                        <a href="" class=""><img src="../img/ita-ex.png" alt="Ex alunos do ITA"></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s12 m3 l2 text-center offset-l1 right">
-                <span class="caption">Realização</span>
-                <div class="col s6 m12 l12 offset-s3 m-tb-10">
-                    <a href="" class=""><img src="../img/ita-logo.svg" alt="ITA logo"></a>
-                </div>
-            </div>
-            
-            <div class="col s12 m4 l4 left m-tb-10">
-                <p class="caption center-on-small-only">
-                <strong>Instituto Tecnológico de Aeronáutica</strong><br>
-                Praça Marechal Eduardo Gomes, 50 <br>
-                Vila das Acácias, 12228-900 <br>
-                São José dos Campos/SP - Brasil
-                </p>
-            </div>            
-        </div>
-        
-        
-
-        <nav class="row m-b-0">
-            <ul class=" yellow-list">
-                <li><a href="apresentacao.html">Institucional</a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>        
-        </nav>
-    </div>
-</footer>
-    
-</body>
-</html>
