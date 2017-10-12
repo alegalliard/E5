@@ -1,12 +1,14 @@
 $(function() {
     
     var slides = $('.slide');
+    var total = slides.length;
     var current = 0;
     var next = current+1;
-    var prev = slides.length;
     var sliderTime = 10000;
     
     slides.addClass('animated');
+    slides.css('opacity',0);
+    slides.eq(current).removeAttr('style');
     
     
     var changeSliderTexts = function(){
@@ -19,27 +21,22 @@ $(function() {
     changeSliderTexts();
     
     var slider = function(){
-        changeSliderTexts();
-        slides.eq(current);
         
-        slides.addClass('fadeIn fadeOut');
-        slides.eq(current).addClass('fadeIn').removeClass('fadeOut');
-        slides.eq(next).addClass('fadeOut').removeClass('fadeIn');
-        
-        
-        if(current < slides.length) {
+        if(current+1 < total){
             current++;
             next = current+1;
-            prev = current-1;
-            
         } else {
             current = 0;
             next = current+1;
-            prev = slides.length;
-        }        
+        }
+        
+        changeSliderTexts();
+        slides.eq(current-1).addClass('fadeOut');
+        slides.eq(current).removeClass('fadeOut').addClass('fadeIn');
     }
     
-    
+
     window.setInterval(slider, sliderTime);
+
    
 });
