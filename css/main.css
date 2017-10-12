@@ -3606,6 +3606,8 @@ textarea {
   width: 100%;
   height: 300px;
   background-color: #fff; }
+  .vitrine.mini {
+    height: 200px; }
 
 .insert-file {
   background-color: #001B4B;
