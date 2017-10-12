@@ -29,36 +29,54 @@
 						<li class="tab"><a href="#" data-tipo="outros" class="nao-ita">Outro</a></li>
 					</ul>
 				</nav>
+				
 				<form action="{LINK_CADASTRAR}" class="row" method="POST" name="cadastro">
 					<input type="hidden" name="tipo_usuario" id="tipo_usuario" value="{TIPO_USUARIO}">
 					<fieldset class="p-rl-05">
 						<legend id="titulo-usuario">Docente do ITA</legend>
+						
 						<div class="row">
-							<div class="col s12">
-								<label for="nome" id="campoNome">Nome completo</label>
-								<input id="nome" value="{NOME}" name="nome" maxlength="255" type="text">
-							</div>
-							<div class="col s6">
-								<label for="email">E-mail</label>
-								<input id="email" name="email" value="{EMAIL}" maxlength="100" type="text">
-							</div>
-							<div class="col s6">
-								<label for="mail_secundario">E-mail alternativo (opcional):</label>
-								<input id="mail_secundario" name="mail_secundario" value="{MAIL_SECUNDARIO}" maxlength="100" type="text">
-							</div>
-							<div class="col s3">
-								<label for="telefone">Telefone para contato:</label>
-								<input id="telefone" name="telefone" value="{TELEFONE}" maxlength="100" type="text">
-							</div>
-							<div class="col s1">
-								<label for="ramal">Ramal:</label>
-								<input id="ramal" name="ramal" value="{RAMAL}" maxlength="10" type="text">
-							</div>
-							<div class="col s8">
-								<label for="link_curriculo">Link para curriculo Lattes <span class="outro">(opcional):</span></label>
-								<input type="text" id="link_curriculo" name="link_curriculo" value="{LINK_CURRICULO}" />
-							</div>
+                            <div class="col s12 m4 l3 rel">
+                                <div class="shadow">
+                                  <div class="vitrine mini"></div>
+                                  <div class="insert-file">
+                                     <label for="img-perfil">imagem do perfil</label>
+                                     <div class="img-icon"><i class="ic-photo"></i></div>
+                                      <input type="file" name="img-perfil" id="img-perfil" accept="image/jpeg">
+                                  </div>
+                                </div>
+                            </div>
+						
+                            <div class="col s12 m8 l9">
+                                <div class="col s12">
+                                    <label for="nome" id="campoNome">Nome completo</label>
+                                    <input id="nome" value="{NOME}" name="nome" maxlength="255" type="text">
+                                </div>
+                                <div class="col s6">
+                                    <label for="email">E-mail</label>
+                                    <input id="email" name="email" value="{EMAIL}" maxlength="100" type="text">
+                                </div>
+                                <div class="col s6">
+                                    <label for="mail_secundario">E-mail alternativo (opcional):</label>
+                                    <input id="mail_secundario" name="mail_secundario" value="{MAIL_SECUNDARIO}" maxlength="100" type="text">
+                                </div>
+                                <div class="col s3">
+                                    <label for="telefone">Telefone para contato:</label>
+                                    <input id="telefone" name="telefone" value="{TELEFONE}" maxlength="100" type="text">
+                                </div>
+                                <div class="col s1">
+                                    <label for="ramal">Ramal:</label>
+                                    <input id="ramal" name="ramal" value="{RAMAL}" maxlength="10" type="text">
+                                </div>
+                                <div class="col s8">
+                                    <label for="link_curriculo">Link para curriculo Lattes <span class="outro">(opcional):</span></label>
+                                    <input type="text" id="link_curriculo" name="link_curriculo" value="{LINK_CURRICULO}" />
+                                </div>
+                            </div>
 						</div>
+						
+						
+						
 						<div class="outro row">
 							<div class="col s6">
 								<label for="cargo">Função/Cargo:</label>
@@ -104,6 +122,9 @@
 						<button type="submit" class="btn-line">Enviar</button>
 					</div>
 				</form>
+				
+				
+				
 			</div>
 		</article>
 	</section>
