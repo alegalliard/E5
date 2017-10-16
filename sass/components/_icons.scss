@@ -8,6 +8,7 @@ $menu-icons: [
     "eventos",
     "inicio",
     "login",
+    "login-amarelo",
     "projetos",
     "publicacoes"
     ];
@@ -73,7 +74,7 @@ $eventos-page-icons: [
         font-weight: 500;
         padding: 13px 0 3px;
         text-align: center;
-        font-style: normal;    
+        font-style: normal;
     }
 
 .sun-search{
@@ -132,7 +133,7 @@ $eventos-page-icons: [
     vertical-align: middle;
     width: 14px;
     height: 14px;
-    
+
     &.ic-clock{
         background:{
             image: url(../img/clock-mini.png);
@@ -161,7 +162,7 @@ $eventos-page-icons: [
     position: relative;
     margin: 0 auto;
     border: 0;
-    
+
     &.pull-left{
         margin: 20px 0;
     }
@@ -177,7 +178,7 @@ $eventos-page-icons: [
     display: inline-block;
     vertical-align: middle;
     position: relative;
-    
+
 }
 
 
@@ -191,7 +192,7 @@ $eventos-page-icons: [
     display: inline-block;
     margin-right: 20px;
     position: relative;
-    
+
     &:after{
         content: " ";
         position: absolute;
@@ -202,9 +203,9 @@ $eventos-page-icons: [
         z-index: 2;
         left: -20px
     }
-    
+
     i{
-      margin-left: -1px; 
+      margin-left: -1px;
     }
 }
 .ic-15{
@@ -235,7 +236,7 @@ $eventos-page-icons: [
             position:center center;
         }
     }
-    
+
     &edit-small{
         width: 20px;
         height: 20px;
@@ -247,7 +248,7 @@ $eventos-page-icons: [
             position:center center;
         }
     }
-    
+
     &publish{
         width: 20px;
         height: 20px;
@@ -259,7 +260,7 @@ $eventos-page-icons: [
             position:center center;
         }
     }
-    
+
     &publish{
         width: 30px;
         height: 30px;
@@ -271,7 +272,7 @@ $eventos-page-icons: [
             position:center center;
         }
     }
-    
+
     &add-sun{
         width: 30px;
         height: 30px;
@@ -283,7 +284,7 @@ $eventos-page-icons: [
             position:center center;
         }
     }
-    
+
     &tiny-download{
         width: 15px;
         height: 15px;
@@ -296,4 +297,3 @@ $eventos-page-icons: [
         }
     }
 }
-

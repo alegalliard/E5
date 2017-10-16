@@ -1,7 +1,8 @@
 .sidenav{
     background-color: #f8f8f8;
     position: fixed;
-    right: 0;
+    // right: 0;
+    right: -190px;
     top: 0;
     margin: 0;
     height: 100%;
@@ -15,23 +16,28 @@
     will-change: transform;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    
+
     -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
-    
-    
+
+
     ul{
-        list-style: none;
+        // list-style: none;
         margin: 0;
         padding: 0;
     }
+
+    .initial{
+      opacity:0;
+      transform:translate3d(2000px,0,0);
+    }
     .full-itens{
-        display: none;
-        i{margin: 0 20px 0 0 }    
+        // display: none;
+        i{margin: 0 20px 0 0 }
     }
     li{ display: block; }
-    
-    
+
+
     a{
         border-left: 3px solid transparent;
         padding: 15px;
@@ -40,7 +46,7 @@
             border-left: 3px solid $azulEscuro;
         }
     }
-    
+
     .search{
         padding: 0;
         position: relative;
@@ -60,36 +66,57 @@
             width: 145px;
         }
     }
-    
+
     .negative{
         background-color: $azulEscuro;
         color: $amarelo;
-        
+
         a{
             color: #fff
         }
     }
-    
+
     @media #{$medium-and-down} {
         width: 100%!important;
-        height: 60px!important;
+        height: 50px;
         top: inherit!important;
         bottom: 0!important;
         padding: 0;
+        right: 0;
         overflow: hidden;
         box-shadow: 0 -2px 18px 1px rgba(0, 0, 0, 0.2);
         li{
             display: inline-block;
         }
+
+
+      &.menu-mobile{
+        height: 100%;
+        width: 217px!important;
+        .full-itens{
+          height: 100%;
+        }
+      }
+
+      &.collapsible-mobile{
+        height: 60px;
+        width: 100%!important;
+        right: 0!important;
+      }
     }
-    
 }
 
 .icon-list{
+  position: absolute;
+  background: #fff;
+  z-index: 3;
+  height: inherit;
+  cursor: pointer;
     i{
         margin: 10px;
     }
     @media #{$medium-and-down} {
+      position: relative;
         li{
             width: 16.66%;
             padding: 0;
