@@ -5,16 +5,16 @@
     <title>ITA - Cadastro</title>
     <meta name="description" content="">
     <meta name="robots" content="index, follow">
-<!--  Se for importante indexar o site no Google, não se esqueça 
-       de permitir a personalização  da TITLE (até 60 chars), a 
-       META-DESCRIPTION (até 140 chars) 
-       e META-ROBOTS para cada página. 
-       
-       Páginas restritas: Não é necessário personalizar a meta-description, 
+<!--  Se for importante indexar o site no Google, não se esqueça
+       de permitir a personalização  da TITLE (até 60 chars), a
+       META-DESCRIPTION (até 140 chars)
+       e META-ROBOTS para cada página.
+
+       Páginas restritas: Não é necessário personalizar a meta-description,
        somente a title. Robots deve constar com content noindex,nofollow
-       
+
        -->
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css?08-40-49-pm">
     <link rel="stylesheet" href="vendor/jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <link rel="stylesheet" href="vendor/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css">
@@ -24,8 +24,8 @@
     <script src="js/login.js"></script>
     <script>
         $( function() {
-            
-            
+
+
             $('.icon-list').on('click', function(){
                 $('.full-itens').show();
                 $('.icon-list').hide();
@@ -34,13 +34,13 @@
                 $('.full-itens').hide();
                 $('.icon-list').show();
             });
-            
+
         });
     </script>
 </head>
 <body>
-   
-    
+
+
 <menu class="sidenav side-nav fixed">
    <ul class="icon-list">
        <li class="right-on-med-and-down"><i class="ic-login"></i></li>
@@ -58,15 +58,15 @@
         <li class="negative">
             <a href="login.html"><i class="ic-login"></i>login ou cadastrar</a>
         </li>
-        
+
         <li>
             <a href="index.html"><i class="ic-inicio"></i>início</a>
         </li>
         <li class="search">
            <form action="busca.html">
             <i class="ic-busca"></i>
-            <input type="search" id="busca" name="busca" placeholder="busque no site"> 
-           </form>        
+            <input type="search" id="busca" name="busca" placeholder="busque no site">
+           </form>
         </li>
         <li>
             <a href="calendario-eventos.html"><i class="ic-eventos"></i>eventos</a>
@@ -98,13 +98,13 @@
   <main class="main">
    <section class="row">
     <div class="container">
-    
+
        <header class="col s12 m12 l4 offset-l1 m-tb-60">
           <a href="index.html" id="side-logo"><img src="img/logo-horizontal.svg" alt="Espaço de Estudos e Experiências em Engenharia"></a>
           <hr class="separador pull-left">
            <h1 class="bold-title">Bem vindo ao E6, um portal feito por docentes para docentes e alunos ou qualquer frase do tipo</h1>
        </header>
-           <div class="col s12 m6 l4 offset-m3 offset-l1 m-t-120">           
+           <div class="col s12 m6 l4 offset-m3 offset-l1 m-t-120">
                <form action="" class="row" id="login-form">
                   <div class="alert error" style="display: none"></div>
                    <fieldset class="">
@@ -130,13 +130,13 @@
                        <a href="cadastro-usuario.html" class="">solicitar uma conta</a>
                    </div>
                </form>
-               
-               
+
+
                <form action="" id="reset-senha-form" style="display: none">
                    <div class="alert error" style="display: none"></div>
                    <fieldset class="">
                       <legend>Recupere seu acesso</legend>
-                      
+
                        <div class="col s12">
                            <label for="prontuario">prontuário</label>
                            <input type="text" name="prontuario" id="prontuario">
@@ -159,16 +159,16 @@
                        <a href="#login-form" class="switch-session" data-parent="reset-senha-form">voltar ao login</a>
                    </div>
                </form>
-               
-               
+
+
            </div>
-       
+
     </div>
 </section>
 </main>
-   
-   
-   
+
+
+
 <footer id="footer">
     <div class="row m-b-0">
         <div class="container">
@@ -206,10 +206,11 @@
                 <li><a href="apresentacao.html">Institucional</a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="contato.html">Contato</a></li>
-            </ul>        
+                <li><a href="links-uteis.html">Links úteis</a></li>
+            </ul>
         </nav>
     </div>
-</footer>   
-    
+</footer>
+
 </body>
 </html>

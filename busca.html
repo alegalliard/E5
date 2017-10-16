@@ -5,16 +5,16 @@
     <title>ITA - Apresentação</title>
     <meta name="description" content="">
     <meta name="robots" content="index, follow">
-<!--  Se for importante indexar o site no Google, não se esqueça 
-       de permitir a personalização  da TITLE (até 60 chars), a 
-       META-DESCRIPTION (até 140 chars) 
-       e META-ROBOTS para cada página. 
-       
-       Páginas restritas: Não é necessário personalizar a meta-description, 
+<!--  Se for importante indexar o site no Google, não se esqueça
+       de permitir a personalização  da TITLE (até 60 chars), a
+       META-DESCRIPTION (até 140 chars)
+       e META-ROBOTS para cada página.
+
+       Páginas restritas: Não é necessário personalizar a meta-description,
        somente a title. Robots deve constar com content noindex,nofollow
-       
+
        -->
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css?08-40-49-pm">
     <link rel="stylesheet" href="vendor/jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <link rel="stylesheet" href="vendor/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css">
@@ -23,8 +23,8 @@
     <script src="vendor/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
     <script>
         $( function() {
-        
-            
+
+
             $('.icon-list').on('click', function(){
                 $('.full-itens').show();
                 $('.icon-list').hide();
@@ -33,10 +33,10 @@
                 $('.full-itens').hide();
                 $('.icon-list').show();
             });
-            
+
             $('.modal').modal();
-            
-            $('.query-name').on('keydown', function(e){                
+
+            $('.query-name').on('keydown', function(e){
                 let code = e.keyCode || e.which;
                 switch(code){
                     case 13: //enter
@@ -46,11 +46,11 @@
                     break;
                 }
             });
-            
+
             $('.empty').on('click', function(){
                 $('.query-name').focus();
             });
-            
+
         });
     </script>
 </head>
@@ -74,15 +74,15 @@
         <li class="negative">
             <a href="login.html"><i class="ic-login"></i>login ou cadastrar</a>
         </li>
-        
+
         <li>
             <a href="index.html"><i class="ic-inicio"></i>início</a>
         </li>
         <li class="search">
            <form action="busca.html">
             <i class="ic-busca"></i>
-            <input type="search" id="busca" name="busca" placeholder="busque no site"> 
-           </form>        
+            <input type="search" id="busca" name="busca" placeholder="busque no site">
+           </form>
         </li>
         <li>
             <a href="calendario-eventos.html"><i class="ic-eventos"></i>eventos</a>
@@ -109,7 +109,7 @@
         </li>
     </ul>
 </menu>
-   
+
 
 <header class="row m-b-0">
     <div class="container">
@@ -120,14 +120,14 @@
             </div>
 
             <div class="col s8 m8 l10 text-center">
-                <input type="search" name="search" id="search" class="query-name" placeholder="pesquisar no e5">            
+                <input type="search" name="search" id="search" class="query-name" placeholder="pesquisar no e5">
             </div>
             <div class="col s2 m2 l1 text-center">
                 <button class="sun-search"><i class="ic-busca"></i></button>
             </div>
         </div>
        </div>
-        
+
     </div>
 </header>
 
@@ -159,17 +159,17 @@
                    <li class="right m-b-20"><a href="index.html" class="teal-text">Voltar</a></li>
                </ul>
            </nav>
-           
-           
-           
+
+
+
            <article class="empty">
                digite o que procura e aperte enter
            </article>
-           
-           
-           
+
+
+
 <!--        Resultados de ACERVO -->
-       
+
        <div id="results-panel" style="display: none;">
 <!--       <div id="results-panel">-->
         <article id="todo-o-acervo">
@@ -190,11 +190,11 @@
                             </a>
                             <a href="#modal-detalhes" class="go-details modal-trigger">detalhes</a>
                         </div>
-                        
+
                         </div>
                     </div>
                 </li>
-                
+
                 <li class="col s12 m6 l6">
                     <div class="card shadow">
                         <div class="side-icon">
@@ -211,11 +211,11 @@
                             </a>
                             <a href="#modal-detalhes" class="go-details modal-trigger">detalhes</a>
                         </div>
-                        
+
                         </div>
                     </div>
                 </li>
-                
+
                 <li class="col s12 m6 l6">
                     <div class="card shadow">
                         <div class="side-icon">
@@ -232,26 +232,26 @@
                             </a>
                             <a href="#modal-detalhes" class="go-details modal-trigger">detalhes</a>
                         </div>
-                        
+
                         </div>
                     </div>
                 </li>
-                
-            
-                
+
+
+
             </ul>
         </article>
-        
-        
+
+
 <!--        Resultados de PROJETO -->
-        
+
         <article id="projetos">
             <ul class="result-list news-list">
                 <li class="col s12 m6 l6">
                     <div class="row">
-                       
+
                         <div class="col s3">
-                           <figure class="news-pic shadow">                               
+                           <figure class="news-pic shadow">
                             <img src="img/ilustrative/img2.jpg" alt="">
                            </figure>
                         </div>
@@ -260,20 +260,20 @@
                             <!--  <i class="ic-15 ic-login m-r-10"></i> -->
                             faça login para acessar
                             </a>
-                            
+
                             <a href="#" class="marine-text">Projeto de Video-aulas e Sala de aula Invertida em Álgebra Linear</a>
                             <time datetime="2016-09-18T19:00" class="caption">Este projeto é essencialmente uma réplica do meu primeiro...</time >
                             <small class="caption"><a href="#"><i class="ic-login ic-15 m-r-10"></i> Renan Lima</a></small>
                         </div>
-                        
+
                     </div>
                 </li>
-                
+
                 <li class="col s12 m6 l6">
                     <div class="row">
-                       
+
                         <div class="col s3">
-                           <figure class="news-pic shadow">                               
+                           <figure class="news-pic shadow">
                             <img src="img/ilustrative/img2.jpg" alt="">
                            </figure>
                         </div>
@@ -282,19 +282,19 @@
                             <!--  <i class="ic-15 ic-login m-r-10"></i> -->
                             faça login para acessar
                             </a>
-                            
+
                             <a href="#" class="marine-text">Asteroids</a>
                             <time datetime="2016-09-18T19:00" class="caption">Este projeto é essencialmente uma réplica do meu primeiro...</time >
                             <small class="caption"><a href="#"><i class="ic-login ic-15 m-r-10"></i> Renan Lima</a></small>
                         </div>
-                        
+
                     </div>
                 </li>
-                
+
             </ul>
         </article>
-        
-        
+
+
 <!--        Resultados de EVENTO -->
         <article id="eventos">
             <ul class="list-events">
@@ -312,7 +312,7 @@
                     </div>
                 </a>
                 </li>
-                
+
                 <li class="col s6">
                 <a href="#" class="p-rl-10 card shadow">
                     <div class="event-block">
@@ -327,7 +327,7 @@
                     </div>
                 </a>
                 </li>
-                
+
                 <li class="col s6">
                 <a href="#" class="p-rl-10 card shadow">
                     <div class="event-block">
@@ -342,11 +342,11 @@
                     </div>
                 </a>
                 </li>
-                
+
             </ul>
         </article>
-        
-        
+
+
 <!--        Resultados de PUBLICAÇÃO -->
         <article id="publicacoes">
             <ul class="result-list">
@@ -366,7 +366,7 @@
                             </a>
                             <a href="#modal-detalhes" class="go-details modal-trigger">detalhes</a>
                         </div>
-                        
+
                         </div>
                     </div>
                 </li>
@@ -377,8 +377,8 @@
         </div>
     </section>
 </main>
-   
-   
+
+
 <footer id="footer">
     <div class="row m-b-0">
         <div class="container">
@@ -400,7 +400,7 @@
                     <a href="" class=""><img src="img/ita-logo.svg" alt="ITA logo"></a>
                 </div>
             </div>
-            
+
             <div class="col s12 m4 l4 left m-tb-10">
                 <p class="caption center-on-small-only">
                 <strong>Instituto Tecnológico de Aeronáutica</strong><br>
@@ -408,21 +408,22 @@
                 Vila das Acácias, 12228-900 <br>
                 São José dos Campos/SP - Brasil
                 </p>
-            </div>            
+            </div>
         </div>
-        
-        
+
+
 
         <nav class="row m-b-0">
             <ul class=" yellow-list">
                 <li><a href="apresentacao.html">Institucional</a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="contato.html">Contato</a></li>
-            </ul>        
+                <li><a href="links-uteis.html">Links úteis</a></li>
+            </ul>
         </nav>
     </div>
 </footer>
-    
+
       <!-- Modal login -->
   <div id="modal-login" class="modal" role="dialog">
     <div class="modal-content">
@@ -437,12 +438,12 @@
                    <label for="pass" class="active">Senha</label>
                    <input type="password" name="pass" id="pass">
                </div>
-               
+
                <div class="col s12 text-right">
                    <a href="cadastro-usuario.html">ou cadastre-se aqui</a>
                </div>
-               
-               
+
+
                <div class="col s6">
                    <button type="button" class="modal-action modal-close btn-line">Cancelar</button>
                </div>
@@ -450,12 +451,12 @@
                <div class="col s6">
                    <button type="submit" class="btn-line">Enviar</button>
                </div>
-               
+
            </fieldset>
        </form>
     </div>
   </div>
-    
+
 
    <!-- Modal login -->
   <div id="modal-detalhes" class="modal" role="dialog">
@@ -476,6 +477,6 @@
        </div>
     </div>
   </div>
-    
+
 </body>
 </html>

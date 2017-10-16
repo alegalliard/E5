@@ -5,16 +5,16 @@
     <title>ITA - Acervo</title>
     <meta name="description" content="">
     <meta name="robots" content="index, follow">
-<!--  Se for importante indexar o site no Google, não se esqueça 
-       de permitir a personalização  da TITLE (até 60 chars), a 
-       META-DESCRIPTION (até 140 chars) 
-       e META-ROBOTS para cada página. 
-       
-       Páginas restritas: Não é necessário personalizar a meta-description, 
+<!--  Se for importante indexar o site no Google, não se esqueça
+       de permitir a personalização  da TITLE (até 60 chars), a
+       META-DESCRIPTION (até 140 chars)
+       e META-ROBOTS para cada página.
+
+       Páginas restritas: Não é necessário personalizar a meta-description,
        somente a title. Robots deve constar com content noindex,nofollow
-       
+
        -->
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css?08-40-49-pm">
     <link rel="stylesheet" href="vendor/jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <link rel="stylesheet" href="vendor/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css">
@@ -24,8 +24,8 @@
     <script src="js/eventos.js"></script>
     <script>
         $( function() {
-            
-            
+
+
             $('.icon-list').on('click', function(){
                 $('.full-itens').show();
                 $('.icon-list').hide();
@@ -57,15 +57,15 @@
         <li class="negative">
             <a href="login.html"><i class="ic-login"></i>login ou cadastrar</a>
         </li>
-        
+
         <li>
             <a href="index.html"><i class="ic-inicio"></i>início</a>
         </li>
         <li class="search">
            <form action="busca.html">
             <i class="ic-busca"></i>
-            <input type="search" id="busca" name="busca" placeholder="busque no site"> 
-           </form>        
+            <input type="search" id="busca" name="busca" placeholder="busque no site">
+           </form>
         </li>
         <li>
             <a href="calendario-eventos.html"><i class="ic-eventos"></i>eventos</a>
@@ -102,18 +102,18 @@
             </div>
 
             <div class="col s9 m10 l10 text-center">
-                <h1>acervo</h1>           
+                <h1>acervo</h1>
             </div>
         </div>
        </div>
-        
+
         <nav class="tab-nav">
            <ul class="tabs horizontal">
                <li class="tab"><a href="#todos-os-arquivos" class="active">todos os arquivos</a></li>
                <li class="tab"><a href="#filtro">filtro</a></li>
             </ul>
         </nav>
-        
+
         <nav class="breadcrumb">
            <ul class="col s12 m-b-0">
                <li><a href="index.html">Home</a></li>
@@ -129,11 +129,11 @@
 
 
 <main class="main">
-<div class="container">  
-   
-   
+<div class="container">
+
+
    <section class="row" id="filtro">
-       
+
        <article class="col s8">
            <ul class="result-list file-list row">
                 <li class="col s12">
@@ -143,11 +143,11 @@
                             <span class="type">áudio</span>
                         </div>
                         <div class="main-desc">
-                           
+
                             <a href="#" class="marine-text m-t-10">Moon Gazing</a>
                             <time datetime="2016-09-18T19:00" class="caption">Adicionado 18 set 2016</time>
                             <small class="filesize">311 kb</small>
-                            
+
                         <div class="row m-b-0">
                             <a href="#modal-login" class="go-login modal-trigger">
                              download <i class="ic-tiny-download"></i>
@@ -158,7 +158,7 @@
                         </div>
                     </div>
                 </li>
-                
+
                 <li class="col s12">
                     <div class="card shadow">
                         <div class="side-icon">
@@ -166,11 +166,11 @@
                             <span class="type">áudio</span>
                         </div>
                         <div class="main-desc">
-                           
+
                             <a href="#" class="marine-text m-t-10">Moon Gazing</a>
                             <time datetime="2016-09-18T19:00" class="caption">Adicionado 18 set 2016</time>
                             <small class="filesize">311 kb</small>
-                            
+
                         <div class="row m-b-0">
                             <a href="#modal-login" class="go-login modal-trigger">
                              download <i class="ic-tiny-download"></i>
@@ -181,7 +181,7 @@
                         </div>
                     </div>
                 </li>
-                
+
                 <li class="col s12">
                     <div class="card shadow">
                         <div class="side-icon">
@@ -189,11 +189,11 @@
                             <span class="type">áudio</span>
                         </div>
                         <div class="main-desc">
-                           
+
                             <a href="#" class="marine-text m-t-10">Moon Gazing</a>
                             <time datetime="2016-09-18T19:00" class="caption">Adicionado 18 set 2016</time>
                             <small class="filesize">311 kb</small>
-                            
+
                         <div class="row m-b-0">
                             <a href="#modal-login" class="go-login modal-trigger">
                              download <i class="ic-tiny-download"></i>
@@ -206,19 +206,19 @@
                 </li>
            </ul>
        </article>
-       
-       
-       
+
+
+
        <form class="col s12 m4 l4 side-events rel">
           <div class="shadow left white">
-           
+
            <div class="col s4 caption m-t-20">
                <i class="ic-filtros"></i> Filtros
            </div>
            <div class="col s8 text-right caption m-t-20">
                listando apenas as opções selecionadas
            </div>
-           
+
            <fieldset class="col s12">
                <h4 class="title-label">período</h4>
                <div class="col s6">
@@ -230,22 +230,22 @@
                    <input type="text" name="ate-data" id="ate-data" class="line-input datepicker">
                </div>
            </fieldset>
-           
-           
+
+
            <fieldset class="col s12">
               <h4 class="title-label">Por nome do evento:</h4>
               <div class="col s12">
                 <label for="dilmes">Dilmês ipsum</label>
                 <input type="checkbox" name="nome-evento[]" id="dilmes">
-              </div>  
+              </div>
               <div class="col s12">
                 <label for="primeiro">Primeiro eu queria</label>
                 <input type="checkbox" name="nome-evento[]" id="primeiro">
-              </div>  
+              </div>
               <div class="col s12">
                 <label for="cump">Cumprimentar os internautas</label>
                 <input type="checkbox" name="nome-evento[]" id="cump">
-              </div>  
+              </div>
               <div class="col s12">
                 <label for="oi">Oi Internautas!</label>
                 <input type="checkbox" name="nome-evento[]" id="oi">
@@ -257,11 +257,11 @@
               <div class="col s12">
                 <label for="sem">é sem dúvida nenhuma uma ameaça</label>
                 <input type="checkbox" name="nome-evento[]" id="sem">
-              </div>                              
+              </div>
            </fieldset>
-           
-           
-           
+
+
+
            <div class="col s12">
               <h4 class="title-label">Tipos de arquivo</h4>
               <div class="col s12 m6 l4">
@@ -283,11 +283,11 @@
                 <div class="col s12 m6 l4">
                     <label for="avi">AVI</label>
                    <input type="checkbox" name="tipos-arquivo[]" id="avi">
-                </div>                              
+                </div>
            </div>
-           
-        
-           
+
+
+
            <div class="col s12">
               <h4 class="title-label">temas</h4>
                <ul class="filter-tags">
@@ -298,19 +298,19 @@
                    <li class="filter-tag"><a href="">gestão</a></li>
                </ul>
            </div>
-           
-           
-           
-           
+
+
+
+
            <button type="button" class="btn-white carregar-mais">filtrar</button>
         </div>
         </form>
    </section>
-   
-   
-   
-   
-   
+
+
+
+
+
     <section class="row" id="todos-os-arquivos">
         <article class="col s12">
             <ul class="result-list file-list row">
@@ -321,11 +321,11 @@
                             <span class="type">áudio</span>
                         </div>
                         <div class="main-desc">
-                           
+
                             <a href="#" class="marine-text m-t-10">Moon Gazing</a>
                             <time datetime="2016-09-18T19:00" class="caption">Adicionado 18 set 2016</time>
                             <small class="filesize">311 kb</small>
-                            
+
                             <hr class="grey-hr">
                              <p class="event-name">Da palestra: <a href="#"> Extensão: articulando ensino e pesquisa com impacto social</a>
                              </p>
@@ -336,8 +336,8 @@
                                <li class="file-tag"><a href="">metodologia</a></li>
                                <li class="file-tag"><a href="">gestão</a></li>
                            </ul>
-                            
-                            
+
+
                         <div class="row m-b-0">
                             <a href="#modal-login" class="go-login modal-trigger">
                              download <i class="ic-tiny-download"></i>
@@ -349,7 +349,7 @@
                     </div>
                 </li>
 
-              
+
               <li class="col s12 m12 l6">
                     <div class="card shadow">
                         <div class="side-icon">
@@ -357,11 +357,11 @@
                             <span class="type">documento</span>
                         </div>
                         <div class="main-desc">
-                           
+
                             <a href="#" class="marine-text m-t-10">Diversidade sexual e respeito às diferenças</a>
                             <time datetime="2016-09-18T19:00" class="caption">Adicionado 18 set 2016</time>
                             <small class="filesize">311 kb</small>
-                            
+
                             <hr class="grey-hr">
                              <p class="event-name">Da palestra: <a href="#"> Extensão: articulando ensino e pesquisa com impacto social</a>
                              </p>
@@ -372,8 +372,8 @@
                                <li class="file-tag"><a href="">metodologia</a></li>
                                <li class="file-tag"><a href="">gestão</a></li>
                            </ul>
-                            
-                            
+
+
                         <div class="row m-b-0">
                             <a href="#modal-login" class="go-login modal-trigger">
                              download <i class="ic-tiny-download"></i>
@@ -384,9 +384,9 @@
                         </div>
                     </div>
                 </li>
-                
-                
-                
+
+
+
                 <li class="col s12 m12 l6">
                     <div class="card shadow">
                         <div class="side-icon">
@@ -394,11 +394,11 @@
                             <span class="type">vídeo</span>
                         </div>
                         <div class="main-desc">
-                           
+
                             <a href="#" class="marine-text m-t-10">ITA promove evento interno para debater a relação professor-aluno</a>
                             <time datetime="2016-09-18T19:00" class="caption">Adicionado 18 set 2016</time>
                             <small class="filesize">311 kb</small>
-                            
+
                             <hr class="grey-hr">
                              <p class="event-name">Da palestra: <a href="#"> Extensão: articulando ensino e pesquisa com impacto social</a>
                              </p>
@@ -409,8 +409,8 @@
                                <li class="file-tag"><a href="">metodologia</a></li>
                                <li class="file-tag"><a href="">gestão</a></li>
                            </ul>
-                            
-                            
+
+
                         <div class="row m-b-0">
                             <a href="#modal-login" class="go-login modal-trigger">
                              download <i class="ic-tiny-download"></i>
@@ -421,9 +421,9 @@
                         </div>
                     </div>
                 </li>
-                
-                
-                
+
+
+
                 <li class="col s12 m12 l6">
                     <div class="card shadow">
                         <div class="side-icon">
@@ -431,11 +431,11 @@
                             <span class="type">documento</span>
                         </div>
                         <div class="main-desc">
-                           
+
                             <a href="#" class="marine-text m-t-10">Extensão: articulando ensino e pesquisa com impacto social</a>
                             <time datetime="2016-09-18T19:00" class="caption">Adicionado 18 set 2016</time>
                             <small class="filesize">311 kb</small>
-                            
+
                             <hr class="grey-hr">
                              <p class="event-name">Da palestra: <a href="#"> Extensão: articulando ensino e pesquisa com impacto social</a>
                              </p>
@@ -446,8 +446,8 @@
                                <li class="file-tag"><a href="">metodologia</a></li>
                                <li class="file-tag"><a href="">gestão</a></li>
                            </ul>
-                            
-                            
+
+
                         <div class="row m-b-0">
                             <a href="#modal-login" class="go-login modal-trigger">
                              download <i class="ic-tiny-download"></i>
@@ -459,7 +459,7 @@
                     </div>
                 </li>
                 </ul>
-                
+
                 <nav class="pagination">
                     <ul>
                         <li class="num rewind"><a href="">&laquo;</a></li>
@@ -477,14 +477,14 @@
                         <li class="num foward"><a href="#">&raquo;</a></li>
                     </ul>
                 </nav>
-                
-                
+
+
         </article>
     </section>
 </div>
 </main>
-   
-   
+
+
 <footer id="footer">
     <div class="row m-b-0">
         <div class="container">
@@ -506,7 +506,7 @@
                     <a href="" class=""><img src="img/ita-logo.svg" alt="ITA logo"></a>
                 </div>
             </div>
-            
+
             <div class="col s12 m4 l4 left m-tb-10">
                 <p class="caption center-on-small-only">
                 <strong>Instituto Tecnológico de Aeronáutica</strong><br>
@@ -514,23 +514,24 @@
                 Vila das Acácias, 12228-900 <br>
                 São José dos Campos/SP - Brasil
                 </p>
-            </div>            
+            </div>
         </div>
-        
-        
+
+
 
         <nav class="row m-b-0">
             <ul class=" yellow-list">
                 <li><a href="apresentacao.html">Institucional</a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="contato.html">Contato</a></li>
-            </ul>        
+                <li><a href="links-uteis.html">Links úteis</a></li>
+            </ul>
         </nav>
     </div>
 </footer>
-   
-   
-   
+
+
+
 <div id="modal-detalhes" class="modal">
     <div class="row">
     <div class="modal-content col s12">
@@ -541,7 +542,7 @@
                 <th colspan="2" class="file-name"></th>
             </tr>
         </thead>
-        <tbody>    
+        <tbody>
             <tr>
                 <td>Tamanho:</td>
                 <td class="file-size"></td>
@@ -567,15 +568,15 @@
     </div>
         <footer class="modal-footer">
             <div class="col s6 offset-s6 text-right">
-                <a href="#!" class="modal-action modal-close btn-line">Fechar</a>         
-            
+                <a href="#!" class="modal-action modal-close btn-line">Fechar</a>
+
                 <a href="#!" class="modal-action modal-close btn-line"> faça login para baixar <i class="ic-download"></i></a>
             </div>
         </footer>
     </div>
 </div>
-   
-   
-    
+
+
+
 </body>
 </html>

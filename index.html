@@ -7,18 +7,18 @@
     <title>ITA</title>
     <meta name="description" content="">
     <meta name="robots" content="index, follow">
-<!--  Se for importante indexar o site no Google, não se esqueça 
-       de permitir a personalização  da TITLE (até 60 chars), a 
-       META-DESCRIPTION (até 140 chars) 
-       e META-ROBOTS para cada página. 
-       
-       Páginas restritas: Não é necessário personalizar a meta-description, 
+<!--  Se for importante indexar o site no Google, não se esqueça
+       de permitir a personalização  da TITLE (até 60 chars), a
+       META-DESCRIPTION (até 140 chars)
+       e META-ROBOTS para cada página.
+
+       Páginas restritas: Não é necessário personalizar a meta-description,
        somente a title. Robots deve constar com content noindex,nofollow
-       
+
        -->
-    
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="vendor/jquery-ui-1.12.1.custom/jquery-ui.min.css">
@@ -38,7 +38,7 @@
                 dayNamesMin:["D", "S", "T", "Q", "Q", "S", "S"]
 
             });
-            
+
             $('.icon-list').on('click', function(){
                 $('.full-itens').show();
                 $('.icon-list').hide();
@@ -48,7 +48,7 @@
                 $('.icon-list').show();
             });
 
-            //descarte esse, utilize a classe .ui-state-active para dias que existem eventos 
+            //descarte esse, utilize a classe .ui-state-active para dias que existem eventos
             var simulateEventsOnCalendar = function(){
                 window.setTimeout(function(){
                     $(document).find('.ui-state-default').each(function(i,d){
@@ -57,22 +57,22 @@
                             $(d).addClass('ui-state-active');
                         }
                     });
-                    
+
                     $(document).find('.ui-datepicker-next, .ui-datepicker-prev').on('click', function(){
                         simulateEventsOnCalendar();
                     });
-                    
+
                 },50);
             }
-            
+
             simulateEventsOnCalendar();
-                
+
         });
     </script>
 </head>
 <body>
- 
- 
+
+
 <menu class="sidenav side-nav fixed">
    <ul class="icon-list">
        <li class="right-on-med-and-down"><i class="ic-login"></i></li>
@@ -90,15 +90,15 @@
         <li class="negative">
             <a href="login.html"><i class="ic-login"></i>login ou cadastrar</a>
         </li>
-        
+
         <li>
             <a href="index.html"><i class="ic-inicio"></i>início</a>
         </li>
         <li class="search">
            <form action="busca.html">
             <i class="ic-busca"></i>
-            <input type="search" id="busca" name="busca" placeholder="busque no site"> 
-           </form>        
+            <input type="search" id="busca" name="busca" placeholder="busque no site">
+           </form>
         </li>
         <li>
             <a href="calendario-eventos.html"><i class="ic-eventos"></i>eventos</a>
@@ -125,7 +125,7 @@
         </li>
     </ul>
 </menu>
-   
+
    <div class="row">
     <div class="container">
         <header class="floating-header">
@@ -154,7 +154,7 @@
                             <img src="img/ilustrative/img5.jpg" alt="">
                         </li>
                     </ul>
-                    
+
                     <div class="info-box">
                        <div class="side-icon">
                           <div class="bordered">
@@ -167,14 +167,14 @@
                             <p class="slider-title">PRG reúne diretores e coordenadores de graduação</p>
                         </div>
                     </div>
-                    
+
                 </div>
-                
+
                 <div class="timerout"></div>
             </div>
             <aside class="col s12 m12 l3 aside">
                 <div class="calendar">
-                    
+
                     <div id="datepicker"></div>
 
 
@@ -226,8 +226,8 @@
             <small class="subcaption">por Carlos Erickson</small>
         </li>
     </ul>
-    
-    
+
+
     <h3 class="teal-h3">assuntos dos últimos projetos</h3>
     <ul class="tags">
         <li class="tag"><a href="#">oficinas</a></li>
@@ -242,15 +242,15 @@
     </div>
 </div><section class="row">
     <article class="container">
-       
+
        <figure class="col s12 m6 l7 right m-r-0">
             <img src="img/ilustra-principal.svg" alt="Organograma ilustrativo">
         </figure>
-        
+
        <div class="col m6 l4 text-center left">
            <h1 class="teal-title">um portal para os eventos do DCTA</h1>
            <p class="e6-desc">Aqui você encontrará informações importantes sobre o Centro. Poderá acompanhar as atividades de formação contínua sobre a prática pedagógica no ensino superior, organizadas pelas Comissões Locais e pelo ITA. Qualquer dúvida, entre em contato pelo e-mail <a href="mailto:contato.e5@ita.br">contato.e5@ita.br</a> ou telefone (12) 3456-7890.</p>
-           
+
            <div class="hide-on-med-and-down">
                <hr class="separador">
 
@@ -264,7 +264,7 @@
                <a href="#" class="mini-a">saiba mais</a>
            </div>
        </div>
-       
+
        <div class="col s8 offset-s2 m6 offset-m3 text-center hide-on-large-only">
            <hr class="separador">
 
@@ -277,9 +277,9 @@
 
            <a href="#" class="mini-a">saiba mais</a>
        </div>
-       
-       
-       
+
+
+
     </article>
 </section><section class="row">
    <div class="container">
@@ -288,7 +288,7 @@
        <a href="" class="subcaption blue-text">+ ver todas</a>
         <hr class="yellow-down">
     </div>
-    
+
     <div class="news">
     <ul>
         <li class="news-box">
@@ -304,7 +304,7 @@
                </p>
            </div>
         </li>
-        
+
         <li class="news-box">
            <figure class="news-pic shadow"><img src="img/ilustrative/img6.jpg" alt=""></figure>
            <div class="info-block">
@@ -318,8 +318,8 @@
                </p>
             </div>
         </li>
-        
-        
+
+
         <li class="news-box">
            <figure class="news-pic shadow"><img src="img/ilustrative/img7.jpg" alt=""></figure>
            <div class="info-block">
@@ -333,7 +333,7 @@
                </p>
             </div>
         </li>
-        
+
         <li class="news-box">
            <figure class="news-pic shadow"><img src="img/ilustrative/img8.jpg" alt=""></figure>
            <div class="info-block">
@@ -347,7 +347,7 @@
                </p>
             </div>
         </li>
-        
+
         <li class="news-box">
            <figure class="news-pic shadow"><img src="img/ilustrative/img5.jpg" alt=""></figure>
            <div class="info-block">
@@ -360,10 +360,10 @@
                    <time class="date subcaption">02 Jun - leitura: 15 min aprox.</time>
                </p>
             </div>
-        </li>        
+        </li>
     </ul>
   </div>
-       
+
    </div>
 </section>
    <section class="row">
@@ -373,17 +373,17 @@
            <a href="#" class="subcaption blue-text">+ ver todas</a>
             <hr class="teal-down">
         </div>
-                    
+
         <article class="row big-news">
             <div class="col s12 m4 l3">
                 <figure class="news-pic shadow">
                     <img src="img/ilustrative/img1.jpg" alt="">
                 </figure>
             </div>
-            
+
             <div class="col s12 m8 l5">
                 <h3 class="h3-title">Bibliometria: uma ferramenta estatística para a gestao da informação e do conhecimento, em sistemas de informação e de avaliação científica</h3>
-                
+
                 <p>Este artigo tem como objetivo o desenvolvimento de uma revisão da literatura sobre Bibliometrie, edstacando sua aplicação como ferramenta estatística básica para gestão</p>
                 <footer class="info-box side-icon">
                    <i class="ic-login"></i>
@@ -392,8 +392,8 @@
                        <time class="date subcaption">02 Jun - leitura: 15 min aprox.</time>
                    </p>
                </footer>
-            </div>      
-            
+            </div>
+
             <aside class="col s12 m12 l4">
                <h4 class="caption">palavras-chave</h4>
                 <ul class="tags">
@@ -404,21 +404,21 @@
                     <li class="tag"><a href="#">Comunicação</a></li>
                     <li class="tag"><a href="#">Gestão Tecnológica</a></li>
                 </ul>
-            </aside>     
+            </aside>
         </article>
         <hr class="half-separator" />
-        
-                   
+
+
         <article class="row big-news">
             <div class="col s12 m4 l3">
                 <figure class="news-pic shadow">
                     <img src="img/ilustrative/img2.jpg" alt="">
                 </figure>
             </div>
-            
+
             <div class="col s12 m8 l5">
                 <h3 class="h3-title">Bibliometria: uma ferramenta estatística para a gestao da informação e do conhecimento, em sistemas de informação e de avaliação científica</h3>
-                
+
                 <p>Este artigo tem como objetivo o desenvolvimento de uma revisão da literatura sobre Bibliometrie, edstacando sua aplicação como ferramenta estatística básica para gestão</p>
                 <footer class="info-box side-icon">
                    <i class="ic-login"></i>
@@ -427,8 +427,8 @@
                        <time class="date subcaption">02 Jun - leitura: 15 min aprox.</time>
                    </p>
                </footer>
-            </div>      
-            
+            </div>
+
             <aside class="col s12 m12 l4">
                <h4 class="caption">palavras-chave</h4>
                 <ul class="tags">
@@ -439,21 +439,21 @@
                     <li class="tag"><a href="#">Comunicação</a></li>
                     <li class="tag"><a href="#">Gestão Tecnológica</a></li>
                 </ul>
-            </aside>     
+            </aside>
         </article>
         <hr class="half-separator" />
-        
-                   
+
+
         <article class="row big-news">
             <div class="col s12 m4 l3">
                 <figure class="news-pic shadow">
                     <img src="img/ilustrative/img3.jpg" alt="">
                 </figure>
             </div>
-            
+
             <div class="col s12 m8 l5">
                 <h3 class="h3-title">Bibliometria: uma ferramenta estatística para a gestao da informação e do conhecimento, em sistemas de informação e de avaliação científica</h3>
-                
+
                 <p>Este artigo tem como objetivo o desenvolvimento de uma revisão da literatura sobre Bibliometrie, edstacando sua aplicação como ferramenta estatística básica para gestão</p>
                 <footer class="info-box side-icon">
                    <i class="ic-login"></i>
@@ -462,8 +462,8 @@
                        <time class="date subcaption">02 Jun - leitura: 15 min aprox.</time>
                    </p>
                </footer>
-            </div>      
-            
+            </div>
+
             <aside class="col s12 m12 l4">
                <h4 class="caption">palavras-chave</h4>
                 <ul class="tags">
@@ -474,21 +474,21 @@
                     <li class="tag"><a href="#">Comunicação</a></li>
                     <li class="tag"><a href="#">Gestão Tecnológica</a></li>
                 </ul>
-            </aside>     
+            </aside>
         </article>
         <hr class="half-separator" />
-        
-                   
+
+
         <article class="row big-news">
             <div class="col s12 m4 l3">
                 <figure class="news-pic shadow">
                     <img src="img/ilustrative/img4.jpg" alt="">
                 </figure>
             </div>
-            
+
             <div class="col s12 m8 l5">
                 <h3 class="h3-title">Bibliometria: uma ferramenta estatística para a gestao da informação e do conhecimento, em sistemas de informação e de avaliação científica</h3>
-                
+
                 <p>Este artigo tem como objetivo o desenvolvimento de uma revisão da literatura sobre Bibliometrie, edstacando sua aplicação como ferramenta estatística básica para gestão</p>
                 <footer class="info-box side-icon">
                    <i class="ic-login"></i>
@@ -497,8 +497,8 @@
                        <time class="date subcaption">02 Jun - leitura: 15 min aprox.</time>
                    </p>
                </footer>
-            </div>      
-            
+            </div>
+
             <aside class="col s12 m12 l4">
                <h4 class="caption">palavras-chave</h4>
                 <ul class="tags">
@@ -509,21 +509,21 @@
                     <li class="tag"><a href="#">Comunicação</a></li>
                     <li class="tag"><a href="#">Gestão Tecnológica</a></li>
                 </ul>
-            </aside>     
+            </aside>
         </article>
         <hr class="half-separator" />
-        
-                   
+
+
         <article class="row big-news">
             <div class="col s12 m4 l3">
                 <figure class="news-pic shadow">
                     <img src="img/ilustrative/img5.jpg" alt="">
                 </figure>
             </div>
-            
+
             <div class="col s12 m8 l5">
                 <h3 class="h3-title">Bibliometria: uma ferramenta estatística para a gestao da informação e do conhecimento, em sistemas de informação e de avaliação científica</h3>
-                
+
                 <p>Este artigo tem como objetivo o desenvolvimento de uma revisão da literatura sobre Bibliometrie, edstacando sua aplicação como ferramenta estatística básica para gestão</p>
                 <footer class="info-box side-icon">
                    <i class="ic-login"></i>
@@ -532,8 +532,8 @@
                        <time class="date subcaption">02 Jun - leitura: 15 min aprox.</time>
                    </p>
                </footer>
-            </div>      
-            
+            </div>
+
             <aside class="col s12 m12 l4">
                <h4 class="caption">palavras-chave</h4>
                 <ul class="tags">
@@ -544,12 +544,12 @@
                     <li class="tag"><a href="#">Comunicação</a></li>
                     <li class="tag"><a href="#">Gestão Tecnológica</a></li>
                 </ul>
-            </aside>     
+            </aside>
         </article>
         <hr class="half-separator" />
-        
-               
-        
+
+
+
     </div>
 </section>
    <section class="row">
@@ -576,17 +576,17 @@
                         <small class="subcaption">Público</small>
                     </div>
                 </header>
-                
-                
+
+
                 <div class="tab-area">
                     <ul class="tabs">
                         <li class="tab col s4 m4 l12"><a href="#when"><i class="icon ic-clock"></i> </a></li>
                         <li class="tab col s4 m4 l12"><a href="#where"><i class="icon ic-map"></i></a></li>
                         <li class="tab col s4 m4 l12"><a href="#who"><i class="icon ic-circle-user"></i></a></li>
                     </ul>
-                
 
-                    <div class="desc-block">             
+
+                    <div class="desc-block">
                         <p class="desc" id="when">
                             <time class="caption">sexta-feira, 18 de agosto às 10 - 12 p.m.</time>
                             <small class="subcaption">daqui 5 dias</small>
@@ -600,7 +600,7 @@
                         <p class="desc" id="who">
                             <b class="caption">Lucille Delgado</b>
                             <small class="subcaption">professora doutora em comortamento pela UNICAMP</small>
-                        </p>           
+                        </p>
                     </div>
                 </div>
                 <hr>
@@ -614,15 +614,15 @@
             </div>
         </div>
     </article>
-       
-       
-       
-       
-       
-       
-       
-       
-       
+
+
+
+
+
+
+
+
+
         <div class="col s12 m4 l4 side-events">
             <ul class="list-events">
                             <li>
@@ -705,7 +705,7 @@
     </div>
 </section>
 
- 
+
 <footer id="footer">
     <div class="row m-b-0">
         <div class="container">
@@ -727,7 +727,7 @@
                     <a href="" class=""><img src="img/ita-logo.svg" alt="ITA logo"></a>
                 </div>
             </div>
-            
+
             <div class="col s12 m4 l4 left m-tb-10">
                 <p class="caption center-on-small-only">
                 <strong>Instituto Tecnológico de Aeronáutica</strong><br>
@@ -735,20 +735,21 @@
                 Vila das Acácias, 12228-900 <br>
                 São José dos Campos/SP - Brasil
                 </p>
-            </div>            
+            </div>
         </div>
-        
-        
+
+
 
         <nav class="row m-b-0">
             <ul class=" yellow-list">
                 <li><a href="apresentacao.html">Institucional</a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="contato.html">Contato</a></li>
-            </ul>        
+                <li><a href="links-uteis.html">Links úteis</a></li>
+            </ul>
         </nav>
     </div>
 </footer>
-    
+
 </body>
 </html>
