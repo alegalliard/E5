@@ -25,13 +25,17 @@
 
 
 
-
 <main class="main">
 <div class="container">
 
 
     <section class="row" id="meus-eventos">
-        <h2 class="col s12">meus eventos</h2>
+        <header class="col s12 rel">
+            <div class="col s12">
+                <h2 class="teal-subtitle">meus eventos</h2>
+            </div>
+            <hr class="teal-down col s12">
+        </header>
 
         <div class="side-events rel">
 
@@ -75,6 +79,15 @@
                 </li>
 
             </ul>
+            
+            <nav class="pagination">
+               <small class="page-results">Exibindo <span class="caption">1</span> resultados de <span class="caption">1</span></small>
+                <ul>
+                    <li class="num rewind"><a href="">&laquo;</a></li>
+                    <li class="num page"><a href="#" class="active">1</a></li>
+                    <li class="num foward"><a href="#">&raquo;</a></li>
+                </ul>
+            </nav>
 
         </div>
     </section>
@@ -86,7 +99,13 @@
 
 
     <section class="row" id="eventos-passados">
-        <h2 class="col s12">eventos passados</h2>
+        <header class="col s12 rel">
+            <div class="col s12">
+                <h2 class="teal-subtitle">eventos passados</h2>
+            </div>
+            <hr class="teal-down col s12">
+        </header>
+        
         <div class="side-events rel">
 
             <ul class="list-events shadow-on-med-and-down">
@@ -105,8 +124,40 @@
                 </a>
                 <hr class="half-separator">
                 </li>
+                
+                <li class="col s12 m12 l6">
+                <a href="#" class="white shadow-on-large">
+                    <div class="event-block">
+                        <small class="caption">curso</small>
+                        <h5 class="">Escola promove seminário de Ética</h5>
+                        <span class="caption"><i class="tiny-ics ic-clock"></i> 10-12 pm</span>
+                        <span class="subcaption"><i class="tiny-ics ic-arroba"></i> Espaço Benedito Miller de apoio</span>
+                    </div>
+                    <div class="day-month">
+                        <i class="ic-calendario">15</i>
+                        <span class="mouth caption">ago</span>
+                    </div>
+                </a>
+                <hr class="half-separator">
+                </li>
 
             </ul>
+            
+            
+            
+            <nav class="pagination">
+               <small class="page-results">Exibindo <span class="caption">10</span> resultados de <span class="caption">55</span></small>
+                <ul>
+                    <li class="num rewind"><a href="">&laquo;</a></li>
+                    <li class="num page"><a href="#" class="active">1</a></li>
+                    <li class="num page"><a href="#">2</a></li>
+                    <li class="num page"><a href="#">3</a></li>
+                    <li class="num page"><a href="#">4</a></li>
+                    <li class="num page"><a href="#">5</a></li>
+                    <li class="num page"><a href="#">...</a></li>
+                    <li class="num foward"><a href="#">&raquo;</a></li>
+                </ul>
+            </nav>
 
         </div>
     </section>
@@ -120,13 +171,18 @@
 
 
     <section class="row" id="eventos-abertos">
-
-        <h2 class="col s12">evento a seguir</h2>
+        
+        <header class="col s12 rel">
+            <div class="col s12">
+                <h2 class="teal-subtitle">evento a seguir</h2>
+            </div>
+            <hr class="teal-down col s12">
+        </header>
 
         <article class="col s12 m8 l8 next-news">
         <div class="shadow">
             <figure>
-                <img src="../img/ilustrative/hands.jpg" alt="">
+                <img src="img/ilustrative/hands.jpg" alt="">
             </figure>
             <div class="pad">
                 <header>
@@ -157,7 +213,7 @@
 
                         <p class="desc" id="where">
                             <b class="caption">auditório Mal. Benedito Miller</b>
-                            <small class="subcaption">rua das Acácias, n 855 <a href="" class="sm-link">mostrar no mapa</a></small>
+                            <small class="subcaption">rua das Acácias, n 855 <a href="evento.html#mapa" class="sm-link">mostrar no mapa</a></small>
                         </p>
 
                         <p class="desc" id="who">
@@ -275,11 +331,15 @@
                </div>
 
                <div class="col s12 m-t-20">
-                   <label for="organizador" class="title-label">Organizador</label>
+                   <label for="organizador" class="title-label">organizador</label>
                    <select name="organizador" id="organizador" class="select-center line-input">
-                      <option value="">ITA</option>
-                       <option value="">UFSCar</option>
-
+                      <option value="">Dilmês ipsum</option>
+                       <option value="">Primeiro eu queria</option>
+                       <option value="">Cumprimentar os internautas</option>
+                       <option value="">Oi Internautas!</option>
+                       <option value="">Depois dizer que o meio ambiente </option>
+                       <option value="">é sem dúvida nenhuma uma ameaça</option>
+                       <option value="">ao desenvolvimento sustentável.</option>
                    </select>
                </div>
            </fieldset>
@@ -330,3 +390,4 @@
     </section>
 </div>
 </main>
+
