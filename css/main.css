@@ -1255,39 +1255,39 @@ button {
   font-family: "Circular";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/Circular/CircularStd-Bold.otf?") format("opentype"); }
+  src: url("../css/fonts/Circular/CircularStd-Bold.otf?") format("opentype"); }
 @font-face {
   font-family: "Circular";
   font-style: italic;
   font-weight: 700;
-  src: url("../fonts/Circular/CircularStd-BoldItalic.otf?") format("opentype"); }
+  src: url("../css/fonts/Circular/CircularStd-BoldItalic.otf?") format("opentype"); }
 @font-face {
   font-family: "Circular";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/Circular/CircularStd-Book.otf?") format("opentype"); }
+  src: url("../css/fonts/Circular/CircularStd-Book.otf?") format("opentype"); }
 @font-face {
   font-family: "Circular";
   font-style: italic;
   font-weight: 500;
-  src: url("../fonts/Circular/CircularStd-BookItalic.otf?") format("opentype"); }
+  src: url("../css/fonts/Circular/CircularStd-BookItalic.otf?") format("opentype"); }
 @font-face {
   font-family: "Lora";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/Circular/Lora-Bold.ttf") format("truetype"); }
+  src: url("../css/fonts/Circular/Lora-Bold.ttf") format("truetype"); }
 @font-face {
   font-family: "Lora";
   font-style: italic;
   font-weight: 700;
-  src: url("../fonts/Circular/Lora-BoldItalic.ttf") format("truetype"); }
+  src: url("../css/fonts/Circular/Lora-BoldItalic.ttf") format("truetype"); }
 @font-face {
   font-family: "Lora";
   font-style: italic;
-  src: url("../fonts/Circular/Lora-Italic.ttf") format("truetype"); }
+  src: url("../css/fonts/Circular/Lora-Italic.ttf") format("truetype"); }
 @font-face {
   font-family: "Lora";
-  src: url("../fonts/Circular/Lora-Regular.ttf") format("truetype"); }
+  src: url("../css/fonts/Circular/Lora-Regular.ttf") format("truetype"); }
 html, body, h2 {
   font-family: "Circular"; }
 
@@ -3088,6 +3088,14 @@ textarea {
     .pagination a:hover, .pagination a.active {
       border: #FFCF15 3px solid;
       background: #fff; }
+
+.page-results {
+  display: block;
+  text-align: center;
+  padding-top: 5.0rem; }
+  .page-results .caption {
+    font-size: 1.5rem;
+    vertical-align: text-bottom; }
 
 #footer {
   background: #fff;
