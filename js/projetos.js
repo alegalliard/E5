@@ -2,7 +2,7 @@ $( function() {
     var totalTags = 0;
     var totalFiles = 0;
     
-    $('.add-tag').on('click', function(e){
+    $('.add-tag i').on('click', function(e){
         e.preventDefault();
         var newKeyword = $('#keywords-projeto');
         var name = newKeyword.val();

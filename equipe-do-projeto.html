@@ -22,22 +22,7 @@
     <script src="vendor/materialize/js/bin/materialize.min.js"></script>
     <script src="vendor/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css">
-
-    <script>
-        $( function() {
-
-
-            $('.icon-list').on('click', function(){
-                $('.full-itens').show();
-                $('.icon-list').hide();
-            });
-            $('.collapse').on('click', function(){
-                $('.full-itens').hide();
-                $('.icon-list').show();
-            });
-
-        });
-    </script>
+    <script src="js/menu.js"></script>
 </head>
 <body>
 
@@ -57,7 +42,7 @@
    </ul>
     <ul class="full-itens">
         <li class="negative">
-            <a href="login.html"><i class="ic-login"></i>login ou cadastrar</a>
+            <a href="login.html"><i class="ic-login-amarelo"></i>login ou cadastrar</a>
         </li>
 
         <li>
@@ -89,12 +74,11 @@
         <li>
             <a href="contato.html"><i class="ic-contato"></i>contato</a>
         </li>
-        <li class="collapse">
-            <a href="#" class="collapse"><i class="ic-contato"></i>colapsar</a>
+        <li>
+            <a href="#" class="collapse"><i class="ic-"></i>colapsar</a>
         </li>
     </ul>
 </menu>
-
 
 
 <header class="row m-b-0">
