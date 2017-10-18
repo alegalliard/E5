@@ -3089,6 +3089,14 @@ textarea {
       border: #FFCF15 3px solid;
       background: #fff; }
 
+.page-results {
+  display: block;
+  text-align: center;
+  padding-top: 5.0rem; }
+  .page-results .caption {
+    font-size: 1.5rem;
+    vertical-align: text-bottom; }
+
 #footer {
   background: #fff;
   padding: 15px 0 0;

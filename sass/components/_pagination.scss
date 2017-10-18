@@ -29,5 +29,17 @@
             border: $amarelo 3px solid;
             background:#fff;
         }
-    }    
+    }
 }
+
+.page-results{
+    display: block;
+    text-align: center;
+    padding-top: 5.0rem;
+    
+    .caption{
+        font-size: 1.5rem;
+        vertical-align: text-bottom;
+    }
+}
+
