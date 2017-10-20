@@ -12,10 +12,12 @@ $(function() {
     
     
     var changeSliderTexts = function(){
+        var link = slides.eq(current).data('link');
         var title = slides.eq(current).data('title');
         var desc = slides.eq(current).data('desc');
         $('.slider-pagin').find('.current').text(current+1);
         $('.slider-title').text(title);
+        $('.slider-link').attr('href', link);
     }
     
     changeSliderTexts();
