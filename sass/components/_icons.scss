@@ -1,6 +1,6 @@
+// Ale, tudo bem? É o J aqui. Peguei esse projeto para fazer algumas modificações que a Giseli me pediu, e precisei retirar os [] das 'arrays' que vc usou abaixo pq o Sass não estava entendendo na hora de compilar. Pareceu funcionar corretamente sem. Eles tinham alguma função específica? Obrigado!
 
-
-$menu-icons: [
+$menu-icons:
     "acervo",
     "busca",
     "contato",
@@ -10,8 +10,9 @@ $menu-icons: [
     "login",
     "login-amarelo",
     "projetos",
-    "publicacoes"
-    ];
+    "publicacoes",
+    "publicacoes-amarelo"
+    ;
 
 @each $menu-icon in $menu-icons{
     .ic-#{$menu-icon} {
@@ -25,22 +26,22 @@ $menu-icons: [
     background-image: url(../img/icones-eventos/small/filtros.svg)
 }
 
-$icon-colors: [
+$icon-colors: 
     "amarelo",
     "azul",
     "azul-marinho",
     "azul-turquesa",
     "cinza"
-];
-$download-icons: [
+;
+$download-icons: 
     "audio",
     "documentos",
     "video"
-];
+;
 
-$eventos-page-icons: [
+$eventos-page-icons: 
     "cancelar","exportar","imprimir"
-];
+;
 
 @each $icon in $eventos-page-icons{
     .ic-evento-#{$icon} {
