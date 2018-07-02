@@ -11,7 +11,8 @@ $menu-icons:
     "login-amarelo",
     "projetos",
     "publicacoes",
-    "publicacoes-amarelo"
+    "publicacoes-amarelo",
+    "colapsar"
     ;
 
 @each $menu-icon in $menu-icons{
@@ -297,4 +298,12 @@ $eventos-page-icons:
             position:center center;
         }
     }
+}
+
+.ic-colapsar{
+    background-size: 70%;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
 }

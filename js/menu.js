@@ -16,7 +16,7 @@ $( function() {
 
   mainMenuIsVisible();
 
-  iconList.addClass('animated fadeInRight');
+  iconList.addClass('animated');
   iconList.on('click', function(){
     iconList.fadeOut(100);
     menu.toggleClass('fadeInRight fadeOutRight');

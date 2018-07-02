@@ -69,7 +69,7 @@
         text-align: center;
         position: relative;
 
-        button.prev, button.next{
+        button.prev-noticia, button.next-noticia{
             position: absolute;
             display: block;
             width: 16px;
@@ -83,7 +83,7 @@
             background-position: center;
         }
 
-        button.next{
+        button.next-noticia{
             left: initial;
             right: 0;
             -webkit-transform: rotate(180deg);
@@ -115,7 +115,7 @@
     overflow: hidden;
     background-color: transparent;
     margin-top:-26px;
-    &:before{
+    .barra-progresso{
         display: block;
         position: absolute;
         content: "";

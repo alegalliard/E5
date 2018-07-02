@@ -1,5 +1,5 @@
 $(function() {
-    
+
     var slides = $('.slide');
     var total = slides.length;
     var current = 0;
@@ -21,7 +21,7 @@ $(function() {
     changeSliderTexts();
     
     var slider = function(){
-        
+
         if(current+1 < total){
             current++;
             next = current+1;
@@ -36,7 +36,40 @@ $(function() {
     }
     
 
-    window.setInterval(slider, sliderTime);
+    var timeoutHandle = window.setInterval(slider, sliderTime);
+    
+    $(".prev-noticia").click(function() {
+        if(current <= 0){
+            current = 4;
+            changeSliderTexts();
+            slides.eq(current+1).addClass('fadeOut');
+            slides.eq(current).removeClass('fadeOut').addClass('fadeIn');
+        }
+        else{
+            current--;
+            changeSliderTexts();
+            slides.eq(current+1).addClass('fadeOut');
+            slides.eq(current).removeClass('fadeOut').addClass('fadeIn');
+        }
+    });
 
-   
+    $(".next-noticia").click(function() {
+        slider();
+    });
+
+
+    $(".prev-noticia, .next-noticia").click(function() {
+        // resetar barra de progresso
+        var el = $('.barra-progresso'),  
+        newone = el.clone(true);
+
+        el.before(newone);
+
+        $("." + el.attr("class") + ":last").remove();
+        // resetar timer da página
+        window.clearTimeout(timeoutHandle);
+        timeoutHandle = window.setInterval(slider, sliderTime);
+
+    });
+
 });
