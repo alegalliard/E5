@@ -23,7 +23,7 @@ $( function() {
     mainMenuIsVisible();
       sidenav.delay(100).animate({
         'right': 0
-      }, 1000, function(){
+      }, 150, function(){
 
       });
   });
@@ -34,8 +34,8 @@ $( function() {
       menu.toggleClass('fadeInRight fadeOutRight');
       mainMenuIsVisible();
       sidenav.animate({
-        'right': '-=190px'
-      }, 1000, function(){
+        'right': '-=172px'
+      }, 150, function(){
         iconList.fadeIn(100);
       });
 
