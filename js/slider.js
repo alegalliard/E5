@@ -60,12 +60,13 @@ $(function() {
 
     $(".prev-noticia, .next-noticia").click(function() {
         // resetar barra de progresso
-        var el = $('.barra-progresso'),  
-        newone = el.clone(true);
+        var barra = $('.barra-progresso'),  
+        newone = barra.clone(true);
 
-        el.before(newone);
+        barra.before(newone);
 
-        $("." + el.attr("class") + ":last").remove();
+        $("." + barra.attr("class") + ":last").remove();
+
         // resetar timer da página
         window.clearTimeout(timeoutHandle);
         timeoutHandle = window.setInterval(slider, sliderTime);
